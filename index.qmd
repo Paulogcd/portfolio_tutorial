@@ -1,0 +1,26 @@
+---
+title: "Research student portfolio tutorial"
+---
+
+You don't have much time and are not proefficient in web development, but you would like to have a portfolio to share your work ?
+Welcome to this *research student portfolio tutorial* ! 
+
+## Objective of this tutorial 
+
+- This simple tutorial aims at giving the right tools to any students who want to publish and maintain their portfolio in a quick and efficient way.
+- It requires no prior programming experience. 
+- You can find all the material and code of this tutorial [on this Github repository](http://github.com/paulogcd/portfolio_tutorial).
+
+## Structure and material
+
+This tutorial is divided in three main sessions : 
+
+1. Basics with visual studio code and git
+2. Basics with quarto
+3. Quickly publishing your own portfolio with github page 
+
+Those three sessions are available on slides or on more detailed pages.
+
+## Further resources
+
+This tutorial is mainly based on the [great documentation of quarto](https://quarto.org) and on the [Florian Oswald class](https://floswald.github.io/ScPoProgramming/), Associate Professor of Economics at SciencesPo in Paris, and my teacher to introduction to programming.

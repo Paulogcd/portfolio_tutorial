@@ -1,0 +1,5 @@
+---
+title: "About"
+---
+
+This is the website of a tutorial for quick and simple maintanable portfolio websites with Quarto. 

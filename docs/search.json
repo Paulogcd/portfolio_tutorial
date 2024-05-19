@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Research student portfolio tutorial",
+    "section": "",
+    "text": "You don’t have much time and are not proefficient in web development, but you would like to have a portfolio to share your work ? Welcome to this research student portfolio tutorial !"
+  },
+  {
+    "objectID": "index.html#objective-of-this-tutorial",
+    "href": "index.html#objective-of-this-tutorial",
+    "title": "Research student portfolio tutorial",
+    "section": "Objective of this tutorial",
+    "text": "Objective of this tutorial\n\nThis simple tutorial aims at giving the right tools to any students who want to publish and maintain their portfolio in a quick and efficient way.\nIt requires no prior programming experience.\nYou can find all the material and code of this tutorial on this Github repository."
+  },
+  {
+    "objectID": "index.html#structure-and-material",
+    "href": "index.html#structure-and-material",
+    "title": "Research student portfolio tutorial",
+    "section": "Structure and material",
+    "text": "Structure and material\nThis tutorial is divided in three main sessions :\n\nBasics with visual studio code and git\nBasics with quarto\nQuickly publishing your own portfolio with github page\n\nThose three sessions are available on slides or on more detailed pages."
+  },
+  {
+    "objectID": "index.html#further-resources",
+    "href": "index.html#further-resources",
+    "title": "Research student portfolio tutorial",
+    "section": "Further resources",
+    "text": "Further resources\nThis tutorial is mainly based on the great documentation of quarto and on the Florian Oswald class, Associate Professor of Economics at SciencesPo in Paris, and my teacher to introduction to programming."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This is the website of a tutorial for quick and simple maintanable portfolio websites with Quarto."
+  }
+]

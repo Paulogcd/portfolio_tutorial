@@ -1,0 +1,28 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Research student portfolio tutorial"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - text: Sessions
+        menu:
+        - text: "1. Git and Github"
+          file: 1_git_and_github.qmd
+        - text: "2. Quarto"
+          file: 2_quarto.qmd
+        - text: "3. Publish with GitHub Pages"
+          file: 3_publish_with_github_pages.qmd
+      - about.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
