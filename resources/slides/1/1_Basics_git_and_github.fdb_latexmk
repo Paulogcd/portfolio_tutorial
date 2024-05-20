@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1716150459.90219 "/Users/paulogugelmocavalheirodias/Documents/Projects/Portfolio_tutorial/resources/slides/1/1_Basics_git_and_github.tex" "1_Basics_git_and_github.pdf" "1_Basics_git_and_github" 1716150460.85998 0
-  "/Users/paulogugelmocavalheirodias/Documents/Projects/Portfolio_tutorial/resources/slides/1/1_Basics_git_and_github.tex" 1716150458.67765 1847 77d93bef614423fe861096664636842f ""
+["pdflatex"] 1716194788.74663 "/Users/paulogugelmocavalheirodias/Documents/Projects/Portfolio_tutorial/resources/slides/1/1_Basics_git_and_github.tex" "1_Basics_git_and_github.pdf" "1_Basics_git_and_github" 1716194789.83665 0
+  "/Users/paulogugelmocavalheirodias/Documents/Projects/Portfolio_tutorial/resources/slides/1/1_Basics_git_and_github.tex" 1716194788.40186 1913 a2e036040c57ac77dd094a3f33e5b934 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -207,10 +207,10 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1714505990.75968 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1714505910 8221420 0b4b4108988c2f012a451f5dd4e55eaa ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "1_Basics_git_and_github.aux" 1716150460.79246 2127 08b4b8bf3f0076e471b0f06afa1a1b9f "pdflatex"
-  "1_Basics_git_and_github.nav" 1716150460.79331 1358 ea3d8159d154c19cc3d5972c53e03628 "pdflatex"
-  "1_Basics_git_and_github.out" 1716150460.79313 103 47949ac7c3dcedddeefe3cd50587dda1 "pdflatex"
-  "1_Basics_git_and_github.tex" 1716150458.67765 1847 77d93bef614423fe861096664636842f ""
+  "1_Basics_git_and_github.aux" 1716194789.76477 2127 08b4b8bf3f0076e471b0f06afa1a1b9f "pdflatex"
+  "1_Basics_git_and_github.nav" 1716194789.76562 1358 ea3d8159d154c19cc3d5972c53e03628 "pdflatex"
+  "1_Basics_git_and_github.out" 1716194789.76538 103 47949ac7c3dcedddeefe3cd50587dda1 "pdflatex"
+  "1_Basics_git_and_github.tex" 1716194788.40186 1913 a2e036040c57ac77dd094a3f33e5b934 ""
   (generated)
   "1_Basics_git_and_github.aux"
   "1_Basics_git_and_github.log"

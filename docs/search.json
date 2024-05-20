@@ -1,5 +1,54 @@
 [
   {
+    "objectID": "1_git_and_github.html",
+    "href": "1_git_and_github.html",
+    "title": "1. Introduction to Git and GitHub",
+    "section": "",
+    "text": "In this first session, you will learn the basics on how to use Git and GitHub on Visual Studio Code.\nYou can find the slides of this session here."
+  },
+  {
+    "objectID": "1_git_and_github.html#summary",
+    "href": "1_git_and_github.html#summary",
+    "title": "1. Introduction to Git and GitHub",
+    "section": "",
+    "text": "In this first session, you will learn the basics on how to use Git and GitHub on Visual Studio Code.\nYou can find the slides of this session here."
+  },
+  {
+    "objectID": "1_git_and_github.html#introduction",
+    "href": "1_git_and_github.html#introduction",
+    "title": "1. Introduction to Git and GitHub",
+    "section": "Introduction",
+    "text": "Introduction\nThis tutorial aims to give you the tools to easily and efficiently create, manage and publish your own online portfolio. In order to do that, we use several tools, such as Visual Studio Code, Git, GitHub, and Quarto. To understand why we use them, it is important to understand what Internet is. Internet can be understood as a network of computers that can communicate with each other. In the same way, a website can be understood as content that can be accessed over the internet. Thus, this tutorial will first focus on the design of the website, and then on the publication of the website.\nUsually, one shoul learn HTML5 and CSS to know a bit of Web development. However, in the recent years, a lot of static website generator have emerged, that make the conception of websites easier. Among the several static website generator, Jekyll, Zola, Hugo, and Quarto can be cited, but they are far from being the only ones. This tutorial focuses on Quarto in the second session.\nAfter having designed your website with a static website generator, we finally have to make it available to the world, i.e. publish it. Several free hosting services exist, such as Netlify, Quarto Pub, and GitHub Pages, among other ones. This tutorial focuses on GitHub Pages in the third session.\nNow, in order to make the whole process easier and fluid, this tutorial first focuses on the establishment of a workflow using Visual Studio Code, Git and GitHub. This workflow allows to make the second and third steps easier, and is also very useful if you are to work in collaborative projects in the future. This is thus the first session of this tutorial."
+  },
+  {
+    "objectID": "1_git_and_github.html#visual-studio-code",
+    "href": "1_git_and_github.html#visual-studio-code",
+    "title": "1. Introduction to Git and GitHub",
+    "section": "Visual Studio Code",
+    "text": "Visual Studio Code\nVisual Studio Code (VSC or vscode) is a software to write code, also called Integrated Development Environment (IDE). It is largely used, and a lot of extensions exist to customize your experience with it. We are thus going to install vscode here.\n\n\n\nDowload page of vscode.\n\n\nThe strength of vscode comes mainly from the way it manages folders, in which several files of the same project exist. Now, we are going to create a folder, named “portfolio” for example, in which we are going to develop our online portfolio.\nAfter it is done, we can use vscode to open this same folder. To do so, we open vscode, click on “open” in the starting page, and select your folder.\n\n\n\nStarting page of vscode. Click on “open” to chose a folder to open.\n\n\nNow that you selected your folder, vscode opened it and you should have something like that :\n\n\n\nAn empty folder opened with vscode.\n\n\n\nNOTE : When you open a folder for the first time, vscode may ask you “Do you trust the authors of the files in this folder?”. Since you just created your folder and that it is empty, you can naturally click on yes. You are the author !\n\nIt’s done ! We settled vscode correctly for the next step : initializing git in vscode."
+  },
+  {
+    "objectID": "1_git_and_github.html#basics-of-git",
+    "href": "1_git_and_github.html#basics-of-git",
+    "title": "1. Introduction to Git and GitHub",
+    "section": "Basics of Git",
+    "text": "Basics of Git\nGit is a software that allows for version management, i.e. it is a version control system. Simply put, it is a software that allows you to make a logbook of all the changes in your files. You want to check all the steps from the very beginning of your project until the current version ? If you use git, it is possible.\nNote that this does not only work with code files, but also with any type of file. If you have a text file (like a Master thesis for example…) for which you want to control the different versions, you can use git for it !\nThe first step is to install Git from here.\n\n\n\nThe installation page of git.\n\n\nOnce it is done, you can go back to vscode and go the research bar at the top and enter “&gt;Terminal: Create New Terminal”. This will pop-up a terminal console in vscode.\n\n\n\nHow to create a new terminal on vscode.\n\n\nThis should normally generate a console at the bottom of vscode, where your username and/or the name of your computer appear :\n\n\n\nTerminal in vscode.\n\n\nSimply put, the terminal allows to textually communicate with your machine, instead of graphically, like it is usually the case. Having a terminal opened in vscode makes it possible to manipulate the current opened folder more easily. This is also how we are going to use Git.\n\nNote : This tutorial does not focus on what a terminal is, what shell, bash or any kind of line command are and do. However, it would be very useful for you to know how to use the basics of it. I strongly encourage you to check some material on it, such as the first four sessions of Florian Oswald lecture on the shell.\n\nNow, to use Git, we need to take a step back.\nFirst, we have to initialise git in a folder. This will create a .git folder in our current folder, that will be the logbook. Second, we have to choose which files we track with git. The changes of the tracked files will be registered in the .git folder. We can now work on our files. Once we want to save the changes of the files, we ‘add’ the modified files to the logbook. Third, we have to describe the changes. Without descriptions, the changes won’t be saved in the logbook. To describe the changes, we write a ‘commit’ in the logbook.\nConcretely, if we come back to vscode :\n\nWe write git init in the terminal console to initialise a git folder.\nWe then click on “new file” on vscode, for example a text-file. We write something in it, and save it as text.txt.\nWe begin tracking this file with git, using git add text.txt.\nWe describe our action using git commit -m \"Adding a text file.\".\n\nAt this point, you should have something like that :\n\n\n\nInitializing git, adding a file, and commiting its change.\n\n\nAt any point, we can use some other git commands to have more information. For example :\n\ngit status informs us about which files in our folder are being tracked, and what modifications are not yet registered.\ngit log gives back the logbook, i.e. the list of changes that were saved.\ngit diff gives the differences between the current version of your files and the latest version saved in the logbook.\n\nGit is a very powerful tool that allows to do a lot of collabortive code managing, but we choose here to mainly exploit one of its features : remote synchronization. In addition to having this local logbook on your computer, you can indeed also send your files to a remote server, in a similar way than the cloud or a remote drive. This is where GitHub enters into play."
+  },
+  {
+    "objectID": "1_git_and_github.html#basics-of-github",
+    "href": "1_git_and_github.html#basics-of-github",
+    "title": "1. Introduction to Git and GitHub",
+    "section": "Basics of GitHub",
+    "text": "Basics of GitHub\nGitHub is a firm (currently owned by Microsoft) that puts at disposition servers with which you can use git to sotre your data remotely. It is widely used in the programming community and is also sometimes referred as the social network of developers.\nTo use GitHub, the first step is to go to GitHub and create an account.\n\n\n\nThe account creation page of GitHub"
+  },
+  {
+    "objectID": "1_git_and_github.html#use-git-and-github-together",
+    "href": "1_git_and_github.html#use-git-and-github-together",
+    "title": "1. Introduction to Git and GitHub",
+    "section": "Use Git and GitHub together",
+    "text": "Use Git and GitHub together"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Research student portfolio tutorial",
