@@ -107,12 +107,19 @@ This is where GitHub enters into play.
 
 ## Basics of GitHub
 
-GitHub is a firm (currently owned by Microsoft) that puts at disposition servers with which you can use git to sotre your data remotely.
-It is widely used in the programming community and is also sometimes referred as the social network of developers.
+GitHub is a firm (currently owned by Microsoft) that puts at disposition servers which you can use to store your data.
+It has a lot of different uses, including collaborative coding, but this tutorial only focuses on how to use it to manage your project with Git and Quarto.
+It is widely used in the programming community and is also sometimes referred as the social network of developers. 
 
 To use GitHub, the first step is to go to [GitHub](https://github.com) and [create an account](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home). 
 
 ![The account creation page of GitHub](./resources/images/8_account_creation_page_github)
+
+Once your account is created, you can create a repository, named "username.github.io", replacing "username" with your actual user name. For example, if your username is "janesmith", then you should create a repository named "janesmith.github.io". 
+
+Once it is done, we can go back to vscode, to add a connection between our local folder and the remote repository we just created.
+
+In order to do that, we first have to configurate git.
 
 ## Use Git and GitHub together 
 

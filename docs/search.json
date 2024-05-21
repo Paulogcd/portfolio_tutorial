@@ -39,7 +39,7 @@
     "href": "1_git_and_github.html#basics-of-github",
     "title": "1. Introduction to Git and GitHub",
     "section": "Basics of GitHub",
-    "text": "Basics of GitHub\nGitHub is a firm (currently owned by Microsoft) that puts at disposition servers with which you can use git to sotre your data remotely. It is widely used in the programming community and is also sometimes referred as the social network of developers.\nTo use GitHub, the first step is to go to GitHub and create an account.\n\n\n\nThe account creation page of GitHub"
+    "text": "Basics of GitHub\nGitHub is a firm (currently owned by Microsoft) that puts at disposition servers which you can use to store your data. It has a lot of different uses, including collaborative coding, but this tutorial only focuses on how to use it to manage your project with Git and Quarto. It is widely used in the programming community and is also sometimes referred as the social network of developers.\nTo use GitHub, the first step is to go to GitHub and create an account.\n\n\n\nThe account creation page of GitHub\n\n\nOnce your account is created, you can create a repository, named “username.github.io”, replacing “username” with your actual user name. For example, if your username is “janesmith”, then you should create a repository named “janesmith.github.io”.\nOnce it is done, we can go back to vscode, to add a connection between our local folder and the remote repository we just created.\nIn order to do that, we first have to configurate git."
   },
   {
     "objectID": "1_git_and_github.html#use-git-and-github-together",
