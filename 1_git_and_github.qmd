@@ -26,6 +26,8 @@ Now, in order to make the whole process easier and fluid, this tutorial first fo
 This workflow allows to make the second and third steps easier, and is also very useful if you are to work in collaborative projects in the future.
 This is thus the first session of this tutorial.
 
+The first session is longer than the other two, so once you are done with it, the rest will be a lot easier.
+
 ## Visual Studio Code
 
 Visual Studio Code (VSC or vscode) is a software to write code, also called Integrated Development Environment (IDE).
@@ -121,5 +123,20 @@ Once it is done, we can go back to vscode, to add a connection between our local
 
 In order to do that, we first have to configurate git.
 
+1. Enter `git config --global user.name "Your Name"`, replacing "Your Name" with the name of your choice. It doesn't have to be the same as your GitHub user name. 
+
+2. Enter `git config --global user.email "your@mail.com"`, replacing "your@mail.com" with the email of your choice. Note that it does not require you to actually own this email adress.
+
+3. Then, we have to add a ssh key to our GitHub account. An ssh key allows you to communicate to GitHub from your computer. Enter `ssh-keygen -t ed25519 -C "your@email.com"`, replacing "your@email" with your actual email. Your terminal will ask for a passphrase, you can not enter anything, to choose to not have any passphrase.
+
+4. Now, we are going to use this key to establish a connection with GitHub. On your terminal, you can enter `cat ~/.ssh/id_ed25519.pub` or `open ~/.ssh/id_ed25519.pub`, and it will give you back a character string beginning with "ssh-ed22519". Go to your GitHub account, Click on your profile picture at the top right of the website, choose "settings", then click on "ssh and gpg keys", then on "add new ssh key", choose the title you want (for example the name of your current computer), and in "key", add the value your terminal gave back to you. You should be connected !
+
+5. Now that your GitHub account is connected to your computer, we have to connect your local folder to a repository. Go on your repository, click on the green menu button "code", and copy the text it gives you in the SSH section (it should be something like "git@github.com:username/name_of_the_repository.git"). In your vscode terminal, with your folder open, you can then enter : `git remote add origin git@github.com:username/name_of_the_repository.git`. The connection between your local folder and the distant repository should be established. 
+
+4. We can "push" the content of our local folder to our remote folder. This is a command that we use once all the changes are commited in our logbook to send all the information in the remote server. To be able to push correctly, you first enter `git push -u origin main`, and then you can just enter `git push` for the next times, when your changes are added and commited. 
+
+> Note : You can also initialise a git folder in another directory, and "clone" an existing GitHub repository. This will create a duplicate of this repository in your file and on your GitHub account, or just load the data locally if it is one of your repositories.
+
 ## Use Git and GitHub together 
 
+Now that the connection between your local folder and your distant repository has been created, you can add modifications to your folder (like creating a new file), add those changes via `git add` followed by the name of your new document (you can also use `*` to select everything in your folder), commit those changes via `git commit -m "the description of your changes"`, and then push those changes via `git push`. This add-commit-push process is one of the basics to synchronize your local folder with the files of your GitHub account.  
