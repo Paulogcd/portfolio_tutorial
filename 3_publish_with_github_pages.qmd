@@ -1,3 +1,20 @@
 ---
 title: "3. Publish your website with Github Pages"
 ---
+
+Congratulations for having made it so far ! Now that we have a decent-looking basis for our online portfolio, we are ready to make it available to the real world. 
+In order for us to publish our content, we are going to use GitHub pages, a website hosting service of GitHub. 
+
+This final step is the easiest one, so hang it on, we are soon reaching the end of this tutorial. 
+
+## Activating GitHub pages
+
+In order for us to publish the content that is available in our `_site` folder, we need first to goto our GitHub repository, and to click on settings at the top-right. We then click in the "Code and automation" on the "Pages" section. You should see something like this : 
+
+![Add image](./resources/images/0_Default_image.png)
+
+We are now going to activate GitHub Pages, and select "Deploy from a branch" for the Source. We are then going to select the folder from which GitHub Pages publishes our website. In our case, it is the "_quarto" folder. The branch from which it selects the folder should be "main" or "master" (but could have another name) depending on your git configuration. After selecting it, you can click on "Save" : 
+
+![Add image](./resources/images/0_Default_image.png)
+
+You can then go to <https://username.github.io>, with your actual GitHub username instead of "username". After a few minutes, it should be on. Congratulations, you have published your portfolio ! 

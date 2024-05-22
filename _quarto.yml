@@ -8,7 +8,7 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - text: Sessions
+      - text: Chapters
         menu:
         - text: "1. Git and Github"
           file: 1_git_and_github.qmd
@@ -20,6 +20,7 @@ website:
 
 format:
   html:
+    code-copy: true
     theme: cosmo
     css: styles.css
     toc: true

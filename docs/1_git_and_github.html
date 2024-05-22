@@ -93,10 +93,10 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-sessions" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Sessions</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-chapters" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Chapters</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-sessions">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-chapters">    
         <li>
     <a class="dropdown-item" href="./1_git_and_github.html">
  <span class="dropdown-text">1. Git and Github</span></a>
@@ -165,24 +165,24 @@ ul.task-list li input[type="checkbox"] {
 <section id="summary" class="level2">
 <h2 class="anchored" data-anchor-id="summary">Summary</h2>
 <ul>
-<li>In this first session, you will learn the basics on how to use Git and GitHub on Visual Studio Code.</li>
-<li>You can find the slides of this session <a href="./resources/slides/1/1_Basics_git_and_github.pdf">here</a>.</li>
+<li>In this first chapter, you will learn the basics on how to use Git and GitHub on Visual Studio Code.</li>
+<li>You can find the slides of this chapter <a href="./resources/slides/1/1_Basics_git_and_github.pdf">here</a>.</li>
 </ul>
 </section>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>This tutorial aims to give you the tools to easily and efficiently create, manage and publish your own online portfolio. In order to do that, we use several tools, such as Visual Studio Code, Git, GitHub, and Quarto. To understand why we use them, it is important to understand what Internet is. Internet can be understood as a network of computers that can communicate with each other. In the same way, a website can be understood as content that can be accessed over the internet. Thus, this tutorial will first focus on the design of the website, and then on the publication of the website.</p>
-<p>Usually, one shoul learn HTML5 and CSS to know a bit of Web development. However, in the recent years, a lot of static website generator have emerged, that make the conception of websites easier. Among the several static website generator, Jekyll, Zola, Hugo, and Quarto can be cited, but they are far from being the only ones. This tutorial focuses on Quarto in the second session.</p>
-<p>After having designed your website with a static website generator, we finally have to make it available to the world, i.e.&nbsp;publish it. Several free hosting services exist, such as Netlify, Quarto Pub, and GitHub Pages, among other ones. This tutorial focuses on GitHub Pages in the third session.</p>
-<p>Now, in order to make the whole process easier and fluid, this tutorial first focuses on the establishment of a workflow using Visual Studio Code, Git and GitHub. This workflow allows to make the second and third steps easier, and is also very useful if you are to work in collaborative projects in the future. This is thus the first session of this tutorial.</p>
-<p>The first session is longer than the other two, so once you are done with it, the rest will be a lot easier.</p>
+<p>Usually, one shoul learn HTML5 and CSS to know a bit of Web development. However, in the recent years, a lot of static website generator have emerged, that make the conception of websites easier. Among the several static website generator, Jekyll, Zola, Hugo, and Quarto can be cited, but they are far from being the only ones. This tutorial focuses on Quarto in the second chapter.</p>
+<p>After having designed your website with a static website generator, we finally have to make it available to the world, i.e.&nbsp;publish it. Several free hosting services exist, such as Netlify, Quarto Pub, and GitHub Pages, among other ones. This tutorial focuses on GitHub Pages in the third chapter.</p>
+<p>Now, in order to make the whole process easier and fluid, this tutorial first focuses on the establishment of a workflow using Visual Studio Code, Git and GitHub. This workflow allows to make the second and third steps easier, and is also very useful if you are to work in collaborative projects in the future. This is thus the first chapter of this tutorial.</p>
+<p>The first chapter is longer than the other two, so once you are done with it, the rest will be a lot easier.</p>
 </section>
 <section id="visual-studio-code" class="level2">
 <h2 class="anchored" data-anchor-id="visual-studio-code">Visual Studio Code</h2>
 <p>Visual Studio Code (VSC or vscode) is a software to write code, also called Integrated Development Environment (IDE). It is largely used, and a lot of extensions exist to customize your experience with it. We are thus going to install vscode <a href="https://code.visualstudio.com/">here</a>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./resources/images/1_install_vscode.png" class="img-fluid figure-img"></p>
+<p><img src="./resources/images/1_1_install_vscode.png" class="img-fluid figure-img"></p>
 <figcaption>Dowload page of vscode.</figcaption>
 </figure>
 </div>
@@ -190,14 +190,14 @@ ul.task-list li input[type="checkbox"] {
 <p>After it is done, we can use vscode to open this same folder. To do so, we open vscode, click on “open” in the starting page, and select your folder.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./resources/images/2_starting_page_vscode.png" class="img-fluid figure-img"></p>
+<p><img src="./resources/images/1_2_starting_page_vscode.png" class="img-fluid figure-img"></p>
 <figcaption>Starting page of vscode. Click on “open” to chose a folder to open.</figcaption>
 </figure>
 </div>
 <p>Now that you selected your folder, vscode opened it and you should have something like that :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./resources/images/3_folder_opened_vscode.png" class="img-fluid figure-img"></p>
+<p><img src="./resources/images/1_3_folder_opened_vscode.png" class="img-fluid figure-img"></p>
 <figcaption>An empty folder opened with vscode.</figcaption>
 </figure>
 </div>
@@ -213,27 +213,27 @@ ul.task-list li input[type="checkbox"] {
 <p>The first step is to install Git from <a href="https://git-scm.com/">here</a>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./resources/images/4_install_git.png" class="img-fluid figure-img"></p>
+<p><img src="./resources/images/1_4_install_git.png" class="img-fluid figure-img"></p>
 <figcaption>The installation page of git.</figcaption>
 </figure>
 </div>
 <p>Once it is done, you can go back to vscode and go the research bar at the top and enter “&gt;Terminal: Create New Terminal”. This will pop-up a terminal console in vscode.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./resources/images/5_create_new_terminal_vscode.png" class="img-fluid figure-img"></p>
+<p><img src="./resources/images/1_5_create_new_terminal_vscode.png" class="img-fluid figure-img"></p>
 <figcaption>How to create a new terminal on vscode.</figcaption>
 </figure>
 </div>
 <p>This should normally generate a console at the bottom of vscode, where your username and/or the name of your computer appear :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./resources/images/6_terminal_vscode.png" class="img-fluid figure-img"></p>
+<p><img src="./resources/images/1_6_terminal_vscode.png" class="img-fluid figure-img"></p>
 <figcaption>Terminal in vscode.</figcaption>
 </figure>
 </div>
 <p>Simply put, the terminal allows to textually communicate with your machine, instead of graphically, like it is usually the case. Having a terminal opened in vscode makes it possible to manipulate the current opened folder more easily. This is also how we are going to use Git.</p>
 <blockquote class="blockquote">
-<p>Note : This tutorial does not focus on what a terminal is, what shell, bash or any kind of line command are and do. However, it would be very useful for you to know how to use the basics of it. I strongly encourage you to check some material on it, such as the first four sessions of <a href="https://floswald.github.io/ScPoProgramming/">Florian Oswald lecture</a> on the shell.</p>
+<p>Note : This tutorial does not focus on what a terminal is, what shell, bash or any kind of line command are and do. However, it would be very useful for you to know how to use the basics of it. I strongly encourage you to check some material on it, such as the first four chapters of <a href="https://floswald.github.io/ScPoProgramming/">Florian Oswald lecture</a> on the shell.</p>
 </blockquote>
 <p>Now, to use Git, we need to take a step back.</p>
 <p>First, we have to initialise git in a folder. This will create a .git folder in our current folder, that will be the logbook. Second, we have to choose which files we track with git. The changes of the tracked files will be registered in the .git folder. We can now work on our files. Once we want to save the changes of the files, we ‘add’ the modified files to the logbook. Third, we have to describe the changes. Without descriptions, the changes won’t be saved in the logbook. To describe the changes, we write a ‘commit’ in the logbook.</p>
@@ -247,7 +247,7 @@ ul.task-list li input[type="checkbox"] {
 <p>At this point, you should have something like that :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./resources/images/7_basic_setup_git.png" class="img-fluid figure-img"></p>
+<p><img src="./resources/images/1_7_basic_setup_git.png" class="img-fluid figure-img"></p>
 <figcaption>Initializing git, adding a file, and commiting its change.</figcaption>
 </figure>
 </div>
@@ -265,7 +265,7 @@ ul.task-list li input[type="checkbox"] {
 <p>To use GitHub, the first step is to go to <a href="https://github.com">GitHub</a> and <a href="https://github.com/signup?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2F&amp;source=header-home">create an account</a>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./resources/images/8_account_creation_page_github.png" class="img-fluid figure-img"></p>
+<p><img src="./resources/images/1_8_account_creation_page_github.png" class="img-fluid figure-img"></p>
 <figcaption>The account creation page of GitHub</figcaption>
 </figure>
 </div>

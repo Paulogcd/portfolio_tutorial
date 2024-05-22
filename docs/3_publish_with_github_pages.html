@@ -93,10 +93,10 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-sessions" role="button" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Sessions</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-chapters" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Chapters</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-sessions">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-chapters">    
         <li>
     <a class="dropdown-item" href="./1_git_and_github.html">
  <span class="dropdown-text">1. Git and Github</span></a>
@@ -127,7 +127,13 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#activating-github-pages" id="toc-activating-github-pages" class="nav-link active" data-scroll-target="#activating-github-pages">Activating GitHub pages</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -151,8 +157,28 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Congratulations for having made it so far ! Now that we have a decent-looking basis for our online portfolio, we are ready to make it available to the real world. In order for us to publish our content, we are going to use GitHub pages, a website hosting service of GitHub.</p>
+<p>This final step is the easiest one, so hang it on, we are soon reaching the end of this tutorial.</p>
+<section id="activating-github-pages" class="level2">
+<h2 class="anchored" data-anchor-id="activating-github-pages">Activating GitHub pages</h2>
+<p>In order for us to publish the content that is available in our <code>_site</code> folder, we need first to goto our GitHub repository, and to click on settings at the top-right. We then click in the “Code and automation” on the “Pages” section. You should see something like this :</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./resources/images/0_Default_image.png" class="img-fluid figure-img"></p>
+<figcaption>Add image</figcaption>
+</figure>
+</div>
+<p>We are now going to activate GitHub Pages, and select “Deploy from a branch” for the Source. We are then going to select the folder from which GitHub Pages publishes our website. In our case, it is the “_quarto” folder. The branch from which it selects the folder should be “main” or “master” (but could have another name) depending on your git configuration. After selecting it, you can click on “Save” :</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./resources/images/0_Default_image.png" class="img-fluid figure-img"></p>
+<figcaption>Add image</figcaption>
+</figure>
+</div>
+<p>You can then go to <a href="https://username.github.io" class="uri">https://username.github.io</a>, with your actual GitHub username instead of “username”. After a few minutes, it should be on. Congratulations, you have published your portfolio !</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

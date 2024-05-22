@@ -2,14 +2,144 @@
 title: "2. Introduction to Quarto"
 ---
 
+
 Now that we know how to use Git and Github together, it is time for us to use Quarto. 
 
-The first step of this session is to download Quarto [here](https://quarto.org/docs/get-started/).
+## Installation of Quarto
+
+The first step of this chapter is to download Quarto [here](https://quarto.org/docs/get-started/).
 
 ![Installation page of Quarto](./resources/images/2_1_install_quarto.png)
 
+
+## Create a Quarto project
+
 The second step is to create a quarto project in your folder (the one you synchronized with your online GitHub repository). In order to do that, you can go in vscode, and enter in the terminal `quarto create`. You will then be guided with several questions regarding the nature of the project you wish to create. For the purpose of creating a portfolio, I would recommend to choose to create a website. 
 
-![Add image with the menu choices of quarto when creating a project.]()
+![Add image with the menu choices of quarto when creating a project.](./resources/images/0_Default_image.png)
 
-Once the creation process is done, you will see appear in your folder several files : index.qmd, about.qmd, .  
+Once the creation process is done, you will see appear in your folder several files : index.qmd, about.qmd, _quarto.yml, style.css. 
+
+Let's take a moment to see what they do : 
+
+1. The files with a ".css" extension are Cascading Style Sheets (css) files. Together with HTML, they are one of the main langages for web development. They are mainly responsisble for the appearance and design of websites. It is not necessary to modify them for the purpose of this tutorial, but you can inform yourself about it [on this tutorial](https://www.w3schools.com/css/).
+2. The files with a ".qmd" extension are quarto files. This extension stands for Quarto MarkDown. They correspond to what the future pages of your website will be. They support various langages, like markup or $\LaTeX$. We will modify our portfolio pages by modifying these pages. 
+3. The files with a ".yml" extension are configuration files. We use them to set some rules that quarto will apply to generate our pages. For example, we will modify the navigation bar (or navbar) through our .yml files later in this chapter.
+
+## The preview and render commands
+
+Quarto allows us to create a properly designed website by only interacting with basic qmd files. We need however to see what results they yield. 
+
+To see the graphical result, we need to use two main commands : the `quarto preview` and `quarto render` commands.
+
+The `quarto preview` command allows to see in real time what the changes we are bringing to our qmd and yml files yield. After entering it in the terminal console, it automatically opens a page on your browser where you can see the graphical resutls. We usually use it at the beginning of a work session, when we bring change to our portfolio. For the changes to be actualised, you need to save your files. 
+
+The `quarto render` command allows to create html and css files from our qmd and yml files. We usually use it at the end of a work session, when we are satisfied with the changes we brought to the our website. Essentially, it does the same as the `preview` command, without opening a browser to see your changes in real time. 
+
+## How to modify the general appearance of our pages
+
+1. Template
+2. Title of pages
+
+Now that you entered `quarto preview` and that you can see the changes in real time, we can begin to change the content of your portfolio. First of all, the general appearance of our pages can be changed via the chosen template specified in the `_quarto.yml` file. 
+
+## How to modify our content
+
+Now that we have chosen the general appearance of our portfolio, we can modify the content of it.
+
+If we want to modify the homepage of our website, we can go to the `index.qmd` file, and change directly the text. 
+By default, Quarto should have filled the document with : 
+
+```{.yml}
+---
+title: "Home"
+---
+
+This is a Quarto website.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+```
+That yields, depending on your chosen template : 
+
+![Add image with the menu choices of quarto when creating a project.](./resources/images/0_Default_image.png)
+
+
+We can modify it by writting for example : 
+```{.yml}
+---
+title: "Home"
+---
+
+Hello, I am Jane Smith, currently a third year PhD Student in Economics at the Paris University, and this is my academic portfolio ! My research interests are mainly about urban economics and spatial inequalities. 
+
+To learn more about my work, visit <https://parisuniversity.com/research_of_Jane_Smith>.
+
+```
+
+- text
+- links
+- pages
+- pictures
+- other documents
+
+## How to modify the navigation bar
+
+An essential element of the website is the navigation bar. In Quarto, it is automatically displayed in all your pages, and you can only modify it in your `_quarto.yml` file. Let's take a look at it : 
+
+```{.yml}
+project:
+  type: website
+
+website:
+  title: "portfolio"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+```
+
+In this example, the content of the navigation bar, or "navbar", are determined by all elements following the `navbar` element in the `website` list. Here, we see that it has two elements : the homepage, defined as the index.qmd file, and the about page, defined as the `about.qmd` file.
+
+Normally, the title of you page should appear in your browser, despite not being specified in your navbar. This is the default setting of Quarto. To unable this option, you can add `title: false` in your `navbar` list : 
+
+```{.yml}
+website:
+  title: "portfolio"
+  navbar:
+    title: false
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+```
+
+This should yield : 
+
+![Add image](./resources/images/0_Default_image.png)
+
+To add a new page to your navbar, you can add an element in the `left` or `right` list such as : 
+
+```{.yml}
+website:
+  title: "portfolio"
+  navbar:
+    title: false
+    left:
+      - href: index.qmd
+        text: Home
+      - project.qmd
+      - about.qmd
+```
+
+For this to work, you must have created a `project.qmd` file beforehand in your folder. This will then implement a new link in the navbar, displayed in its left part, having for name the name of file, i.e. here `project` : 
+
+![Add image](./resources/images/0_Default_image.png)
+

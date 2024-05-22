@@ -4,8 +4,8 @@ title: "1. Introduction to Git and GitHub"
 
 ## Summary 
 
-- In this first session, you will learn the basics on how to use Git and GitHub on Visual Studio Code.
-- You can find the slides of this session [here](./resources/slides/1/1_Basics_git_and_github.pdf).
+- In this first chapter, you will learn the basics on how to use Git and GitHub on Visual Studio Code.
+- You can find the slides of this chapter [here](./resources/slides/1/1_Basics_git_and_github.pdf).
 
 ## Introduction 
 
@@ -17,16 +17,16 @@ In the same way, a website can be understood as content that can be accessed ove
 Thus, this tutorial will first focus on the design of the website, and then on the publication of the website. 
 
 Usually, one shoul learn HTML5 and CSS to know a bit of Web development. However, in the recent years, a lot of static website generator have emerged, that make the conception of websites easier.
-Among the several static website generator, Jekyll, Zola, Hugo, and Quarto can be cited, but they are far from being the only ones. This tutorial focuses on Quarto in the second session.
+Among the several static website generator, Jekyll, Zola, Hugo, and Quarto can be cited, but they are far from being the only ones. This tutorial focuses on Quarto in the second chapter.
 
 After having designed your website with a static website generator, we finally have to make it available to the world, i.e. publish it.
-Several free hosting services exist, such as Netlify, Quarto Pub, and GitHub Pages, among other ones. This tutorial focuses on GitHub Pages in the third session.
+Several free hosting services exist, such as Netlify, Quarto Pub, and GitHub Pages, among other ones. This tutorial focuses on GitHub Pages in the third chapter.
 
 Now, in order to make the whole process easier and fluid, this tutorial first focuses on the establishment of a workflow using Visual Studio Code, Git and GitHub.
 This workflow allows to make the second and third steps easier, and is also very useful if you are to work in collaborative projects in the future.
-This is thus the first session of this tutorial.
+This is thus the first chapter of this tutorial.
 
-The first session is longer than the other two, so once you are done with it, the rest will be a lot easier.
+The first chapter is longer than the other two, so once you are done with it, the rest will be a lot easier.
 
 ## Visual Studio Code
 
@@ -34,18 +34,18 @@ Visual Studio Code (VSC or vscode) is a software to write code, also called Inte
 It is largely used, and a lot of extensions exist to customize your experience with it. 
 We are thus going to install vscode [here](https://code.visualstudio.com/).
  
-![Dowload page of vscode.](./resources/images/1_install_vscode.png)
+![Dowload page of vscode.](./resources/images/1_1_install_vscode.png)
 
 The strength of vscode comes mainly from the way it manages folders, in which several files of the same project exist.
 Now, we are going to create a folder, named "portfolio" for example, in which we are going to develop our online portfolio. 
 
 After it is done, we can use vscode to open this same folder. To do so, we open vscode, click on "open" in the starting page, and select your folder.
 
-![Starting page of vscode. Click on "open" to chose a folder to open.](./resources/images/2_starting_page_vscode.png)
+![Starting page of vscode. Click on "open" to chose a folder to open.](./resources/images/1_2_starting_page_vscode.png)
 
 Now that you selected your folder, vscode opened it and you should have something like that : 
 
-![An empty folder opened with vscode.](./resources/images/3_folder_opened_vscode.png)
+![An empty folder opened with vscode.](./resources/images/1_3_folder_opened_vscode.png)
 
 > NOTE : When you open a folder for the first time, vscode may ask you "Do you trust the authors of the files in this folder?".
 Since you just created your folder and that it is empty, you can naturally click on yes. You are the author !
@@ -64,20 +64,20 @@ If you have a text file (like a Master thesis for example...) for which you want
 
 The first step is to install Git from [here](https://git-scm.com/). 
 
-![The installation page of git.](./resources/images/4_install_git.png)
+![The installation page of git.](./resources/images/1_4_install_git.png)
 
 Once it is done, you can go back to vscode and go the research bar at the top and enter ">Terminal: Create New Terminal". This will pop-up a terminal console in vscode.
 
-![How to create a new terminal on vscode.](./resources/images/5_create_new_terminal_vscode.png)
+![How to create a new terminal on vscode.](./resources/images/1_5_create_new_terminal_vscode.png)
 
 This should normally generate a console at the bottom of vscode, where your username and/or the name of your computer appear :
 
-![Terminal in vscode.](./resources/images/6_terminal_vscode.png)
+![Terminal in vscode.](./resources/images/1_6_terminal_vscode.png)
 
 Simply put, the terminal allows to textually communicate with your machine, instead of graphically, like it is usually the case.
 Having a terminal opened in vscode makes it possible to manipulate the current opened folder more easily. This is also how we are going to use Git.
 
-> Note : This tutorial does not focus on what a terminal is, what shell, bash or any kind of line command are and do. However, it would be very useful for you to know how to use the basics of it. I strongly encourage you to check some material on it, such as the first four sessions of [Florian Oswald lecture](https://floswald.github.io/ScPoProgramming/) on the shell. 
+> Note : This tutorial does not focus on what a terminal is, what shell, bash or any kind of line command are and do. However, it would be very useful for you to know how to use the basics of it. I strongly encourage you to check some material on it, such as the first four chapters of [Florian Oswald lecture](https://floswald.github.io/ScPoProgramming/) on the shell. 
 
 Now, to use Git, we need to take a step back. 
 
@@ -95,7 +95,7 @@ Concretely, if we come back to vscode :
 
 At this point, you should have something like that :
 
-![Initializing git, adding a file, and commiting its change.](./resources/images/7_basic_setup_git)
+![Initializing git, adding a file, and commiting its change.](./resources/images/1_7_basic_setup_git)
 
 At any point, we can use some other git commands to have more information. For example : 
 
@@ -115,7 +115,7 @@ It is widely used in the programming community and is also sometimes referred as
 
 To use GitHub, the first step is to go to [GitHub](https://github.com) and [create an account](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home). 
 
-![The account creation page of GitHub](./resources/images/8_account_creation_page_github)
+![The account creation page of GitHub](./resources/images/1_8_account_creation_page_github)
 
 Once your account is created, you can create a repository, named "username.github.io", replacing "username" with your actual user name. For example, if your username is "janesmith", then you should create a repository named "janesmith.github.io". 
 
