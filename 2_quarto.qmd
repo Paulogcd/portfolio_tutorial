@@ -1,3 +1,15 @@
 ---
 title: "2. Introduction to Quarto"
 ---
+
+Now that we know how to use Git and Github together, it is time for us to use Quarto. 
+
+The first step of this session is to download Quarto [here](https://quarto.org/docs/get-started/).
+
+![Installation page of Quarto](./resources/images/2_1_install_quarto.png)
+
+The second step is to create a quarto project in your folder (the one you synchronized with your online GitHub repository). In order to do that, you can go in vscode, and enter in the terminal `quarto create`. You will then be guided with several questions regarding the nature of the project you wish to create. For the purpose of creating a portfolio, I would recommend to choose to create a website. 
+
+![Add image with the menu choices of quarto when creating a project.]()
+
+Once the creation process is done, you will see appear in your folder several files : index.qmd, about.qmd, .  

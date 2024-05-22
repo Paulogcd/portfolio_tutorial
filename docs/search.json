@@ -82,5 +82,12 @@
     "title": "About",
     "section": "",
     "text": "This is the website of a tutorial for quick and simple maintanable portfolio websites with Quarto."
+  },
+  {
+    "objectID": "2_quarto.html",
+    "href": "2_quarto.html",
+    "title": "2. Introduction to Quarto",
+    "section": "",
+    "text": "Now that we know how to use Git and Github together, it is time for us to use Quarto.\nThe first step of this session is to download Quarto here.\n\n\n\nInstallation page of Quarto\n\n\nThe second step is to create a quarto project in your folder (the one you synchronized with your online GitHub repository). In order to do that, you can go in vscode, and enter in the terminal quarto create. You will then be guided with several questions regarding the nature of the project you wish to create. For the purpose of creating a portfolio, I would recommend to choose to create a website.\n\n\n\nAdd image with the menu choices of quarto when creating a project.\n\n\nOnce the creation process is done, you will see appear in your folder several files : index.qmd, about.qmd, ."
   }
 ]
