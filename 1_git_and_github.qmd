@@ -100,6 +100,10 @@ At any point, we can use some other git commands to have more information. For e
 - `git log` gives back the logbook, i.e. the list of changes that were saved.
 - `git diff` gives the differences between the current version of your files and the latest version saved in the logbook.
 
+Finally, it is also useful to set up a branch. Without entering into too much details, a branch is the path in which you are registering all your commits and files. If you create another branch, then, it would mean .
+It is important to set up a main branch, in order for git not to bug in future operations.
+In order to do so, we can enter : `git branch -M main` in the terminal. 
+
 Git is a very powerful tool that allows to do a lot of collabortive code managing, but we choose here to mainly exploit one of its features : remote synchronization. 
 In addition to having this local logbook on your computer, you can indeed also send your files to a remote server, in a similar way than the cloud or a remote drive.
 This is where GitHub enters into play. 
@@ -126,7 +130,7 @@ Once it is done, we can go back to vscode, to add a connection between our local
 
 2. Enter `git config --global user.email "your@mail.com"`, replacing "your@mail.com" with the email of your choice. Note that it does not require you to actually own this email adress.
 
-3. Then, we have to add a ssh key to our GitHub account. An ssh key allows you to communicate to GitHub from your computer. Enter `ssh-keygen -t ed25519 -C "your@email.com"`, replacing "your@email" with your actual email. Your terminal will ask for a passphrase, you can not enter anything, to choose to not have any passphrase.
+3. Then, we have to add a ssh key to our GitHub account. An ssh key allows you to communicate to GitHub from your computer. Enter `ssh-keygen -t ed25519 -C "your@email.com"`, replacing "your@email" with your actual email. Your terminal will ask for a passphrase, but it's better for simplicity purposes to not enter anything, and just press the enter key on your keyboard.
 
 In my case, my first name is Paulo and my last is Gugelmo Cavalheiro Dias, and I choose the username "frpgcd" for demonstration purposes, I would then enter in my Terminal console : 
 
@@ -146,7 +150,7 @@ ssh-keygen -t ed25519 -C "frpgcd@email.com"
 
 > Note : You should not share your ssh keys to the public. It could jeopardize the safety of your data and access to the distant repository. 
 
-5. Now that your GitHub account is connected to your computer, we have to connect your local folder to a repository. Go on your repository, click on the green menu button "code", and copy the text it gives you in the SSH section (it should be something like "git@github.com:username/name_of_the_repository.git"). In your vscode terminal, with your folder open, you can then enter : `git remote add origin git@github.com:username/name_of_the_repository.git`. The connection between your local folder and the distant repository should be established. 
+5. Now that your GitHub account is connected to your computer, we have to connect your local folder to a repository. Go on your repository, and copy the text it gives you in the SSH section (it should be something like "git@github.com:username/name_of_the_repository.git"). In your vscode terminal, with your folder open, you can then enter : `git remote add origin git@github.com:username/name_of_the_repository.git`. The connection between your local folder and the distant repository should be established. 
 
 4. We can "push" the content of our local folder to our remote folder. This is a command that we use once all the changes are commited in our logbook to send all the information in the remote server. To be able to push correctly, you first enter `git push -u origin main`, and then you can just enter `git push` for the next times, when your changes are added and commited. 
 
@@ -156,8 +160,18 @@ git remote add origin git@github.com:frpgcd/frpgcd.github.io.git
 git push -u origin main
 ```
 
-> Note : You can also initialise a git folder in another directory, and "clone" an existing GitHub repository. This will create a duplicate of this repository in your file and on your GitHub account, or just load the data locally if it is one of your repositories. Although this is not covered in the current tutorial, you can check the Github and Git documentations if needed.
+> Note : You can also initialise a git folder in another directory, and "clone" an existing GitHub repository. This will create a duplicate of this repository in your file and on your GitHub account, or just load the data locally if it is one of your repositories. Although this is not covered in the current tutorial, you can check the Github and Git documentations to get more information on those operations. 
 
 ## Use Git and GitHub together 
 
 Now that the connection between your local folder and your distant repository has been created, you can add modifications to your folder (like creating a new file), add those changes via `git add` followed by the name of your new document (you can also use `*` to select everything in your folder), commit those changes via `git commit -m "the description of your changes"`, and then push those changes via `git push`. This add-commit-push process is one of the basics to synchronize your local folder with the files of your GitHub account.  
+
+For example, if we want to create a new file, named "new_file.txt", to enter some text in it, to save it and to track it with git, and then to send it to our distant GitHub repository, we would do, after saving the file : 
+
+```{bash}
+git add new_file.txt
+git commit -m "Adding a new file."
+git push
+```
+
+You can then verify that your changes have been taken into account by going on the website of GitHub, on your repository. Your tracked files should appear there.
