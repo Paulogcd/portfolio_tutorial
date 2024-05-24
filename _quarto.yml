@@ -5,9 +5,12 @@ project:
 website:
   title: "Research student portfolio tutorial"
   navbar:
+    title: false
     left:
-      - href: index.qmd
+      - href: ../
         text: Home
+      - text: Research Portfolio tutorial
+        href: index.qmd
       - text: Chapters
         menu:
         - text: "1. Git and Github"
@@ -17,6 +20,16 @@ website:
         - text: "3. Publish with GitHub Pages"
           file: 3_publish_with_github_pages.qmd
       - about.qmd
+  sidebar: 
+    contents:
+    - index.qmd
+    - 1_git_and_github.qmd
+    - 2_quarto.qmd
+    - 3_publish_with_github_pages.qmd
+    - about.qmd
+  page-footer: "[![](https://img.shields.io/badge/License-CC%20BY--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nd/4.0/) Paulo Gugelmo Cavalheiro Dias" 
+  page-navigation: true
+  back-to-top-navigation: true
 
 format:
   html:

@@ -2,8 +2,10 @@
 title: "Research student portfolio tutorial"
 ---
 
+> This tutorial is currently going under construction. All chapters and sections are not finished. 
+
 You don't have much time and are not proefficient in web development, but you would like to have a portfolio to share your work ?
-Welcome to this *research student portfolio tutorial* ! 
+Welcome to this **research student portfolio tutorial** ! 
 
 ## Objective of this tutorial 
 
@@ -13,14 +15,20 @@ Welcome to this *research student portfolio tutorial* !
 
 ## Structure and material
 
-This tutorial is divided in three main sessions : 
+This tutorial is divided in three main chapters : 
 
 1. Basics with visual studio code and git
 2. Basics with quarto
 3. Quickly publishing your own portfolio with github page 
 
-Those three sessions are available on slides or on more detailed pages.
+Those three chapters are available on slides or on more detailed pages.
+
+| Chapter | Description | Slides |
+|---|---|---|
+| [1. Git and Github with Visual Studio Code](1_git_and_github.qmd) | In this first chapter, you will learn how to use Git and GitHub with Visual Studio Code. This serves to setup the workflow that will be used in the rest of the tutorial. | [You can find the slides of this chapter here.](./resources/slides/1/1_Basics_git_and_github.pdf) |
+| [2. Create your content with Quarto](2_quarto.qmd) | In this chapter, you will learn to generate web content with Quarto, and to easily modify and maintain it. This chapter serves to create the content of your portfolio you will later publish. | [You can find the slides of this chapter here.](./resources/slides/2/2_Basics_quarto.pdf) |
+| [3. Publish your website with GitHub Pages](3_publish_with_github_pages.qmd) | In this final chapter, you will learn how to publish your website, i.e. make it accessible to everyone on the internet. We use the publishing service GitHub Pages and show how to quickly update your website with the previous presented tools. | [You can find the slides of this chapter here.](./resources/slides/3/3_Publish_with_github_page.pdf) |
 
 ## Further resources
 
-This tutorial is mainly based on the [great documentation of quarto](https://quarto.org) and on the [Florian Oswald class](https://floswald.github.io/ScPoProgramming/), Associate Professor of Economics at SciencesPo in Paris, and my teacher to introduction to programming.
+This tutorial is mainly based on the [great documentation of quarto](https://quarto.org) and on the [Florian Oswald class](https://floswald.github.io/ScPoProgramming/), Associate Professor of Economics at Sciences Po in Paris, and my teacher to introduction to programming.

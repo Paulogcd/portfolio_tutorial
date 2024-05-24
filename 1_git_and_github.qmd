@@ -5,7 +5,6 @@ title: "1. Introduction to Git and GitHub"
 ## Summary 
 
 - In this first chapter, you will learn the basics on how to use Git and GitHub on Visual Studio Code.
-- You can find the slides of this chapter [here](./resources/slides/1/1_Basics_git_and_github.pdf).
 
 ## Introduction 
 
@@ -17,10 +16,10 @@ In the same way, a website can be understood as content that can be accessed ove
 Thus, this tutorial will first focus on the design of the website, and then on the publication of the website. 
 
 Usually, one shoul learn HTML5 and CSS to know a bit of Web development. However, in the recent years, a lot of static website generator have emerged, that make the conception of websites easier.
-Among the several static website generator, Jekyll, Zola, Hugo, and Quarto can be cited, but they are far from being the only ones. This tutorial focuses on Quarto in the second chapter.
+Among the several static website generator, [Jekyll](https://jekyllrb.com/), [Zola](https://www.getzola.org/), [Hugo](https://gohugo.io/), and [Quarto](https://quarto.org/) can be cited, but they are far from being the only ones. This tutorial focuses on Quarto in the second chapter.
 
 After having designed your website with a static website generator, we finally have to make it available to the world, i.e. publish it.
-Several free hosting services exist, such as Netlify, Quarto Pub, and GitHub Pages, among other ones. This tutorial focuses on GitHub Pages in the third chapter.
+Several free hosting services exist, such as [Netlify](https://www.netlify.com/), [Quarto Pub](https://quartopub.com/), and [GitHub Pages](https://pages.github.com/), among other ones. This tutorial focuses on GitHub Pages in the third chapter.
 
 Now, in order to make the whole process easier and fluid, this tutorial first focuses on the establishment of a workflow using Visual Studio Code, Git and GitHub.
 This workflow allows to make the second and third steps easier, and is also very useful if you are to work in collaborative projects in the future.
@@ -74,7 +73,7 @@ This should normally generate a console at the bottom of vscode, where your user
 
 Simply put, the terminal allows to textually communicate with your machine, instead of graphically, like it is usually the case. Having a terminal opened in vscode makes it possible to manipulate the current opened folder more easily. This is also how we are going to use Git.
 
-> Note : This tutorial does not focus on what a terminal is, what shell, bash or any kind of line command are and do. However, it would be very useful for you to know how to use the basics of it. I strongly encourage you to check some material on it, such as the first four chapters of [Florian Oswald lecture](https://floswald.github.io/ScPoProgramming/) on the shell. 
+> Note : This tutorial does not focus on what a terminal is, what shell, bash or any kind of line command are and do. However, it would be very useful for you to know how to use the basics of it. Further resources are available at the end of this page, and I strongly encourage you to check them, especially the first four chapters of [Florian Oswald's lecture](https://floswald.github.io/ScPoProgramming/) on the shell. 
 
 Now, to understand how to use Git, we need to take a step back, and have in mind the four main steps of our workflow :
 
@@ -135,7 +134,6 @@ Once it is done, we can go back to vscode, to add a connection between our local
 In my case, my first name is Paulo and my last is Gugelmo Cavalheiro Dias, and I choose the username "frpgcd" for demonstration purposes, I would then enter in my Terminal console : 
 
 ```{zsh}
-
 git config --global user.name "frpgcd"
 git config --global user.email "frpgcd@mail.com"
 ssh-keygen -t ed25519 -C "frpgcd@email.com"
@@ -160,7 +158,7 @@ git remote add origin git@github.com:frpgcd/frpgcd.github.io.git
 git push -u origin main
 ```
 
-> Note : You can also initialise a git folder in another directory, and "clone" an existing GitHub repository. This will create a duplicate of this repository in your file and on your GitHub account, or just load the data locally if it is one of your repositories. Although this is not covered in the current tutorial, you can check the Github and Git documentations to get more information on those operations. 
+> Note : You can also initialise a git folder in another directory, and "clone" an existing GitHub repository. This will create a duplicate of this repository in your folder and on your GitHub account, or just load the data locally if it is one of your repositories. Although this is not covered in the current tutorial, you can check the Github and Git documentations to get more information on those operations. 
 
 ## Use Git and GitHub together 
 
@@ -175,3 +173,27 @@ git push
 ```
 
 You can then verify that your changes have been taken into account by going on the website of GitHub, on your repository. Your tracked files should appear there.
+
+## Further Resources
+
+You are now ready to proceed to the second chapter, that treats content generation with Quarto. However, if you wish to dive deeper into the tools presented in this first chapter, and try to understand better Git, GitHub, or even the Terminal and Visual Studio Code, you might be tempted to look at additional material. First of all, for all that has been covered in this tutorial, I recommend the lecture of Florian Oswald about git and github, available at  <https://floswald.github.io/ScPoProgramming/05-git.html>. For more specific questions, you might find the following resources useful : 
+
+About vscode : 
+
+- The official documentation of vscode, available at : <https://code.visualstudio.com/docs>
+
+About the terminal : 
+
+- The first four sessions of the Florian Oswald lecture, available at : <https://floswald.github.io/ScPoProgramming/>
+- A general tutorial about the command line, including resources for Windows, MacOS, and Linux, available at : <https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line>
+- The vscode documentation about the terminal inside vscode, that might require some prior knowledge about the command line, available at : <https://code.visualstudio.com/docs/terminal/basics>
+
+About git : 
+
+- The official documentation of git, availbale at : <https://git-scm.com/doc>
+- The w3school tutorial for git, available at : <https://www.w3schools.com/git/>
+
+About github : 
+
+- The official tutorial of github on using git and github together, available at : <https://docs.github.com/en/get-started/start-your-journey>
+
