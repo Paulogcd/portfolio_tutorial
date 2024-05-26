@@ -16,25 +16,66 @@ The first step of this chapter is to download Quarto [here](https://quarto.org/d
 
 The second step is to create a quarto project in your folder (the one you synchronized with your online GitHub repository). In order to do that, you can go in vscode, and enter in the terminal `quarto create`. You will then be guided with several questions regarding the nature of the project you wish to create. For the purpose of creating a portfolio, I would recommend to choose to create a website. 
 
-![Add image with the menu choices of quarto when creating a project.](./resources/images/0_Default_image.png)
+![Creation of a project with Quarto](./resources/images/2_2_create_project_quarto.png)
+
+After entering `quarto create`, quarto asks you different things : 
+
+1. The nature of the quarto environment you want to create. You have the choice between a `project` and an `extension`. For a portfolio, I recommend creating a project. 
+2. The type of your project. It gives you the choice between : 
+    - default
+    - website
+    - blog
+    - manuscript
+    - book
+    - confluence
+
+    You could choose another different kinds of projects here. For example, `default` would work well enough also. However, I recommend creating `website` for the sake of simplicity.
+3. Quarto then asks for the Directory you wish to create your quarto project in. Since you are already in the folder you opened with vscode, you should write a simple dot `.` and press enter.  
+
+> Note : The dot `.` refers to the current directory in several langages. To understand better how a path works, I recommend consulting [this article](https://www.w3schools.com/html/html_filepaths.asp).
 
 Once the creation process is done, you will see appear in your folder several files : index.qmd, about.qmd, _quarto.yml, style.css. 
 
 Let's take a moment to see what they do : 
 
 1. The files with a ".css" extension are Cascading Style Sheets (css) files. Together with HTML, they are one of the main langages for web development. They are mainly responsisble for the appearance and design of websites. It is not necessary to modify them for the purpose of this tutorial, but you can inform yourself about it [on this tutorial](https://www.w3schools.com/css/).
-2. The files with a ".qmd" extension are quarto files. This extension stands for Quarto MarkDown. They correspond to what the future pages of your website will be. They support various langages, like markup or $\LaTeX$. We will modify our portfolio pages by modifying these pages. 
-3. The files with a ".yml" extension are configuration files. We use them to set some rules that quarto will apply to generate our pages. For example, we will modify the navigation bar (or navbar) through our .yml files later in this chapter.
+2. The files with a ".qmd" extension are quarto files. This extension stands for Quarto MarkDown. They correspond to what the future pages of your website will be. They support various langages, like traditional Markdown or $\LaTeX$. We will change our portfolio pages by modifying these pages. 
+3. The files with a ".yml" extension are configuration files. We use them to set some rules that quarto will apply to generate our pages. For example, we will modify the navigation bar (or navbar) through our these files later in this chapter.
 
 ## The preview and render commands
 
 Quarto allows us to create a properly designed website by only interacting with basic qmd files. We need however to see what results they yield. 
 
-To see the graphical result, we need to use two main commands : the `quarto preview` and `quarto render` commands.
+To see the graphical result of our qmd files, we need to use two main commands : the `quarto preview` and `quarto render` commands.
 
-The `quarto preview` command allows to see in real time what the changes we are bringing to our qmd and yml files yield. After entering it in the terminal console, it automatically opens a page on your browser where you can see the graphical resutls. We usually use it at the beginning of a work session, when we bring change to our portfolio. For the changes to be actualised, you need to save your files. 
+The `quarto preview` command allows to see in real time what the changes we are bringing to our qmd and yml files yield.
+After entering it in the terminal console, it automatically opens a page on your default browser where you can see the graphical results of the latest saved version of your qmd and yml files.
+If there is an error with your files (for example a bad configuration within your yaml file), you won't be able to see correctly the results, and an error message
+will pop-up. We usually use it at the beginning of a work session, when we bring change to our portfolio. 
 
-The `quarto render` command allows to create html and css files from our qmd and yml files. We usually use it at the end of a work session, when we are satisfied with the changes we brought to the our website. Essentially, it does the same as the `preview` command, without opening a browser to see your changes in real time. 
+The `quarto render` command allows to create html and css files from our qmd and yml files. We usually use it at the end of a work session, when we are satisfied with the changes we brought to the our website.
+Essentially, it does the same as the `preview` command, without opening a browser to see your changes in real time. 
+
+Let's try to run the `quarto preview` command : 
+
+![Running the quarto preview command on the vscode terminal.](./resources/images/2_3_quarto_preview_1.png)
+
+You should briefly see some blue text "preparing to preview", followed by the names of your qmd files, before your default browser automatically launches itself. 
+
+If you did not modify the basic files, you should see something like this on your web browser : 
+
+![The graphical result of an empty quarto project.](./resources/images/2_4_quarto_preview_2.png)
+
+Okay, we have our first graphical results ! What happened exactly here ? 
+First, you entered `quarto preview`. Quarto first transformed all your qmd files in your folder in readable files for you web browser, i.e. html and css files.
+Then, it opened those html and css files with your default browser. What you are seeing is the result of this conversion from qmd to html and css.
+
+> Note : You can notice that the URL of your page looks a bit different from normal websites you access. Indeed, you should have something like "http://localhost:6986/", or any other kind of four numbers combination. 
+This is because quarto is currently watching at your file, and will refresh the page as soon as any of your qmd or yaml files are changed and saved. 
+Without entering into the details, "localhost" means that it is your computer, and the four numbers are the port of your computer quarto is using to display the files.
+
+> Note : Now, your terminal is busy reading your files in the web browser. You can create a new terminal session by clicking on the "+" in vscode. 
+To stop the process, you can click on your terminal and then enter `ctrl`+`c` (`command`+`c` for MacOS keyboards).
 
 ## How to modify the general appearance of our pages
 

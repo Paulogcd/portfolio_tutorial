@@ -75,6 +75,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -279,7 +282,7 @@ window.Quarto = {
 <p>The first step of this chapter is to download Quarto <a href="https://quarto.org/docs/get-started/">here</a>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./resources/images/2_1_install_quarto.png" class="img-fluid figure-img"></p>
+<p><a href="./resources/images/2_1_install_quarto.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1" title="Installation page of Quarto"><img src="./resources/images/2_1_install_quarto.png" class="img-fluid figure-img" alt="Installation page of Quarto"></a></p>
 <figcaption>Installation page of Quarto</figcaption>
 </figure>
 </div>
@@ -289,24 +292,64 @@ window.Quarto = {
 <p>The second step is to create a quarto project in your folder (the one you synchronized with your online GitHub repository). In order to do that, you can go in vscode, and enter in the terminal <code>quarto create</code>. You will then be guided with several questions regarding the nature of the project you wish to create. For the purpose of creating a portfolio, I would recommend to choose to create a website.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./resources/images/0_Default_image.png" class="img-fluid figure-img"></p>
-<figcaption>Add image with the menu choices of quarto when creating a project.</figcaption>
+<p><a href="./resources/images/2_2_create_project_quarto.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2" title="Creation of a project with Quarto"><img src="./resources/images/2_2_create_project_quarto.png" class="img-fluid figure-img" alt="Creation of a project with Quarto"></a></p>
+<figcaption>Creation of a project with Quarto</figcaption>
 </figure>
 </div>
+<p>After entering <code>quarto create</code>, quarto asks you different things :</p>
+<ol type="1">
+<li>The nature of the quarto environment you want to create. You have the choice between a <code>project</code> and an <code>extension</code>. For a portfolio, I recommend creating a project.</li>
+<li>The type of your project. It gives you the choice between :
+<ul>
+<li>default</li>
+<li>website</li>
+<li>blog</li>
+<li>manuscript</li>
+<li>book</li>
+<li>confluence</li>
+</ul>
+You could choose another different kinds of projects here. For example, <code>default</code> would work well enough also. However, I recommend creating <code>website</code> for the sake of simplicity.</li>
+<li>Quarto then asks for the Directory you wish to create your quarto project in. Since you are already in the folder you opened with vscode, you should write a simple dot <code>.</code> and press enter.</li>
+</ol>
+<blockquote class="blockquote">
+<p>Note : The dot <code>.</code> refers to the current directory in several langages. To understand better how a path works, I recommend consulting <a href="https://www.w3schools.com/html/html_filepaths.asp">this article</a>.</p>
+</blockquote>
 <p>Once the creation process is done, you will see appear in your folder several files : index.qmd, about.qmd, _quarto.yml, style.css.</p>
 <p>Let’s take a moment to see what they do :</p>
 <ol type="1">
 <li>The files with a “.css” extension are Cascading Style Sheets (css) files. Together with HTML, they are one of the main langages for web development. They are mainly responsisble for the appearance and design of websites. It is not necessary to modify them for the purpose of this tutorial, but you can inform yourself about it <a href="https://www.w3schools.com/css/">on this tutorial</a>.</li>
-<li>The files with a “.qmd” extension are quarto files. This extension stands for Quarto MarkDown. They correspond to what the future pages of your website will be. They support various langages, like markup or <span class="math inline">\(\LaTeX\)</span>. We will modify our portfolio pages by modifying these pages.</li>
-<li>The files with a “.yml” extension are configuration files. We use them to set some rules that quarto will apply to generate our pages. For example, we will modify the navigation bar (or navbar) through our .yml files later in this chapter.</li>
+<li>The files with a “.qmd” extension are quarto files. This extension stands for Quarto MarkDown. They correspond to what the future pages of your website will be. They support various langages, like traditional Markdown or <span class="math inline">\(\LaTeX\)</span>. We will change our portfolio pages by modifying these pages.</li>
+<li>The files with a “.yml” extension are configuration files. We use them to set some rules that quarto will apply to generate our pages. For example, we will modify the navigation bar (or navbar) through our these files later in this chapter.</li>
 </ol>
 </section>
 <section id="the-preview-and-render-commands" class="level2">
 <h2 class="anchored" data-anchor-id="the-preview-and-render-commands">The preview and render commands</h2>
 <p>Quarto allows us to create a properly designed website by only interacting with basic qmd files. We need however to see what results they yield.</p>
-<p>To see the graphical result, we need to use two main commands : the <code>quarto preview</code> and <code>quarto render</code> commands.</p>
-<p>The <code>quarto preview</code> command allows to see in real time what the changes we are bringing to our qmd and yml files yield. After entering it in the terminal console, it automatically opens a page on your browser where you can see the graphical resutls. We usually use it at the beginning of a work session, when we bring change to our portfolio. For the changes to be actualised, you need to save your files.</p>
+<p>To see the graphical result of our qmd files, we need to use two main commands : the <code>quarto preview</code> and <code>quarto render</code> commands.</p>
+<p>The <code>quarto preview</code> command allows to see in real time what the changes we are bringing to our qmd and yml files yield. After entering it in the terminal console, it automatically opens a page on your default browser where you can see the graphical results of the latest saved version of your qmd and yml files. If there is an error with your files (for example a bad configuration within your yaml file), you won’t be able to see correctly the results, and an error message will pop-up. We usually use it at the beginning of a work session, when we bring change to our portfolio.</p>
 <p>The <code>quarto render</code> command allows to create html and css files from our qmd and yml files. We usually use it at the end of a work session, when we are satisfied with the changes we brought to the our website. Essentially, it does the same as the <code>preview</code> command, without opening a browser to see your changes in real time.</p>
+<p>Let’s try to run the <code>quarto preview</code> command :</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./resources/images/2_3_quarto_preview_1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" data-glightbox="description: .lightbox-desc-3" title="Running the quarto preview command on the vscode terminal."><img src="./resources/images/2_3_quarto_preview_1.png" class="img-fluid figure-img" alt="Running the quarto preview command on the vscode terminal."></a></p>
+<figcaption>Running the quarto preview command on the vscode terminal.</figcaption>
+</figure>
+</div>
+<p>You should briefly see some blue text “preparing to preview”, followed by the names of your qmd files, before your default browser automatically launches itself.</p>
+<p>If you did not modify the basic files, you should see something like this on your web browser :</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./resources/images/2_4_quarto_preview_2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" data-glightbox="description: .lightbox-desc-4" title="The graphical result of an empty quarto project."><img src="./resources/images/2_4_quarto_preview_2.png" class="img-fluid figure-img" alt="The graphical result of an empty quarto project."></a></p>
+<figcaption>The graphical result of an empty quarto project.</figcaption>
+</figure>
+</div>
+<p>Okay, we have our first graphical results ! What happened exactly here ? First, you entered <code>quarto preview</code>. Quarto first transformed all your qmd files in your folder in readable files for you web browser, i.e.&nbsp;html and css files. Then, it opened those html and css files with your default browser. What you are seeing is the result of this conversion from qmd to html and css.</p>
+<blockquote class="blockquote">
+<p>Note : You can notice that the URL of your page looks a bit different from normal websites you access. Indeed, you should have something like “http://localhost:6986/”, or any other kind of four numbers combination. This is because quarto is currently watching at your file, and will refresh the page as soon as any of your qmd or yaml files are changed and saved. Without entering into the details, “localhost” means that it is your computer, and the four numbers are the port of your computer quarto is using to display the files.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>Note : Now, your terminal is busy reading your files in the web browser. You can create a new terminal session by clicking on the “+” in vscode. To stop the process, you can click on your terminal and then enter <code>ctrl</code>+<code>c</code> (<code>command</code>+<code>c</code> for MacOS keyboards).</p>
+</blockquote>
 </section>
 <section id="how-to-modify-the-general-appearance-of-our-pages" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-modify-the-general-appearance-of-our-pages">How to modify the general appearance of our pages</h2>
@@ -330,7 +373,7 @@ window.Quarto = {
 <p>That yields, depending on your chosen template :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./resources/images/0_Default_image.png" class="img-fluid figure-img"></p>
+<p><a href="./resources/images/0_Default_image.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" data-glightbox="description: .lightbox-desc-5" title="Add image with the menu choices of quarto when creating a project."><img src="./resources/images/0_Default_image.png" class="img-fluid figure-img" alt="Add image with the menu choices of quarto when creating a project."></a></p>
 <figcaption>Add image with the menu choices of quarto when creating a project.</figcaption>
 </figure>
 </div>
@@ -382,7 +425,7 @@ window.Quarto = {
 <p>This should yield :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./resources/images/0_Default_image.png" class="img-fluid figure-img"></p>
+<p><a href="./resources/images/0_Default_image.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" data-glightbox="description: .lightbox-desc-6" title="Add image"><img src="./resources/images/0_Default_image.png" class="img-fluid figure-img" alt="Add image"></a></p>
 <figcaption>Add image</figcaption>
 </figure>
 </div>
@@ -399,12 +442,21 @@ window.Quarto = {
 <p>For this to work, you must have created a <code>project.qmd</code> file beforehand in your folder. This will then implement a new link in the navbar, displayed in its left part, having for name the name of file, i.e.&nbsp;here <code>project</code> :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./resources/images/0_Default_image.png" class="img-fluid figure-img"></p>
+<p><a href="./resources/images/0_Default_image.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" data-glightbox="description: .lightbox-desc-7" title="Add image"><img src="./resources/images/0_Default_image.png" class="img-fluid figure-img" alt="Add image"></a></p>
 <figcaption>Add image</figcaption>
 </figure>
 </div>
 
 
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">Installation page of Quarto</span>
+<span class="glightbox-desc lightbox-desc-2">Creation of a project with Quarto</span>
+<span class="glightbox-desc lightbox-desc-3">Running the quarto preview command on the vscode terminal.</span>
+<span class="glightbox-desc lightbox-desc-4">The graphical result of an empty quarto project.</span>
+<span class="glightbox-desc lightbox-desc-5">Add image with the menu choices of quarto when creating a project.</span>
+<span class="glightbox-desc lightbox-desc-6">Add image</span>
+<span class="glightbox-desc lightbox-desc-7">Add image</span>
+</div>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
@@ -503,6 +555,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -843,6 +900,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom","loop":false});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
 
 
 

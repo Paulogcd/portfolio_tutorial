@@ -2,6 +2,10 @@ project:
   type: website
   output-dir: docs
 
+lightbox: true
+
+link-external-newwindow: true
+
 website:
   title: "Research student portfolio tutorial"
   navbar:
