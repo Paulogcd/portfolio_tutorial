@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.4.554">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -347,10 +381,9 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Then, we have to add a ssh key to our GitHub account. An ssh key allows you to communicate to GitHub from your computer. Enter <code>ssh-keygen -t ed25519 -C "your@email.com"</code>, replacing “your@email” with your actual email. Your terminal will ask for a passphrase, but it’s better for simplicity purposes to not enter anything, and just press the enter key on your keyboard.</p></li>
 </ol>
 <p>In my case, my first name is Paulo and my last is Gugelmo Cavalheiro Dias, and I choose the username “frpgcd” for demonstration purposes, I would then enter in my Terminal console :</p>
-<pre class="{zsh}"><code>git config --global user.name "frpgcd"
-git config --global user.email "frpgcd@mail.com"
-ssh-keygen -t ed25519 -C "frpgcd@email.com"
-</code></pre>
+<div class="sourceCode" id="cb1"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"frpgcd"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"frpgcd@mail.com"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh-keygen</span> <span class="at">-t</span> ed25519 <span class="at">-C</span> <span class="st">"frpgcd@email.com"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="4" type="1">
 <li>Now, we are going to use this key to establish a connection with GitHub. On your terminal, you can enter <code>cat ~/.ssh/id_ed25519.pub</code> or <code>open ~/.ssh/id_ed25519.pub</code>, and it will give you back a character string beginning with “ssh-ed22519”. Go to your GitHub account, click on your profile picture at the top right of the website, choose “settings”, then click on “ssh and gpg keys”, then on “add new ssh key”, choose the title you want (for example the name of your current computer), and in “key”, add the value your terminal gave back to you. You should be connected !</li>
 </ol>
@@ -374,8 +407,8 @@ ssh-keygen -t ed25519 -C "frpgcd@email.com"
 <li><p>We can “push” the content of our local folder to our remote folder. This is a command that we use once all the changes are commited in our logbook to send all the information in the remote server. To be able to push correctly, you first enter <code>git push -u origin main</code>, and then you can just enter <code>git push</code> for the next times, when your changes are added and commited.</p></li>
 </ol>
 <p>In my case, I have, with the username “frpgcd” and the repository “frpgcd.github.io” :</p>
-<pre class="{zsh}"><code>git remote add origin git@github.com:frpgcd/frpgcd.github.io.git
-git push -u origin main</code></pre>
+<div class="sourceCode" id="cb2"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin git@github.com:frpgcd/frpgcd.github.io.git</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <blockquote class="blockquote">
 <p>Note : You can also initialise a git folder in another directory, and “clone” an existing GitHub repository. This will create a duplicate of this repository in your folder and on your GitHub account, or just load the data locally if it is one of your repositories. Although this is not covered in the current tutorial, you can check the Github and Git documentations to get more information on those operations.</p>
 </blockquote>
@@ -384,9 +417,9 @@ git push -u origin main</code></pre>
 <h2 class="anchored" data-anchor-id="use-git-and-github-together">Use Git and GitHub together</h2>
 <p>Now that the connection between your local folder and your distant repository has been created, you can add modifications to your folder (like creating a new file), add those changes via <code>git add</code> followed by the name of your new document (you can also use <code>*</code> to select everything in your folder), commit those changes via <code>git commit -m "the description of your changes"</code>, and then push those changes via <code>git push</code>. This add-commit-push process is one of the basics to synchronize your local folder with the files of your GitHub account.</p>
 <p>For example, if we want to create a new file, named “new_file.txt”, to enter some text in it, to save it and to track it with git, and then to send it to our distant GitHub repository, we would do, after saving the file :</p>
-<pre class="{bash}"><code>git add new_file.txt
-git commit -m "Adding a new file."
-git push</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add new_file.txt</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Adding a new file."</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>You can then verify that your changes have been taken into account by going on the website of GitHub, on your repository. Your tracked files should appear there.</p>
 </section>
 <section id="further-resources" class="level2">

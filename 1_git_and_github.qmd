@@ -1,5 +1,8 @@
 ---
 title: "1. Introduction to Git and GitHub"
+
+execute:
+  echo: false
 ---
 
 ## Summary 
@@ -133,7 +136,8 @@ Once it is done, we can go back to vscode, to add a connection between our local
 
 In my case, my first name is Paulo and my last is Gugelmo Cavalheiro Dias, and I choose the username "frpgcd" for demonstration purposes, I would then enter in my Terminal console : 
 
-```{zsh}
+
+```{.zsh}
 git config --global user.name "frpgcd"
 git config --global user.email "frpgcd@mail.com"
 ssh-keygen -t ed25519 -C "frpgcd@email.com"
@@ -153,7 +157,7 @@ ssh-keygen -t ed25519 -C "frpgcd@email.com"
 4. We can "push" the content of our local folder to our remote folder. This is a command that we use once all the changes are commited in our logbook to send all the information in the remote server. To be able to push correctly, you first enter `git push -u origin main`, and then you can just enter `git push` for the next times, when your changes are added and commited. 
 
 In my case, I have, with the username "frpgcd" and the repository "frpgcd.github.io" : 
-```{zsh}
+```{.zsh}
 git remote add origin git@github.com:frpgcd/frpgcd.github.io.git
 git push -u origin main
 ```
@@ -166,7 +170,7 @@ Now that the connection between your local folder and your distant repository ha
 
 For example, if we want to create a new file, named "new_file.txt", to enter some text in it, to save it and to track it with git, and then to send it to our distant GitHub repository, we would do, after saving the file : 
 
-```{bash}
+```{.zsh}
 git add new_file.txt
 git commit -m "Adding a new file."
 git push
