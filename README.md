@@ -6,7 +6,7 @@ Feel free to contact me for further questions and to report eventual problems wi
 
 ## Website guide
 
-All content and the structure of this tutorial can be found on the [dedicated website](www.paulogcd.com/portfolio_tutorial).
+All content and the structure of this tutorial can be found on the [dedicated website](https://www.paulogcd.com/portfolio_tutorial).
 
 ## Structure
 
