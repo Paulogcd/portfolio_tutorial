@@ -4,7 +4,7 @@
     "href": "3_publish_with_github_pages.html",
     "title": "3. Publish your website with Github Pages",
     "section": "",
-    "text": "Congratulations for having made it so far ! Now that we have a decent-looking basis for our online portfolio, we are ready to make it available to the real world. In order for us to publish our content, we are going to use GitHub pages, a website hosting service of GitHub.\nThis final step is the easiest one, so hang it on, we are soon reaching the end of this tutorial.",
+    "text": "Caution\n\n\n\nThis tutorial is currently going under construction. All chapters and sections are not finished and might include incomplete explanations. Feel free to reach out to me to point out some missing elements.\nCongratulations for having made it so far ! Now that we have a decent-looking basis for our online portfolio, we are ready to make it available to the real world. In order for us to publish our content, we are going to use GitHub pages, a website hosting service of GitHub.\nThis final step is the easiest one, so hang it on, we are soon reaching the end of this tutorial.",
     "crumbs": [
       "Home",
       "3. Publish your website with Github Pages"
@@ -26,7 +26,7 @@
     "href": "1_git_and_github.html",
     "title": "1. Introduction to Git and GitHub",
     "section": "",
-    "text": "In this first chapter, you will learn the basics on how to use Git and GitHub on Visual Studio Code.",
+    "text": "Caution\n\n\n\nThis tutorial is currently going under construction. All chapters and sections are not finished and might include incomplete explanations. Feel free to reach out to me to point out some missing elements.",
     "crumbs": [
       "Home",
       "1. Introduction to Git and GitHub"
@@ -36,8 +36,8 @@
     "objectID": "1_git_and_github.html#summary",
     "href": "1_git_and_github.html#summary",
     "title": "1. Introduction to Git and GitHub",
-    "section": "",
-    "text": "In this first chapter, you will learn the basics on how to use Git and GitHub on Visual Studio Code.",
+    "section": "Summary",
+    "text": "Summary\n\nIn this first chapter, you will learn the basics on how to use Git and GitHub on Visual Studio Code.",
     "crumbs": [
       "Home",
       "1. Introduction to Git and GitHub"
@@ -114,7 +114,7 @@
     "href": "index.html",
     "title": "Research student portfolio tutorial",
     "section": "",
-    "text": "This tutorial is currently going under construction. All chapters and sections are not finished.\nYou don’t have much time and are not proefficient in web development, but you would like to have a portfolio to share your work ? Welcome to this research student portfolio tutorial !",
+    "text": "Caution\n\n\n\nThis tutorial is currently going under construction. All chapters and sections are not finished and might include incomplete explanations. Feel free to reach out to me to point out some missing elements.\nYou don’t have much time and are not proefficient in web development, but you would like to have a portfolio to share your work ? Welcome to this research student portfolio tutorial !",
     "crumbs": [
       "Home",
       "Research student portfolio tutorial"
@@ -154,6 +154,13 @@
     ]
   },
   {
+    "objectID": "warning.html",
+    "href": "warning.html",
+    "title": "Research student portfolio tutorial",
+    "section": "",
+    "text": "Caution\n\n\n\nThis tutorial is currently going under construction. All chapters and sections are not finished and might include incomplete explanations. Feel free to reach out to me to point out some missing elements.\n\n\n\n\n\n Back to top"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -169,7 +176,7 @@
     "href": "2_quarto.html",
     "title": "2. Introduction to Quarto",
     "section": "",
-    "text": "Now that we know how to use Git and Github together, it is time for us to use Quarto.",
+    "text": "Caution\n\n\n\nThis tutorial is currently going under construction. All chapters and sections are not finished and might include incomplete explanations. Feel free to reach out to me to point out some missing elements.\nNow that we know how to use Git and Github together, it is time for us to use Quarto.",
     "crumbs": [
       "Home",
       "2. Introduction to Quarto"
@@ -209,22 +216,11 @@
     ]
   },
   {
-    "objectID": "2_quarto.html#how-to-modify-the-general-appearance-of-our-pages",
-    "href": "2_quarto.html#how-to-modify-the-general-appearance-of-our-pages",
-    "title": "2. Introduction to Quarto",
-    "section": "How to modify the general appearance of our pages",
-    "text": "How to modify the general appearance of our pages\n\nTemplate\nTitle of pages\n\nNow that you entered quarto preview and that you can see the changes in real time, we can begin to change the content of your portfolio. First of all, the general appearance of our pages can be changed via the chosen template specified in the _quarto.yml file.",
-    "crumbs": [
-      "Home",
-      "2. Introduction to Quarto"
-    ]
-  },
-  {
     "objectID": "2_quarto.html#how-to-modify-our-content",
     "href": "2_quarto.html#how-to-modify-our-content",
     "title": "2. Introduction to Quarto",
     "section": "How to modify our content",
-    "text": "How to modify our content\nNow that we have chosen the general appearance of our portfolio, we can modify the content of it.\nIf we want to modify the homepage of our website, we can go to the index.qmd file, and change directly the text. By default, Quarto should have filled the document with :\n---\ntitle: \"Home\"\n---\n\nThis is a Quarto website.\n\nTo learn more about Quarto websites visit &lt;https://quarto.org/docs/websites&gt;.\nThat yields, depending on your chosen template :\n\n\n\nAdd image with the menu choices of quarto when creating a project.\n\n\nWe can modify it by writting for example :\n---\ntitle: \"Home\"\n---\n\nHello, I am Jane Smith, currently a third year PhD Student in Economics at the Paris University, and this is my academic portfolio ! My research interests are mainly about urban economics and spatial inequalities. \n\nTo learn more about my work, visit &lt;https://parisuniversity.com/research_of_Jane_Smith&gt;.\n\ntext\nlinks\npages\npictures\nother documents",
+    "text": "How to modify our content\nNow that we rendered the first version of our page, how do we modify its content ?\nIf we want to modify the homepage of our website, we can go to the index.qmd file, and change directly the text. By default, Quarto should have filled the document with :\n---\ntitle: \"Home\"\n---\n\nThis is a Quarto website.\n\nTo learn more about Quarto websites visit &lt;https://quarto.org/docs/websites&gt;.\nThat yields the previous image.\nWe can modify it by writting for example :\n---\ntitle: \"Home\"\n---\n\nHello, I am Paulo Gugelmo, currently a first year\nstudent of the Master of Research in Economics at Sciences Po. \nMy research interests are environmental economics. \n\nFeel free to reach out to me at my email adress :\n\"paulo.gugelmocavalheirodias\" followed by \"@sciencespo.fr\" !\n\nThis should yield :\n\n\n\nBasic index page.\n\n\n\nNote : you should usually avoid putting your entire email adress directly in your webpage. Some bots are constantly scrapping webpages to get potential email adress that are later on the target of spam or fraudulous emails.\n\nAs you see, the changes are pretty straightforward. Since qmd files are basically a form of markdown file, you can use the markdown syntax for your content. If you are not familiar with it, it is easy to understand. I encourage you to go check some documentation.\nFor plain text, note that you can enter jumplines without actually rendering a jumpline. If you want to do a breakline, you should let at least one empty line between two text chunks.\nWe are now going to cover some features of markdown.\n\nTitles and subtitles\nIf you write plain text in your qmd file, you will get normal text in your page. However, if you want to have titles and subtitles, you can use the # sign before it.\nIn this way, one # will yiel a title, two # a subtitle, etc., until the sixth level. With text filler, we could write the following code :\n---\ntitle: \"Home\"\n---\n\nHello, I am Paulo Gugelmo, currently a first year student of\nthe Master of Research in Economics at Sciences Po. \nMy research interests are environmental economics. \n\nFeel free to reach out to me at my email adress : \"paulo.gugelmocavalheirodias\"\nfollowed by \"@sciencespo.fr\" !\n\n# Title \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit,\nsed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris \nnisi ut aliquip ex ea commodo consequat.\n\n## A Subtitle \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit,\nsed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris \nnisi ut aliquip ex ea commodo consequat.\n\n### A subsubtitle \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit,\nsed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris \nnisi ut aliquip ex ea commodo consequat.\nThis would then yield :\n\n\n\nExample of titles and subtitles.\n\n\nIt is as simple as that, and by default, Quarto creates a table of content automatically for us in the right-side of our page !\n\n\nAdding links\nNow, if we want to add some link to our text, we are going to use the [text](link) markdown syntax. Concretely, the text will be between square brackets [], and the link we want between parenthesis ().\nFor example this code :\n\n---\ntitle: \"Home\"\n---\n\nHello, I am Paulo Gugelmo, currently a first year student\nof the\n[Master of Research in Economics](https://www.sciencespo.fr/ecole-recherche/en/academics/masters/master-economics/)\nat [Sciences Po](https://www.sciencespo.fr/en/). \nMy research interests are environmental economics and open source !\n\nFeel free to reach out to me at my email adress :\n\"paulo.gugelmocavalheirodias\" followed by \"@sciencespo.fr\" !\nwill yield :\n\n\n\nExample of links usage.\n\n\nAnd if you click on the links in your browser, you should be redirected to the url you wrote !\n\n\nAdding documents and pictures\nNow, we could also want to include some pictures in our text. For example, some pdf of a long article we wrote or screeenshots.\nIn order to do so, we are going to use the ![description](link) markdown syntax.\nIn the previous example, we had url as links, that could be accessed on internet. Now, let’s imagine that you have a pdf file in your computer that you want to share on your portfolio. Usually, such a pdf is not available online on a public url.\nTHe first step we want to do is put the files you want to share in your folder in vscode. You should have something like that :\n\n\n\nA vscode folder with files that you want to share.\n\n\nNote that in the left side of my screen, in the explorer bar, I now have to additional files : “screenshot.png” and “2_8_markdown_guide.pdf”.\nIf we want to include them, we could write :\n\n\n---\ntitle: \"Home\"\n---\n\nHello, I am Paulo Gugelmo, currently a first year student\nof the\n[Master of Research in Economics](https://www.sciencespo.fr/ecole-recherche/en/academics/masters/master-economics/)\nat [Sciences Po](https://www.sciencespo.fr/en/). \nMy research interests are environmental economics and open source !\n\nHere is an interesting website :\n\n![A screenshot of the CRAN website.](screenshot.png)\n\nHere is an interesting guide : \n\n![This is the Markdown guide, written by Matt Cone.](2_8_markdown_guide.pdf)\n\nFeel free to reach out to me at my email adress :\n\"paulo.gugelmocavalheirodias\" followed by \"@sciencespo.fr\" !\nThis code would yield :\n\n\n\nAn attempt to include pictures and pdf\n\n\nWe see that the picture, a screenshot of the CRAN website, seems to work fine. However, the markdown guide, written by Matt Cone, and available here, is displayed in a smaller dimension than the page. This is due to the fact that we are trying to include a pdf as a picture. To include a pdf, we can thus use the normal link syntax, while directing to the emplacement of our pdf file. In this way, a syntax similar to You can read the markdown guide of Matt Conen [by clicking on this link](2_8_markdown_guide.pdf) would work better. We could thus write :\n\n---\ntitle: \"Home\"\n---\n\nHello, I am Paulo Gugelmo, currently a first year student\nof the\n[Master of Research in Economics](https://www.sciencespo.fr/ecole-recherche/en/academics/masters/master-economics/)\nat [Sciences Po](https://www.sciencespo.fr/en/). \nMy research interests are environmental economics and open source !\n\nHere is an interesting website :\n\n![A screenshot of the CRAN website.](screenshot.png)\n\n\nYou can read the markdown guide of Matt Conen [by clicking on this link](2_8_markdown_guide.pdf)\n\nFeel free to reach out to me at my email adress :\n\"paulo.gugelmocavalheirodias\" followed by \"@sciencespo.fr\" !\nThat would yield :\n\n\n\nIncluding a pdf document through a local link.\n\n\nAnd if we click on the link, we are redirected to the pdf file within our browser.\nFor the case of a portfolio, we could for example include our CV in this fashion.\n\n\nAdding code\nNow, we might want to include code snippets in our portfolio. For example, we have a project for which we wrote in R or any other languages, and we want to make the code easily accessible by our visitors.\nIn order for us to do that, we have two options. Either we want to include code inline, in which way we write our code between thos reversed ticks : ``, or we want to include a code snippet, in which case we use the following syntax :\n::: {.cell}\n\n```{.r .cell-code}\n# print(\"Hello world !\")\n::: ````\nThis is not working.\n\n\nAdding math\n\ntext\nlinks\npages\npictures\nother documents",
     "crumbs": [
       "Home",
       "2. Introduction to Quarto"
@@ -235,7 +231,18 @@
     "href": "2_quarto.html#how-to-modify-the-navigation-bar",
     "title": "2. Introduction to Quarto",
     "section": "How to modify the navigation bar",
-    "text": "How to modify the navigation bar\nAn essential element of the website is the navigation bar. In Quarto, it is automatically displayed in all your pages, and you can only modify it in your _quarto.yml file. Let’s take a look at it :\nproject:\n  type: website\n\nwebsite:\n  title: \"portfolio\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - about.qmd\n\nformat:\n  html:\n    theme: cosmo\n    css: styles.css\n    toc: true\nIn this example, the content of the navigation bar, or “navbar”, are determined by all elements following the navbar element in the website list. Here, we see that it has two elements : the homepage, defined as the index.qmd file, and the about page, defined as the about.qmd file.\nNormally, the title of you page should appear in your browser, despite not being specified in your navbar. This is the default setting of Quarto. To unable this option, you can add title: false in your navbar list :\nwebsite:\n  title: \"portfolio\"\n  navbar:\n    title: false\n    left:\n      - href: index.qmd\n        text: Home\n      - about.qmd\nThis should yield :\n\n\n\nAdd image\n\n\nTo add a new page to your navbar, you can add an element in the left or right list such as :\nwebsite:\n  title: \"portfolio\"\n  navbar:\n    title: false\n    left:\n      - href: index.qmd\n        text: Home\n      - project.qmd\n      - about.qmd\nFor this to work, you must have created a project.qmd file beforehand in your folder. This will then implement a new link in the navbar, displayed in its left part, having for name the name of file, i.e. here project :\n\n\n\nAdd image\n\n\n\n\n\nInstallation page of Quarto\nCreation of a project with Quarto\nRunning the quarto preview command on the vscode terminal.\nThe graphical result of an empty quarto project.\nAdd image with the menu choices of quarto when creating a project.\nAdd image\nAdd image",
+    "text": "How to modify the navigation bar\nAn essential element of the website is the navigation bar. In Quarto, it is automatically displayed in all your pages, and you can only modify it in your _quarto.yml file. Let’s take a look at it :\nproject:\n  type: website\n\nwebsite:\n  title: \"portfolio\"\n  navbar:\n    left:\n      - href: index.qmd\n        text: Home\n      - about.qmd\n\nformat:\n  html:\n    theme: cosmo\n    css: styles.css\n    toc: true\nIn this example, the content of the navigation bar, or “navbar”, are determined by all elements following the navbar element in the website list. Here, we see that it has two elements : the homepage, defined as the index.qmd file, and the about page, defined as the about.qmd file.\nNormally, the title of you page should appear in your browser, despite not being specified in your navbar. This is the default setting of Quarto. To unable this option, you can add title: false in your navbar list :\nwebsite:\n  title: \"portfolio\"\n  navbar:\n    title: false\n    left:\n      - href: index.qmd\n        text: Home\n      - about.qmd\nThis should yield :\n\n\n\nAdd image\n\n\nTo add a new page to your navbar, you can add an element in the left or right list such as :\nwebsite:\n  title: \"portfolio\"\n  navbar:\n    title: false\n    left:\n      - href: index.qmd\n        text: Home\n      - project.qmd\n      - about.qmd\nFor this to work, you must have created a project.qmd file beforehand in your folder. This will then implement a new link in the navbar, displayed in its left part, having for name the name of file, i.e. here project :\n\n\n\nAdd image",
+    "crumbs": [
+      "Home",
+      "2. Introduction to Quarto"
+    ]
+  },
+  {
+    "objectID": "2_quarto.html#further-resources",
+    "href": "2_quarto.html#further-resources",
+    "title": "2. Introduction to Quarto",
+    "section": "Further resources",
+    "text": "Further resources\nQuarto is a very powerful tool. We can use it to quickly produce content and maintain it with the presented workflow in this tutorial. I highly recommend the reading of their documentation here, and more specifically to follow through their Get Started guide.\n\n\n\nInstallation page of Quarto\nCreation of a project with Quarto\nRunning the quarto preview command on the vscode terminal.\nThe graphical result of an empty quarto project.\nBasic index page.\nExample of titles and subtitles.\nExample of links usage.\nA vscode folder with files that you want to share.\nAn attempt to include pictures and pdf\nIncluding a pdf document through a local link.\nAdd image\nAdd image",
     "crumbs": [
       "Home",
       "2. Introduction to Quarto"

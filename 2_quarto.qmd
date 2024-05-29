@@ -2,6 +2,7 @@
 title: "2. Introduction to Quarto"
 ---
 
+{{< include warning.qmd >}}
 
 Now that we know how to use Git and Github together, it is time for us to use Quarto. 
 
@@ -77,16 +78,9 @@ Without entering into the details, "localhost" means that it is your computer, a
 > Note : Now, your terminal is busy reading your files in the web browser. You can create a new terminal session by clicking on the "+" in vscode. 
 To stop the process, you can click on your terminal and then enter `ctrl`+`c` (`command`+`c` for MacOS keyboards).
 
-## How to modify the general appearance of our pages
-
-1. Template
-2. Title of pages
-
-Now that you entered `quarto preview` and that you can see the changes in real time, we can begin to change the content of your portfolio. First of all, the general appearance of our pages can be changed via the chosen template specified in the `_quarto.yml` file. 
-
 ## How to modify our content
 
-Now that we have chosen the general appearance of our portfolio, we can modify the content of it.
+Now that we rendered the first version of our page, how do we modify its content ? 
 
 If we want to modify the homepage of our website, we can go to the `index.qmd` file, and change directly the text. 
 By default, Quarto should have filled the document with : 
@@ -101,22 +95,220 @@ This is a Quarto website.
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
 ```
-That yields, depending on your chosen template : 
-
-![Add image with the menu choices of quarto when creating a project.](./resources/images/0_Default_image.png)
+That yields the previous image.
 
 
 We can modify it by writting for example : 
+```{.qmd}
+---
+title: "Home"
+---
+
+Hello, I am Paulo Gugelmo, currently a first year
+student of the Master of Research in Economics at Sciences Po. 
+My research interests are environmental economics. 
+
+Feel free to reach out to me at my email adress :
+"paulo.gugelmocavalheirodias" followed by "@sciencespo.fr" !
+
+```
+
+This should yield : 
+
+![Basic index page.](./resources/images/2_5_basic_index.png)
+
+> Note : you should usually avoid putting your entire email adress directly in your webpage.
+Some bots are constantly scrapping webpages to get potential email adress that are later on the target of spam or fraudulous emails.
+
+
+As you see, the changes are pretty straightforward. Since qmd files are basically a form of markdown file, you can use the markdown syntax for your content. 
+If you are not familiar with it, it is easy to understand. I encourage you to go check [some documentation](https://www.markdownguide.org/basic-syntax/). 
+
+For plain text, note that you can enter jumplines without actually rendering a jumpline. 
+If you want to do a breakline, you should let at least one empty line between two text chunks. 
+
+We are now going to cover some features of markdown.
+
+### Titles and subtitles
+
+If you write plain text in your qmd file, you will get normal text in your page. However, if you want to have titles and subtitles, you can use the `#` sign before it.
+
+In this way, one `#` will yiel a title, two `#` a subtitle, etc., until the sixth level. With text filler, we could write the following code : 
+
 ```{.yml}
 ---
 title: "Home"
 ---
 
-Hello, I am Jane Smith, currently a third year PhD Student in Economics at the Paris University, and this is my academic portfolio ! My research interests are mainly about urban economics and spatial inequalities. 
+Hello, I am Paulo Gugelmo, currently a first year student of
+the Master of Research in Economics at Sciences Po. 
+My research interests are environmental economics. 
 
-To learn more about my work, visit <https://parisuniversity.com/research_of_Jane_Smith>.
+Feel free to reach out to me at my email adress : "paulo.gugelmocavalheirodias"
+followed by "@sciencespo.fr" !
+
+# Title 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+nisi ut aliquip ex ea commodo consequat.
+
+## A Subtitle 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+nisi ut aliquip ex ea commodo consequat.
+
+### A subsubtitle 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+nisi ut aliquip ex ea commodo consequat.
 
 ```
+
+This would then yield : 
+
+![Example of titles and subtitles.](./resources/images/2_6_titles.png)
+
+It is as simple as that, and by default, Quarto creates a table of content automatically for us in the right-side of our page !
+
+### Adding links
+
+Now, if we want to add some link to our text, we are going to use the `[text](link)` markdown syntax.
+Concretely, the text will be between square brackets `[]`, and the link we want between parenthesis `()`.
+
+For example this code : 
+
+```{.yml}
+
+---
+title: "Home"
+---
+
+Hello, I am Paulo Gugelmo, currently a first year student
+of the
+[Master of Research in Economics](https://www.sciencespo.fr/ecole-recherche/en/academics/masters/master-economics/)
+at [Sciences Po](https://www.sciencespo.fr/en/). 
+My research interests are environmental economics and open source !
+
+Feel free to reach out to me at my email adress :
+"paulo.gugelmocavalheirodias" followed by "@sciencespo.fr" !
+
+```
+
+will yield : 
+
+![Example of links usage.](./resources/images/2_7_links.png)
+
+And if you click on the links in your browser, you should be redirected to the url you wrote ! 
+
+### Adding documents and pictures
+
+Now, we could also want to include some pictures in our text.
+For example, some pdf of a long article we wrote or screeenshots. 
+
+In order to do so, we are going to use the `![description](link)` markdown syntax.
+
+In the previous example, we had url as links, that could be accessed on internet. 
+Now, let's imagine that you have a pdf file in your computer that you want to share on your portfolio. 
+Usually, such a pdf is not available online on a public url. 
+
+THe first step we want to do is put the files you want to share in your folder in vscode. You should have something like that : 
+
+![A vscode folder with files that you want to share.](./resources/images/2_8_vscode_files.png)
+
+Note that in the left side of my screen, in the explorer bar, I now have to additional files : "screenshot.png" and "2_8_markdown_guide.pdf". 
+
+If we want to include them, we could write : 
+
+```{.yml}
+
+
+---
+title: "Home"
+---
+
+Hello, I am Paulo Gugelmo, currently a first year student
+of the
+[Master of Research in Economics](https://www.sciencespo.fr/ecole-recherche/en/academics/masters/master-economics/)
+at [Sciences Po](https://www.sciencespo.fr/en/). 
+My research interests are environmental economics and open source !
+
+Here is an interesting website :
+
+![A screenshot of the CRAN website.](screenshot.png)
+
+Here is an interesting guide : 
+
+![This is the Markdown guide, written by Matt Cone.](2_8_markdown_guide.pdf)
+
+Feel free to reach out to me at my email adress :
+"paulo.gugelmocavalheirodias" followed by "@sciencespo.fr" !
+
+```
+
+This code would yield : 
+
+![An attempt to include pictures and pdf](./resources/images/2_9_including_documents.png)
+
+We see that the picture, a screenshot of the CRAN website, seems to work fine. 
+However, the markdown guide, written by Matt Cone, and [available here](https://markdown.p2hp.com/assets/book/markdown-guide.pdf), is displayed in a smaller dimension than the page. 
+This is due to the fact that we are trying to include a pdf as a picture. 
+To include a pdf, we can thus use the normal link syntax, while directing to the emplacement of our pdf file.
+In this way, a syntax similar to `You can read the markdown guide of Matt Conen [by clicking on this link](2_8_markdown_guide.pdf)` would work better. 
+We could thus write : 
+
+```{.yml}
+
+---
+title: "Home"
+---
+
+Hello, I am Paulo Gugelmo, currently a first year student
+of the
+[Master of Research in Economics](https://www.sciencespo.fr/ecole-recherche/en/academics/masters/master-economics/)
+at [Sciences Po](https://www.sciencespo.fr/en/). 
+My research interests are environmental economics and open source !
+
+Here is an interesting website :
+
+![A screenshot of the CRAN website.](screenshot.png)
+
+
+You can read the markdown guide of Matt Conen [by clicking on this link](2_8_markdown_guide.pdf)
+
+Feel free to reach out to me at my email adress :
+"paulo.gugelmocavalheirodias" followed by "@sciencespo.fr" !
+```
+
+That would yield : 
+
+![Including a pdf document through a local link.](./resources/images/2_10_including_documents_2.png)
+
+And if we click on the link, we are redirected to the pdf file within our browser. 
+
+For the case of a portfolio, we could for example include our CV in this fashion. 
+
+### Adding code 
+
+Now, we might want to include code snippets in our portfolio. 
+For example, we have a project for which we wrote in R or any other languages, and we want to make the code easily accessible by our visitors. 
+
+In order for us to do that, we have two options. Either we want to include code inline, in which way we write our code between thos reversed ticks : ``, or we want to include a code snippet, 
+in which case we use the following syntax : 
+```{.yml}
+```{r}
+# print("Hello world !")
+```
+````
+
+This is not working. 
+
+### Adding math 
 
 - text
 - links
@@ -147,9 +339,11 @@ format:
     toc: true
 ```
 
-In this example, the content of the navigation bar, or "navbar", are determined by all elements following the `navbar` element in the `website` list. Here, we see that it has two elements : the homepage, defined as the index.qmd file, and the about page, defined as the `about.qmd` file.
+In this example, the content of the navigation bar, or "navbar", are determined by all elements following the `navbar` element in the `website` list.
+Here, we see that it has two elements : the homepage, defined as the index.qmd file, and the about page, defined as the `about.qmd` file.
 
-Normally, the title of you page should appear in your browser, despite not being specified in your navbar. This is the default setting of Quarto. To unable this option, you can add `title: false` in your `navbar` list : 
+Normally, the title of you page should appear in your browser, despite not being specified in your navbar. This is the default setting of Quarto.
+To unable this option, you can add `title: false` in your `navbar` list : 
 
 ```{.yml}
 website:
@@ -183,4 +377,9 @@ website:
 For this to work, you must have created a `project.qmd` file beforehand in your folder. This will then implement a new link in the navbar, displayed in its left part, having for name the name of file, i.e. here `project` : 
 
 ![Add image](./resources/images/0_Default_image.png)
+
+## Further resources
+
+Quarto is a very powerful tool. We can use it to quickly produce content and maintain it with the presented workflow in this tutorial.
+I highly recommend the reading of their [documentation here](https://quarto.org/docs/guide/), and more specifically to follow through their [Get Started guide](https://quarto.org/docs/get-started/).
 

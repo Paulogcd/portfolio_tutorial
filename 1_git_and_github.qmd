@@ -5,6 +5,9 @@ execute:
   echo: false
 ---
 
+
+{{< include warning.qmd >}}
+
 ## Summary 
 
 - In this first chapter, you will learn the basics on how to use Git and GitHub on Visual Studio Code.

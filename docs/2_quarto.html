@@ -248,9 +248,16 @@ window.Quarto = {
   <li><a href="#installation-of-quarto" id="toc-installation-of-quarto" class="nav-link active" data-scroll-target="#installation-of-quarto">Installation of Quarto</a></li>
   <li><a href="#create-a-quarto-project" id="toc-create-a-quarto-project" class="nav-link" data-scroll-target="#create-a-quarto-project">Create a Quarto project</a></li>
   <li><a href="#the-preview-and-render-commands" id="toc-the-preview-and-render-commands" class="nav-link" data-scroll-target="#the-preview-and-render-commands">The preview and render commands</a></li>
-  <li><a href="#how-to-modify-the-general-appearance-of-our-pages" id="toc-how-to-modify-the-general-appearance-of-our-pages" class="nav-link" data-scroll-target="#how-to-modify-the-general-appearance-of-our-pages">How to modify the general appearance of our pages</a></li>
-  <li><a href="#how-to-modify-our-content" id="toc-how-to-modify-our-content" class="nav-link" data-scroll-target="#how-to-modify-our-content">How to modify our content</a></li>
+  <li><a href="#how-to-modify-our-content" id="toc-how-to-modify-our-content" class="nav-link" data-scroll-target="#how-to-modify-our-content">How to modify our content</a>
+  <ul class="collapse">
+  <li><a href="#titles-and-subtitles" id="toc-titles-and-subtitles" class="nav-link" data-scroll-target="#titles-and-subtitles">Titles and subtitles</a></li>
+  <li><a href="#adding-links" id="toc-adding-links" class="nav-link" data-scroll-target="#adding-links">Adding links</a></li>
+  <li><a href="#adding-documents-and-pictures" id="toc-adding-documents-and-pictures" class="nav-link" data-scroll-target="#adding-documents-and-pictures">Adding documents and pictures</a></li>
+  <li><a href="#adding-code" id="toc-adding-code" class="nav-link" data-scroll-target="#adding-code">Adding code</a></li>
+  <li><a href="#adding-math" id="toc-adding-math" class="nav-link" data-scroll-target="#adding-math">Adding math</a></li>
+  </ul></li>
   <li><a href="#how-to-modify-the-navigation-bar" id="toc-how-to-modify-the-navigation-bar" class="nav-link" data-scroll-target="#how-to-modify-the-navigation-bar">How to modify the navigation bar</a></li>
+  <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further resources</a></li>
   </ul>
 </nav>
     </div>
@@ -276,13 +283,26 @@ window.Quarto = {
 </header>
 
 
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This tutorial is currently going under construction. All chapters and sections are not finished and might include incomplete explanations. Feel free to reach out to me to point out some missing elements.</p>
+</div>
+</div>
 <p>Now that we know how to use Git and Github together, it is time for us to use Quarto.</p>
 <section id="installation-of-quarto" class="level2">
 <h2 class="anchored" data-anchor-id="installation-of-quarto">Installation of Quarto</h2>
 <p>The first step of this chapter is to download Quarto <a href="https://quarto.org/docs/get-started/">here</a>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_1_install_quarto.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1" title="Installation page of Quarto"><img src="./resources/images/2_1_install_quarto.png" class="img-fluid figure-img" alt="Installation page of Quarto"></a></p>
+<p><a href="./resources/images/2_1_install_quarto.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1" title="Installation page of Quarto"><img src="./resources/images/2_1_install_quarto.png" class="img-fluid figure-img" alt="Installation page of Quarto"></a></p>
 <figcaption>Installation page of Quarto</figcaption>
 </figure>
 </div>
@@ -292,7 +312,7 @@ window.Quarto = {
 <p>The second step is to create a quarto project in your folder (the one you synchronized with your online GitHub repository). In order to do that, you can go in vscode, and enter in the terminal <code>quarto create</code>. You will then be guided with several questions regarding the nature of the project you wish to create. For the purpose of creating a portfolio, I would recommend to choose to create a website.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_2_create_project_quarto.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2" title="Creation of a project with Quarto"><img src="./resources/images/2_2_create_project_quarto.png" class="img-fluid figure-img" alt="Creation of a project with Quarto"></a></p>
+<p><a href="./resources/images/2_2_create_project_quarto.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2" title="Creation of a project with Quarto"><img src="./resources/images/2_2_create_project_quarto.png" class="img-fluid figure-img" alt="Creation of a project with Quarto"></a></p>
 <figcaption>Creation of a project with Quarto</figcaption>
 </figure>
 </div>
@@ -331,7 +351,7 @@ You could choose another different kinds of projects here. For example, <code>de
 <p>Let’s try to run the <code>quarto preview</code> command :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_3_quarto_preview_1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" data-glightbox="description: .lightbox-desc-3" title="Running the quarto preview command on the vscode terminal."><img src="./resources/images/2_3_quarto_preview_1.png" class="img-fluid figure-img" alt="Running the quarto preview command on the vscode terminal."></a></p>
+<p><a href="./resources/images/2_3_quarto_preview_1.png" class="lightbox" data-glightbox="description: .lightbox-desc-3" data-gallery="quarto-lightbox-gallery-3" title="Running the quarto preview command on the vscode terminal."><img src="./resources/images/2_3_quarto_preview_1.png" class="img-fluid figure-img" alt="Running the quarto preview command on the vscode terminal."></a></p>
 <figcaption>Running the quarto preview command on the vscode terminal.</figcaption>
 </figure>
 </div>
@@ -339,7 +359,7 @@ You could choose another different kinds of projects here. For example, <code>de
 <p>If you did not modify the basic files, you should see something like this on your web browser :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_4_quarto_preview_2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" data-glightbox="description: .lightbox-desc-4" title="The graphical result of an empty quarto project."><img src="./resources/images/2_4_quarto_preview_2.png" class="img-fluid figure-img" alt="The graphical result of an empty quarto project."></a></p>
+<p><a href="./resources/images/2_4_quarto_preview_2.png" class="lightbox" data-glightbox="description: .lightbox-desc-4" data-gallery="quarto-lightbox-gallery-4" title="The graphical result of an empty quarto project."><img src="./resources/images/2_4_quarto_preview_2.png" class="img-fluid figure-img" alt="The graphical result of an empty quarto project."></a></p>
 <figcaption>The graphical result of an empty quarto project.</figcaption>
 </figure>
 </div>
@@ -351,17 +371,9 @@ You could choose another different kinds of projects here. For example, <code>de
 <p>Note : Now, your terminal is busy reading your files in the web browser. You can create a new terminal session by clicking on the “+” in vscode. To stop the process, you can click on your terminal and then enter <code>ctrl</code>+<code>c</code> (<code>command</code>+<code>c</code> for MacOS keyboards).</p>
 </blockquote>
 </section>
-<section id="how-to-modify-the-general-appearance-of-our-pages" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-modify-the-general-appearance-of-our-pages">How to modify the general appearance of our pages</h2>
-<ol type="1">
-<li>Template</li>
-<li>Title of pages</li>
-</ol>
-<p>Now that you entered <code>quarto preview</code> and that you can see the changes in real time, we can begin to change the content of your portfolio. First of all, the general appearance of our pages can be changed via the chosen template specified in the <code>_quarto.yml</code> file.</p>
-</section>
 <section id="how-to-modify-our-content" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-modify-our-content">How to modify our content</h2>
-<p>Now that we have chosen the general appearance of our portfolio, we can modify the content of it.</p>
+<p>Now that we rendered the first version of our page, how do we modify its content ?</p>
 <p>If we want to modify the homepage of our website, we can go to the <code>index.qmd</code> file, and change directly the text. By default, Quarto should have filled the document with :</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Home"</span></span>
@@ -370,21 +382,189 @@ You could choose another different kinds of projects here. For example, <code>de
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="at">This is a Quarto website.</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="at">To learn more about Quarto websites visit &lt;https://quarto.org/docs/websites&gt;.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>That yields, depending on your chosen template :</p>
+<p>That yields the previous image.</p>
+<p>We can modify it by writting for example :</p>
+<pre class="qmd"><code>---
+title: "Home"
+---
+
+Hello, I am Paulo Gugelmo, currently a first year
+student of the Master of Research in Economics at Sciences Po. 
+My research interests are environmental economics. 
+
+Feel free to reach out to me at my email adress :
+"paulo.gugelmocavalheirodias" followed by "@sciencespo.fr" !
+</code></pre>
+<p>This should yield :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/0_Default_image.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" data-glightbox="description: .lightbox-desc-5" title="Add image with the menu choices of quarto when creating a project."><img src="./resources/images/0_Default_image.png" class="img-fluid figure-img" alt="Add image with the menu choices of quarto when creating a project."></a></p>
-<figcaption>Add image with the menu choices of quarto when creating a project.</figcaption>
+<p><a href="./resources/images/2_5_basic_index.png" class="lightbox" data-glightbox="description: .lightbox-desc-5" data-gallery="quarto-lightbox-gallery-5" title="Basic index page."><img src="./resources/images/2_5_basic_index.png" class="img-fluid figure-img" alt="Basic index page."></a></p>
+<figcaption>Basic index page.</figcaption>
 </figure>
 </div>
-<p>We can modify it by writting for example :</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Home"</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="at">Hello, I am Jane Smith, currently a third year PhD Student in Economics at the Paris University, and this is my academic portfolio ! My research interests are mainly about urban economics and spatial inequalities. </span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="at">To learn more about my work, visit &lt;https://parisuniversity.com/research_of_Jane_Smith&gt;.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<blockquote class="blockquote">
+<p>Note : you should usually avoid putting your entire email adress directly in your webpage. Some bots are constantly scrapping webpages to get potential email adress that are later on the target of spam or fraudulous emails.</p>
+</blockquote>
+<p>As you see, the changes are pretty straightforward. Since qmd files are basically a form of markdown file, you can use the markdown syntax for your content. If you are not familiar with it, it is easy to understand. I encourage you to go check <a href="https://www.markdownguide.org/basic-syntax/">some documentation</a>.</p>
+<p>For plain text, note that you can enter jumplines without actually rendering a jumpline. If you want to do a breakline, you should let at least one empty line between two text chunks.</p>
+<p>We are now going to cover some features of markdown.</p>
+<section id="titles-and-subtitles" class="level3">
+<h3 class="anchored" data-anchor-id="titles-and-subtitles">Titles and subtitles</h3>
+<p>If you write plain text in your qmd file, you will get normal text in your page. However, if you want to have titles and subtitles, you can use the <code>#</code> sign before it.</p>
+<p>In this way, one <code>#</code> will yiel a title, two <code>#</code> a subtitle, etc., until the sixth level. With text filler, we could write the following code :</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Home"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="at">Hello, I am Paulo Gugelmo, currently a first year student of</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="at">the Master of Research in Economics at Sciences Po. </span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="at">My research interests are environmental economics. </span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="fu">Feel free to reach out to me at my email adress </span><span class="kw">:</span><span class="at"> </span><span class="st">"paulo.gugelmocavalheirodias"</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="at">followed by "@sciencespo.fr" !</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Title </span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="at">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="at">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="at">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="at">nisi ut aliquip ex ea commodo consequat.</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="co">## A Subtitle </span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="at">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="at">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="at">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="at">nisi ut aliquip ex ea commodo consequat.</span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a><span class="co">### A subsubtitle </span></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a><span class="at">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</span></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a><span class="at">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a><span class="at">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </span></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a><span class="at">nisi ut aliquip ex ea commodo consequat.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This would then yield :</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./resources/images/2_6_titles.png" class="lightbox" data-glightbox="description: .lightbox-desc-6" data-gallery="quarto-lightbox-gallery-6" title="Example of titles and subtitles."><img src="./resources/images/2_6_titles.png" class="img-fluid figure-img" alt="Example of titles and subtitles."></a></p>
+<figcaption>Example of titles and subtitles.</figcaption>
+</figure>
+</div>
+<p>It is as simple as that, and by default, Quarto creates a table of content automatically for us in the right-side of our page !</p>
+</section>
+<section id="adding-links" class="level3">
+<h3 class="anchored" data-anchor-id="adding-links">Adding links</h3>
+<p>Now, if we want to add some link to our text, we are going to use the <code>[text](link)</code> markdown syntax. Concretely, the text will be between square brackets <code>[]</code>, and the link we want between parenthesis <code>()</code>.</p>
+<p>For example this code :</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Home"</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="at">Hello, I am Paulo Gugelmo, currently a first year student</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="at">of the</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="kw">[</span><span class="at">Master of Research in Economics</span><span class="kw">]</span><span class="at">(https://www.sciencespo.fr/ecole-recherche/en/academics/masters/master-economics/)</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="at">at [Sciences Po](https://www.sciencespo.fr/en/). </span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="at">My research interests are environmental economics and open source !</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="fu">Feel free to reach out to me at my email adress </span><span class="kw">:</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="st">"paulo.gugelmocavalheirodias"</span><span class="at"> followed by "@sciencespo.fr" !</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>will yield :</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./resources/images/2_7_links.png" class="lightbox" data-glightbox="description: .lightbox-desc-7" data-gallery="quarto-lightbox-gallery-7" title="Example of links usage."><img src="./resources/images/2_7_links.png" class="img-fluid figure-img" alt="Example of links usage."></a></p>
+<figcaption>Example of links usage.</figcaption>
+</figure>
+</div>
+<p>And if you click on the links in your browser, you should be redirected to the url you wrote !</p>
+</section>
+<section id="adding-documents-and-pictures" class="level3">
+<h3 class="anchored" data-anchor-id="adding-documents-and-pictures">Adding documents and pictures</h3>
+<p>Now, we could also want to include some pictures in our text. For example, some pdf of a long article we wrote or screeenshots.</p>
+<p>In order to do so, we are going to use the <code>![description](link)</code> markdown syntax.</p>
+<p>In the previous example, we had url as links, that could be accessed on internet. Now, let’s imagine that you have a pdf file in your computer that you want to share on your portfolio. Usually, such a pdf is not available online on a public url.</p>
+<p>THe first step we want to do is put the files you want to share in your folder in vscode. You should have something like that :</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./resources/images/2_8_vscode_files.png" class="lightbox" data-glightbox="description: .lightbox-desc-8" data-gallery="quarto-lightbox-gallery-8" title="A vscode folder with files that you want to share."><img src="./resources/images/2_8_vscode_files.png" class="img-fluid figure-img" alt="A vscode folder with files that you want to share."></a></p>
+<figcaption>A vscode folder with files that you want to share.</figcaption>
+</figure>
+</div>
+<p>Note that in the left side of my screen, in the explorer bar, I now have to additional files : “screenshot.png” and “2_8_markdown_guide.pdf”.</p>
+<p>If we want to include them, we could write :</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Home"</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="at">Hello, I am Paulo Gugelmo, currently a first year student</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="at">of the</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="kw">[</span><span class="at">Master of Research in Economics</span><span class="kw">]</span><span class="at">(https://www.sciencespo.fr/ecole-recherche/en/academics/masters/master-economics/)</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="at">at [Sciences Po](https://www.sciencespo.fr/en/). </span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="at">My research interests are environmental economics and open source !</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="fu">Here is an interesting website </span><span class="kw">:</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="at">![A screenshot of the CRAN website.](screenshot.png)</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="fu">Here is an interesting guide </span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="at">![This is the Markdown guide, written by Matt Cone.](2_8_markdown_guide.pdf)</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="fu">Feel free to reach out to me at my email adress </span><span class="kw">:</span></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="st">"paulo.gugelmocavalheirodias"</span><span class="at"> followed by "@sciencespo.fr" !</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This code would yield :</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./resources/images/2_9_including_documents.png" class="lightbox" data-glightbox="description: .lightbox-desc-9" data-gallery="quarto-lightbox-gallery-9" title="An attempt to include pictures and pdf"><img src="./resources/images/2_9_including_documents.png" class="img-fluid figure-img" alt="An attempt to include pictures and pdf"></a></p>
+<figcaption>An attempt to include pictures and pdf</figcaption>
+</figure>
+</div>
+<p>We see that the picture, a screenshot of the CRAN website, seems to work fine. However, the markdown guide, written by Matt Cone, and <a href="https://markdown.p2hp.com/assets/book/markdown-guide.pdf">available here</a>, is displayed in a smaller dimension than the page. This is due to the fact that we are trying to include a pdf as a picture. To include a pdf, we can thus use the normal link syntax, while directing to the emplacement of our pdf file. In this way, a syntax similar to <code>You can read the markdown guide of Matt Conen [by clicking on this link](2_8_markdown_guide.pdf)</code> would work better. We could thus write :</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Home"</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="at">Hello, I am Paulo Gugelmo, currently a first year student</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="at">of the</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="kw">[</span><span class="at">Master of Research in Economics</span><span class="kw">]</span><span class="at">(https://www.sciencespo.fr/ecole-recherche/en/academics/masters/master-economics/)</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="at">at [Sciences Po](https://www.sciencespo.fr/en/). </span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="at">My research interests are environmental economics and open source !</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="fu">Here is an interesting website </span><span class="kw">:</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="at">![A screenshot of the CRAN website.](screenshot.png)</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="at">You can read the markdown guide of Matt Conen [by clicking on this link](2_8_markdown_guide.pdf)</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="fu">Feel free to reach out to me at my email adress </span><span class="kw">:</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="st">"paulo.gugelmocavalheirodias"</span><span class="at"> followed by "@sciencespo.fr" !</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>That would yield :</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./resources/images/2_10_including_documents_2.png" class="lightbox" data-glightbox="description: .lightbox-desc-10" data-gallery="quarto-lightbox-gallery-10" title="Including a pdf document through a local link."><img src="./resources/images/2_10_including_documents_2.png" class="img-fluid figure-img" alt="Including a pdf document through a local link."></a></p>
+<figcaption>Including a pdf document through a local link.</figcaption>
+</figure>
+</div>
+<p>And if we click on the link, we are redirected to the pdf file within our browser.</p>
+<p>For the case of a portfolio, we could for example include our CV in this fashion.</p>
+</section>
+<section id="adding-code" class="level3">
+<h3 class="anchored" data-anchor-id="adding-code">Adding code</h3>
+<p>Now, we might want to include code snippets in our portfolio. For example, we have a project for which we wrote in R or any other languages, and we want to make the code easily accessible by our visitors.</p>
+<p>In order for us to do that, we have two options. Either we want to include code inline, in which way we write our code between thos reversed ticks : ``, or we want to include a code snippet, in which case we use the following syntax :</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="at">:</span><span class="fu">:</span><span class="kw">:</span><span class="at"> </span><span class="kw">{</span><span class="at">.cell</span><span class="kw">}</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="at">```{.r .cell-code}</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># print("Hello world !")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>::: ````</p>
+<p>This is not working.</p>
+</section>
+<section id="adding-math" class="level3">
+<h3 class="anchored" data-anchor-id="adding-math">Adding math</h3>
 <ul>
 <li>text</li>
 <li>links</li>
@@ -393,59 +573,64 @@ You could choose another different kinds of projects here. For example, <code>de
 <li>other documents</li>
 </ul>
 </section>
+</section>
 <section id="how-to-modify-the-navigation-bar" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-modify-the-navigation-bar">How to modify the navigation bar</h2>
 <p>An essential element of the website is the navigation bar. In Quarto, it is automatically displayed in all your pages, and you can only modify it in your <code>_quarto.yml</code> file. Let’s take a look at it :</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"portfolio"</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Home</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> about.qmd</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> cosmo</span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">css</span><span class="kw">:</span><span class="at"> styles.css</span></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"portfolio"</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Home</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> about.qmd</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span><span class="at"> cosmo</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">css</span><span class="kw">:</span><span class="at"> styles.css</span></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>In this example, the content of the navigation bar, or “navbar”, are determined by all elements following the <code>navbar</code> element in the <code>website</code> list. Here, we see that it has two elements : the homepage, defined as the index.qmd file, and the about page, defined as the <code>about.qmd</code> file.</p>
 <p>Normally, the title of you page should appear in your browser, despite not being specified in your navbar. This is the default setting of Quarto. To unable this option, you can add <code>title: false</code> in your <code>navbar</code> list :</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"portfolio"</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Home</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> about.qmd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"portfolio"</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Home</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> about.qmd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This should yield :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/0_Default_image.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" data-glightbox="description: .lightbox-desc-6" title="Add image"><img src="./resources/images/0_Default_image.png" class="img-fluid figure-img" alt="Add image"></a></p>
+<p><a href="./resources/images/0_Default_image.png" class="lightbox" data-glightbox="description: .lightbox-desc-11" data-gallery="quarto-lightbox-gallery-11" title="Add image"><img src="./resources/images/0_Default_image.png" class="img-fluid figure-img" alt="Add image"></a></p>
 <figcaption>Add image</figcaption>
 </figure>
 </div>
 <p>To add a new page to your navbar, you can add an element in the <code>left</code> or <code>right</code> list such as :</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"portfolio"</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Home</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> project.qmd</span></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> about.qmd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"portfolio"</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Home</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> project.qmd</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> about.qmd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>For this to work, you must have created a <code>project.qmd</code> file beforehand in your folder. This will then implement a new link in the navbar, displayed in its left part, having for name the name of file, i.e.&nbsp;here <code>project</code> :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/0_Default_image.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" data-glightbox="description: .lightbox-desc-7" title="Add image"><img src="./resources/images/0_Default_image.png" class="img-fluid figure-img" alt="Add image"></a></p>
+<p><a href="./resources/images/0_Default_image.png" class="lightbox" data-glightbox="description: .lightbox-desc-12" data-gallery="quarto-lightbox-gallery-12" title="Add image"><img src="./resources/images/0_Default_image.png" class="img-fluid figure-img" alt="Add image"></a></p>
 <figcaption>Add image</figcaption>
 </figure>
 </div>
+</section>
+<section id="further-resources" class="level2">
+<h2 class="anchored" data-anchor-id="further-resources">Further resources</h2>
+<p>Quarto is a very powerful tool. We can use it to quickly produce content and maintain it with the presented workflow in this tutorial. I highly recommend the reading of their <a href="https://quarto.org/docs/guide/">documentation here</a>, and more specifically to follow through their <a href="https://quarto.org/docs/get-started/">Get Started guide</a>.</p>
 
 
 <div class="hidden" aria-hidden="true">
@@ -453,9 +638,14 @@ You could choose another different kinds of projects here. For example, <code>de
 <span class="glightbox-desc lightbox-desc-2">Creation of a project with Quarto</span>
 <span class="glightbox-desc lightbox-desc-3">Running the quarto preview command on the vscode terminal.</span>
 <span class="glightbox-desc lightbox-desc-4">The graphical result of an empty quarto project.</span>
-<span class="glightbox-desc lightbox-desc-5">Add image with the menu choices of quarto when creating a project.</span>
-<span class="glightbox-desc lightbox-desc-6">Add image</span>
-<span class="glightbox-desc lightbox-desc-7">Add image</span>
+<span class="glightbox-desc lightbox-desc-5">Basic index page.</span>
+<span class="glightbox-desc lightbox-desc-6">Example of titles and subtitles.</span>
+<span class="glightbox-desc lightbox-desc-7">Example of links usage.</span>
+<span class="glightbox-desc lightbox-desc-8">A vscode folder with files that you want to share.</span>
+<span class="glightbox-desc lightbox-desc-9">An attempt to include pictures and pdf</span>
+<span class="glightbox-desc lightbox-desc-10">Including a pdf document through a local link.</span>
+<span class="glightbox-desc lightbox-desc-11">Add image</span>
+<span class="glightbox-desc lightbox-desc-12">Add image</span>
 </div>
 </section>
 
@@ -900,7 +1090,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom","loop":false});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox","closeEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

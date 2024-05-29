@@ -2,7 +2,7 @@
 title: "Research student portfolio tutorial"
 ---
 
-> This tutorial is currently going under construction. All chapters and sections are not finished. 
+{{< include warning.qmd >}}
 
 You don't have much time and are not proefficient in web development, but you would like to have a portfolio to share your work ?
 Welcome to this **research student portfolio tutorial** ! 
