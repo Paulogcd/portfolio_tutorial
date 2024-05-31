@@ -2,13 +2,19 @@ project:
   type: website
   output-dir: docs
 
+
+# Allows the readers to click on images to expand them 
 lightbox: true
 
+# Open the link in another browser tab
 link-external-newwindow: true
 
 website:
   title: "Research student portfolio tutorial"
   navbar:
+    # Setting the grey background color to overwrite the default color of flatly
+    background-color: "#454545"
+    # Avoid putting the title of the website in the navbar
     title: false
     left:
       - href: ../
@@ -24,6 +30,7 @@ website:
         - text: "3. Publish with GitHub Pages"
           file: 3_publish_with_github_pages.qmd
       - about.qmd
+  # Add a sidebar at the left of the pages with this list of pages
   sidebar: 
     contents:
     - index.qmd
@@ -31,16 +38,30 @@ website:
     - 2_quarto.qmd
     - 3_publish_with_github_pages.qmd
     - about.qmd
+  # Add a footer with the CC 4.0 License 
   page-footer: "[![](https://img.shields.io/badge/License-CC%20BY--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nd/4.0/) Paulo Gugelmo Cavalheiro Dias" 
   page-navigation: true
+  # Add a back to the top button
   back-to-top-navigation: true
+  
+  # Add the repository of this website and create links to edit it and report an issue
+  repo-url: https://github.com/Paulogcd/portfolio_tutorial
+  repo-actions: [edit, issue]
+  
+  # Add a reader mode button
+  reader-mode: true
 
 format:
   html:
+    # Enables the code snippets to be copied
     code-copy: true
     theme: cosmo
+    # The following is ugly, so I decided to implement it. 
+    # I am waiting for <https://github.com/quarto-dev/quarto-cli/issues/7391> to be implemented 
+    #  light: flatly
+    #  dark: darkly
     css: styles.css
+    # Create automatically a table of content at the right side of the page 
     toc: true
-
 
 
