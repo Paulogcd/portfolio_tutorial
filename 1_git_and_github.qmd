@@ -54,9 +54,9 @@ Now that you selected your folder, vscode opened it and you should have somethin
 
 > NOTE : When you open a folder for the first time, vscode may ask you "Do you trust the authors of the files in this folder?". Since you just created your folder and that it is empty, you can naturally click on yes. You are the author !
 
-It's done ! We settled vscode correctly for the next step : initializing git in vscode. 
+It's done ! We settled vscode correctly for the next step : using Git and Github.
 
-## Basics of Git 
+## Git and Github 
 
 Git is a software that allows for version management, i.e. it is a version control system. 
 Simply put, it is a software that allows you to make a logbook of all the changes in your files. 
@@ -64,6 +64,42 @@ You want to check all the steps from the very beginning of your project until th
 If you use git, it is possible.
 
 > Note : Git does not only work with code files, but also with any type of file. If you have a text file (like a Master thesis for example...) for which you want to control the different versions, you can use git for it ! 
+
+GitHub is a firm (currently owned by Microsoft) that puts at disposition servers which you can use to store your data.
+It is a website that takes the concept of git and allows for a remote interaction with your tracked files.
+It has a lot of different uses, including collaborative coding, but this tutorial only focuses on how to use it to manage your project with Git and Quarto.
+It is widely used in the programming community and is also sometimes referred as the social network of developers. 
+
+To use Git and Github, this tutorial offers two methods. 
+The first one is based on the Graphical User Interface (GUI) solution of Github Desktop, an application that offers a simple interface to interact with git and github at the same time. 
+It is more simple and quick to setup, especially if you are not familiar or confortable with the second approach : the Command Line Interface (CLI) approach.
+This second solution uses the basic git and github solutions. 
+It requires more steps, and is a bit harder to setup, but you will develop a deeper understanding of what is going on when you use Git and Github.
+
+::: {.panel-tabset group="method"}
+## GitHub Desktop : The Graphical User Interface (GUI)
+
+This section presents the method to use Git and Github via a GUI. 
+In order for us to do so, we are going to use Github Desktop. 
+
+### Setup your Github account
+
+The first step is to create a Github account. 
+The second step is to create a repository named (username.github.io).
+
+### Use GIthub Desktop
+
+The next step is to install Github desktop. 
+You then have to open it, and connect yourself to your Github account. 
+It will aks you what you want to do, and you will select clone your repository. 
+Now, if you make any change in your folder, you will be able to commit the changes. 
+Check the Github repository : your local files should be online !
+
+## Git Command Line Interface (CLI)
+
+This section presents the method to use Git and Github via a CLI.
+
+### Basics of Git 
 
 The first step is to install Git from [here](https://git-scm.com/). 
 
@@ -105,7 +141,8 @@ At any point, we can use some other git commands to have more information. For e
 - `git log` gives back the logbook, i.e. the list of changes that were saved.
 - `git diff` gives the differences between the current version of your files and the latest version saved in the logbook.
 
-Finally, it is also useful to set up a branch. Without entering into too much details, a branch is the path in which you are registering all your commits and files. If you create another branch, then, it would mean .
+Finally, it is also useful to set up a branch. Without entering into too much details, a branch is the path in which you are registering all your commits and files.
+If you create and program on another branch, it is like you are continuing the development of your code on a parallel version of your program, without modifying the "main" version of it (i.e. the "main" branch).
 It is important to set up a main branch, in order for git not to bug in future operations.
 In order to do so, we can enter : `git branch -M main` in the terminal. 
 
@@ -113,11 +150,7 @@ Git is a very powerful tool that allows to do a lot of collabortive code managin
 In addition to having this local logbook on your computer, you can indeed also send your files to a remote server, in a similar way than the cloud or a remote drive.
 This is where GitHub enters into play. 
 
-## Basics of GitHub
-
-GitHub is a firm (currently owned by Microsoft) that puts at disposition servers which you can use to store your data.
-It has a lot of different uses, including collaborative coding, but this tutorial only focuses on how to use it to manage your project with Git and Quarto.
-It is widely used in the programming community and is also sometimes referred as the social network of developers. 
+### Basics of GitHub
 
 To use GitHub, the first step is to go to [GitHub](https://github.com) and create an account. Once your account is created, you can create a repository, named "username.github.io", replacing "username" with your actual user name. Since I choose the username `frpgcd`, I will create in the example a repository name "frpgcd.github.io".
 
@@ -167,7 +200,7 @@ git push -u origin main
 
 > Note : You can also initialise a git folder in another directory, and "clone" an existing GitHub repository. This will create a duplicate of this repository in your folder and on your GitHub account, or just load the data locally if it is one of your repositories. Although this is not covered in the current tutorial, you can check the Github and Git documentations to get more information on those operations. 
 
-## Use Git and GitHub together 
+### Use Git and GitHub together 
 
 Now that the connection between your local folder and your distant repository has been created, you can add modifications to your folder (like creating a new file), add those changes via `git add` followed by the name of your new document (you can also use `*` to select everything in your folder), commit those changes via `git commit -m "the description of your changes"`, and then push those changes via `git push`. This add-commit-push process is one of the basics to synchronize your local folder with the files of your GitHub account.  
 
@@ -180,6 +213,8 @@ git push
 ```
 
 You can then verify that your changes have been taken into account by going on the website of GitHub, on your repository. Your tracked files should appear there.
+
+:::
 
 ## Further Resources
 
