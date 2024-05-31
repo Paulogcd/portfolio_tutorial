@@ -58,6 +58,8 @@ It's done ! We settled vscode correctly for the next step : using Git and Github
 
 ## Git and Github 
 
+{{< include section_warning.qmd >}}
+
 Git is a software that allows for version management, i.e. it is a version control system. 
 Simply put, it is a software that allows you to make a logbook of all the changes in your files. 
 You want to check all the steps from the very beginning of your project until the current version ?

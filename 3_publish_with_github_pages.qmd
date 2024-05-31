@@ -11,6 +11,8 @@ This final step is the easiest one, so hang it on, we are soon reaching the end 
 
 ## Activating GitHub pages
 
+{{< include section_warning.qmd >}}
+
 In order for us to publish the content that is available in our `_site` folder, we need first to goto our GitHub repository, and to click on settings at the top-right. We then click in the "Code and automation" on the "Pages" section. You should see something like this : 
 
 ![Add image](./resources/images/0_Default_image.png)
