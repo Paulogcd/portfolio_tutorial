@@ -475,4 +475,3 @@ At this point, we should have the basics of Quarto. Although not complete, our p
 
 Quarto is a very powerful tool. We can use it to quickly produce content and maintain it with the presented workflow in this tutorial.
 I highly recommend the reading of their [documentation here](https://quarto.org/docs/guide/), and more specifically to follow through their [Get Started guide](https://quarto.org/docs/get-started/).
-

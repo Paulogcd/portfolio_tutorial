@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Research student portfolio tutorial - 1. Introduction to Git and GitHub</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./2_quarto.html" rel="next">
+<link href="./index.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./../"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Research Portfolio tutorial</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-chapters" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Chapters</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-chapters">    
+        <li>
+    <a class="dropdown-item" href="./1_git_and_github.html">
+ <span class="dropdown-text">1. Git and Github</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./2_quarto.html">
+ <span class="dropdown-text">2. Quarto</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./3_publish_with_github_pages.html">
+ <span class="dropdown-text">3. Publish with GitHub Pages</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1_git_and_github.html">1. Introduction to Git and GitHub</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Research student portfolio tutorial</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1_git_and_github.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">1. Introduction to Git and GitHub</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2_quarto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. Introduction to Quarto</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3_publish_with_github_pages.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. Publish your website with Github Pages</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#visual-studio-code" id="toc-visual-studio-code" class="nav-link" data-scroll-target="#visual-studio-code">Visual Studio Code</a></li>
+  <li><a href="#git-and-github" id="toc-git-and-github" class="nav-link" data-scroll-target="#git-and-github">Git and Github</a></li>
+  <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further Resources</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/Paulogcd/portfolio_tutorial/edit/main/1_git_and_github.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Paulogcd/portfolio_tutorial/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">1. Introduction to Git and GitHub</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This tutorial is currently going under construction. All chapters and sections are not finished and might include incomplete explanations. Feel free to reach out to me to point out some missing elements.</p>
+</div>
+</div>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<ul>
+<li>In this first chapter, you will learn the basics on how to use Git and GitHub on Visual Studio Code.</li>
+</ul>
+</section>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>This tutorial aims to give you the tools to easily and efficiently create, manage and publish your own online portfolio. In order to do that, we use several tools, such as Visual Studio Code, Git, GitHub, and Quarto. To understand why we use them, it is important to understand what Internet is. Internet can be understood as a network of computers that can communicate with each other. In the same way, a website can be understood as content that can be accessed over the internet. Thus, this tutorial will first focus on the design of the website, and then on the publication of the website.</p>
+<p>Usually, one shoul learn HTML5 and CSS to know a bit of Web development. However, in the recent years, a lot of static website generator have emerged, that make the conception of websites easier. Among the several static website generator, <a href="https://jekyllrb.com/">Jekyll</a>, <a href="https://www.getzola.org/">Zola</a>, <a href="https://gohugo.io/">Hugo</a>, and <a href="https://quarto.org/">Quarto</a> can be cited, but they are far from being the only ones. This tutorial focuses on Quarto in the second chapter.</p>
+<p>After having designed your website with a static website generator, we finally have to make it available to the world, i.e.&nbsp;publish it. Several free hosting services exist, such as <a href="https://www.netlify.com/">Netlify</a>, <a href="https://quartopub.com/">Quarto Pub</a>, and <a href="https://pages.github.com/">GitHub Pages</a>, among other ones. This tutorial focuses on GitHub Pages in the third chapter.</p>
+<p>Now, in order to make the whole process easier and fluid, this tutorial first focuses on the establishment of a workflow using Visual Studio Code, Git and GitHub. This workflow allows to make the second and third steps easier, and is also very useful if you are to work in collaborative projects in the future. This is thus the first chapter of this tutorial.</p>
+<p>The first chapter is longer than the other two, so once you are done with it, the rest will be a lot easier.</p>
+</section>
+<section id="visual-studio-code" class="level2">
+<h2 class="anchored" data-anchor-id="visual-studio-code">Visual Studio Code</h2>
+<p>Visual Studio Code (VSC or vscode) is a software to write code, also called Integrated Development Environment (IDE). It is largely used, and a lot of extensions exist to customize your experience with it. We are thus going to install vscode <a href="https://code.visualstudio.com/">here</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./resources/images/1_1_install_vscode.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1" title="Dowload page of vscode."><img src="./resources/images/1_1_install_vscode.png" class="img-fluid figure-img" alt="Dowload page of vscode."></a></p>
+<figcaption>Dowload page of vscode.</figcaption>
+</figure>
+</div>
+<p>The strength of vscode comes mainly from the way it manages folders, in which several files of the same project exist. Now, we are going to create a folder in which we are going to develop our online portfolio. It is better if you name it “username.github.io”, with instead of “username” the pseudonym you are thinking of using in GitHub. It will be useful in the future parts of the tutorial. In my case, I will chose to illustrate it with the username “frpgcd”, thus naming my folder “frpgcd.github.io”.</p>
+<p>Once it is done, we can use vscode to open this same folder. To do so, we open vscode, click on “open” in the starting page, and select your folder.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./resources/images/1_2_starting_page_vscode.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2" title="Starting page of vscode. Click on “open” to chose a folder to open."><img src="./resources/images/1_2_starting_page_vscode.png" class="img-fluid figure-img" alt="Starting page of vscode. Click on “open” to chose a folder to open."></a></p>
+<figcaption>Starting page of vscode. Click on “open” to chose a folder to open.</figcaption>
+</figure>
+</div>
+<p>Now that you selected your folder, vscode opened it and you should have something like that :</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./resources/images/1_3_folder_opened_vscode.png" class="lightbox" data-glightbox="description: .lightbox-desc-3" data-gallery="quarto-lightbox-gallery-3" title="An empty folder opened with vscode."><img src="./resources/images/1_3_folder_opened_vscode.png" class="img-fluid figure-img" alt="An empty folder opened with vscode."></a></p>
+<figcaption>An empty folder opened with vscode.</figcaption>
+</figure>
+</div>
+<blockquote class="blockquote">
+<p>NOTE : When you open a folder for the first time, vscode may ask you “Do you trust the authors of the files in this folder?”. Since you just created your folder and that it is empty, you can naturally click on yes. You are the author !</p>
+</blockquote>
+<p>It’s done ! We settled vscode correctly for the next step : using Git and Github.</p>
+</section>
+<section id="git-and-github" class="level2">
+<h2 class="anchored" data-anchor-id="git-and-github">Git and Github</h2>
+<p>Git is a software that allows for version management, i.e.&nbsp;it is a version control system. Simply put, it is a software that allows you to make a logbook of all the changes in your files. You want to check all the steps from the very beginning of your project until the current version ? If you use git, it is possible.</p>
+<blockquote class="blockquote">
+<p>Note : Git does not only work with code files, but also with any type of file. If you have a text file (like a Master thesis for example…) for which you want to control the different versions, you can use git for it !</p>
+</blockquote>
+<p>GitHub is a firm (currently owned by Microsoft) that puts at disposition servers which you can use to store your data. It is a website that takes the concept of git and allows for a remote interaction with your tracked files. It has a lot of different uses, including collaborative coding, but this tutorial only focuses on how to use it to manage your project with Git and Quarto. It is widely used in the programming community and is also sometimes referred as the social network of developers.</p>
+<p>To use Git and Github, this tutorial offers two methods. The first one is based on the Graphical User Interface (GUI) solution of Github Desktop, an application that offers a simple interface to interact with git and github at the same time. It is more simple and quick to setup, especially if you are not familiar or confortable with the second approach : the Command Line Interface (CLI) approach. This second solution uses the basic git and github solutions. It requires more steps, and is a bit harder to setup, but you will develop a deeper understanding of what is going on when you use Git and Github.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset" data-group="method">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">GitHub Desktop : The Graphical User Interface (GUI)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Git Command Line Interface (CLI)</a></li></ul>
+<div class="tab-content" data-group="method">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>This section presents the method to use Git and Github via a GUI. In order for us to do so, we are going to use Github Desktop.</p>
+<section id="setup-your-github-account" class="level3">
+<h3 class="anchored" data-anchor-id="setup-your-github-account">Setup your Github account</h3>
+<p>The first step is to create a Github account. The second step is to create a repository named (username.github.io).</p>
+</section>
+<section id="use-github-desktop" class="level3">
+<h3 class="anchored" data-anchor-id="use-github-desktop">Use GIthub Desktop</h3>
+<p>The next step is to install Github desktop. You then have to open it, and connect yourself to your Github account. It will aks you what you want to do, and you will select clone your repository. Now, if you make any change in your folder, you will be able to commit the changes. Check the Github repository : your local files should be online !</p>
+</section>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>This section presents the method to use Git and Github via a CLI.</p>
+<section id="basics-of-git" class="level3">
+<h3 class="anchored" data-anchor-id="basics-of-git">Basics of Git</h3>
+<p>The first step is to install Git from <a href="https://git-scm.com/">here</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./resources/images/1_4_install_git.png" class="lightbox" data-glightbox="description: .lightbox-desc-4" data-gallery="quarto-lightbox-gallery-4" title="The installation page of git."><img src="./resources/images/1_4_install_git.png" class="img-fluid figure-img" alt="The installation page of git."></a></p>
+<figcaption>The installation page of git.</figcaption>
+</figure>
+</div>
+<p>Once it is done, you can go back to vscode and go the research bar at the top and enter “&gt;Terminal: Create New Terminal”. This will pop-up a terminal console in vscode.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./resources/images/1_5_create_new_terminal_vscode.png" class="lightbox" data-glightbox="description: .lightbox-desc-5" data-gallery="quarto-lightbox-gallery-5" title="How to create a new terminal on vscode."><img src="./resources/images/1_5_create_new_terminal_vscode.png" class="img-fluid figure-img" alt="How to create a new terminal on vscode."></a></p>
+<figcaption>How to create a new terminal on vscode.</figcaption>
+</figure>
+</div>
+<p>This should normally generate a console at the bottom of vscode, where your username, the name of your computer, adn/or the name of our current folder could appear :</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./resources/images/1_6_terminal_vscode.png" class="lightbox" data-glightbox="description: .lightbox-desc-6" data-gallery="quarto-lightbox-gallery-6" title="Terminal in vscode."><img src="./resources/images/1_6_terminal_vscode.png" class="img-fluid figure-img" alt="Terminal in vscode."></a></p>
+<figcaption>Terminal in vscode.</figcaption>
+</figure>
+</div>
+<p>Simply put, the terminal allows to textually communicate with your machine, instead of graphically, like it is usually the case. Having a terminal opened in vscode makes it possible to manipulate the current opened folder more easily. This is also how we are going to use Git.</p>
+<blockquote class="blockquote">
+<p>Note : This tutorial does not focus on what a terminal is, what shell, bash or any kind of line command are and do. However, it would be very useful for you to know how to use the basics of it. Further resources are available at the end of this page, and I strongly encourage you to check them, especially the first four chapters of <a href="https://floswald.github.io/ScPoProgramming/">Florian Oswald’s lecture</a> on the shell.</p>
+</blockquote>
+<p>Now, to understand how to use Git, we need to take a step back, and have in mind the four main steps of our workflow :</p>
+<ol type="1">
+<li>First, we have to initialise git in a folder. This will create a folder with a <code>.git</code> extension in our current folder, that will be the logbook.</li>
+<li>Second, we have to choose which files we track with git. The changes of the tracked files will be registered in the <code>.git</code> folder.</li>
+<li>We can now work on our files. Once we want to save the changes of the files, we ‘add’ the modified files to the logbook.</li>
+<li>Finally, we have to describe the changes. Without descriptions, the changes won’t be saved in the logbook. To describe the changes, we write a ‘commit’ in the logbook.</li>
+</ol>
+<p>Concretely, if we come back to vscode :</p>
+<ol type="1">
+<li>We write <code>git init</code> in the terminal console to initialise a git folder. This create a hidden folder inside of our folder, named <code>.git</code>. You must not necessarily see it to use git.</li>
+<li>We then click on “new file” on vscode, for example a text-file. We write something in it, and save it as <code>text.txt</code>.</li>
+<li>We begin tracking this file with git, using <code>git add text.txt</code>.</li>
+<li>We describe our action using <code>git commit -m "Adding a text file."</code>.</li>
+</ol>
+<p>At this point, you should have something like that :</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./resources/images/1_7_basic_setup_git.png" class="lightbox" data-glightbox="description: .lightbox-desc-7" data-gallery="quarto-lightbox-gallery-7" title="Initializing git, adding a file, and commiting its change."><img src="./resources/images/1_7_basic_setup_git.png" class="img-fluid figure-img" alt="Initializing git, adding a file, and commiting its change."></a></p>
+<figcaption>Initializing git, adding a file, and commiting its change.</figcaption>
+</figure>
+</div>
+<p>At any point, we can use some other git commands to have more information. For example :</p>
+<ul>
+<li><code>git status</code> informs us about which files in our folder are being tracked, and what modifications are not yet registered.</li>
+<li><code>git log</code> gives back the logbook, i.e.&nbsp;the list of changes that were saved.</li>
+<li><code>git diff</code> gives the differences between the current version of your files and the latest version saved in the logbook.</li>
+</ul>
+<p>Finally, it is also useful to set up a branch. Without entering into too much details, a branch is the path in which you are registering all your commits and files. If you create and program on another branch, it is like you are continuing the development of your code on a parallel version of your program, without modifying the “main” version of it (i.e.&nbsp;the “main” branch). It is important to set up a main branch, in order for git not to bug in future operations. In order to do so, we can enter : <code>git branch -M main</code> in the terminal.</p>
+<p>Git is a very powerful tool that allows to do a lot of collabortive code managing, but we choose here to mainly exploit one of its features : remote synchronization. In addition to having this local logbook on your computer, you can indeed also send your files to a remote server, in a similar way than the cloud or a remote drive. This is where GitHub enters into play.</p>
+</section>
+<section id="basics-of-github" class="level3">
+<h3 class="anchored" data-anchor-id="basics-of-github">Basics of GitHub</h3>
+<p>To use GitHub, the first step is to go to <a href="https://github.com">GitHub</a> and create an account. Once your account is created, you can create a repository, named “username.github.io”, replacing “username” with your actual user name. Since I choose the username <code>frpgcd</code>, I will create in the example a repository name “frpgcd.github.io”.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./resources/images/1_9_starting_page_github.png" class="lightbox" data-glightbox="description: .lightbox-desc-8" data-gallery="quarto-lightbox-gallery-8" title="Click on the green button “Create a repository”."><img src="./resources/images/1_9_starting_page_github.png" class="img-fluid figure-img" alt="Click on the green button “Create a repository”."></a></p>
+<figcaption>Click on the green button “Create a repository”.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./resources/images/1_10_create_repo.png" class="lightbox" data-glightbox="description: .lightbox-desc-9" data-gallery="quarto-lightbox-gallery-9" title="Starting page of the repository creation process."><img src="./resources/images/1_10_create_repo.png" class="img-fluid figure-img" alt="Starting page of the repository creation process."></a></p>
+<figcaption>Starting page of the repository creation process.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./resources/images/1_11_create_repo_filled.png" class="lightbox" data-glightbox="description: .lightbox-desc-10" data-gallery="quarto-lightbox-gallery-10" title="Page of the repository creation process filled with information."><img src="./resources/images/1_11_create_repo_filled.png" class="img-fluid figure-img" alt="Page of the repository creation process filled with information."></a></p>
+<figcaption>Page of the repository creation process filled with information.</figcaption>
+</figure>
+</div>
+<blockquote class="blockquote">
+<p>Note : During the creation process of a repository, you are asked for a license. It is important to chose one, because without it, the most restrictive policy applies. After a quick research, it seems that the <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons BY-NC-ND 4.0 Deed license</a> should cover all the cases we need for an online academic portfolio. It is very permissive, but requires citation (“appropriate credit”), does not allows for commercial uses and derivatives. If your needs are different, it is worth looking into different kinds of license to see which one is better for your own usage.</p>
+</blockquote>
+<p>Once it is done, we can go back to vscode, to add a connection between our local folder and the remote repository we just created. In order to do that, we first have to configurate git.</p>
+<ol type="1">
+<li><p>Enter <code>git config --global user.name "Your Name"</code>, replacing “Your Name” with the name of your choice. It doesn’t have to be the same as your GitHub user name.</p></li>
+<li><p>Enter <code>git config --global user.email "your@mail.com"</code>, replacing “your@mail.com” with the email of your choice. Note that it does not require you to actually own this email adress.</p></li>
+<li><p>Then, we have to add a ssh key to our GitHub account. An ssh key allows you to communicate to GitHub from your computer. Enter <code>ssh-keygen -t ed25519 -C "your@email.com"</code>, replacing “your@email” with your actual email. Your terminal will ask for a passphrase, but it’s better for simplicity purposes to not enter anything, and just press the enter key on your keyboard.</p></li>
+</ol>
+<p>In my case, my first name is Paulo and my last is Gugelmo Cavalheiro Dias, and I choose the username “frpgcd” for demonstration purposes, I would then enter in my Terminal console :</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"frpgcd"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"frpgcd@mail.com"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh-keygen</span> <span class="at">-t</span> ed25519 <span class="at">-C</span> <span class="st">"frpgcd@email.com"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="4" type="1">
+<li>Now, we are going to use this key to establish a connection with GitHub. On your terminal, you can enter <code>cat ~/.ssh/id_ed25519.pub</code> or <code>open ~/.ssh/id_ed25519.pub</code>, and it will give you back a character string beginning with “ssh-ed22519”. Go to your GitHub account, click on your profile picture at the top right of the website, choose “settings”, then click on “ssh and gpg keys”, then on “add new ssh key”, choose the title you want (for example the name of your current computer), and in “key”, add the value your terminal gave back to you. You should be connected !</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./resources/images/1_12_ssh_keys.png" class="lightbox" data-glightbox="description: .lightbox-desc-11" data-gallery="quarto-lightbox-gallery-11" title="In your settings, find the ssh and gpg keys section."><img src="./resources/images/1_12_ssh_keys.png" class="img-fluid figure-img" alt="In your settings, find the ssh and gpg keys section."></a></p>
+<figcaption>In your settings, find the ssh and gpg keys section.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./resources/images/1_13_ssh_keys_info.png" class="lightbox" data-glightbox="description: .lightbox-desc-12" data-gallery="quarto-lightbox-gallery-12" title="After having clicked on “New SSH Key”, you can add what you get from your terminal after entering “cat ~/.ssh/id_ed25519.pub” in the “Key” section."><img src="./resources/images/1_13_ssh_keys_info.png" class="img-fluid figure-img" alt="After having clicked on “New SSH Key”, you can add what you get from your terminal after entering “cat ~/.ssh/id_ed25519.pub” in the “Key” section."></a></p>
+<figcaption>After having clicked on “New SSH Key”, you can add what you get from your terminal after entering “cat ~/.ssh/id_ed25519.pub” in the “Key” section.</figcaption>
+</figure>
+</div>
+<blockquote class="blockquote">
+<p>Note : You should not share your ssh keys to the public. It could jeopardize the safety of your data and access to the distant repository.</p>
+</blockquote>
+<ol start="5" type="1">
+<li><p>Now that your GitHub account is connected to your computer, we have to connect your local folder to a repository. Go on your repository, and copy the text it gives you in the SSH section (it should be something like “git@github.com:username/name_of_the_repository.git”). In your vscode terminal, with your folder open, you can then enter : <code>git remote add origin git@github.com:username/name_of_the_repository.git</code>. The connection between your local folder and the distant repository should be established.</p></li>
+<li><p>We can “push” the content of our local folder to our remote folder. This is a command that we use once all the changes are commited in our logbook to send all the information in the remote server. To be able to push correctly, you first enter <code>git push -u origin main</code>, and then you can just enter <code>git push</code> for the next times, when your changes are added and commited.</p></li>
+</ol>
+<p>In my case, I have, with the username “frpgcd” and the repository “frpgcd.github.io” :</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin git@github.com:frpgcd/frpgcd.github.io.git</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<blockquote class="blockquote">
+<p>Note : You can also initialise a git folder in another directory, and “clone” an existing GitHub repository. This will create a duplicate of this repository in your folder and on your GitHub account, or just load the data locally if it is one of your repositories. Although this is not covered in the current tutorial, you can check the Github and Git documentations to get more information on those operations.</p>
+</blockquote>
+</section>
+<section id="use-git-and-github-together" class="level3">
+<h3 class="anchored" data-anchor-id="use-git-and-github-together">Use Git and GitHub together</h3>
+<p>Now that the connection between your local folder and your distant repository has been created, you can add modifications to your folder (like creating a new file), add those changes via <code>git add</code> followed by the name of your new document (you can also use <code>*</code> to select everything in your folder), commit those changes via <code>git commit -m "the description of your changes"</code>, and then push those changes via <code>git push</code>. This add-commit-push process is one of the basics to synchronize your local folder with the files of your GitHub account.</p>
+<p>For example, if we want to create a new file, named “new_file.txt”, to enter some text in it, to save it and to track it with git, and then to send it to our distant GitHub repository, we would do, after saving the file :</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add new_file.txt</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Adding a new file."</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You can then verify that your changes have been taken into account by going on the website of GitHub, on your repository. Your tracked files should appear there.</p>
+</section>
+</div>
+</div>
+</div>
+</section>
+<section id="further-resources" class="level2">
+<h2 class="anchored" data-anchor-id="further-resources">Further Resources</h2>
+<p>You are now ready to proceed to the second chapter, that treats content generation with Quarto. However, if you wish to dive deeper into the tools presented in this first chapter, and try to understand better Git, GitHub, or even the Terminal and Visual Studio Code, you might be tempted to look at additional material. First of all, for all that has been covered in this tutorial, I recommend the lecture of Florian Oswald about git and github, available at <a href="https://floswald.github.io/ScPoProgramming/05-git.html" class="uri">https://floswald.github.io/ScPoProgramming/05-git.html</a>. For more specific questions, you might find the following resources useful :</p>
+<p>About vscode :</p>
+<ul>
+<li>The official documentation of vscode, available at : <a href="https://code.visualstudio.com/docs" class="uri">https://code.visualstudio.com/docs</a></li>
+</ul>
+<p>About the terminal :</p>
+<ul>
+<li>The first four sessions of the Florian Oswald lecture, available at : <a href="https://floswald.github.io/ScPoProgramming/" class="uri">https://floswald.github.io/ScPoProgramming/</a></li>
+<li>A general tutorial about the command line, including resources for Windows, MacOS, and Linux, available at : <a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line" class="uri">https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line</a></li>
+<li>The vscode documentation about the terminal inside vscode, that might require some prior knowledge about the command line, available at : <a href="https://code.visualstudio.com/docs/terminal/basics" class="uri">https://code.visualstudio.com/docs/terminal/basics</a></li>
+</ul>
+<p>About git :</p>
+<ul>
+<li>The official documentation of git, availbale at : <a href="https://git-scm.com/doc" class="uri">https://git-scm.com/doc</a></li>
+<li>The w3school tutorial for git, available at : <a href="https://www.w3schools.com/git/" class="uri">https://www.w3schools.com/git/</a></li>
+</ul>
+<p>About github :</p>
+<ul>
+<li>The official tutorial of github on using git and github together, available at : <a href="https://docs.github.com/en/get-started/start-your-journey" class="uri">https://docs.github.com/en/get-started/start-your-journey</a></li>
+</ul>
+
+
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">Dowload page of vscode.</span>
+<span class="glightbox-desc lightbox-desc-2">Starting page of vscode. Click on “open” to chose a folder to open.</span>
+<span class="glightbox-desc lightbox-desc-3">An empty folder opened with vscode.</span>
+<span class="glightbox-desc lightbox-desc-4">The installation page of git.</span>
+<span class="glightbox-desc lightbox-desc-5">How to create a new terminal on vscode.</span>
+<span class="glightbox-desc lightbox-desc-6">Terminal in vscode.</span>
+<span class="glightbox-desc lightbox-desc-7">Initializing git, adding a file, and commiting its change.</span>
+<span class="glightbox-desc lightbox-desc-8">Click on the green button “Create a repository”.</span>
+<span class="glightbox-desc lightbox-desc-9">Starting page of the repository creation process.</span>
+<span class="glightbox-desc lightbox-desc-10">Page of the repository creation process filled with information.</span>
+<span class="glightbox-desc lightbox-desc-11">In your settings, find the ssh and gpg keys section.</span>
+<span class="glightbox-desc lightbox-desc-12">After having clicked on “New SSH Key”, you can add what you get from your terminal after entering “cat ~/.ssh/id_ed25519.pub” in the “Key” section.</span>
+</div>
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link" aria-label="Research student portfolio tutorial">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Research student portfolio tutorial</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./2_quarto.html" class="pagination-link" aria-label="2. Introduction to Quarto">
+        <span class="nav-page-text">2. Introduction to Quarto</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p><a href="https://creativecommons.org/licenses/by-nd/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--ND%204.0-lightgrey.svg" class="img-fluid"></a> Paulo Gugelmo Cavalheiro Dias</p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Paulogcd/portfolio_tutorial/edit/main/1_git_and_github.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Paulogcd/portfolio_tutorial/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","loop":false,"closeEffect":"zoom","selector":".lightbox","openEffect":"zoom"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
+
+
+
+
+</body></html>
