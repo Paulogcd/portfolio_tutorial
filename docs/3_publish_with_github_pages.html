@@ -122,6 +122,11 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -184,7 +189,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#activating-github-pages" id="toc-activating-github-pages" class="nav-link active" data-scroll-target="#activating-github-pages">Activating GitHub pages</a></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/Paulogcd/portfolio_tutorial/edit/main/3_publish_with_github_pages.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Paulogcd/portfolio_tutorial/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -228,14 +233,14 @@ Caution
 <p>In order for us to publish the content that is available in our <code>_site</code> folder, we need first to goto our GitHub repository, and to click on settings at the top-right. We then click in the “Code and automation” on the “Pages” section. You should see something like this :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/0_Default_image.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1" title="Add image"><img src="./resources/images/0_Default_image.png" class="img-fluid figure-img" alt="Add image"></a></p>
+<p><a href="./resources/images/0_Default_image.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1" title="Add image"><img src="./resources/images/0_Default_image.png" class="img-fluid figure-img" alt="Add image"></a></p>
 <figcaption>Add image</figcaption>
 </figure>
 </div>
 <p>We are now going to activate GitHub Pages, and select “Deploy from a branch” for the Source. We are then going to select the folder from which GitHub Pages publishes our website. In our case, it is the “_quarto” folder. The branch from which it selects the folder should be “main” or “master” (but could have another name) depending on your git configuration. After selecting it, you can click on “Save” :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/0_Default_image.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2" title="Add image"><img src="./resources/images/0_Default_image.png" class="img-fluid figure-img" alt="Add image"></a></p>
+<p><a href="./resources/images/0_Default_image.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2" title="Add image"><img src="./resources/images/0_Default_image.png" class="img-fluid figure-img" alt="Add image"></a></p>
 <figcaption>Add image</figcaption>
 </figure>
 </div>
@@ -683,13 +688,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
 <p><a href="https://creativecommons.org/licenses/by-nd/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--ND%204.0-lightgrey.svg" class="img-fluid"></a> Paulo Gugelmo Cavalheiro Dias</p>
-</div>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Paulogcd/portfolio_tutorial/edit/main/3_publish_with_github_pages.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Paulogcd/portfolio_tutorial/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","loop":false,"descPosition":"bottom","selector":".lightbox","closeEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
