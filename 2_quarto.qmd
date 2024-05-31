@@ -226,8 +226,6 @@ Note that in the left side of my screen, in the explorer bar, I now have to addi
 If we want to include them, we could write : 
 
 ```{.yml}
-
-
 ---
 title: "Home"
 ---
@@ -263,7 +261,6 @@ In this way, a syntax similar to `You can read the markdown guide of Matt Conen 
 We could thus write : 
 
 ```{.yml}
-
 ---
 title: "Home"
 ---
@@ -298,34 +295,95 @@ For the case of a portfolio, we could for example include our CV in this fashion
 Now, we might want to include code snippets in our portfolio. 
 For example, we have a project for which we wrote in R or any other languages, and we want to make the code easily accessible by our visitors. 
 
-In order for us to do that, we have two options. Either we want to include code inline, in which way we write our code between thos reversed ticks : ``, or we want to include a code snippet, 
-in which case we use the following syntax : 
-```{.yml}
+In order for us to do that, we have two options. Either we want to include code inline, in which way we write our code between those reversed ticks (or "backticks") : ``, or we want to include a code snippet, that has several lines,
+in which case we write three reversed ticks at the beginning and at the end of our code like this : 
+````
+```{{r}}
+print("Hello world !")
+```
+
+````
+
+The code will yield : 
+
 ```{r}
-# print("Hello world !")
+print("Hello world !")
+```
+
+**We are here touching one of the biggest strength of Quarto.**
+Despite being a "simple" static website generator, it allows us to include and execute code in our page.
+This can be very useful to display work that requires data treatment and/or other statistical computations. 
+
+For example, the following code in R : 
+
+````
+```{{r}}
+data(iris) # load the freely accessible dataset named "iris"
+summary(iris) # display a simple statistical summary of this dataset
+model = lm(iris$Sepal.Length ~ iris$Petal.Length)
+# create a linear model trying to explain the sepal length by the petal length
+
+plot(x = iris$Petal.Length,
+  y = iris$Sepal.Length, 
+  xlab = "Petal Length",
+  ylab = "Sepal Length") # plot those two variables
+abline(model) # draw the linear regression line on the plot
 ```
 ````
 
-This is not working. 
+Will generate : 
+
+```{r}
+data(iris) # load the freely accessible dataset named "iris"
+summary(iris) # display a simple statistical summary of this dataset
+model = lm(iris$Sepal.Length ~ iris$Petal.Length)
+# create a linear model trying to explain the sepal length by the petal length
+
+plot(x = iris$Petal.Length,
+  y = iris$Sepal.Length, 
+  xlab = "Petal Length",
+  ylab = "Sepal Length") # plot those two variables
+abline(model) # draw the linear regression line on the plot
+```
+
+If you don't use R, don't worry, Quarto also support several other languages, such as Python, Julia, and Observable JavaScript. In theory, if you know how to deal with code engine, you can also run other languages on Quarto. 
 
 ### Adding math 
 
-- text
-- links
-- pages
-- pictures
-- other documents
+Finally, if you want to add some math to your website, it is also possible. Indeed, markdown supports $\LaTeX$, so if you are already familiar with it, you can simply include your $\LaTeX$ code between dollar signs `$ some math $` to generate inline math, or between two dollar signs `$$ an equation $$`to generate math blocks. 
+
+For example, the following code : 
+
+```{.md}
+
+The arithmetic mean $\bar{x}$ is defined as : 
+
+$$
+\bar{x}=\frac{1}{N}\sum_{i=1}^{N}x_{i}
+$$
+
+```
+
+will produce : 
+
+The arithmetic mean $\bar{x}$ is defined as : 
+
+$$
+\bar{x}=\frac{1}{N}\sum_{i=1}^{N}x_{i}
+$$
+
+If you are not familiar with $\LaTeX$ and will be in positions where you have to write documents with math in it, I highly recommend you familiarizing yourself with it. The [Overleaf website](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes) is a good place to start, and [this guide here](https://en.wikibooks.org/wiki/LaTeX) is very complete.
 
 ## How to modify the navigation bar
 
-An essential element of the website is the navigation bar. In Quarto, it is automatically displayed in all your pages, and you can only modify it in your `_quarto.yml` file. Let's take a look at it : 
+Now that we are more proefficient in the generation of content, we can talk about the aspect of our portfolio.Without being website designers, we can recognize that an essential element of any website is the navigation bar. In Quarto, it is automatically displayed in all your pages, and you can only modify it in your `_quarto.yml` file. By default, you should have something similar to this :
 
 ```{.yml}
 project:
   type: website
 
 website:
-  title: "portfolio"
+  title: "."
   navbar:
     left:
       - href: index.qmd
@@ -339,6 +397,10 @@ format:
     toc: true
 ```
 
+That yields a navbar like : 
+
+![The default navbar of Quarto](./resources/images/2_11_default_navbar.png)
+
 In this example, the content of the navigation bar, or "navbar", are determined by all elements following the `navbar` element in the `website` list.
 Here, we see that it has two elements : the homepage, defined as the index.qmd file, and the about page, defined as the `about.qmd` file.
 
@@ -347,7 +409,7 @@ To unable this option, you can add `title: false` in your `navbar` list :
 
 ```{.yml}
 website:
-  title: "portfolio"
+  title: "."
   navbar:
     title: false
     left:
@@ -358,27 +420,58 @@ website:
 
 This should yield : 
 
-![Add image](./resources/images/0_Default_image.png)
+![A navbar without title.](./resources/images/2_12_without_title.png)
 
-To add a new page to your navbar, you can add an element in the `left` or `right` list such as : 
+You may however want to keep it. in this case, it should be better to modify the title of your webpage to a customed one, like your name. For example : 
 
 ```{.yml}
 website:
-  title: "portfolio"
+  title: "Paulo Gugelmo Cavalheiro Dias"
   navbar:
-    title: false
     left:
       - href: index.qmd
         text: Home
-      - project.qmd
       - about.qmd
 ```
 
-For this to work, you must have created a `project.qmd` file beforehand in your folder. This will then implement a new link in the navbar, displayed in its left part, having for name the name of file, i.e. here `project` : 
+Now, to add a new page to your navbar, you can add an element in the `left` or `right` list such as : 
 
-![Add image](./resources/images/0_Default_image.png)
+```{.yml}
+website:
+  title: "Paulo Gugelmo Cavalheiro Dias"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - projects.qmd
+      - about.qmd
+```
+
+For this configuration to work, you must first create a `projects.qmd` file beforehand in your folder. This will then implement a new link in the navbar, displayed in its left part, having for name the title of the file, i.e. here `Projects` : 
+
+```{.yml}
+---
+title: "Projects"
+--- 
+
+Welcome to my projects webpage. You will find here a list of ongoing or past projects I worked on. 
+
+```
+
+If we now combine the two mentioned code, we should have something like : 
+
+::: {#New-doc-navbar layout-ncol=2}
+
+![Our vscode interface.](./resources/images/2_13_vscode.png)
+
+![The graphical result.](./resources/images/2_14_navbar.png)
+
+Adding a new document to the navbar
+:::
 
 ## Further resources
+
+At this point, we should have the basics of Quarto. Although not complete, our portfolio is functional. If you wish to dive further into the personalization of your website (which is probably the case), you can spend more time reading their documentation, which is mentioned in the next paragraph.
 
 Quarto is a very powerful tool. We can use it to quickly produce content and maintain it with the presented workflow in this tutorial.
 I highly recommend the reading of their [documentation here](https://quarto.org/docs/guide/), and more specifically to follow through their [Get Started guide](https://quarto.org/docs/get-started/).
