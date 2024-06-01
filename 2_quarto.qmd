@@ -1,17 +1,32 @@
 ---
-title: "2. Introduction to Quarto"
+title: "2. Creating our content with Quarto"
 ---
 
 {{< include warning.qmd >}}
 
-Now that we know how to use Git and Github together, it is time for us to use Quarto. 
+Now that we know how to make use of Github and Visual Studio Code, it is time for us to use Quarto. 
+
+**Quarto** is a static website generator. It is a software that allows us to create web content from human readable files.
+Usually, we should learn HTML and CSS to know a bit of Web development.
+Indeed, those are the languages that traditional web browser support. 
+When you go to a webpage, your web browser transforms html and css into a graphical interface, which is easier to understand for humans.
+However, in the recent years, a lot of static website generator have emerged, turning the conception of websites much easier.
+Among the several static website generator, [Jekyll](https://jekyllrb.com/), [Zola](https://www.getzola.org/), [Hugo](https://gohugo.io/), and [Quarto](https://quarto.org/) can be cited, but they are far from being the only ones.
+
+This tutorial focuses on Quarto for several reasons.
+First, it is easy to use.
+The commands are user-friendly, and do not require much background knowledge.
+Second, its format (qmd, or "quarto markdown") allows to easily include data visualization, code and support some very useful libraries like [Shiny](https://shiny.posit.co/), that allow to create interactive web pages with data.
+It makes it easy to showcase your work if you deal with data and some statistical analysis with R, Python, or Julia for example.
+It is especially important if we are trying to build a research portfolio.
 
 ## Installation of Quarto
 
 The first step of this chapter is to download Quarto [here](https://quarto.org/docs/get-started/).
 
-![Installation page of Quarto](./resources/images/2_1_install_quarto.png)
+![Installation page of Quarto](./resources/images/2_1_install_quarto2.png)
 
+Once it is done, we will be able to interact with Quarto through the terminal of vscode.
 
 ## Create a Quarto project
 
@@ -274,7 +289,6 @@ My research interests are environmental economics and open source !
 Here is an interesting website :
 
 ![A screenshot of the CRAN website.](screenshot.png)
-
 
 You can read the markdown guide of Matt Conen [by clicking on this link](2_8_markdown_guide.pdf)
 

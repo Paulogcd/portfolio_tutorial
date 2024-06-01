@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Research student portfolio tutorial - 2. Introduction to Quarto</title>
+<title>Research student portfolio tutorial - 2. Creating our content with Quarto</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -206,7 +206,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2_quarto.html">2. Introduction to Quarto</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2_quarto.html">2. Creating our content with Quarto</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -233,7 +233,7 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./2_quarto.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">2. Introduction to Quarto</span></a>
+ <span class="menu-text">2. Creating our content with Quarto</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -285,7 +285,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">2. Introduction to Quarto</h1>
+<h1 class="title">2. Creating our content with Quarto</h1>
 </div>
 
 
@@ -315,16 +315,19 @@ Caution
 <p>This tutorial is currently going under construction. All chapters and sections are not finished and might include incomplete explanations. Feel free to reach out to me to point out some missing elements.</p>
 </div>
 </div>
-<p>Now that we know how to use Git and Github together, it is time for us to use Quarto.</p>
+<p>Now that we know how to make use of Github and Visual Studio Code, it is time for us to use Quarto.</p>
+<p><strong>Quarto</strong> is a static website generator. It is a software that allows us to create web content from human readable files. Usually, we should learn HTML and CSS to know a bit of Web development. Indeed, those are the languages that traditional web browser support. When you go to a webpage, your web browser transforms html and css into a graphical interface, which is easier to understand for humans. However, in the recent years, a lot of static website generator have emerged, turning the conception of websites much easier. Among the several static website generator, <a href="https://jekyllrb.com/">Jekyll</a>, <a href="https://www.getzola.org/">Zola</a>, <a href="https://gohugo.io/">Hugo</a>, and <a href="https://quarto.org/">Quarto</a> can be cited, but they are far from being the only ones.</p>
+<p>This tutorial focuses on Quarto for several reasons. First, it is easy to use. The commands are user-friendly, and do not require much background knowledge. Second, its format (qmd, or “quarto markdown”) allows to easily include data visualization, code and support some very useful libraries like <a href="https://shiny.posit.co/">Shiny</a>, that allow to create interactive web pages with data. It makes it easy to showcase your work if you deal with data and some statistical analysis with R, Python, or Julia for example. It is especially important if we are trying to build a research portfolio.</p>
 <section id="installation-of-quarto" class="level2">
 <h2 class="anchored" data-anchor-id="installation-of-quarto">Installation of Quarto</h2>
 <p>The first step of this chapter is to download Quarto <a href="https://quarto.org/docs/get-started/">here</a>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_1_install_quarto.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1" title="Installation page of Quarto"><img src="./resources/images/2_1_install_quarto.png" class="img-fluid figure-img" alt="Installation page of Quarto"></a></p>
+<p><a href="./resources/images/2_1_install_quarto2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1" title="Installation page of Quarto"><img src="./resources/images/2_1_install_quarto2.png" class="img-fluid figure-img" alt="Installation page of Quarto"></a></p>
 <figcaption>Installation page of Quarto</figcaption>
 </figure>
 </div>
+<p>Once it is done, we will be able to interact with Quarto through the terminal of vscode.</p>
 </section>
 <section id="create-a-quarto-project" class="level2">
 <h2 class="anchored" data-anchor-id="create-a-quarto-project">Create a Quarto project</h2>
@@ -553,11 +556,10 @@ Feel free to reach out to me at my email adress :
 <span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="at">![A screenshot of the CRAN website.](screenshot.png)</span></span>
 <span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="at">You can read the markdown guide of Matt Conen [by clicking on this link](2_8_markdown_guide.pdf)</span></span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="fu">Feel free to reach out to me at my email adress </span><span class="kw">:</span></span>
-<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="st">"paulo.gugelmocavalheirodias"</span><span class="at"> followed by "@sciencespo.fr" !</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="at">You can read the markdown guide of Matt Conen [by clicking on this link](2_8_markdown_guide.pdf)</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="fu">Feel free to reach out to me at my email adress </span><span class="kw">:</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="st">"paulo.gugelmocavalheirodias"</span><span class="at"> followed by "@sciencespo.fr" !</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>That would yield :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -1213,7 +1215,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","loop":false,"descPosition":"bottom","openEffect":"zoom","closeEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","loop":false,"closeEffect":"zoom","selector":".lightbox","descPosition":"bottom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

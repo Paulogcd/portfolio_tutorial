@@ -40,6 +40,9 @@ It uses the basic features of Git and Github, and uses the Command Line to inter
 It requires more steps, and is a harder to setup, but you will develop a deeper understanding of what is going on when you use Git and Github.
 
 If you do not wish to dive deep into the mechanisms of the Git and its interaction with Github, it is advised that you proceed with the GUI approach.
+However useful Graphical Interfaces are, they imply necessarily abstractions of how processes are really working.
+I highly encourage you to read the CLI section, even if you do not follow all of its instruction. 
+Also, you can always continue with the GUI approach, and later on come back to this chapter to read the CLI section. 
 
 ::: {.panel-tabset group="method"}
 ## GitHub Desktop : The Graphical User Interface (GUI)
@@ -124,33 +127,20 @@ I invite you to follow [the instruction of the last section of this chapter](#vi
 
 ### Basics of Git 
 
-The first step is to install Git from [here](https://git-scm.com/). 
+Now, we are going to install Git from [here](https://git-scm.com/). 
 
 ![The installation page of git.](./resources/images/1_4_install_git.png)
 
-Once it is done, you can go back to vscode and go the research bar at the top and enter ">Terminal: Create New Terminal". This will pop-up a terminal console in vscode.
+Once it is done, we can go back to vscode and open a new terminal console. 
 
-![How to create a new terminal on vscode.](./resources/images/1_5_create_new_terminal_vscode.png)
-
-This should normally generate a console at the bottom of vscode, where your username, the name of your computer, adn/or the name of our current folder could appear :
-
-![Terminal in vscode.](./resources/images/1_6_terminal_vscode.png)
-
-Simply put, the terminal allows to textually communicate with your machine, instead of graphically, like it is usually the case.
-It is why we calll it the Command Line Interface. 
-Having a terminal opened in vscode makes it possible to manipulate the current opened folder more easily.
-This is also how we are going to use Git.
-
-> Note : This tutorial does not focus on what a terminal is, what shell, bash or any kind of line command are and do. However, it would be very useful for you to know how to use the basics of it. Further resources are available at the end of this page, and I strongly encourage you to check them, especially the first four chapters of [Florian Oswald's lecture](https://floswald.github.io/ScPoProgramming/) on the shell. 
-
-Now, to understand how to use Git, we need to take a step back, and have in mind the four main steps of our workflow :
+Now, to understand how to use Git, we need to stop for a moment, and have in mind the four main steps of our workflow :
 
 1. First, we have to initialise git in a folder. This will create a folder with a `.git` extension in our current folder, that will be the logbook.
 2. Second, we have to choose which files we track with git. The changes of the tracked files will be registered in the `.git` folder.
 3. We can now work on our files. Once we want to save the changes of the files, we 'add' the modified files to the logbook. 
 4. Finally, we have to describe the changes. Without descriptions, the changes won't be saved in the logbook. To describe the changes, we write a 'commit' in the logbook.
 
-Concretely, if we come back to vscode :  
+Concretely, using vscode :  
 
 1. We write `git init` in the terminal console to initialise a git folder. This create a hidden folder inside of our folder, named `.git`. You must not necessarily see it to use git. 
 2. We then click on "new file" on vscode, for example a text-file. We write something in it, and save it as `text.txt`.
@@ -159,7 +149,7 @@ Concretely, if we come back to vscode :
 
 At this point, you should have something like that :
 
-![Initializing git, adding a file, and commiting its change.](./resources/images/1_7_basic_setup_git)
+![Initializing git, adding a file, and commiting this change.](./resources/images/1_7_basic_setup_git)
 
 At any point, we can use some other git commands to have more information. For example : 
 
@@ -174,11 +164,13 @@ In order to do so, we can enter : `git branch -M main` in the terminal.
 
 Git is a very powerful tool that allows to do a lot of collabortive code managing, but we choose here to mainly exploit one of its features : remote synchronization. 
 In addition to having this local logbook on your computer, you can indeed also send your files to a remote server, in a similar way than the cloud or a remote drive.
-This is where GitHub enters into play. 
+This is where Github enters into play. 
 
-### Basics of GitHub
+### Basics of Github
 
-To use GitHub, the first step is to go to [GitHub](https://github.com) and create an account. Once your account is created, you can create a repository, named "username.github.io", replacing "username" with your actual user name. Since I choose the username `frpgcd`, I will create in the example a repository name "frpgcd.github.io".
+To use Github, the first step is to go to [GitHub](https://github.com) and create an account.
+Once your account is created, you can create a repository, named "username.github.io", replacing "username" with your actual user name.
+Since I choose the username `frpgcd`, I will create in this example a repository name "frpgcd.github.io".
 
 ![Click on the green button "Create a repository".](./resources/images/1_9_starting_page_github.png)
 
@@ -186,7 +178,10 @@ To use GitHub, the first step is to go to [GitHub](https://github.com) and creat
 
 ![Page of the repository creation process filled with information.](./resources/images/1_11_create_repo_filled.png)
 
-> Note : During the creation process of a repository, you are asked for a license. It is important to chose one, because without it, the most restrictive policy applies. After a quick research, it seems that the [Creative Commons BY-NC-ND 4.0 Deed license](https://creativecommons.org/licenses/by-nc-nd/4.0/) should cover all the cases we need for an online academic portfolio. It is very permissive, but requires citation ("appropriate credit"), does not allows for commercial uses and derivatives. If your needs are different, it is worth looking into different kinds of license to see which one is better for your own usage.
+> Note : During the creation process of a repository, you are asked for a license.
+It is important to chose one, because without it, the most restrictive policy applies.
+After a quick research, it seems that the [Creative Commons BY-NC-ND 4.0 Deed license](https://creativecommons.org/licenses/by-nc-nd/4.0/) should cover all the cases we need for an online academic portfolio. It is very permissive, but requires citation ("appropriate credit"), does not allows for commercial uses and derivatives.
+If your needs are different, it is worth looking into different kinds of license to see which one is better for your own usage.
 
 Once it is done, we can go back to vscode, to add a connection between our local folder and the remote repository we just created. In order to do that, we first have to configurate git.
 
@@ -196,8 +191,7 @@ Once it is done, we can go back to vscode, to add a connection between our local
 
 3. Then, we have to add a ssh key to our GitHub account. An ssh key allows you to communicate to GitHub from your computer. Enter `ssh-keygen -t ed25519 -C "your@email.com"`, replacing "your@email" with your actual email. Your terminal will ask for a passphrase, but it's better for simplicity purposes to not enter anything, and just press the enter key on your keyboard.
 
-In my case, my first name is Paulo and my last is Gugelmo Cavalheiro Dias, and I choose the username "frpgcd" for demonstration purposes, I would then enter in my Terminal console : 
-
+In my case, with the username "frpgcd", I would enter in my Terminal console : 
 
 ```{.zsh}
 git config --global user.name "frpgcd"
@@ -206,17 +200,24 @@ ssh-keygen -t ed25519 -C "frpgcd@email.com"
 
 ```
 
-4. Now, we are going to use this key to establish a connection with GitHub. On your terminal, you can enter `cat ~/.ssh/id_ed25519.pub` or `open ~/.ssh/id_ed25519.pub`, and it will give you back a character string beginning with "ssh-ed22519". Go to your GitHub account, click on your profile picture at the top right of the website, choose "settings", then click on "ssh and gpg keys", then on "add new ssh key", choose the title you want (for example the name of your current computer), and in "key", add the value your terminal gave back to you. You should be connected !
+4. Now, we are going to use this key to establish a connection with GitHub.
+On your terminal, you can enter `cat ~/.ssh/id_ed25519.pub` or `open ~/.ssh/id_ed25519.pub`, and it will give you back a character string beginning with "ssh-ed22519". Go to your GitHub account, click on your profile picture at the top right of the website, choose "settings", then click on "ssh and gpg keys", then on "add new ssh key", choose the title you want (for example the name of your current computer), and in "key", add the value your terminal gave back to you. You should be connected !
 
-![In your settings, find the ssh and gpg keys section.](./resources/images/1_12_ssh_keys.png)
+![In our settings, we must find the ssh and gpg keys section.](./resources/images/1_12_ssh_keys.png)
 
-![After having clicked on "New SSH Key", you can add what you get from your terminal after entering "cat ~/.ssh/id_ed25519.pub" in the "Key" section.](./resources/images/1_13_ssh_keys_info.png)
+![After having clicked on "New SSH Key", we can add what we get from our terminal after entering "cat ~/.ssh/id_ed25519.pub" in the "Key" section.](./resources/images/1_13_ssh_keys_info.png)
 
-> Note : You should not share your ssh keys to the public. It could jeopardize the safety of your data and access to the distant repository. 
+> You should not share your ssh keys to the public.
+It could jeopardize the safety of your connection and access to the distant repository. 
 
-5. Now that your GitHub account is connected to your computer, we have to connect your local folder to a repository. Go on your repository, and copy the text it gives you in the SSH section (it should be something like "git@github.com:username/name_of_the_repository.git"). In your vscode terminal, with your folder open, you can then enter : `git remote add origin git@github.com:username/name_of_the_repository.git`. The connection between your local folder and the distant repository should be established. 
+5. Now that our GitHub account is connected to our computer, we have to connect our local folder to a repository.
+We must go on our repository, and copy the text it gives us in the SSH section (it should be something like "git@github.com:username/name_of_the_repository.git").
+In our vscode terminal, with our folder open, we can then enter : `git remote add origin git@github.com:username/name_of_the_repository.git`.
+The connection between our local folder and distant repository should be established. 
 
-4. We can "push" the content of our local folder to our remote folder. This is a command that we use once all the changes are commited in our logbook to send all the information in the remote server. To be able to push correctly, you first enter `git push -u origin main`, and then you can just enter `git push` for the next times, when your changes are added and commited. 
+4. We can "push" the content of our local folder to our remote folder.
+This is a command that we use once all the changes are commited in our logbook to send all the information in the remote server.
+To be able to push correctly, you first enter `git push -u origin main`, and then you can just enter `git push` for the next times, when your changes are added and commited. 
 
 In my case, I have, with the username "frpgcd" and the repository "frpgcd.github.io" : 
 ```{.zsh}
@@ -224,9 +225,11 @@ git remote add origin git@github.com:frpgcd/frpgcd.github.io.git
 git push -u origin main
 ```
 
-> Note : You can also initialise a git folder in another directory, and "clone" an existing GitHub repository. This will create a duplicate of this repository in your folder and on your GitHub account, or just load the data locally if it is one of your repositories. Although this is not covered in the current tutorial, you can check the Github and Git documentations to get more information on those operations. 
+> You can also initialise a git folder in another directory, and "clone" an existing Github repository.
+This will create a duplicate of this repository in your folder and on your Github account, or just load the data locally if it is one of your repositories.
+Although this is not covered in the current tutorial, you can check the Github and Git documentations to get more information on those operations. 
 
-### Use Git and GitHub together 
+### Use Git and Github together 
 
 Now that the connection between your local folder and your distant repository has been created, you can add modifications to your folder (like creating a new file), add those changes via `git add` followed by the name of your new document (you can also use `*` to select everything in your folder), commit those changes via `git commit -m "the description of your changes"`, and then push those changes via `git push`. This add-commit-push process is one of the basics to synchronize your local folder with the files of your GitHub account.  
 
@@ -261,6 +264,24 @@ Now that we selected our folder, vscode opened it and we should see something li
 ![An empty folder opened with vscode.](./resources/images/1_3_folder_opened_vscode.png)
 
 > NOTE : When you open a folder for the first time, vscode may ask you "Do you trust the authors of the files in this folder?". Since you just created your folder and that it is empty, you can naturally click on yes. You are the author !
+
+We are almost done. The last step is to create a terminal within vscode.
+In order for us to do that, we go the research bar at the top and enter ">Terminal: Create New Terminal". This will pop-up a terminal console in vscode.
+
+![How to create a new terminal on vscode.](./resources/images/1_5_create_new_terminal_vscode.png)
+
+This should normally generate a console at the bottom of vscode, where your username, the name of your computer, adn/or the name of our current folder could appear :
+
+![Terminal in vscode.](./resources/images/1_6_terminal_vscode.png)
+
+Simply put, the terminal allows to textually communicate with your machine, instead of graphically, like it is usually the case.
+For those following the CLI section, we use Git with the terminal, and this is why we calll it the Command Line Interface. 
+Having a terminal opened in vscode makes it possible to manipulate the current opened folder more easily.
+This is also how we will be using Quarto. 
+
+> This tutorial does not focus on what a terminal is, what shell, bash or any kind of line command are and do.
+However, it would be very useful for you to know how to use the basics of it.
+Further resources are available at the end of this page, and I strongly encourage you to check them, especially the first four chapters of [Florian Oswald's lecture](https://floswald.github.io/ScPoProgramming/) on the shell. 
 
 It is done !
 We have created a Github account, connected it to our Github Desktop application, created a repository, and opened it with vscode.
