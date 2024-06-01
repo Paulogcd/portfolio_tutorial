@@ -1,5 +1,5 @@
 ---
-title: "1. Introduction to Git and GitHub"
+title: "1. Setting up our workflow"
 
 execute:
   echo: false
@@ -8,108 +8,119 @@ execute:
 
 {{< include warning.qmd >}}
 
-## Summary 
 
-- In this first chapter, you will learn the basics on how to use Git and GitHub on Visual Studio Code.
-
-## Introduction 
-
-This tutorial aims to give you the tools to easily and efficiently create, manage and publish your own online portfolio.
-In order to do that, we use several tools, such as Visual Studio Code, Git, GitHub, and Quarto. 
-To understand why we use them, it is important to understand what Internet is. 
-Internet can be understood as a network of computers that can communicate with each other. 
-In the same way, a website can be understood as content that can be accessed over the internet. 
-Thus, this tutorial will first focus on the design of the website, and then on the publication of the website. 
-
-Usually, one shoul learn HTML5 and CSS to know a bit of Web development. However, in the recent years, a lot of static website generator have emerged, that make the conception of websites easier.
-Among the several static website generator, [Jekyll](https://jekyllrb.com/), [Zola](https://www.getzola.org/), [Hugo](https://gohugo.io/), and [Quarto](https://quarto.org/) can be cited, but they are far from being the only ones. This tutorial focuses on Quarto in the second chapter.
-
-After having designed your website with a static website generator, we finally have to make it available to the world, i.e. publish it.
-Several free hosting services exist, such as [Netlify](https://www.netlify.com/), [Quarto Pub](https://quartopub.com/), and [GitHub Pages](https://pages.github.com/), among other ones. This tutorial focuses on GitHub Pages in the third chapter.
-
-Now, in order to make the whole process easier and fluid, this tutorial first focuses on the establishment of a workflow using Visual Studio Code, Git and GitHub.
-This workflow allows to make the second and third steps easier, and is also very useful if you are to work in collaborative projects in the future.
-This is thus the first chapter of this tutorial.
-
-The first chapter is longer than the other two, so once you are done with it, the rest will be a lot easier.
-
-## Visual Studio Code
-
-Visual Studio Code (VSC or vscode) is a software to write code, also called Integrated Development Environment (IDE).
-It is largely used, and a lot of extensions exist to customize your experience with it. 
-We are thus going to install vscode [here](https://code.visualstudio.com/).
- 
-![Dowload page of vscode.](./resources/images/1_1_install_vscode.png)
-
-The strength of vscode comes mainly from the way it manages folders, in which several files of the same project exist.
-Now, we are going to create a folder in which we are going to develop our online portfolio. It is better if you name it "username.github.io", with instead of "username" the pseudonym you are thinking of using in GitHub. It will be useful in the future parts of the tutorial. In my case, I will chose to illustrate it with the username "frpgcd", thus naming my folder "frpgcd.github.io".
-
-Once it is done, we can use vscode to open this same folder. To do so, we open vscode, click on "open" in the starting page, and select your folder.
-
-![Starting page of vscode. Click on "open" to chose a folder to open.](./resources/images/1_2_starting_page_vscode.png)
-
-Now that you selected your folder, vscode opened it and you should have something like that : 
-
-![An empty folder opened with vscode.](./resources/images/1_3_folder_opened_vscode.png)
-
-> NOTE : When you open a folder for the first time, vscode may ask you "Do you trust the authors of the files in this folder?". Since you just created your folder and that it is empty, you can naturally click on yes. You are the author !
-
-It's done ! We settled vscode correctly for the next step : using Git and Github.
+The first step of our online portfolio creation is to set up our working environment. 
+In order to do so, we are going to use several tools, like **Git**, **Github** and **Visual Studio Code**. 
+Git and Github will allow us to manage the changes of our files, and store them online. 
+Visual Studio Code will allow us to modify our files.
 
 ## Git and Github 
 
-{{< include section_warning.qmd >}}
+**Git** is a software that allows to manage all the changes done to the selected files. It is also called a version management software, or a version control system. 
+We want to check all the versions and changes of our files from their creation until their current version ?
+If we use Git, it is possible.
 
-Git is a software that allows for version management, i.e. it is a version control system. 
-Simply put, it is a software that allows you to make a logbook of all the changes in your files. 
-You want to check all the steps from the very beginning of your project until the current version ?
-If you use git, it is possible.
+> Git does not only work with code files, but also with any type of file.
+If you have a text file (like a Master thesis for example...) for which you want to control the different versions, you can use git for it ! 
 
-> Note : Git does not only work with code files, but also with any type of file. If you have a text file (like a Master thesis for example...) for which you want to control the different versions, you can use git for it ! 
+**GitHub** is a company (currently owned by Microsoft) that puts at disposition servers which you can use to store your code projects.
+Their website integrates Git and offers a remote access to all the files you choose to track with it.
 
-GitHub is a firm (currently owned by Microsoft) that puts at disposition servers which you can use to store your data.
-It is a website that takes the concept of git and allows for a remote interaction with your tracked files.
-It has a lot of different uses, including collaborative coding, but this tutorial only focuses on how to use it to manage your project with Git and Quarto.
+> Github has a lot of different uses, including collaborative coding, but this tutorial only focuses on how to use it to manage your project with Git and Quarto.
 It is widely used in the programming community and is also sometimes referred as the social network of developers. 
 
-To use Git and Github, this tutorial offers two methods. 
-The first one is based on the Graphical User Interface (GUI) solution of Github Desktop, an application that offers a simple interface to interact with git and github at the same time. 
-It is more simple and quick to setup, especially if you are not familiar or confortable with the second approach : the Command Line Interface (CLI) approach.
-This second solution uses the basic git and github solutions. 
-It requires more steps, and is a bit harder to setup, but you will develop a deeper understanding of what is going on when you use Git and Github.
+To use **Git** and **Github**, this tutorial offers two methods :
+
+- The first one is based on the **Graphical User Interface (GUI)** solution of **Github Desktop**.
+It is an application that offers a simple interface to interact with Git and Github at the same time. 
+It is simple and quick to setup.
+
+- The second method is based on the **Command Line Interface (CLI)** approach. 
+It uses the basic features of Git and Github, and uses the Command Line to interact with Git and Github.
+It requires more steps, and is a harder to setup, but you will develop a deeper understanding of what is going on when you use Git and Github.
+
+If you do not wish to dive deep into the mechanisms of the Git and its interaction with Github, it is advised that you proceed with the GUI approach.
 
 ::: {.panel-tabset group="method"}
 ## GitHub Desktop : The Graphical User Interface (GUI)
 
-This section presents the method to use Git and Github via a GUI. 
-In order for us to do so, we are going to use Github Desktop. 
-
-### Setup your Github account
+### Create your Github account
 
 The first step is to create a Github account.
-You can go [here](https://github.com/) and click on sign up.
-Be especially thoughtful of your username, because your website will inlcude it in its url (it will have the format "https://username.github.io").
-After having created your account, you should land on a page looking like that : 
+We can go [here](https://github.com/) and click on "Sign up".
+
+We have to be especially thoughtful of our username, because our website will inlcude it in its url. It will indeed have the format "https://username.github.io".
+
+After having created our account, we should land on a page looking like that : 
 
 ![The starting page of Github.](./resources/images/1_9_starting_page_github)
 
-The second step is to create a repository named "username.github.io" replacing the "username" with your actual username.
-For example, with the username "fgrpgcd", I create a repository named frpgcd.github.io : 
+For this tutorial, I create an account named frpgcd. It will be the example username you will see in all the screenshots.
 
-![Creating a repository with some information.](1_11_create_repo_filled)
+### Install and configure Github Desktop
 
+The next step is to install Github desktop [here](https://desktop.github.com/).
 
-### Use GIthub Desktop
+![Github Desktop landing page.](./resources/images/1_12_github_desktop2.png)
 
-The next step is to install Github desktop. 
-You then have to open it, and connect yourself to your Github account. 
-It will aks you what you want to do, and you will select clone your repository. 
+Once the installation is done, we can open Github Desktop and connect yourself to our recently created Github account. 
+By clicking on "Sign in to GitHub.com", we should be redirected to a connection page on our browser, and once we're connected on your browser, we are asked if we authorize Github Desktop to have access to our Github account. 
+
+:::{layout-ncol=2}
+
+![Starting page of Github Desktop.](./resources/images/1_13_github_desktop_start.png)
+
+![Authorization page to Github.](./resources/images/1_14_authorization2.png)
+
+Github desktop initialization.
+
+:::
+
+Then, we will be redirected to a configuration page on Github Desktop. 
+We can here notice that a slightly different email address can be specified by default instead of the one we used in the creation process of our Github account. 
+This is normal, it does not matter much for what we are trying to achieve here. We can also finish the configuration process with this different email address. 
+
+![Github Desktop configuration.](./resources/images/1_15_configuration.png)
+
+Once we are done with the configuration process, we should land on a page looking like that : 
+
+![Github Desktop home page.](./resources/images/1_16_homepage2.png)
+
+If we want to start our portfolio, we need a folder with all of our files.
+On our computer, we call it a directory, and on Github we call it a "repository".
+
+We click on "Create a New Repository on your Local Drive...", and create a repository called "username.github.io", with our actual username instead of "username". 
+I will create one, and since my Github username is frpgcd, my repository will be called "frpgcd.github.io" : 
+
+![Creating a repository on Github Desktop.](./resources/images/1_17_create_repository.png)
+
+Now, we should get something looking like that :
+
+![An empty repository on Github desktop.](./resources/images/1_18_repository_github_desktop.png)
+
+Let us take a moment to comment what we see. 
+In the left side bar, we have all the modified files of our directory.
+Here, Github desktop created automatically a .gitattributes file.
+In the right side interface, we see the content of the selected files. 
+Here, we see that two lines have been added, thanks to the green color and the addition sign "+".
+
 Now, if you make any change in your folder, you will be able to commit the changes. 
-Check the Github repository : your local files should be online !
+"Commit" means here that the changes will be recorded in our history of changes.
+Once our change are commited, we can publish then on our repository on Github with the top-right button "Publish repository".
+
+In order for us to add files to our directory and modify them, we are now going to use another tool : Visual Studio Code.
 
 ## Git Command Line Interface (CLI)
 
+{{< include section_warning.qmd >}}
+
 This section presents the method to use Git and Github via a CLI.
+
+### Install vscode
+
+It is much easier to use the CLI of Git with vscode. 
+Therefore, we should first install vscode. 
+I invite you to follow [the instruction of the last section of this chapter](#visual-studio-code) and then to come back here.
 
 ### Basics of Git 
 
@@ -125,7 +136,10 @@ This should normally generate a console at the bottom of vscode, where your user
 
 ![Terminal in vscode.](./resources/images/1_6_terminal_vscode.png)
 
-Simply put, the terminal allows to textually communicate with your machine, instead of graphically, like it is usually the case. Having a terminal opened in vscode makes it possible to manipulate the current opened folder more easily. This is also how we are going to use Git.
+Simply put, the terminal allows to textually communicate with your machine, instead of graphically, like it is usually the case.
+It is why we calll it the Command Line Interface. 
+Having a terminal opened in vscode makes it possible to manipulate the current opened folder more easily.
+This is also how we are going to use Git.
 
 > Note : This tutorial does not focus on what a terminal is, what shell, bash or any kind of line command are and do. However, it would be very useful for you to know how to use the basics of it. Further resources are available at the end of this page, and I strongly encourage you to check them, especially the first four chapters of [Florian Oswald's lecture](https://floswald.github.io/ScPoProgramming/) on the shell. 
 
@@ -227,6 +241,30 @@ git push
 You can then verify that your changes have been taken into account by going on the website of GitHub, on your repository. Your tracked files should appear there.
 
 :::
+
+## Visual Studio Code
+
+**Visual Studio Code** (VSC or vscode) is a software to write and execute code, also called Integrated Development Environment (IDE).
+It is largely used, and a lot of extensions exist to customize your experience with it. 
+We are going to install vscode [here](https://code.visualstudio.com/).
+ 
+![Dowload page of vscode.](./resources/images/1_1_install_vscode2.png)
+
+One of the strenghts of vscode is the fact that it can open and manage a whole folder.
+We are now going to use vscode to open the folder "username.github.io" that we created earlier.
+To do so, we open vscode, click on "open" in the starting page, and select our folder.
+
+![Starting page of vscode. Click on "open" to chose a folder to open.](./resources/images/1_2_starting_page_vscode.png)
+
+Now that we selected our folder, vscode opened it and we should see something like that : 
+
+![An empty folder opened with vscode.](./resources/images/1_3_folder_opened_vscode.png)
+
+> NOTE : When you open a folder for the first time, vscode may ask you "Do you trust the authors of the files in this folder?". Since you just created your folder and that it is empty, you can naturally click on yes. You are the author !
+
+It is done !
+We have created a Github account, connected it to our Github Desktop application, created a repository, and opened it with vscode.
+Next step : using Quarto to create our website content.
 
 ## Further Resources
 

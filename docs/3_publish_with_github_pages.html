@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./about.html" rel="next">
+<link href="./conclusion.html" rel="next">
 <link href="./2_quarto.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -93,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Research Portfolio tutorial</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -101,6 +101,10 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Chapters</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-chapters">    
+        <li>
+    <a class="dropdown-item" href="./foreword.html">
+ <span class="dropdown-text">Foreword</span></a>
+  </li>  
         <li>
     <a class="dropdown-item" href="./1_git_and_github.html">
  <span class="dropdown-text">1. Git and Github</span></a>
@@ -113,10 +117,14 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="./3_publish_with_github_pages.html">
  <span class="dropdown-text">3. Publish with GitHub Pages</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./conclusion.html">
+ <span class="dropdown-text">Conclusion</span></a>
+  </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link active" href="./about.html" aria-current="page"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -149,14 +157,14 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Research student portfolio tutorial</span></a>
+  <a href="./foreword.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Foreword</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./1_git_and_github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1. Introduction to Git and GitHub</span></a>
+ <span class="menu-text">1. Setting up our workflow</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -169,6 +177,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="./3_publish_with_github_pages.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">3. Publish your website with Github Pages</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Conclusion</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -688,8 +702,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./about.html" class="pagination-link" aria-label="About">
-        <span class="nav-page-text">About</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./conclusion.html" class="pagination-link" aria-label="Conclusion">
+        <span class="nav-page-text">Conclusion</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -707,7 +721,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","loop":false,"descPosition":"bottom","closeEffect":"zoom","openEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"loop":false,"openEffect":"zoom","closeEffect":"zoom","descPosition":"bottom","selector":".lightbox"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
