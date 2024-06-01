@@ -86,8 +86,18 @@ In order for us to do so, we are going to use Github Desktop.
 
 ### Setup your Github account
 
-The first step is to create a Github account. 
-The second step is to create a repository named (username.github.io).
+The first step is to create a Github account.
+You can go [here](https://github.com/) and click on sign up.
+Be especially thoughtful of your username, because your website will inlcude it in its url (it will have the format "https://username.github.io").
+After having created your account, you should land on a page looking like that : 
+
+![The starting page of Github.](./resources/images/1_9_starting_page_github)
+
+The second step is to create a repository named "username.github.io" replacing the "username" with your actual username.
+For example, with the username "fgrpgcd", I create a repository named frpgcd.github.io : 
+
+![Creating a repository with some information.](1_11_create_repo_filled)
+
 
 ### Use GIthub Desktop
 
