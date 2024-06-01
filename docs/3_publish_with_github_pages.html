@@ -260,14 +260,14 @@ Caution
 <p>In order for us to publish the content that is available in our <code>_site</code> folder, we need first to goto our GitHub repository, and to click on settings at the top-right. We then click in the “Code and automation” on the “Pages” section. You should see something like this :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/0_Default_image.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1" title="Add image"><img src="./resources/images/0_Default_image.png" class="img-fluid figure-img" alt="Add image"></a></p>
+<p><a href="./resources/images/0_Default_image.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1" title="Add image"><img src="./resources/images/0_Default_image.png" class="img-fluid figure-img" alt="Add image"></a></p>
 <figcaption>Add image</figcaption>
 </figure>
 </div>
 <p>We are now going to activate GitHub Pages, and select “Deploy from a branch” for the Source. We are then going to select the folder from which GitHub Pages publishes our website. In our case, it is the “_quarto” folder. The branch from which it selects the folder should be “main” or “master” (but could have another name) depending on your git configuration. After selecting it, you can click on “Save” :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/0_Default_image.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2" title="Add image"><img src="./resources/images/0_Default_image.png" class="img-fluid figure-img" alt="Add image"></a></p>
+<p><a href="./resources/images/0_Default_image.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2" title="Add image"><img src="./resources/images/0_Default_image.png" class="img-fluid figure-img" alt="Add image"></a></p>
 <figcaption>Add image</figcaption>
 </figure>
 </div>
@@ -721,7 +721,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","descPosition":"bottom","loop":false,"openEffect":"zoom"});
+<!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://paulogcd.matomo.cloud/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src='https://cdn.matomo.cloud/paulogcd.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","selector":".lightbox","loop":false,"openEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
