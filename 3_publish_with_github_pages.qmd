@@ -4,20 +4,24 @@ title: "3. Publish your website with Github Pages"
 
 {{< include warning.qmd >}}
 
-Congratulations for having made it so far !
+Congratulations for having made it so far :grin: !
 Now that we have a decent-looking basis for our online portfolio, we are ready to make it available to the real world. 
 In order for us to publish our content, we are going to use GitHub pages, a website hosting service of GitHub. 
 
-This final step is the easiest one, so hang it on, we are soon reaching the end of this tutorial. 
+> Several free hosting services exist, such as [Netlify](https://www.netlify.com/), [Quarto Pub](https://quartopub.com/), and [GitHub Pages](https://pages.github.com/), among other ones.
+We focus here on Github Pages because of its simplicity and because it allows to have an easy and stable workflow with our Github repository.
+
+This final step is the easiest one, so hang it on, we are soon reaching the end of this tutorial :grin:.
 
 ## Saving our changes
 
 Before we publish our website, we have to make sure we saved all of our changes.
 Let us do a quick recap of our workflow here : 
+
 1. We create our repository on Github and open it in our computer.
 2. We create a Quarto project in vscode, and make some changes to our qmd and yml files.
 3. We stop the previewing process in our Terminal by clicking in it and entering `cmd`+`c` or clicking on the trash bin that appears when we pass our mouse on it at the right-bottom part of vscode. 
-4. We make sure all of our files are saved an enter `quarto render` in the Terminal.
+4. We make sure all of our files are saved and enter `quarto render` in the Terminal.
 6. We add all of our changes in Git and commit them, depending on our method : 
     - Through the commit button in Github Desktop,
     - Through the `git add *` and `git commit -m "..."` commands via the CLI
@@ -42,15 +46,93 @@ Now, our changes are saved on Github and ready to be published in the web !
 
 ## Activating GitHub pages
 
-{{< include section_warning.qmd >}}
+In order for us to publish the content that is available in our `docs` folder, we need first to goto our GitHub repository, and to click on "Settings", the last item of the top-bar : 
 
-In order for us to publish the content that is available in our `docs` folder, we need first to goto our GitHub repository, and to click on settings at the top-right.
-We then click in the "Code and automation" on the "Pages" section. You should see something like this : 
+![Our Github repository, after having added our Quarto files.](./resources/images/3_4.png)
 
-![Add image](./resources/images/0_Default_image.png)
+We then click in the "Code and automation" on the "Pages" section : 
 
-We are now going to activate GitHub Pages, and select "Deploy from a branch" for the Source. We are then going to select the folder from which GitHub Pages publishes our website. In our case, it is the "_quarto" folder. The branch from which it selects the folder should be "main" or "master" (but could have another name) depending on your git configuration. After selecting it, you can click on "Save" : 
+![After having clicked on "Settings", we should land on the "General" section. Now, we click on "Pages".](./resources/images/3_5.png)
 
-![Add image](./resources/images/0_Default_image.png)
+We should be seeing something like this : 
 
-You can then go to <https://username.github.io>, with your actual GitHub username instead of "username". After a few minutes, it should be on. Congratulations, you have published your portfolio ! 
+![The "Pages" section of the settings.](./resources/images/3_6.png)
+
+We are now going to activate GitHub Pages, and select "Deploy from a branch" for the Source.
+We select the folder from which GitHub Pages publishes our website.
+In our case, it is the "docs" folder we created in the last section of the second chapter.
+The branch from which it selects the folder should be "main" or "master" (but could have another name) depending on your git configuration.
+
+![Selecting the "main" branch and the "docs" folder.](./resources/images/3_7.png)
+
+After selecting it, we can click on "Save". 
+Github will popup a bar at the top of the page indicating : "GitHub Pages source saved."
+Also, a "Custom domain" section should appear, that we can later configurate if we wish to have our own customed url :
+
+![After saving our source.](./resources/images/3_8.png)
+
+Now, GitHub is going to test our code to see if it is possible to publish it online without errors. 
+If we come back to the home page of our repository, we will notice an orange dot next to our last commit message.
+If we click on this orange dot, a small pop-up window will appear, with additional information on the test.
+
+::: {#New-doc-navbar layout-ncol=2}
+
+![Home page of our repository, with now a test being run by Github pages.](./resources/images/3_9.png)
+
+![Additional information on the current test.](./resources/images/3_10.png)
+
+:::
+
+Now, if we click on "Details", we can have more information on what is going on : 
+
+
+![Details of the test being run.](./resources/images/3_11.png)
+
+At this point, if we followed carefully the steps of this tutorial, everything should turn green in a few seconds.
+
+> If a test did not pass, you can click on it to get more information.
+You can then look into it by searching solutions online. 
+Errors are very common and a lot of possible solutions have been proposed.
+You can check the official guide of Github [here](https://docs.github.com/en/pages/quickstart) and the guide of Quarto [here](https://quarto.org/docs/publishing/github-pages.html).
+[Stack Overflow](https://stackoverflow.com/) is also a very good platform to find solutions. 
+
+> If you see an error message related to Jekyll, try adding an empty file named `.nojekyll` in your folder by entering `touch .nojekyll` in your vscode terminal.
+Publish this change to your Github repository, and see if the test is passing.
+This issue seems to occurs regularly, but not in all cases.
+
+Once all the dots are green, we can go to <https://username.github.io>, with our actual GitHub username instead of "username".
+After a few minutes, it should be on.
+
+Congratulations, you have published your portfolio ! :fire: :fire: :fire: 
+
+![Our basic portfolio is online.](./resources/images/3_12.png)
+
+We see that it is online with the url. 
+In my case, I see "https://frpgcd.github.io", and not something with "localhost".
+Try accessing your website from another machine, be it a computer or a mobile phone.
+It should work ! 
+
+## Further resources
+
+If you wish to understand more about the publishing process, you can find more information in the following material : 
+
+- [The Quarto documentation](https://quarto.org/docs/publishing/github-pages.html)
+
+- [The Github guide for Github pages](https://docs.github.com/en/pages)
+
+In order to understand better what the publication process is, it is also useful to understand how internet works, and what the difference between frontend and backend development is : 
+
+- The [Wikipedia article about Internet](https://en.wikipedia.org/wiki/Internet) is a good starting point.
+- To understand what the frontend is, you can check [the Wikpedia article of the topic](https://en.wikipedia.org/wiki/Front-end_web_development) or [this w3school guide](https://www.w3schools.com/whatis/whatis_frontenddev.asp). 
+- Similarly for the backend, you can check [the Wikibooks article](https://en.wikibooks.org/wiki/Web_Development/What_is_a_backend%3F). 
+
+You can also check [this Wikipedia article about the difference between Front and Backend](https://en.wikipedia.org/wiki/Frontend_and_backend).
+
+## Epilog
+
+:tada: Congratulations on finishing this tutorial. 
+I hope you enjoyed it. 
+If you noticed some things that seemed wrong, too complicated, or some bugs in the website, please reach to me.
+This tutorial is currently under construction and I am trying to improve it as much as possible. 
+
+> If you want to suggest some modification to this tutorial, you can also click on the top-right buttons "Report an issue" ("Edit this page" will create a pull request on Github... Feel free to look what this means) under the table of content of this chapter ;).

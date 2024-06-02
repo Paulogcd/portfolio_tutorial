@@ -4,19 +4,15 @@ title: "Foreword"
 
 This tutorial aims to give you the tools to easily and efficiently create, and maintain your own online portfolio.
 
-This tutorial is divided in three chapters : 
+It is divided in three chapters : 
 
-1. The first chapter of this tutorial focuses on creating a simple workflow for the rest of our work.\
+1. The first chapter focuses on creating a simple workflow for the rest of our work.\
     We will use **Git**, **Github**, and **Visual Studio Code**.
-2. The second capter of this tutorial focuses on the design of the website.\
+2. The second capter focuses on the design of the website.\
     We will use **Quarto**.
-3. The third and last chapter of this tutorial focuses on the publication of our website.\
+3. The third and last chapter focuses on the publication of our website.\
     We will use **Github Pages**.
 
-After having designed your website with a static website generator, we finally have to make it available to the world, i.e. publish it.
-Several free hosting services exist, such as [Netlify](https://www.netlify.com/), [Quarto Pub](https://quartopub.com/), and [GitHub Pages](https://pages.github.com/), among other ones.
-This tutorial focuses on GitHub Pages in the third chapter.
+No prior programming experience is required to follow this tutorial. 
 
-Now, in order to make the whole process easier and fluid, this tutorial first focuses on the establishment of a workflow using Visual Studio Code, Git and GitHub.
-This workflow allows to make the second and third steps easier, and is also very useful if you are to work in collaborative projects in the future.
-This is thus the first chapter of this tutorial.
+I hope you will enjoy it :grin: ! 

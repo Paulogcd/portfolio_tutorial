@@ -9,10 +9,12 @@ execute:
 {{< include warning.qmd >}}
 
 
+Welcome in this tutorial to create your own online portfolio :slightly_smiling_face: !
 The first step of our online portfolio creation is to set up our working environment. 
 In order to do so, we are going to use several tools, like **Git**, **Github** and **Visual Studio Code**. 
-Git and Github will allow us to manage the changes of our files, and store them online. 
-Visual Studio Code will allow us to modify our files.
+
+- Git and Github will allow us to manage the changes of our files, and store them online. 
+- Visual Studio Code will allow us to modify our files.
 
 ## Git and Github 
 
@@ -40,9 +42,10 @@ It uses the basic features of Git and Github, and uses the Command Line to inter
 It requires more steps, and is a harder to setup, but you will develop a deeper understanding of what is going on when you use Git and Github.
 
 If you do not wish to dive deep into the mechanisms of the Git and its interaction with Github, it is advised that you proceed with the GUI approach.
-However useful Graphical Interfaces are, they imply necessarily abstractions of how processes are really working.
-I highly encourage you to read the CLI section, even if you do not follow all of its instruction. 
-Also, you can always continue with the GUI approach, and later on come back to this chapter to read the CLI section. 
+
+> If the GUI approach is easy and useful, it implies necessarily abstractions of how things are really working under the hood.
+Therefore, I highly encourage you to read the CLI section, even if you do not follow all of its instruction. 
+You can always continue with the GUI approach, and later on come back to this chapter to read the CLI section once you are done with the tutorial. 
 
 ::: {.panel-tabset group="method"}
 ## GitHub Desktop : The Graphical User Interface (GUI)
@@ -114,8 +117,6 @@ Once our change are commited, we can publish then on our repository on Github wi
 In order for us to add files to our directory and modify them, we are now going to use another tool : Visual Studio Code.
 
 ## Git Command Line Interface (CLI)
-
-{{< include section_warning.qmd >}}
 
 This section presents the method to use Git and Github via a CLI.
 
@@ -283,30 +284,33 @@ This is also how we will be using Quarto.
 However, it would be very useful for you to know how to use the basics of it.
 Further resources are available at the end of this page, and I strongly encourage you to check them, especially the first four chapters of [Florian Oswald's lecture](https://floswald.github.io/ScPoProgramming/) on the shell. 
 
-It is done !
+:tada: It is done !
 We have created a Github account, connected it to our Github Desktop application, created a repository, and opened it with vscode.
 Next step : using Quarto to create our website content.
 
 ## Further Resources
 
-You are now ready to proceed to the second chapter, that treats content generation with Quarto. However, if you wish to dive deeper into the tools presented in this first chapter, and try to understand better Git, GitHub, or even the Terminal and Visual Studio Code, you might be tempted to look at additional material. First of all, for all that has been covered in this tutorial, I recommend the lecture of Florian Oswald about git and github, available at  <https://floswald.github.io/ScPoProgramming/05-git.html>. For more specific questions, you might find the following resources useful : 
+We are now ready to proceed to the second chapter, that treats content generation with Quarto.
+However, if you wish to dive deeper into the tools presented in this first chapter, and try to understand better Git, GitHub, or even the Terminal and Visual Studio Code, you might be tempted to look at additional material.
+First of all, for all that has been covered in this tutorial, I recommend the lecture of Florian Oswald about git and github, [available here](https://floswald.github.io/ScPoProgramming/05-git.html).
+For more specific questions, you might find the following resources useful : 
 
 About vscode : 
 
-- The official documentation of vscode, available at : <https://code.visualstudio.com/docs>
+- The official documentation of vscode, [available here](https://code.visualstudio.com/docs).
 
 About the terminal : 
 
-- The first four sessions of the Florian Oswald lecture, available at : <https://floswald.github.io/ScPoProgramming/>
-- A general tutorial about the command line, including resources for Windows, MacOS, and Linux, available at : <https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line>
-- The vscode documentation about the terminal inside vscode, that might require some prior knowledge about the command line, available at : <https://code.visualstudio.com/docs/terminal/basics>
+- The first four sessions of the Florian Oswald lecture, [available here](https://floswald.github.io/ScPoProgramming/).
+- A general tutorial about the command line, including resources for Windows, MacOS, and Linux, [available here](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line).
+- The vscode documentation about the terminal inside vscode, that might require some prior knowledge about the command line, [available here](https://code.visualstudio.com/docs/terminal/basics).
 
 About git : 
 
-- The official documentation of git, availbale at : <https://git-scm.com/doc>
-- The w3school tutorial for git, available at : <https://www.w3schools.com/git/>
+- The official documentation of git, [availbale here](https://git-scm.com/doc).
+- The w3school tutorial for git, [available here](https://www.w3schools.com/git/).
 
 About github : 
 
-- The official tutorial of github on using git and github together, available at : <https://docs.github.com/en/get-started/start-your-journey>
+- The official tutorial of github on using git and github together, [available here](https://docs.github.com/en/get-started/start-your-journey).
 

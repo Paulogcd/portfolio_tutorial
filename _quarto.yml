@@ -2,6 +2,8 @@ project:
   type: website
   output-dir: docs
 
+# Allows the displaying of emojis
+from: markdown+emoji
 
 # Allows the readers to click on images to expand them 
 lightbox: true

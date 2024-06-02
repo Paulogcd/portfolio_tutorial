@@ -1,5 +1,15 @@
 ---
 title: "About"
+date: today
 ---
 
-This is the website of a tutorial for quick and simple maintanable portfolio websites with Quarto. 
+
+Hello :wave:, I am Paulo Gugelmo Cavalheiro Dias, a research student in Economics at Sciences Po. 
+
+I made this tutorial to make it easy to research student to create their own online portfolio. 
+It is made so even someone with no prior programming experience can understand and follow its steps.
+
+Feel free to visit my main website by clicking on "Home", the first item of the navigation bar of this page.
+I posted and will post other projects there. 
+
+You can also contact me per mail via "paulo.gugelmocavalheirodias" followed by "@sciencespo.fr".

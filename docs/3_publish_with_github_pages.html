@@ -209,6 +209,8 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#saving-our-changes" id="toc-saving-our-changes" class="nav-link active" data-scroll-target="#saving-our-changes">Saving our changes</a></li>
   <li><a href="#activating-github-pages" id="toc-activating-github-pages" class="nav-link" data-scroll-target="#activating-github-pages">Activating GitHub pages</a></li>
+  <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further resources</a></li>
+  <li><a href="#epilog" id="toc-epilog" class="nav-link" data-scroll-target="#epilog">Epilog</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/Paulogcd/portfolio_tutorial/edit/main/3_publish_with_github_pages.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Paulogcd/portfolio_tutorial/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -247,11 +249,30 @@ Caution
 <p>This tutorial is currently going under construction. All chapters and sections are not finished and might include incomplete explanations. Feel free to reach out to me to point out some missing elements.</p>
 </div>
 </div>
-<p>Congratulations for having made it so far ! Now that we have a decent-looking basis for our online portfolio, we are ready to make it available to the real world. In order for us to publish our content, we are going to use GitHub pages, a website hosting service of GitHub.</p>
-<p>This final step is the easiest one, so hang it on, we are soon reaching the end of this tutorial.</p>
+<p>Congratulations for having made it so far <span class="emoji" data-emoji="grin">😁</span> ! Now that we have a decent-looking basis for our online portfolio, we are ready to make it available to the real world. In order for us to publish our content, we are going to use GitHub pages, a website hosting service of GitHub.</p>
+<blockquote class="blockquote">
+<p>Several free hosting services exist, such as <a href="https://www.netlify.com/">Netlify</a>, <a href="https://quartopub.com/">Quarto Pub</a>, and <a href="https://pages.github.com/">GitHub Pages</a>, among other ones. We focus here on Github Pages because of its simplicity and because it allows to have an easy and stable workflow with our Github repository.</p>
+</blockquote>
+<p>This final step is the easiest one, so hang it on, we are soon reaching the end of this tutorial <span class="emoji" data-emoji="grin">😁</span>.</p>
 <section id="saving-our-changes" class="level2">
 <h2 class="anchored" data-anchor-id="saving-our-changes">Saving our changes</h2>
-<p>Before we publish our website, we have to make sure we saved all of our changes. Let us do a quick recap of our workflow here : 1. We create our repository on Github and open it in our computer. 2. We create a Quarto project in vscode, and make some changes to our qmd and yml files. 3. We stop the previewing process in our Terminal by clicking in it and entering <code>cmd</code>+<code>c</code> or clicking on the trash bin that appears when we pass our mouse on it at the right-bottom part of vscode. 4. We make sure all of our files are saved an enter <code>quarto render</code> in the Terminal. 6. We add all of our changes in Git and commit them, depending on our method : - Through the commit button in Github Desktop, - Through the <code>git add *</code> and <code>git commit -m "..."</code> commands via the CLI 7. We publish our changes in our Github repository, depending on our method : - Through the “publish” buttons in Github Desktop, - Through the <code>git push</code> command via the CLI.</p>
+<p>Before we publish our website, we have to make sure we saved all of our changes. Let us do a quick recap of our workflow here :</p>
+<ol type="1">
+<li>We create our repository on Github and open it in our computer.</li>
+<li>We create a Quarto project in vscode, and make some changes to our qmd and yml files.</li>
+<li>We stop the previewing process in our Terminal by clicking in it and entering <code>cmd</code>+<code>c</code> or clicking on the trash bin that appears when we pass our mouse on it at the right-bottom part of vscode.</li>
+<li>We make sure all of our files are saved and enter <code>quarto render</code> in the Terminal.</li>
+<li>We add all of our changes in Git and commit them, depending on our method :
+<ul>
+<li>Through the commit button in Github Desktop,</li>
+<li>Through the <code>git add *</code> and <code>git commit -m "..."</code> commands via the CLI</li>
+</ul></li>
+<li>We publish our changes in our Github repository, depending on our method :
+<ul>
+<li>Through the “publish” buttons in Github Desktop,</li>
+<li>Through the <code>git push</code> command via the CLI.</li>
+</ul></li>
+</ol>
 <div>
 
 </div>
@@ -291,42 +312,125 @@ Caution
 </section>
 <section id="activating-github-pages" class="level2">
 <h2 class="anchored" data-anchor-id="activating-github-pages">Activating GitHub pages</h2>
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Caution
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This section is currently going under construction. Is it incomplete, and I am currently working on it. Its content is coming soon ! Feel free to reach out to me to point out some elements that could be included here.</p>
-</div>
-</div>
-<p>In order for us to publish the content that is available in our <code>docs</code> folder, we need first to goto our GitHub repository, and to click on settings at the top-right. We then click in the “Code and automation” on the “Pages” section. You should see something like this :</p>
+<p>In order for us to publish the content that is available in our <code>docs</code> folder, we need first to goto our GitHub repository, and to click on “Settings”, the last item of the top-bar :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/0_Default_image.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" data-glightbox="description: .lightbox-desc-4" title="Add image"><img src="./resources/images/0_Default_image.png" class="img-fluid figure-img" alt="Add image"></a></p>
-<figcaption>Add image</figcaption>
+<p><a href="./resources/images/3_4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" data-glightbox="description: .lightbox-desc-4" title="Our Github repository, after having added our Quarto files."><img src="./resources/images/3_4.png" class="img-fluid figure-img" alt="Our Github repository, after having added our Quarto files."></a></p>
+<figcaption>Our Github repository, after having added our Quarto files.</figcaption>
 </figure>
 </div>
-<p>We are now going to activate GitHub Pages, and select “Deploy from a branch” for the Source. We are then going to select the folder from which GitHub Pages publishes our website. In our case, it is the “_quarto” folder. The branch from which it selects the folder should be “main” or “master” (but could have another name) depending on your git configuration. After selecting it, you can click on “Save” :</p>
+<p>We then click in the “Code and automation” on the “Pages” section :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/0_Default_image.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" data-glightbox="description: .lightbox-desc-5" title="Add image"><img src="./resources/images/0_Default_image.png" class="img-fluid figure-img" alt="Add image"></a></p>
-<figcaption>Add image</figcaption>
+<p><a href="./resources/images/3_5.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" data-glightbox="description: .lightbox-desc-5" title="After having clicked on “Settings”, we should land on the “General” section. Now, we click on “Pages”."><img src="./resources/images/3_5.png" class="img-fluid figure-img" alt="After having clicked on “Settings”, we should land on the “General” section. Now, we click on “Pages”."></a></p>
+<figcaption>After having clicked on “Settings”, we should land on the “General” section. Now, we click on “Pages”.</figcaption>
 </figure>
 </div>
-<p>You can then go to <a href="https://username.github.io" class="uri">https://username.github.io</a>, with your actual GitHub username instead of “username”. After a few minutes, it should be on. Congratulations, you have published your portfolio !</p>
+<p>We should be seeing something like this :</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./resources/images/3_6.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" data-glightbox="description: .lightbox-desc-6" title="The “Pages” section of the settings."><img src="./resources/images/3_6.png" class="img-fluid figure-img" alt="The “Pages” section of the settings."></a></p>
+<figcaption>The “Pages” section of the settings.</figcaption>
+</figure>
+</div>
+<p>We are now going to activate GitHub Pages, and select “Deploy from a branch” for the Source. We select the folder from which GitHub Pages publishes our website. In our case, it is the “docs” folder we created in the last section of the second chapter. The branch from which it selects the folder should be “main” or “master” (but could have another name) depending on your git configuration.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./resources/images/3_7.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" data-glightbox="description: .lightbox-desc-7" title="Selecting the “main” branch and the “docs” folder."><img src="./resources/images/3_7.png" class="img-fluid figure-img" alt="Selecting the “main” branch and the “docs” folder."></a></p>
+<figcaption>Selecting the “main” branch and the “docs” folder.</figcaption>
+</figure>
+</div>
+<p>After selecting it, we can click on “Save”. Github will popup a bar at the top of the page indicating : “GitHub Pages source saved.” Also, a “Custom domain” section should appear, that we can later configurate if we wish to have our own customed url :</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./resources/images/3_8.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" data-glightbox="description: .lightbox-desc-8" title="After saving our source."><img src="./resources/images/3_8.png" class="img-fluid figure-img" alt="After saving our source."></a></p>
+<figcaption>After saving our source.</figcaption>
+</figure>
+</div>
+<p>Now, GitHub is going to test our code to see if it is possible to publish it online without errors. If we come back to the home page of our repository, we will notice an orange dot next to our last commit message. If we click on this orange dot, a small pop-up window will appear, with additional information on the test.</p>
+<div>
+
+</div>
+<div id="New-doc-navbar" class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./resources/images/3_9.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" data-glightbox="description: .lightbox-desc-9" title="Home page of our repository, with now a test being run by Github pages."><img src="./resources/images/3_9.png" class="img-fluid figure-img" alt="Home page of our repository, with now a test being run by Github pages."></a></p>
+<figcaption>Home page of our repository, with now a test being run by Github pages.</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./resources/images/3_10.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" data-glightbox="description: .lightbox-desc-10" title="Additional information on the current test."><img src="./resources/images/3_10.png" class="img-fluid figure-img" alt="Additional information on the current test."></a></p>
+<figcaption>Additional information on the current test.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>Now, if we click on “Details”, we can have more information on what is going on :</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./resources/images/3_11.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" data-glightbox="description: .lightbox-desc-11" title="Details of the test being run."><img src="./resources/images/3_11.png" class="img-fluid figure-img" alt="Details of the test being run."></a></p>
+<figcaption>Details of the test being run.</figcaption>
+</figure>
+</div>
+<p>At this point, if we followed carefully the steps of this tutorial, everything should turn green in a few seconds.</p>
+<blockquote class="blockquote">
+<p>If a test did not pass, you can click on it to get more information. You can then look into it by searching solutions online. Errors are very common and a lot of possible solutions have been proposed. You can check the official guide of Github <a href="https://docs.github.com/en/pages/quickstart">here</a> and the guide of Quarto <a href="https://quarto.org/docs/publishing/github-pages.html">here</a>. <a href="https://stackoverflow.com/">Stack Overflow</a> is also a very good platform to find solutions.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>If you see an error message related to Jekyll, try adding an empty file named <code>.nojekyll</code> in your folder by entering <code>touch .nojekyll</code> in your vscode terminal. Publish this change to your Github repository, and see if the test is passing. This issue seems to occurs regularly, but not in all cases.</p>
+</blockquote>
+<p>Once all the dots are green, we can go to <a href="https://username.github.io" class="uri">https://username.github.io</a>, with our actual GitHub username instead of “username”. After a few minutes, it should be on.</p>
+<p>Congratulations, you have published your portfolio ! <span class="emoji" data-emoji="fire">🔥</span> <span class="emoji" data-emoji="fire">🔥</span> <span class="emoji" data-emoji="fire">🔥</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="./resources/images/3_12.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12" data-glightbox="description: .lightbox-desc-12" title="Our basic portfolio is online."><img src="./resources/images/3_12.png" class="img-fluid figure-img" alt="Our basic portfolio is online."></a></p>
+<figcaption>Our basic portfolio is online.</figcaption>
+</figure>
+</div>
+<p>We see that it is online with the url. In my case, I see “https://frpgcd.github.io”, and not something with “localhost”. Try accessing your website from another machine, be it a computer or a mobile phone. It should work !</p>
+</section>
+<section id="further-resources" class="level2">
+<h2 class="anchored" data-anchor-id="further-resources">Further resources</h2>
+<p>If you wish to understand more about the publishing process, you can find more information in the following material :</p>
+<ul>
+<li><p><a href="https://quarto.org/docs/publishing/github-pages.html">The Quarto documentation</a></p></li>
+<li><p><a href="https://docs.github.com/en/pages">The Github guide for Github pages</a></p></li>
+</ul>
+<p>In order to understand better what the publication process is, it is also useful to understand how internet works, and what the difference between frontend and backend development is :</p>
+<ul>
+<li>The <a href="https://en.wikipedia.org/wiki/Internet">Wikipedia article about Internet</a> is a good starting point.</li>
+<li>To understand what the frontend is, you can check <a href="https://en.wikipedia.org/wiki/Front-end_web_development">the Wikpedia article of the topic</a> or <a href="https://www.w3schools.com/whatis/whatis_frontenddev.asp">this w3school guide</a>.</li>
+<li>Similarly for the backend, you can check <a href="https://en.wikibooks.org/wiki/Web_Development/What_is_a_backend%3F">the Wikibooks article</a>.</li>
+</ul>
+<p>You can also check <a href="https://en.wikipedia.org/wiki/Frontend_and_backend">this Wikipedia article about the difference between Front and Backend</a>.</p>
+</section>
+<section id="epilog" class="level2">
+<h2 class="anchored" data-anchor-id="epilog">Epilog</h2>
+<p><span class="emoji" data-emoji="tada">🎉</span> Congratulations on finishing this tutorial. I hope you enjoyed it. If you noticed some things that seemed wrong, too complicated, or some bugs in the website, please reach to me. This tutorial is currently under construction and I am trying to improve it as much as possible.</p>
+<blockquote class="blockquote">
+<p>If you want to suggest some modification to this tutorial, you can also click on the top-right buttons “Report an issue” (“Edit this page” will create a pull request on Github… Feel free to look what this means) under the table of content of this chapter ;).</p>
+</blockquote>
 
 
 <div class="hidden" aria-hidden="true">
 <span class="glightbox-desc lightbox-desc-1">1. Commiting the changes in Github Desktop.</span>
 <span class="glightbox-desc lightbox-desc-2">2. Publishing our changes to Github via Github Desktop.</span>
 <span class="glightbox-desc lightbox-desc-3">Commited changes with Github Desktop.</span>
-<span class="glightbox-desc lightbox-desc-4">Add image</span>
-<span class="glightbox-desc lightbox-desc-5">Add image</span>
+<span class="glightbox-desc lightbox-desc-4">Our Github repository, after having added our Quarto files.</span>
+<span class="glightbox-desc lightbox-desc-5">After having clicked on “Settings”, we should land on the “General” section. Now, we click on “Pages”.</span>
+<span class="glightbox-desc lightbox-desc-6">The “Pages” section of the settings.</span>
+<span class="glightbox-desc lightbox-desc-7">Selecting the “main” branch and the “docs” folder.</span>
+<span class="glightbox-desc lightbox-desc-8">After saving our source.</span>
+<span class="glightbox-desc lightbox-desc-9">Home page of our repository, with now a test being run by Github pages.</span>
+<span class="glightbox-desc lightbox-desc-10">Additional information on the current test.</span>
+<span class="glightbox-desc lightbox-desc-11">Details of the test being run.</span>
+<span class="glightbox-desc lightbox-desc-12">Our basic portfolio is online.</span>
 </div>
 </section>
 
@@ -771,7 +875,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","loop":false,"descPosition":"bottom","openEffect":"zoom","selector":".lightbox"});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","closeEffect":"zoom","selector":".lightbox","loop":false,"openEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

@@ -322,9 +322,12 @@ Caution
 <p>This tutorial is currently going under construction. All chapters and sections are not finished and might include incomplete explanations. Feel free to reach out to me to point out some missing elements.</p>
 </div>
 </div>
-<p>Now that we know how to make use of Github and Visual Studio Code, it is time for us to use Quarto.</p>
-<p><strong>Quarto</strong> is a static website generator. It is a software that allows us to create web content from human readable files. Usually, we should learn HTML and CSS to know a bit of Web development. Indeed, those are the languages that traditional web browsers support. When you go to a webpage, our web browser transforms html and css into a graphical interface, which is easier to understand for humans. However, in recent years, a lot of static website generators have emerged, turning the creation of websites much easier. Among the several static website generators, <a href="https://jekyllrb.com/">Jekyll</a>, <a href="https://www.getzola.org/">Zola</a>, <a href="https://gohugo.io/">Hugo</a>, and <a href="https://quarto.org/">Quarto</a> can be cited, but they are far from being the only ones.</p>
-<p>This tutorial focuses on Quarto for several reasons. First, it is easy to use. The commands are user-friendly, and do not require much background knowledge. Second, its file format (qmd, or “quarto markdown”) allows to easily include data visualization, code and support some very useful libraries like <a href="https://shiny.posit.co/">Shiny</a>, that allow to create interactive web pages with data. It makes it easy to showcase our work if you deal with data and statistical analysis with R, Python, or Julia. It is therefore especially interesting if we are trying to build a research portfolio.</p>
+<p>Now that we know how to make use of Github and Visual Studio Code, we are going to use Quarto to create our website <span class="emoji" data-emoji="art">🎨</span> !</p>
+<p><strong>Quarto</strong> is a static website generator. It is a software that allows us to create web content from human readable files.</p>
+<p>Usually, we should learn HTML and CSS to know a bit of Web development. Indeed, those are the languages that traditional web browsers support. When you go to a webpage, our web browser transforms html and css into a graphical interface, which is easier to understand for humans. However, in recent years, a lot of static website generators have emerged, turning the creation of websites much easier. Among the several static website generators, <a href="https://jekyllrb.com/">Jekyll</a>, <a href="https://www.getzola.org/">Zola</a>, <a href="https://gohugo.io/">Hugo</a>, and <a href="https://quarto.org/">Quarto</a> can be cited, but they are far from being the only ones.</p>
+<blockquote class="blockquote">
+<p>This tutorial focuses on Quarto for several reasons. First, it is easy to use. The commands are user-friendly, and do not require much background knowledge. Second, its file format (qmd, or “quarto markdown”) allows to easily include data visualization, code and support some very useful libraries like <a href="https://shiny.posit.co/">Shiny</a>, that allow to create interactive web pages with data. It makes it easy to showcase our work if you deal with data and statistical analysis with R, Python, or Julia. It is therefore especially interesting if we are trying to build a research portfolio <span class="emoji" data-emoji="sunglasses">😎</span>.</p>
+</blockquote>
 <section id="installation-of-quarto" class="level2">
 <h2 class="anchored" data-anchor-id="installation-of-quarto">Installation of Quarto</h2>
 <p>The first step of this chapter is to download Quarto <a href="https://quarto.org/docs/get-started/">here</a>.</p>
@@ -413,17 +416,16 @@ Wecould choose different kinds of projects here. For example, <code>default</cod
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="at">To learn more about Quarto websites visit &lt;https://quarto.org/docs/websites&gt;.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>That yields the previous image.</p>
 <p>We can modify it by writting for example :</p>
-<pre class="qmd"><code>---
-title: "Home"
----
-
-Hello, I am Paulo Gugelmo, currently a first year
-student of the Master of Research in Economics at Sciences Po. 
-My research interests are environmental economics. 
-
-Feel free to reach out to me at my email adress :
-"paulo.gugelmocavalheirodias" followed by "@sciencespo.fr" !
-</code></pre>
+<div class="sourceCode" id="cb2"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Home"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="at">Hello, I am Paulo Gugelmo, currently a first year</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="at">student of the Master of Research in Economics at Sciences Po. </span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="at">My research interests are environmental economics. </span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">Feel free to reach out to me at my email adress </span><span class="kw">:</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="st">"paulo.gugelmocavalheirodias"</span><span class="at"> followed by "@sciencespo.fr" !</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This should yield :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -652,12 +654,11 @@ Feel free to reach out to me at my email adress :
 <h3 class="anchored" data-anchor-id="adding-math">Adding math</h3>
 <p>Finally, it’s also possible to add some math to our website. Indeed, markdown supports <span class="math inline">\(\LaTeX\)</span>, so if you are already familiar with it, you can simply include our <span class="math inline">\(\LaTeX\)</span> code between dollar signs <code>$ some math $</code> to generate inline math, or between two dollar signs <code>$$ an equation $$</code> to generate math blocks.</p>
 <p>For example, the following code :</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>The arithmetic mean $\bar{x}$ is defined as : </span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>\bar{x}=\frac{1}{N}\sum_{i=1}^{N}x_{i}</span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>$$</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>The arithmetic mean $\bar{x}$ is defined as : </span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>\bar{x}=\frac{1}{N}\sum_{i=1}^{N}x_{i}</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>$$</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>will produce :</p>
 <p>The arithmetic mean <span class="math inline">\(\bar{x}\)</span> is defined as :</p>
 <p><span class="math display">\[
@@ -1237,7 +1238,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","loop":false,"selector":".lightbox","openEffect":"zoom","closeEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","selector":".lightbox","loop":false,"descPosition":"bottom","closeEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
