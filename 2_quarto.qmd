@@ -8,17 +8,17 @@ Now that we know how to make use of Github and Visual Studio Code, it is time fo
 
 **Quarto** is a static website generator. It is a software that allows us to create web content from human readable files.
 Usually, we should learn HTML and CSS to know a bit of Web development.
-Indeed, those are the languages that traditional web browser support. 
-When you go to a webpage, your web browser transforms html and css into a graphical interface, which is easier to understand for humans.
-However, in the recent years, a lot of static website generator have emerged, turning the conception of websites much easier.
-Among the several static website generator, [Jekyll](https://jekyllrb.com/), [Zola](https://www.getzola.org/), [Hugo](https://gohugo.io/), and [Quarto](https://quarto.org/) can be cited, but they are far from being the only ones.
+Indeed, those are the languages that traditional web browsers support. 
+When you go to a webpage, our web browser transforms html and css into a graphical interface, which is easier to understand for humans.
+However, in recent years, a lot of static website generators have emerged, turning the creation of websites much easier.
+Among the several static website generators, [Jekyll](https://jekyllrb.com/), [Zola](https://www.getzola.org/), [Hugo](https://gohugo.io/), and [Quarto](https://quarto.org/) can be cited, but they are far from being the only ones.
 
 This tutorial focuses on Quarto for several reasons.
 First, it is easy to use.
 The commands are user-friendly, and do not require much background knowledge.
-Second, its format (qmd, or "quarto markdown") allows to easily include data visualization, code and support some very useful libraries like [Shiny](https://shiny.posit.co/), that allow to create interactive web pages with data.
-It makes it easy to showcase your work if you deal with data and some statistical analysis with R, Python, or Julia for example.
-It is especially important if we are trying to build a research portfolio.
+Second, its file format (qmd, or "quarto markdown") allows to easily include data visualization, code and support some very useful libraries like [Shiny](https://shiny.posit.co/), that allow to create interactive web pages with data.
+It makes it easy to showcase our work if you deal with data and statistical analysis with R, Python, or Julia.
+It is therefore especially interesting if we are trying to build a research portfolio.
 
 ## Installation of Quarto
 
@@ -30,14 +30,17 @@ Once it is done, we will be able to interact with Quarto through the terminal of
 
 ## Create a Quarto project
 
-The second step is to create a quarto project in your folder (the one you synchronized with your online GitHub repository). In order to do that, you can go in vscode, and enter in the terminal `quarto create`. You will then be guided with several questions regarding the nature of the project you wish to create. For the purpose of creating a portfolio, I would recommend to choose to create a website. 
+Now that Quarto is installed, we can create a Quarto project in our folder (the one we synchronized with our online GitHub repository).
+In order to do that, you can go in vscode, and enter `quarto create` in the terminal.
+We will then be guided with several questions regarding the nature of the project we wish to create.
+For the purpose of creating a portfolio, we are going to select `website` in the menu. 
 
 ![Creation of a project with Quarto](./resources/images/2_2_create_project_quarto.png)
 
 After entering `quarto create`, quarto asks you different things : 
 
-1. The nature of the quarto environment you want to create. You have the choice between a `project` and an `extension`. For a portfolio, I recommend creating a project. 
-2. The type of your project. It gives you the choice between : 
+1. The nature of the Quarto environment we want to create. We have the choice between a `project` and an `extension`. We are going to choose `project`.
+2. The type of our project. It gives us the choice between : 
     - default
     - website
     - blog
@@ -45,17 +48,18 @@ After entering `quarto create`, quarto asks you different things :
     - book
     - confluence
 
-    You could choose another different kinds of projects here. For example, `default` would work well enough also. However, I recommend creating `website` for the sake of simplicity.
-3. Quarto then asks for the Directory you wish to create your quarto project in. Since you are already in the folder you opened with vscode, you should write a simple dot `.` and press enter.  
+    Wecould choose different kinds of projects here. For example, `default` would work well enough also. However, let's stick to `website` for the sake of simplicity.
+3. Quarto then asks for the Directory you wish to create our quarto project in. Since you are already in the folder you opened with vscode, you should write a simple dot `.` and press enter.  
 
-> Note : The dot `.` refers to the current directory in several langages. To understand better how a path works, I recommend consulting [this article](https://www.w3schools.com/html/html_filepaths.asp).
+> The dot `.` refers to the current directory in several langages.
+To understand better how a path works, I recommend consulting [this article](https://www.w3schools.com/html/html_filepaths.asp).
 
-Once the creation process is done, you will see appear in your folder several files : index.qmd, about.qmd, _quarto.yml, style.css. 
+Once the creation process is done, you will see appear in our folder several files : index.qmd, about.qmd, _quarto.yml, style.css. 
 
 Let's take a moment to see what they do : 
 
-1. The files with a ".css" extension are Cascading Style Sheets (css) files. Together with HTML, they are one of the main langages for web development. They are mainly responsisble for the appearance and design of websites. It is not necessary to modify them for the purpose of this tutorial, but you can inform yourself about it [on this tutorial](https://www.w3schools.com/css/).
-2. The files with a ".qmd" extension are quarto files. This extension stands for Quarto MarkDown. They correspond to what the future pages of your website will be. They support various langages, like traditional Markdown or $\LaTeX$. We will change our portfolio pages by modifying these pages. 
+1. The files with a ".css" extension are Cascading Style Sheets (css) files. Together with HTML, they are one of the main langages for web development. They are mainly responsisble for the appearance and design of websites. It is not necessary to modify them for the purpose of this tutorial, but you can inform ourself about it [on this tutorial](https://www.w3schools.com/css/).
+2. The files with a ".qmd" extension are quarto files. This extension stands for Quarto MarkDown. They correspond to what the future pages of our website will be. They support various langages, like traditional Markdown or $\LaTeX$. We will change our portfolio pages by modifying these pages. 
 3. The files with a ".yml" extension are configuration files. We use them to set some rules that quarto will apply to generate our pages. For example, we will modify the navigation bar (or navbar) through our these files later in this chapter.
 
 ## The preview and render commands
@@ -65,33 +69,36 @@ Quarto allows us to create a properly designed website by only interacting with 
 To see the graphical result of our qmd files, we need to use two main commands : the `quarto preview` and `quarto render` commands.
 
 The `quarto preview` command allows to see in real time what the changes we are bringing to our qmd and yml files yield.
-After entering it in the terminal console, it automatically opens a page on your default browser where you can see the graphical results of the latest saved version of your qmd and yml files.
-If there is an error with your files (for example a bad configuration within your yaml file), you won't be able to see correctly the results, and an error message
+After entering it in the terminal console, it automatically opens a page on our default browser where you can see the graphical results of the latest saved version of our qmd and yml files.
+If there is an error with our files (for example a bad configuration within our yaml file), you won't be able to see correctly the results, and an error message
 will pop-up. We usually use it at the beginning of a work session, when we bring change to our portfolio. 
 
 The `quarto render` command allows to create html and css files from our qmd and yml files. We usually use it at the end of a work session, when we are satisfied with the changes we brought to the our website.
-Essentially, it does the same as the `preview` command, without opening a browser to see your changes in real time. 
+Essentially, it does the same as the `preview` command, without opening a browser to see our changes in real time. 
 
 Let's try to run the `quarto preview` command : 
 
 ![Running the quarto preview command on the vscode terminal.](./resources/images/2_3_quarto_preview_1.png)
 
-You should briefly see some blue text "preparing to preview", followed by the names of your qmd files, before your default browser automatically launches itself. 
+You should briefly see some blue text "preparing to preview", followed by the names of our qmd files, before our default browser automatically launches itself. 
 
-If you did not modify the basic files, you should see something like this on your web browser : 
+If you did not modify the basic files, you should see something like this on our web browser : 
 
 ![The graphical result of an empty quarto project.](./resources/images/2_4_quarto_preview_2.png)
 
 Okay, we have our first graphical results ! What happened exactly here ? 
-First, you entered `quarto preview`. Quarto first transformed all your qmd files in your folder in readable files for you web browser, i.e. html and css files.
-Then, it opened those html and css files with your default browser. What you are seeing is the result of this conversion from qmd to html and css.
+First, we entered `quarto preview`.
+Quarto first transformed all our qmd files in our folder in readable files for you web browser, i.e. html and css files.
+Then, it opened those html and css files with our default browser.
+What we are seeing is the result of this conversion from qmd to html and css.
 
-> Note : You can notice that the URL of your page looks a bit different from normal websites you access. Indeed, you should have something like "http://localhost:6986/", or any other kind of four numbers combination. 
-This is because quarto is currently watching at your file, and will refresh the page as soon as any of your qmd or yaml files are changed and saved. 
-Without entering into the details, "localhost" means that it is your computer, and the four numbers are the port of your computer quarto is using to display the files.
+> We can notice that the URL of our page looks a bit different from normal websites you access.
+Indeed, you should have something like "http://localhost:6986/", or any other kind of four numbers combination. 
+This is because quarto is currently watching at our file, and will refresh the page as soon as any of our qmd or yaml files are changed and saved. 
+Simplyt put, "localhost" means that it is our computer, and the four numbers are the port of our computer quarto is using to display the files.
 
-> Note : Now, your terminal is busy reading your files in the web browser. You can create a new terminal session by clicking on the "+" in vscode. 
-To stop the process, you can click on your terminal and then enter `ctrl`+`c` (`command`+`c` for MacOS keyboards).
+> Now, our terminal is busy reading our files in the web browser. You can create a new terminal session by clicking on the "+" in vscode. 
+To stop the process, we can click on our terminal and then enter `ctrl`+`c` (`command`+`c` for MacOS keyboards).
 
 ## How to modify our content
 
@@ -132,21 +139,22 @@ This should yield :
 
 ![Basic index page.](./resources/images/2_5_basic_index.png)
 
-> Note : you should usually avoid putting your entire email adress directly in your webpage.
+> We should usually avoid putting our entire email adress directly in our webpage.
 Some bots are constantly scrapping webpages to get potential email adress that are later on the target of spam or fraudulous emails.
 
 
-As you see, the changes are pretty straightforward. Since qmd files are basically a form of markdown file, you can use the markdown syntax for your content. 
-If you are not familiar with it, it is easy to understand. I encourage you to go check [some documentation](https://www.markdownguide.org/basic-syntax/). 
+As we see, the changes are pretty straightforward. Since qmd files are basically a form of markdown file, we can use the markdown syntax for our content. 
 
-For plain text, note that you can enter jumplines without actually rendering a jumpline. 
-If you want to do a breakline, you should let at least one empty line between two text chunks. 
+> If you are not familiar with the markdown syntax, it is easy to understand. I encourage you to go check [some documentation](https://www.markdownguide.org/basic-syntax/). 
+
+For plain text, note that we can enter jumplines without actually rendering a jumpline. 
+If we want to do a breakline, we should let at least one empty line between two text chunks. 
 
 We are now going to cover some features of markdown.
 
 ### Titles and subtitles
 
-If you write plain text in your qmd file, you will get normal text in your page. However, if you want to have titles and subtitles, you can use the `#` sign before it.
+If we write plain text in our qmd file, we will get normal text in our page. However, if we want to have titles and subtitles, we can use the `#` sign before it.
 
 In this way, one `#` will yiel a title, two `#` a subtitle, etc., until the sixth level. With text filler, we could write the following code : 
 
@@ -219,7 +227,7 @@ will yield :
 
 ![Example of links usage.](./resources/images/2_7_links.png)
 
-And if you click on the links in your browser, you should be redirected to the url you wrote ! 
+And if we click on the links, we should be redirected to the url we wrote ! 
 
 ### Adding documents and pictures
 
@@ -229,12 +237,12 @@ For example, some pdf of a long article we wrote or screeenshots.
 In order to do so, we are going to use the `![description](link)` markdown syntax.
 
 In the previous example, we had url as links, that could be accessed on internet. 
-Now, let's imagine that you have a pdf file in your computer that you want to share on your portfolio. 
+Now, let's imagine that we have a pdf file in our computer that we want to share on our portfolio. 
 Usually, such a pdf is not available online on a public url. 
 
-THe first step we want to do is put the files you want to share in your folder in vscode. You should have something like that : 
+The first step we want to do is put the files we want to share in our folder in vscode. We should have something like that : 
 
-![A vscode folder with files that you want to share.](./resources/images/2_8_vscode_files.png)
+![A vscode folder with files that we want to share.](./resources/images/2_8_vscode_files.png)
 
 Note that in the left side of my screen, in the explorer bar, I now have to additional files : "screenshot.png" and "2_8_markdown_guide.pdf". 
 
@@ -360,11 +368,13 @@ plot(x = iris$Petal.Length,
 abline(model) # draw the linear regression line on the plot
 ```
 
-If you don't use R, don't worry, Quarto also support several other languages, such as Python, Julia, and Observable JavaScript. In theory, if you know how to deal with code engine, you can also run other languages on Quarto. 
+> If you don't use R, don't worry, Quarto also support several other languages, such as Python, Julia, and Observable JavaScript.
+In theory, if you know how to deal with code engine, you can also run other languages on Quarto. 
 
 ### Adding math 
 
-Finally, if you want to add some math to your website, it is also possible. Indeed, markdown supports $\LaTeX$, so if you are already familiar with it, you can simply include your $\LaTeX$ code between dollar signs `$ some math $` to generate inline math, or between two dollar signs `$$ an equation $$`to generate math blocks. 
+Finally, it's also possible to add some math to our website.
+Indeed, markdown supports $\LaTeX$, so if you are already familiar with it, you can simply include our $\LaTeX$ code between dollar signs `$ some math $` to generate inline math, or between two dollar signs `$$ an equation $$` to generate math blocks. 
 
 For example, the following code : 
 
@@ -386,11 +396,14 @@ $$
 \bar{x}=\frac{1}{N}\sum_{i=1}^{N}x_{i}
 $$
 
-If you are not familiar with $\LaTeX$ and will be in positions where you have to write documents with math in it, I highly recommend you familiarizing yourself with it. The [Overleaf website](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes) is a good place to start, and [this guide here](https://en.wikibooks.org/wiki/LaTeX) is very complete.
+If you are not familiar with $\LaTeX$ and will be in positions where you have to write documents with math in it, I highly recommend you familiarizing ourself with this language.
+The [Overleaf website](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes) is a good place to start, and [this guide here](https://en.wikibooks.org/wiki/LaTeX) is very complete.
 
 ## How to modify the navigation bar
 
-Now that we are more proefficient in the generation of content, we can talk about the aspect of our portfolio.Without being website designers, we can recognize that an essential element of any website is the navigation bar. In Quarto, it is automatically displayed in all your pages, and you can only modify it in your `_quarto.yml` file. By default, you should have something similar to this :
+Now that we are more proefficient in the generation of content, we can talk about the aspect of our portfolio. 
+Without being website designers, we can recognize that an essential element of any website is the navigation bar.
+In Quarto, it is automatically displayed in all our pages, and we can only modify it in our `_quarto.yml` file. By default, we should have something similar to this :
 
 ```{.yml}
 project:
@@ -418,8 +431,9 @@ That yields a navbar like :
 In this example, the content of the navigation bar, or "navbar", are determined by all elements following the `navbar` element in the `website` list.
 Here, we see that it has two elements : the homepage, defined as the index.qmd file, and the about page, defined as the `about.qmd` file.
 
-Normally, the title of you page should appear in your browser, despite not being specified in your navbar. This is the default setting of Quarto.
-To unable this option, you can add `title: false` in your `navbar` list : 
+Normally, the title of our page should appear in our browser, despite not being specified in our navbar.
+This is the default setting of Quarto.
+To unable this option, we can add `title: false` in our `navbar` list : 
 
 ```{.yml}
 website:
@@ -436,7 +450,8 @@ This should yield :
 
 ![A navbar without title.](./resources/images/2_12_without_title.png)
 
-You may however want to keep it. in this case, it should be better to modify the title of your webpage to a customed one, like your name. For example : 
+We may however want to keep it. in this case, it should be better to modify the title of our webpage to a customed one, like our name.
+For example, in my case : 
 
 ```{.yml}
 website:
@@ -448,7 +463,7 @@ website:
       - about.qmd
 ```
 
-Now, to add a new page to your navbar, you can add an element in the `left` or `right` list such as : 
+Now, to add a new page to our navbar, we can add an element in the `left` or `right` list such as : 
 
 ```{.yml}
 website:
@@ -461,7 +476,8 @@ website:
       - about.qmd
 ```
 
-For this configuration to work, you must first create a `projects.qmd` file beforehand in your folder. This will then implement a new link in the navbar, displayed in its left part, having for name the title of the file, i.e. here `Projects` : 
+For this configuration to work, we must first create a `projects.qmd` file beforehand in our folder.
+This will then implement a new link in the navbar, displayed in its left part, having for name the title of the file, i.e. here `Projects` : 
 
 ```{.yml}
 ---
@@ -483,9 +499,29 @@ If we now combine the two mentioned code, we should have something like :
 Adding a new document to the navbar
 :::
 
+## Output directory
+
+A final important point for the publication of our website in the last chapter is the out-put directory.
+
+In order for us to configure the output directory, we are going to change our _quarto.yml to add the `output-dir` line :
+
+```{.yml}
+project:
+  type: website
+  output-dir: docs
+```
+
+This line tells Quarto to create a subdirectory called "docs" to store the html and css files. 
+It is important to specify this so that Github Pages recognize more easily our files to publish them.
+
+Therefore, make sure to add this line, run `quarto render`, and check that the "docs" directory is created in your folder.
+
 ## Further resources
 
-At this point, we should have the basics of Quarto. Although not complete, our portfolio is functional. If you wish to dive further into the personalization of your website (which is probably the case), you can spend more time reading their documentation, which is mentioned in the next paragraph.
+At this point, we roughly covered the basics of Quarto.
+Although not complete, our portfolio is functional.
+If you wish to dive further into the personalization of our website (which is probably the case), you can spend more time reading their documentation. 
 
-Quarto is a very powerful tool. We can use it to quickly produce content and maintain it with the presented workflow in this tutorial.
+Quarto is a very powerful tool.
+We can use it to quickly produce content and maintain it with the presented workflow in this tutorial.
 I highly recommend the reading of their [documentation here](https://quarto.org/docs/guide/), and more specifically to follow through their [Get Started guide](https://quarto.org/docs/get-started/).

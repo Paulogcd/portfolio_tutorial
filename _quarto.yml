@@ -35,6 +35,7 @@ website:
   # Add a sidebar at the left of the pages with this list of pages
   sidebar: 
     contents:
+    - index.qmd
     - foreword.qmd
     - 1_git_and_github.qmd
     - 2_quarto.qmd

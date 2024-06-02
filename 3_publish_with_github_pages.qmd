@@ -4,16 +4,48 @@ title: "3. Publish your website with Github Pages"
 
 {{< include warning.qmd >}}
 
-Congratulations for having made it so far ! Now that we have a decent-looking basis for our online portfolio, we are ready to make it available to the real world. 
+Congratulations for having made it so far !
+Now that we have a decent-looking basis for our online portfolio, we are ready to make it available to the real world. 
 In order for us to publish our content, we are going to use GitHub pages, a website hosting service of GitHub. 
 
 This final step is the easiest one, so hang it on, we are soon reaching the end of this tutorial. 
+
+## Saving our changes
+
+Before we publish our website, we have to make sure we saved all of our changes.
+Let us do a quick recap of our workflow here : 
+1. We create our repository on Github and open it in our computer.
+2. We create a Quarto project in vscode, and make some changes to our qmd and yml files.
+3. We stop the previewing process in our Terminal by clicking in it and entering `cmd`+`c` or clicking on the trash bin that appears when we pass our mouse on it at the right-bottom part of vscode. 
+4. We make sure all of our files are saved an enter `quarto render` in the Terminal.
+6. We add all of our changes in Git and commit them, depending on our method : 
+    - Through the commit button in Github Desktop,
+    - Through the `git add *` and `git commit -m "..."` commands via the CLI
+7. We publish our changes in our Github repository, depending on our method : 
+    - Through the "publish" buttons in Github Desktop, 
+    - Through the `git push` command via the CLI.
+
+::: {#New-doc-navbar layout-ncol=2}
+
+![1. Commiting the changes in Github Desktop.](./resources/images/3_1_github_desktop2.png)
+
+![2. Publishing our changes to Github via Github Desktop.](./resources/images/3_2_publish.png)
+
+The commit-publish process in Github Desktop.
+:::
+
+On Github Desktop, you should have a message like "Last fetched just now" just under the publish "Publish" button, that has now turned into a "Fetch origin" button : 
+
+![Commited changes with Github Desktop.](./resources/images/3_3_last_fetched.png)
+
+Now, our changes are saved on Github and ready to be published in the web ! 
 
 ## Activating GitHub pages
 
 {{< include section_warning.qmd >}}
 
-In order for us to publish the content that is available in our `_site` folder, we need first to goto our GitHub repository, and to click on settings at the top-right. We then click in the "Code and automation" on the "Pages" section. You should see something like this : 
+In order for us to publish the content that is available in our `docs` folder, we need first to goto our GitHub repository, and to click on settings at the top-right.
+We then click in the "Code and automation" on the "Pages" section. You should see something like this : 
 
 ![Add image](./resources/images/0_Default_image.png)
 
