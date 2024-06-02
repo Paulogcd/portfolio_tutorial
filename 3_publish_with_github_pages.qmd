@@ -6,7 +6,7 @@ title: "3. Publish your website with Github Pages"
 
 Congratulations for having made it so far :grin: !
 Now that we have a decent-looking basis for our online portfolio, we are ready to make it available to the real world. 
-In order for us to publish our content, we are going to use GitHub pages, a website hosting service of GitHub. 
+In order for us to publish our content, we are going to use GitHub Pages, a website hosting service of GitHub. 
 
 > Several free hosting services exist, such as [Netlify](https://www.netlify.com/), [Quarto Pub](https://quartopub.com/), and [GitHub Pages](https://pages.github.com/), among other ones.
 We focus here on Github Pages because of its simplicity and because it allows to have an easy and stable workflow with our Github repository.
@@ -34,17 +34,15 @@ Let us do a quick recap of our workflow here :
 ![1. Commiting the changes in Github Desktop.](./resources/images/3_1_github_desktop2.png)
 
 ![2. Publishing our changes to Github via Github Desktop.](./resources/images/3_2_publish.png)
-
-The commit-publish process in Github Desktop.
 :::
 
 On Github Desktop, you should have a message like "Last fetched just now" just under the publish "Publish" button, that has now turned into a "Fetch origin" button : 
 
 ![Commited changes with Github Desktop.](./resources/images/3_3_last_fetched.png)
 
-Now, our changes are saved on Github and ready to be published in the web ! 
+Now, our changes are saved on Github and ready to be published on the Web ! 
 
-## Activating GitHub pages
+## Activating GitHub Pages
 
 In order for us to publish the content that is available in our `docs` folder, we need first to goto our GitHub repository, and to click on "Settings", the last item of the top-bar : 
 
@@ -77,7 +75,7 @@ If we click on this orange dot, a small pop-up window will appear, with addition
 
 ::: {#New-doc-navbar layout-ncol=2}
 
-![Home page of our repository, with now a test being run by Github pages.](./resources/images/3_9.png)
+![Home page of our repository, with now a test being run by Github Pages.](./resources/images/3_9.png)
 
 ![Additional information on the current test.](./resources/images/3_10.png)
 
@@ -98,7 +96,7 @@ You can check the official guide of Github [here](https://docs.github.com/en/pag
 
 > If you see an error message related to Jekyll, try adding an empty file named `.nojekyll` in your folder by entering `touch .nojekyll` in your vscode terminal.
 Publish this change to your Github repository, and see if the test is passing.
-This issue seems to occurs regularly, but not in all cases.
+This issue seems to occur regularly, but not in all cases.
 
 Once all the dots are green, we can go to <https://username.github.io>, with our actual GitHub username instead of "username".
 After a few minutes, it should be on.
@@ -118,7 +116,7 @@ If you wish to understand more about the publishing process, you can find more i
 
 - [The Quarto documentation](https://quarto.org/docs/publishing/github-pages.html)
 
-- [The Github guide for Github pages](https://docs.github.com/en/pages)
+- [The Github guide for Github Pages](https://docs.github.com/en/pages)
 
 In order to understand better what the publication process is, it is also useful to understand how internet works, and what the difference between frontend and backend development is : 
 
@@ -135,4 +133,4 @@ I hope you enjoyed it.
 If you noticed some things that seemed wrong, too complicated, or some bugs in the website, please reach to me.
 This tutorial is currently under construction and I am trying to improve it as much as possible. 
 
-> If you want to suggest some modification to this tutorial, you can also click on the top-right buttons "Report an issue" ("Edit this page" will create a pull request on Github... Feel free to look what this means) under the table of content of this chapter ;).
+> If you want to suggest some modification to this tutorial, you can also click on the top-right buttons "Report an issue" ("Edit this page" will create a pull request on Github... Feel free to look to what it does) under the table of content of this chapter :wink:.

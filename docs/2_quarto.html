@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.554">
+<meta name="generator" content="quarto-1.4.553">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -180,10 +180,6 @@ window.Quarto = {
     <a class="dropdown-item" href="./3_publish_with_github_pages.html">
  <span class="dropdown-text">3. Publish with GitHub Pages</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./conclusion.html">
- <span class="dropdown-text">Conclusion</span></a>
-  </li>  
     </ul>
   </li>
   <li class="nav-item">
@@ -246,12 +242,6 @@ window.Quarto = {
   <div class="sidebar-item-container"> 
   <a href="./3_publish_with_github_pages.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">3. Publish your website with Github Pages</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./conclusion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Conclusion</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -322,7 +312,7 @@ Caution
 <p>This tutorial is currently going under construction. All chapters and sections are not finished and might include incomplete explanations. Feel free to reach out to me to point out some missing elements.</p>
 </div>
 </div>
-<p>Now that we know how to make use of Github and Visual Studio Code, we are going to use Quarto to create our website <span class="emoji" data-emoji="art">🎨</span> !</p>
+<p>Now that we know how to make use of GitHub and Visual Studio Code, we are going to use Quarto to create our website <span class="emoji" data-emoji="art">🎨</span> !</p>
 <p><strong>Quarto</strong> is a static website generator. It is a software that allows us to create web content from human readable files.</p>
 <p>Usually, we should learn HTML and CSS to know a bit of Web development. Indeed, those are the languages that traditional web browsers support. When you go to a webpage, our web browser transforms html and css into a graphical interface, which is easier to understand for humans. However, in recent years, a lot of static website generators have emerged, turning the creation of websites much easier. Among the several static website generators, <a href="https://jekyllrb.com/">Jekyll</a>, <a href="https://www.getzola.org/">Zola</a>, <a href="https://gohugo.io/">Hugo</a>, and <a href="https://quarto.org/">Quarto</a> can be cited, but they are far from being the only ones.</p>
 <blockquote class="blockquote">
@@ -348,7 +338,7 @@ Caution
 <figcaption>Creation of a project with Quarto</figcaption>
 </figure>
 </div>
-<p>After entering <code>quarto create</code>, quarto asks you different things :</p>
+<p>After entering <code>quarto create</code>, Quarto asks you different things :</p>
 <ol type="1">
 <li>The nature of the Quarto environment we want to create. We have the choice between a <code>project</code> and an <code>extension</code>. We are going to choose <code>project</code>.</li>
 <li>The type of our project. It gives us the choice between :
@@ -361,17 +351,17 @@ Caution
 <li>confluence</li>
 </ul>
 Wecould choose different kinds of projects here. For example, <code>default</code> would work well enough also. However, let’s stick to <code>website</code> for the sake of simplicity.</li>
-<li>Quarto then asks for the Directory you wish to create our quarto project in. Since you are already in the folder you opened with vscode, you should write a simple dot <code>.</code> and press enter.</li>
+<li>Quarto then asks for the Directory you wish to create our Quarto project in. Since you are already in the folder you opened with vscode, you should write a simple dot <code>.</code> and press enter.</li>
 </ol>
 <blockquote class="blockquote">
 <p>The dot <code>.</code> refers to the current directory in several langages. To understand better how a path works, I recommend consulting <a href="https://www.w3schools.com/html/html_filepaths.asp">this article</a>.</p>
 </blockquote>
 <p>Once the creation process is done, you will see appear in our folder several files : index.qmd, about.qmd, _quarto.yml, style.css.</p>
-<p>Let’s take a moment to see what they do :</p>
+<p>Let us take a moment to see what they do :</p>
 <ol type="1">
 <li>The files with a “.css” extension are Cascading Style Sheets (css) files. Together with HTML, they are one of the main langages for web development. They are mainly responsisble for the appearance and design of websites. It is not necessary to modify them for the purpose of this tutorial, but you can inform ourself about it <a href="https://www.w3schools.com/css/">on this tutorial</a>.</li>
-<li>The files with a “.qmd” extension are quarto files. This extension stands for Quarto MarkDown. They correspond to what the future pages of our website will be. They support various langages, like traditional Markdown or <span class="math inline">\(\LaTeX\)</span>. We will change our portfolio pages by modifying these pages.</li>
-<li>The files with a “.yml” extension are configuration files. We use them to set some rules that quarto will apply to generate our pages. For example, we will modify the navigation bar (or navbar) through our these files later in this chapter.</li>
+<li>The files with a “.qmd” extension are Quarto files. This extension stands for Quarto MarkDown. They correspond to what the future pages of our website will be. They support various langages, like traditional Markdown or <span class="math inline">\(\LaTeX\)</span>. We will change our portfolio pages by modifying these pages.</li>
+<li>The files with a “.yml” extension are configuration files. We use them to set some rules that Quarto will apply to generate our pages. For example, we will modify the navigation bar (or navbar) through our these files later in this chapter.</li>
 </ol>
 </section>
 <section id="the-preview-and-render-commands" class="level2">
@@ -384,7 +374,7 @@ Wecould choose different kinds of projects here. For example, <code>default</cod
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><a href="./resources/images/2_3_quarto_preview_1.png" class="lightbox" data-glightbox="description: .lightbox-desc-3" data-gallery="quarto-lightbox-gallery-3" title="Running the quarto preview command on the vscode terminal."><img src="./resources/images/2_3_quarto_preview_1.png" class="img-fluid figure-img" alt="Running the quarto preview command on the vscode terminal."></a></p>
-<figcaption>Running the quarto preview command on the vscode terminal.</figcaption>
+<figcaption>Running the <code>quarto preview</code> command on the vscode terminal.</figcaption>
 </figure>
 </div>
 <p>You should briefly see some blue text “preparing to preview”, followed by the names of our qmd files, before our default browser automatically launches itself.</p>
@@ -397,7 +387,7 @@ Wecould choose different kinds of projects here. For example, <code>default</cod
 </div>
 <p>Okay, we have our first graphical results ! What happened exactly here ? First, we entered <code>quarto preview</code>. Quarto first transformed all our qmd files in our folder in readable files for you web browser, i.e.&nbsp;html and css files. Then, it opened those html and css files with our default browser. What we are seeing is the result of this conversion from qmd to html and css.</p>
 <blockquote class="blockquote">
-<p>We can notice that the URL of our page looks a bit different from normal websites you access. Indeed, you should have something like “http://localhost:6986/”, or any other kind of four numbers combination. This is because quarto is currently watching at our file, and will refresh the page as soon as any of our qmd or yaml files are changed and saved. Simplyt put, “localhost” means that it is our computer, and the four numbers are the port of our computer quarto is using to display the files.</p>
+<p>We can notice that the URL of our page looks a bit different from normal websites you access. Indeed, you should have something like “http://localhost:6986/”, or any other kind of four numbers combination. This is because Quarto is currently watching at our file, and will refresh the page as soon as any of our qmd or yaml files are changed and saved. Simplyt put, “localhost” means that it is our computer, and the four numbers are the port of our computer quarto is using to display the files.</p>
 </blockquote>
 <blockquote class="blockquote">
 <p>Now, our terminal is busy reading our files in the web browser. You can create a new terminal session by clicking on the “+” in vscode. To stop the process, we can click on our terminal and then enter <code>ctrl</code>+<code>c</code> (<code>command</code>+<code>c</code> for MacOS keyboards).</p>
@@ -596,7 +586,7 @@ Wecould choose different kinds of projects here. For example, <code>default</cod
 <pre><code>[1] "Hello world !"</code></pre>
 </div>
 </div>
-<p><strong>We are here touching one of the biggest strength of Quarto.</strong> Despite being a “simple” static website generator, it allows us to include and execute code in our page. This can be very useful to display work that requires data treatment and/or other statistical computations.</p>
+<p><strong>We are here touching one of the biggest strengths of Quarto.</strong> Despite being a “simple” static website generator, it allows us to include and execute code in our page. This can be very useful to display work that requires data treatment and/or other statistical computations.</p>
 <p>For example, the following code in R :</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="in">data(iris) # load the freely accessible dataset named "iris"</span></span>
@@ -770,7 +760,7 @@ Wecould choose different kinds of projects here. For example, <code>default</cod
 <div class="sourceCode" id="cb20"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">output-dir</span><span class="kw">:</span><span class="at"> docs</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>This line tells Quarto to create a subdirectory called “docs” to store the html and css files. It is important to specify this so that Github Pages recognize more easily our files to publish them.</p>
+<p>This line tells Quarto to create a subdirectory called “docs” to store the html and css files. It is important to specify this so that GitHub Pages recognize more easily our files to publish them.</p>
 <p>Therefore, make sure to add this line, run <code>quarto render</code>, and check that the “docs” directory is created in your folder.</p>
 </section>
 <section id="further-resources" class="level2">
@@ -782,7 +772,7 @@ Wecould choose different kinds of projects here. For example, <code>default</cod
 <div class="hidden" aria-hidden="true">
 <span class="glightbox-desc lightbox-desc-1">Installation page of Quarto</span>
 <span class="glightbox-desc lightbox-desc-2">Creation of a project with Quarto</span>
-<span class="glightbox-desc lightbox-desc-3">Running the quarto preview command on the vscode terminal.</span>
+<span class="glightbox-desc lightbox-desc-3">Running the <code>quarto preview</code> command on the vscode terminal.</span>
 <span class="glightbox-desc lightbox-desc-4">The graphical result of an empty quarto project.</span>
 <span class="glightbox-desc lightbox-desc-5">Basic index page.</span>
 <span class="glightbox-desc lightbox-desc-6">Example of titles and subtitles.</span>
@@ -1238,7 +1228,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","selector":".lightbox","loop":false,"descPosition":"bottom","closeEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","closeEffect":"zoom","openEffect":"zoom","selector":".lightbox","loop":false});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

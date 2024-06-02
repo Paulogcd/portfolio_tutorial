@@ -4,7 +4,7 @@ title: "2. Creating our content with Quarto"
 
 {{< include warning.qmd >}}
 
-Now that we know how to make use of Github and Visual Studio Code, we are going to use Quarto to create our website :art: !
+Now that we know how to make use of GitHub and Visual Studio Code, we are going to use Quarto to create our website :art: !
 
 **Quarto** is a static website generator. It is a software that allows us to create web content from human readable files.
 
@@ -38,7 +38,7 @@ For the purpose of creating a portfolio, we are going to select `website` in the
 
 ![Creation of a project with Quarto](./resources/images/2_2_create_project_quarto.png)
 
-After entering `quarto create`, quarto asks you different things : 
+After entering `quarto create`, Quarto asks you different things : 
 
 1. The nature of the Quarto environment we want to create. We have the choice between a `project` and an `extension`. We are going to choose `project`.
 2. The type of our project. It gives us the choice between : 
@@ -50,18 +50,18 @@ After entering `quarto create`, quarto asks you different things :
     - confluence
 
     Wecould choose different kinds of projects here. For example, `default` would work well enough also. However, let's stick to `website` for the sake of simplicity.
-3. Quarto then asks for the Directory you wish to create our quarto project in. Since you are already in the folder you opened with vscode, you should write a simple dot `.` and press enter.  
+3. Quarto then asks for the Directory you wish to create our Quarto project in. Since you are already in the folder you opened with vscode, you should write a simple dot `.` and press enter.  
 
 > The dot `.` refers to the current directory in several langages.
 To understand better how a path works, I recommend consulting [this article](https://www.w3schools.com/html/html_filepaths.asp).
 
 Once the creation process is done, you will see appear in our folder several files : index.qmd, about.qmd, _quarto.yml, style.css. 
 
-Let's take a moment to see what they do : 
+Let us take a moment to see what they do : 
 
 1. The files with a ".css" extension are Cascading Style Sheets (css) files. Together with HTML, they are one of the main langages for web development. They are mainly responsisble for the appearance and design of websites. It is not necessary to modify them for the purpose of this tutorial, but you can inform ourself about it [on this tutorial](https://www.w3schools.com/css/).
-2. The files with a ".qmd" extension are quarto files. This extension stands for Quarto MarkDown. They correspond to what the future pages of our website will be. They support various langages, like traditional Markdown or $\LaTeX$. We will change our portfolio pages by modifying these pages. 
-3. The files with a ".yml" extension are configuration files. We use them to set some rules that quarto will apply to generate our pages. For example, we will modify the navigation bar (or navbar) through our these files later in this chapter.
+2. The files with a ".qmd" extension are Quarto files. This extension stands for Quarto MarkDown. They correspond to what the future pages of our website will be. They support various langages, like traditional Markdown or $\LaTeX$. We will change our portfolio pages by modifying these pages. 
+3. The files with a ".yml" extension are configuration files. We use them to set some rules that Quarto will apply to generate our pages. For example, we will modify the navigation bar (or navbar) through our these files later in this chapter.
 
 ## The preview and render commands
 
@@ -79,7 +79,7 @@ Essentially, it does the same as the `preview` command, without opening a browse
 
 Let's try to run the `quarto preview` command : 
 
-![Running the quarto preview command on the vscode terminal.](./resources/images/2_3_quarto_preview_1.png)
+![Running the `quarto preview` command on the vscode terminal.](./resources/images/2_3_quarto_preview_1.png)
 
 You should briefly see some blue text "preparing to preview", followed by the names of our qmd files, before our default browser automatically launches itself. 
 
@@ -95,7 +95,7 @@ What we are seeing is the result of this conversion from qmd to html and css.
 
 > We can notice that the URL of our page looks a bit different from normal websites you access.
 Indeed, you should have something like "http://localhost:6986/", or any other kind of four numbers combination. 
-This is because quarto is currently watching at our file, and will refresh the page as soon as any of our qmd or yaml files are changed and saved. 
+This is because Quarto is currently watching at our file, and will refresh the page as soon as any of our qmd or yaml files are changed and saved. 
 Simplyt put, "localhost" means that it is our computer, and the four numbers are the port of our computer quarto is using to display the files.
 
 > Now, our terminal is busy reading our files in the web browser. You can create a new terminal session by clicking on the "+" in vscode. 
@@ -333,7 +333,7 @@ The code will yield :
 print("Hello world !")
 ```
 
-**We are here touching one of the biggest strength of Quarto.**
+**We are here touching one of the biggest strengths of Quarto.**
 Despite being a "simple" static website generator, it allows us to include and execute code in our page.
 This can be very useful to display work that requires data treatment and/or other statistical computations. 
 
@@ -512,7 +512,7 @@ project:
 ```
 
 This line tells Quarto to create a subdirectory called "docs" to store the html and css files. 
-It is important to specify this so that Github Pages recognize more easily our files to publish them.
+It is important to specify this so that GitHub Pages recognize more easily our files to publish them.
 
 Therefore, make sure to add this line, run `quarto render`, and check that the "docs" directory is created in your folder.
 

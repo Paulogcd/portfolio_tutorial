@@ -32,7 +32,6 @@ website:
           file: 2_quarto.qmd
         - text: "3. Publish with GitHub Pages"
           file: 3_publish_with_github_pages.qmd
-        - conclusion.qmd
       - about.qmd
   # Add a sidebar at the left of the pages with this list of pages
   sidebar: 
@@ -42,7 +41,6 @@ website:
     - 1_git_and_github.qmd
     - 2_quarto.qmd
     - 3_publish_with_github_pages.qmd
-    - conclusion.qmd
     - about.qmd
   # Add a footer with the CC 4.0 License 
   page-footer: "[![](https://img.shields.io/badge/License-CC%20BY--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nd/4.0/) Paulo Gugelmo Cavalheiro Dias" 

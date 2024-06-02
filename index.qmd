@@ -4,14 +4,14 @@ title: "Research student portfolio tutorial"
 
 {{< include warning.qmd >}}
 
-You don't have much time and are not proefficient in web development :confused:, but you would like to have an online portfolio to share your research work :thinking:?
+You do not have much time and are not proefficient in web development :confused:, but you would like to have an online portfolio to share your work in research :thinking:?
 Welcome to this **research student portfolio tutorial** :open_mouth: ! 
 
 ## Objective of this tutorial 
 
-- This simple tutorial aims at giving the right tools to any students who want to publish and maintain their portfolio in a quick and efficient way.
+- This tutorial aims to give the right tools to any research student who wants to publish and maintain their portfolio in a quick and efficient way.
 - It requires no prior programming experience. 
-- You can find all the material and code of this tutorial [on this Github repository](http://github.com/paulogcd/portfolio_tutorial).
+- You can find all the material and code of this tutorial [on this GitHub repository](http://github.com/paulogcd/portfolio_tutorial).
 
 ## Structure and material
 
@@ -20,13 +20,13 @@ This tutorial is divided in three main chapters :
 | Chapter | Summary |
 |---|---|
 | [1. Setting up our workflow](1_git_and_github.qmd) | In this chapter, we will learn how to use Git and GitHub with Visual Studio Code. This serves to setup the workflow that will be used in the rest of the tutorial. |
-| [2. Creating our content with Quarto](2_quarto.qmd) | In this chapter, we will learn to generate web content with Quarto, and to easily modify and maintain it. This chapter serves to create the content of our portfolio we will later publish. |
-| [3. Publish your website with GitHub Pages](3_publish_with_github_pages.qmd) | In this chapter, you will learn how to publish your website, i.e. make it accessible to everyone on the internet. We will also cover how to quickly update our website. |
+| [2. Creating our content with Quarto](2_quarto.qmd) | In this chapter, we will learn to create and modify web content with Quarto. This serves to create the content of our portfolio that we will later published. |
+| [3. Publish your website with GitHub Pages](3_publish_with_github_pages.qmd) | In this chapter, we will learn how to publish our website, i.e. make it accessible to everyone on the Internet. |
 
 ## Further resources
 
-You will find some useful complementary resources at the end of each chapter.
+At the end of each chapter, you will find some useful complementary resources. Here are the main ones : 
 
-For the first chapter, I learned a lot in [Florian Oswald class](https://floswald.github.io/ScPoProgramming/), Associate Professor of Economics at Sciences Po in Paris, and my teacher to introduction to programming.
-The second chapter takes some important elements from the [great documentation of quarto](https://quarto.org) and on [their discussion forum on Github](https://github.com/quarto-dev/quarto-cli/discussions). 
-The last chapter is based on the guide of [Github Pages of Github](https://docs.github.com/en/pages/quickstart) and complementary research on [stackoverflow](https://stackoverflow.com/) to troubleshot errors. 
+- For the first chapter, I learned a lot in [Florian Oswald class](https://floswald.github.io/ScPoProgramming/), Associate Professor of Economics at Sciences Po in Paris, and my teacher to introduction to programming.
+- The second chapter takes some important elements from the [great documentation of Quarto](https://quarto.org) and on [their discussion forum on GitHub](https://github.com/quarto-dev/quarto-cli/discussions). 
+- The last chapter is based on the guide of [GitHub Pages of GitHub](https://docs.github.com/en/pages/quickstart) and complementary research on [Stack Overflow](https://stackoverflow.com/) to troubleshot errors. 
