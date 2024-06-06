@@ -4,7 +4,7 @@ title: "Research student portfolio tutorial"
 
 {{< include warning.qmd >}}
 
-You do not have much time and are not proefficient in web development :confused:, but you would like to have an online portfolio to share your work in research :thinking:?
+You would like to have an online portfolio to share your work in research :thinking:, but you do not have much time and are not proefficient in web development :confused: ?
 Welcome to this **research student portfolio tutorial** :open_mouth: ! 
 
 ## Objective of this tutorial 
@@ -19,9 +19,9 @@ This tutorial is divided in three main chapters :
 
 | Chapter | Summary |
 |---|---|
-| [1. Setting up our workflow](1_git_and_github.qmd) | In this chapter, we will learn how to use Git and GitHub with Visual Studio Code. This serves to setup the workflow that will be used in the rest of the tutorial. |
-| [2. Creating our content with Quarto](2_quarto.qmd) | In this chapter, we will learn to create and modify web content with Quarto. This serves to create the content of our portfolio that we will later published. |
-| [3. Publish your website with GitHub Pages](3_publish_with_github_pages.qmd) | In this chapter, we will learn how to publish our website, i.e. make it accessible to everyone on the Internet. |
+| [1. Setting up our workflow](1_git_and_github.qmd) | In this chapter, we will learn what Git and GitHub are, and how to use them. This serves to setup the workflow that will be used in the rest of the tutorial. |
+| [2. Creating our content with Quarto](2_quarto.qmd) | In this chapter, we will learn to create and modify web content with Quarto. This serves to create the content of our portfolio. |
+| [3. Publish our website with GitHub Pages](3_publish_with_github_pages.qmd) | In this chapter, we will learn how to publish our website, i.e. make it accessible to everyone on the Internet. |
 
 ## Further resources
 

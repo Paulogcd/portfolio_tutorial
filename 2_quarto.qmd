@@ -8,18 +8,20 @@ Now that we know how to make use of GitHub and Visual Studio Code, we are going 
 
 **Quarto** is a static website generator. It is a software that allows us to create web content from human readable files.
 
-Usually, we should learn HTML and CSS to know a bit of Web development.
+Usually, we should learn HTML and CSS, and JavaScript to know a bit of Web development.
 Indeed, those are the languages that traditional web browsers support. 
-When you go to a webpage, our web browser transforms html and css into a graphical interface, which is easier to understand for humans.
-However, in recent years, a lot of static website generators have emerged, turning the creation of websites much easier.
-Among the several static website generators, [Jekyll](https://jekyllrb.com/), [Zola](https://www.getzola.org/), [Hugo](https://gohugo.io/), and [Quarto](https://quarto.org/) can be cited, but they are far from being the only ones.
+When you go to a webpage, our web browser transforms html and css into a graphical interface, which is easier to understand for humans. Javascript allows us to implement interactive features.
+However, in recent years, a lot of static website generators have emerged, making the creation of websites much easier.
+Among them, [Jekyll](https://jekyllrb.com/), [Zola](https://www.getzola.org/), [Hugo](https://gohugo.io/), and [Quarto](https://quarto.org/) can be cited, but they are far from being the only ones available.
 
 > This tutorial focuses on Quarto for several reasons.
 First, it is easy to use.
 The commands are user-friendly, and do not require much background knowledge.
 Second, its file format (qmd, or "quarto markdown") allows to easily include data visualization, code and support some very useful libraries like [Shiny](https://shiny.posit.co/), that allow to create interactive web pages with data.
-It makes it easy to showcase our work if you deal with data and statistical analysis with R, Python, or Julia.
+It makes it easy to showcase our work if we deal with data and statistical analysis with R, Python, or Julia.
 It is therefore especially interesting if we are trying to build a research portfolio :sunglasses:.
+
+> By the way, this webpage was done with Quarto. 
 
 ## Installation of Quarto
 
@@ -32,13 +34,11 @@ Once it is done, we will be able to interact with Quarto through the terminal of
 ## Create a Quarto project
 
 Now that Quarto is installed, we can create a Quarto project in our folder (the one we synchronized with our online GitHub repository).
-In order to do that, you can go in vscode, and enter `quarto create` in the terminal.
-We will then be guided with several questions regarding the nature of the project we wish to create.
-For the purpose of creating a portfolio, we are going to select `website` in the menu. 
+In order to do that, we go back to vscode, and enter `quarto create` in the terminal of our open folder.
 
 ![Creation of a project with Quarto](./resources/images/2_2_create_project_quarto.png)
 
-After entering `quarto create`, Quarto asks you different things : 
+After entering `quarto create`, Quarto asks us different things : 
 
 1. The nature of the Quarto environment we want to create. We have the choice between a `project` and an `extension`. We are going to choose `project`.
 2. The type of our project. It gives us the choice between : 
@@ -49,19 +49,19 @@ After entering `quarto create`, Quarto asks you different things :
     - book
     - confluence
 
-    Wecould choose different kinds of projects here. For example, `default` would work well enough also. However, let's stick to `website` for the sake of simplicity.
-3. Quarto then asks for the Directory you wish to create our Quarto project in. Since you are already in the folder you opened with vscode, you should write a simple dot `.` and press enter.  
+    We could choose several options here. For example, `default` would work well enough also. However, let's stick to `website` for the sake of simplicity.
+3. Quarto then asks for the Directory we wish to create our Quarto project in. Since we are already in the folder we opened with vscode, we should write a simple dot `.` and press enter.  
 
 > The dot `.` refers to the current directory in several langages.
-To understand better how a path works, I recommend consulting [this article](https://www.w3schools.com/html/html_filepaths.asp).
+To understand better how a path works, we can consult [this article](https://www.w3schools.com/html/html_filepaths.asp).
 
-Once the creation process is done, you will see appear in our folder several files : index.qmd, about.qmd, _quarto.yml, style.css. 
+Once the creation process is done, we will see appear in our folder several files : index.qmd, about.qmd, _quarto.yml, style.css. 
 
-Let us take a moment to see what they do : 
+Let us take a moment to comment on what they do : 
 
-1. The files with a ".css" extension are Cascading Style Sheets (css) files. Together with HTML, they are one of the main langages for web development. They are mainly responsisble for the appearance and design of websites. It is not necessary to modify them for the purpose of this tutorial, but you can inform ourself about it [on this tutorial](https://www.w3schools.com/css/).
-2. The files with a ".qmd" extension are Quarto files. This extension stands for Quarto MarkDown. They correspond to what the future pages of our website will be. They support various langages, like traditional Markdown or $\LaTeX$. We will change our portfolio pages by modifying these pages. 
-3. The files with a ".yml" extension are configuration files. We use them to set some rules that Quarto will apply to generate our pages. For example, we will modify the navigation bar (or navbar) through our these files later in this chapter.
+1. The files with a ".css" extension are Cascading Style Sheets (css) files. Together with HTML, CSS is one of the main languages for web development. Those kind of files are mainly responsisble for the appearance and design of websites. It is not necessary to modify them for the purpose of this tutorial, but we can inform ourselves about it [on this page](https://www.w3schools.com/css/).
+2. The files with a ".qmd" extension are Quarto files. This extension stands for Quarto MarkDown (qmd). They correspond to what the future pages of our website will be. They support various langages, like traditional Markdown, $\LaTeX$, and more... We will change our portfolio pages by modifying these pages. 
+3. The files with a ".yml" extension are configuration files. We use them to set some rules that Quarto will apply to generate our pages. For example, we will modify the navigation bar (or navbar) through these files.
 
 ## The preview and render commands
 
@@ -69,10 +69,9 @@ Quarto allows us to create a properly designed website by only interacting with 
 
 To see the graphical result of our qmd files, we need to use two main commands : the `quarto preview` and `quarto render` commands.
 
-The `quarto preview` command allows to see in real time what the changes we are bringing to our qmd and yml files yield.
-After entering it in the terminal console, it automatically opens a page on our default browser where you can see the graphical results of the latest saved version of our qmd and yml files.
-If there is an error with our files (for example a bad configuration within our yaml file), you won't be able to see correctly the results, and an error message
-will pop-up. We usually use it at the beginning of a work session, when we bring change to our portfolio. 
+The `quarto preview` command allows to see in real time what our `qmd` and `yml` yield.
+After entering it in the terminal console, it automatically opens a page on our default browser where you can see the graphical results of the latest saved version of our files.
+If there is an error with our files (for example a bad configuration within our yaml file), you won't be able to see correctly the results, and an error message will pop-up. We usually use it at the beginning of a work session, when we bring change to our portfolio. 
 
 The `quarto render` command allows to create html and css files from our qmd and yml files. We usually use it at the end of a work session, when we are satisfied with the changes we brought to the our website.
 Essentially, it does the same as the `preview` command, without opening a browser to see our changes in real time. 

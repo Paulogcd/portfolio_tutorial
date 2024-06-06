@@ -10,7 +10,7 @@ execute:
 
 
 Welcome in this tutorial to create your own online portfolio :slightly_smiling_face: !
-The first step of our online portfolio creation is to set up our working environment. 
+The first step of our journey to set up our working environment. 
 In order to do so, we are going to use several tools, like **Git**, **GitHub** and **Visual Studio Code**. 
 
 - Git and GitHub will allow us to manage the changes of our files, and store them online. 
@@ -18,14 +18,14 @@ In order to do so, we are going to use several tools, like **Git**, **GitHub** a
 
 ## Git and GitHub 
 
-**Git** is a software that allows to manage all the changes done to the selected files. It is also called a version management software, or a version control system. 
+**Git** is a software that allows to manage all the changes done to selected files. It is also called a version management software, or a version control system. 
 We want to check all the versions and changes of our files from their creation until their current version ?
 If we use Git, it is possible.
 
 > Git does not only work with code files, but also with any type of file.
 If you have a text file (like a Master thesis for example...) for which you want to control the different versions, you can use Git for it ! 
 
-**GitHub** is a company (currently owned by Microsoft) that puts at disposition servers that can be used to store files.
+**GitHub** is a company (currently owned by Microsoft) whose servers can be used to store files.
 Their website integrates Git and use it to track the changes of all the documents we choose to store on it.
 
 > GitHub has a lot of different uses, including collaborative coding, but this tutorial only focuses on how to use it to manage our project with Git and Quarto.
@@ -39,7 +39,7 @@ It is simple and quick to setup.
 
 - The second method is based on the **Command Line Interface (CLI)** approach. 
 It uses the basic features of Git and GitHub, and relies on the Command Line to interact with Git and GitHub.
-It requires more steps, and is harder to setup, but we will develop a deeper understanding of what is going on when we use Git and GitHub.
+It requires more steps, and is harder to setup, but allows to develop a deeper understanding of what is going on when we use Git and GitHub.
 
 If we do not wish to dive deep into the mechanisms of the Git and its interactions with GitHub, we can proceed with the GUI approach.
 
@@ -108,13 +108,14 @@ Now, we should get something looking like that :
 
 Let us take a moment to comment what we see. 
 In the left side bar, we have all the modified files of our directory.
-Here, GitHub desktop created automatically a .gitattributes file.
+Here, GitHub desktop automatically created a .gitattributes file.
 In the right side interface, we see the content of the selected files. 
 Here, we see that two lines have been added, thanks to the green color and the addition sign "+".
 
-Now, if you make any change in your folder, you will be able to commit the changes. 
-"Commit" means here that the changes will be recorded in our history of changes.
-Once our changes are commited, we can publish them on our GitHub repository with the top-right button "Publish repository".
+Now, if we make any change in our folder, we will be able to commit the changes. 
+"Commit" means here that the changes will be recorded in the history of changes.
+Once our changes are commited, we can "push" them on our GitHub repository with the top-right button. 
+If we want to "push" for the first time, we first have to publish the repository, i.e. create a distant repository on GitHub. We do it with the top-right button "Publish repository".
 
 In order for us to add files to our directory and modify them, we are now going to use another tool : Visual Studio Code.
 
@@ -166,7 +167,7 @@ Creating and programming on another branch would  be aking to continuing the dev
 It is important to set up a main branch, in order for Git not to bug in future operations.
 In order to do so, we can enter : `git branch -M main` in the terminal. 
 
-Git is a very powerful tool that allows to do a lot of collabortive code managing, but we choose here to mainly exploit one of its features : remote synchronization. 
+Git is a very powerful tool that allows to do a lot of collaborative code managing, but we choose here to mainly exploit one of its features : remote synchronization. 
 Ideed, in addition to having this local logbook on our computer, we can also send your files to a remote server, in a similar way than the cloud or a remote drive works.
 This is where GitHub enters into play. 
 
@@ -256,7 +257,7 @@ You can then verify that your changes have been taken into account by going on t
 ## Visual Studio Code
 
 **Visual Studio Code** (VSC or vscode) is a software to write and execute code, also called Integrated Development Environment (IDE).
-It is largely used, and a lot of extensions exist to customize your experience with it. 
+It is largely used, and many extensions exist to customize one's experience with it. 
 We are going to install vscode [here](https://code.visualstudio.com/).
  
 ![Dowload page of vscode.](./resources/images/1_1_install_vscode2.png)
@@ -265,41 +266,44 @@ One of the strenghts of vscode is the fact that it can open and manage a whole f
 We are now going to use vscode to open the folder "username.github.io" that we created earlier.
 To do so, we open vscode, click on "open" in the starting page, and select our folder.
 
+> In some versions of vscode, two options exist for opening a file or a folder. 
+Be sure to select the option to open a folder and not a file.
+
 ![Starting page of vscode. Click on "open" to chose a folder to open.](./resources/images/1_2_starting_page_vscode.png)
 
 Now that we selected our folder, vscode opened it and we should see something like that : 
 
 ![An empty folder opened with vscode.](./resources/images/1_3_folder_opened_vscode.png)
 
-> NOTE : When you open a folder for the first time, vscode may ask you "Do you trust the authors of the files in this folder?". Since you just created your folder and that it is empty, you can naturally click on yes. You are the author !
+> NOTE : When a folder is opened for the first time, vscode may ask "Do you trust the authors of the files in this folder?". Since you just created your folder and that it is empty, you can naturally click on yes. You are the author !
 
 We are almost done. The last step is to create a terminal within vscode.
 In order for us to do that, we go the research bar at the top and enter ">Terminal: Create New Terminal". This will pop-up a terminal console in vscode.
 
 ![How to create a new terminal on vscode.](./resources/images/1_5_create_new_terminal_vscode.png)
 
-This should normally generate a console at the bottom of vscode, where your username, the name of your computer, adn/or the name of our current folder could appear :
+This should normally generate a console at the bottom of vscode, where our username, the name of our computer, adn/or the name of our current folder do appear :
 
 ![Terminal in vscode.](./resources/images/1_6_terminal_vscode.png)
 
-Simply put, the terminal allows to textually communicate with your machine, instead of graphically, like it is usually the case.
-For those following the CLI section, we use Git with the terminal, and this is why we calll it the Command Line Interface. 
+Simply put, the terminal allows to textually communicate with your machine, instead of graphically, like it is usually the case nowadays.
+For those following the CLI section, we use Git with the terminal, and it is the reason the section is called the Command Line Interface section.
 Having a terminal opened in vscode makes it possible to manipulate the current opened folder more easily.
-This is also how we will be using Quarto. 
+This is also how we will be using Quarto in the next chapter.
 
-> This tutorial does not focus on what a terminal is, what shell, bash or any kind of line command are and do.
+> This tutorial does not focus on what a terminal is, what shell, bash or any kinds of line command are and do.
 However, it would be very useful for you to know how to use the basics of it.
 Further resources are available at the end of this page, and I strongly encourage you to check them, especially the first four chapters of [Florian Oswald's lecture](https://floswald.github.io/ScPoProgramming/) on the shell. 
 
 :tada: It is done !
 We have created a GitHub account, connected it to our GitHub Desktop application, created a repository, and opened it with vscode.
-Next step : using Quarto to create our website content.
+Next step : use Quarto to create web content.
 
 ## Further Resources
 
 We are now ready to proceed to the second chapter, that treats content generation with Quarto.
 However, if you wish to dive deeper into the tools presented in this first chapter, and try to understand better Git, GitHub, or even the Terminal and Visual Studio Code, you might be tempted to look at additional material.
-First of all, for all that has been covered in this tutorial, I recommend the lecture of Florian Oswald about git and GitHub, [available here](https://floswald.github.io/ScPoProgramming/05-git.html).
+First of all, for all that has been covered in this tutorial, I recommend the lecture of Florian Oswald about Git and GitHub, [available here](https://floswald.github.io/ScPoProgramming/05-git.html).
 For more specific questions, you might find the following resources useful : 
 
 About vscode : 

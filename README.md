@@ -1,25 +1,27 @@
 # Research student portfolio tutorial 
 
-Welcome to this GitHub repository ! Its aim is to provide a guide to building quickly a simple portfolio for students. For now, it covers mainly the solution offered by [quarto](https://quarto.org). 
+Welcome to this GitHub repository ! Its aim is to provide a guide to building quickly a simple portfolio for research students. For now, it covers mainly the solution offered by [Quarto](https://quarto.org). 
 
 Feel free to contact me for further questions and to report eventual problems with the code ! 
 
 ## Website guide
 
-All content and the structure of this tutorial can be found on the [dedicated website](https://www.paulogcd.com/portfolio_tutorial).
+All the content of this tutorial can be found on [its dedicated website](https://www.paulogcd.com/portfolio_tutorial).
 
 ## Structure
 
-It is divided in the following sessions : 
+It is divided in three main chapters :
 
-- Basics regarding Visual Studio Code and Git
-- Presentation of quarto
-- How to publish your portfolio with github pages
+- Basics with Git, GitHub, GitHub Desktop using Visual Studio Code,
+- Presentation of Quarto,
+- How to publish your portfolio with GitHub Pages.
 
 ## Skills
 
-At the end of this tutorial, you will be able to : 
-- Understand and synchronize git and github
+This tutorial does not require any prior programming experience.
+
+At the end of it, you will be able to : 
+- Understand and synchronize Git and GitHub
 - Change quickly the appearance and structure of your portfolio 
 - Publish new projects on your portfolio
 

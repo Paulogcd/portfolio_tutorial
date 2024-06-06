@@ -314,16 +314,19 @@ Caution
 </div>
 <p>Now that we know how to make use of GitHub and Visual Studio Code, we are going to use Quarto to create our website <span class="emoji" data-emoji="art">🎨</span> !</p>
 <p><strong>Quarto</strong> is a static website generator. It is a software that allows us to create web content from human readable files.</p>
-<p>Usually, we should learn HTML and CSS to know a bit of Web development. Indeed, those are the languages that traditional web browsers support. When you go to a webpage, our web browser transforms html and css into a graphical interface, which is easier to understand for humans. However, in recent years, a lot of static website generators have emerged, turning the creation of websites much easier. Among the several static website generators, <a href="https://jekyllrb.com/">Jekyll</a>, <a href="https://www.getzola.org/">Zola</a>, <a href="https://gohugo.io/">Hugo</a>, and <a href="https://quarto.org/">Quarto</a> can be cited, but they are far from being the only ones.</p>
+<p>Usually, we should learn HTML and CSS, and JavaScript to know a bit of Web development. Indeed, those are the languages that traditional web browsers support. When you go to a webpage, our web browser transforms html and css into a graphical interface, which is easier to understand for humans. Javascript allows us to implement interactive features. However, in recent years, a lot of static website generators have emerged, making the creation of websites much easier. Among them, <a href="https://jekyllrb.com/">Jekyll</a>, <a href="https://www.getzola.org/">Zola</a>, <a href="https://gohugo.io/">Hugo</a>, and <a href="https://quarto.org/">Quarto</a> can be cited, but they are far from being the only ones available.</p>
 <blockquote class="blockquote">
-<p>This tutorial focuses on Quarto for several reasons. First, it is easy to use. The commands are user-friendly, and do not require much background knowledge. Second, its file format (qmd, or “quarto markdown”) allows to easily include data visualization, code and support some very useful libraries like <a href="https://shiny.posit.co/">Shiny</a>, that allow to create interactive web pages with data. It makes it easy to showcase our work if you deal with data and statistical analysis with R, Python, or Julia. It is therefore especially interesting if we are trying to build a research portfolio <span class="emoji" data-emoji="sunglasses">😎</span>.</p>
+<p>This tutorial focuses on Quarto for several reasons. First, it is easy to use. The commands are user-friendly, and do not require much background knowledge. Second, its file format (qmd, or “quarto markdown”) allows to easily include data visualization, code and support some very useful libraries like <a href="https://shiny.posit.co/">Shiny</a>, that allow to create interactive web pages with data. It makes it easy to showcase our work if we deal with data and statistical analysis with R, Python, or Julia. It is therefore especially interesting if we are trying to build a research portfolio <span class="emoji" data-emoji="sunglasses">😎</span>.</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>By the way, this webpage was done with Quarto.</p>
 </blockquote>
 <section id="installation-of-quarto" class="level2">
 <h2 class="anchored" data-anchor-id="installation-of-quarto">Installation of Quarto</h2>
 <p>The first step of this chapter is to download Quarto <a href="https://quarto.org/docs/get-started/">here</a>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_1_install_quarto2.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1" title="Installation page of Quarto"><img src="./resources/images/2_1_install_quarto2.png" class="img-fluid figure-img" alt="Installation page of Quarto"></a></p>
+<p><a href="./resources/images/2_1_install_quarto2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1" title="Installation page of Quarto"><img src="./resources/images/2_1_install_quarto2.png" class="img-fluid figure-img" alt="Installation page of Quarto"></a></p>
 <figcaption>Installation page of Quarto</figcaption>
 </figure>
 </div>
@@ -331,14 +334,14 @@ Caution
 </section>
 <section id="create-a-quarto-project" class="level2">
 <h2 class="anchored" data-anchor-id="create-a-quarto-project">Create a Quarto project</h2>
-<p>Now that Quarto is installed, we can create a Quarto project in our folder (the one we synchronized with our online GitHub repository). In order to do that, you can go in vscode, and enter <code>quarto create</code> in the terminal. We will then be guided with several questions regarding the nature of the project we wish to create. For the purpose of creating a portfolio, we are going to select <code>website</code> in the menu.</p>
+<p>Now that Quarto is installed, we can create a Quarto project in our folder (the one we synchronized with our online GitHub repository). In order to do that, we go back to vscode, and enter <code>quarto create</code> in the terminal of our open folder.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_2_create_project_quarto.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2" title="Creation of a project with Quarto"><img src="./resources/images/2_2_create_project_quarto.png" class="img-fluid figure-img" alt="Creation of a project with Quarto"></a></p>
+<p><a href="./resources/images/2_2_create_project_quarto.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2" title="Creation of a project with Quarto"><img src="./resources/images/2_2_create_project_quarto.png" class="img-fluid figure-img" alt="Creation of a project with Quarto"></a></p>
 <figcaption>Creation of a project with Quarto</figcaption>
 </figure>
 </div>
-<p>After entering <code>quarto create</code>, Quarto asks you different things :</p>
+<p>After entering <code>quarto create</code>, Quarto asks us different things :</p>
 <ol type="1">
 <li>The nature of the Quarto environment we want to create. We have the choice between a <code>project</code> and an <code>extension</code>. We are going to choose <code>project</code>.</li>
 <li>The type of our project. It gives us the choice between :
@@ -350,30 +353,30 @@ Caution
 <li>book</li>
 <li>confluence</li>
 </ul>
-Wecould choose different kinds of projects here. For example, <code>default</code> would work well enough also. However, let’s stick to <code>website</code> for the sake of simplicity.</li>
-<li>Quarto then asks for the Directory you wish to create our Quarto project in. Since you are already in the folder you opened with vscode, you should write a simple dot <code>.</code> and press enter.</li>
+We could choose several options here. For example, <code>default</code> would work well enough also. However, let’s stick to <code>website</code> for the sake of simplicity.</li>
+<li>Quarto then asks for the Directory we wish to create our Quarto project in. Since we are already in the folder we opened with vscode, we should write a simple dot <code>.</code> and press enter.</li>
 </ol>
 <blockquote class="blockquote">
-<p>The dot <code>.</code> refers to the current directory in several langages. To understand better how a path works, I recommend consulting <a href="https://www.w3schools.com/html/html_filepaths.asp">this article</a>.</p>
+<p>The dot <code>.</code> refers to the current directory in several langages. To understand better how a path works, we can consult <a href="https://www.w3schools.com/html/html_filepaths.asp">this article</a>.</p>
 </blockquote>
-<p>Once the creation process is done, you will see appear in our folder several files : index.qmd, about.qmd, _quarto.yml, style.css.</p>
-<p>Let us take a moment to see what they do :</p>
+<p>Once the creation process is done, we will see appear in our folder several files : index.qmd, about.qmd, _quarto.yml, style.css.</p>
+<p>Let us take a moment to comment on what they do :</p>
 <ol type="1">
-<li>The files with a “.css” extension are Cascading Style Sheets (css) files. Together with HTML, they are one of the main langages for web development. They are mainly responsisble for the appearance and design of websites. It is not necessary to modify them for the purpose of this tutorial, but you can inform ourself about it <a href="https://www.w3schools.com/css/">on this tutorial</a>.</li>
-<li>The files with a “.qmd” extension are Quarto files. This extension stands for Quarto MarkDown. They correspond to what the future pages of our website will be. They support various langages, like traditional Markdown or <span class="math inline">\(\LaTeX\)</span>. We will change our portfolio pages by modifying these pages.</li>
-<li>The files with a “.yml” extension are configuration files. We use them to set some rules that Quarto will apply to generate our pages. For example, we will modify the navigation bar (or navbar) through our these files later in this chapter.</li>
+<li>The files with a “.css” extension are Cascading Style Sheets (css) files. Together with HTML, CSS is one of the main languages for web development. Those kind of files are mainly responsisble for the appearance and design of websites. It is not necessary to modify them for the purpose of this tutorial, but we can inform ourselves about it <a href="https://www.w3schools.com/css/">on this page</a>.</li>
+<li>The files with a “.qmd” extension are Quarto files. This extension stands for Quarto MarkDown (qmd). They correspond to what the future pages of our website will be. They support various langages, like traditional Markdown, <span class="math inline">\(\LaTeX\)</span>, and more… We will change our portfolio pages by modifying these pages.</li>
+<li>The files with a “.yml” extension are configuration files. We use them to set some rules that Quarto will apply to generate our pages. For example, we will modify the navigation bar (or navbar) through these files.</li>
 </ol>
 </section>
 <section id="the-preview-and-render-commands" class="level2">
 <h2 class="anchored" data-anchor-id="the-preview-and-render-commands">The preview and render commands</h2>
 <p>Quarto allows us to create a properly designed website by only interacting with basic qmd files. We need however to see what results they yield.</p>
 <p>To see the graphical result of our qmd files, we need to use two main commands : the <code>quarto preview</code> and <code>quarto render</code> commands.</p>
-<p>The <code>quarto preview</code> command allows to see in real time what the changes we are bringing to our qmd and yml files yield. After entering it in the terminal console, it automatically opens a page on our default browser where you can see the graphical results of the latest saved version of our qmd and yml files. If there is an error with our files (for example a bad configuration within our yaml file), you won’t be able to see correctly the results, and an error message will pop-up. We usually use it at the beginning of a work session, when we bring change to our portfolio.</p>
+<p>The <code>quarto preview</code> command allows to see in real time what our <code>qmd</code> and <code>yml</code> yield. After entering it in the terminal console, it automatically opens a page on our default browser where you can see the graphical results of the latest saved version of our files. If there is an error with our files (for example a bad configuration within our yaml file), you won’t be able to see correctly the results, and an error message will pop-up. We usually use it at the beginning of a work session, when we bring change to our portfolio.</p>
 <p>The <code>quarto render</code> command allows to create html and css files from our qmd and yml files. We usually use it at the end of a work session, when we are satisfied with the changes we brought to the our website. Essentially, it does the same as the <code>preview</code> command, without opening a browser to see our changes in real time.</p>
 <p>Let’s try to run the <code>quarto preview</code> command :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_3_quarto_preview_1.png" class="lightbox" data-glightbox="description: .lightbox-desc-3" data-gallery="quarto-lightbox-gallery-3" title="Running the quarto preview command on the vscode terminal."><img src="./resources/images/2_3_quarto_preview_1.png" class="img-fluid figure-img" alt="Running the quarto preview command on the vscode terminal."></a></p>
+<p><a href="./resources/images/2_3_quarto_preview_1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" data-glightbox="description: .lightbox-desc-3" title="Running the quarto preview command on the vscode terminal."><img src="./resources/images/2_3_quarto_preview_1.png" class="img-fluid figure-img" alt="Running the quarto preview command on the vscode terminal."></a></p>
 <figcaption>Running the <code>quarto preview</code> command on the vscode terminal.</figcaption>
 </figure>
 </div>
@@ -381,7 +384,7 @@ Wecould choose different kinds of projects here. For example, <code>default</cod
 <p>If you did not modify the basic files, you should see something like this on our web browser :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_4_quarto_preview_2.png" class="lightbox" data-glightbox="description: .lightbox-desc-4" data-gallery="quarto-lightbox-gallery-4" title="The graphical result of an empty quarto project."><img src="./resources/images/2_4_quarto_preview_2.png" class="img-fluid figure-img" alt="The graphical result of an empty quarto project."></a></p>
+<p><a href="./resources/images/2_4_quarto_preview_2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" data-glightbox="description: .lightbox-desc-4" title="The graphical result of an empty quarto project."><img src="./resources/images/2_4_quarto_preview_2.png" class="img-fluid figure-img" alt="The graphical result of an empty quarto project."></a></p>
 <figcaption>The graphical result of an empty quarto project.</figcaption>
 </figure>
 </div>
@@ -419,7 +422,7 @@ Wecould choose different kinds of projects here. For example, <code>default</cod
 <p>This should yield :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_5_basic_index.png" class="lightbox" data-glightbox="description: .lightbox-desc-5" data-gallery="quarto-lightbox-gallery-5" title="Basic index page."><img src="./resources/images/2_5_basic_index.png" class="img-fluid figure-img" alt="Basic index page."></a></p>
+<p><a href="./resources/images/2_5_basic_index.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" data-glightbox="description: .lightbox-desc-5" title="Basic index page."><img src="./resources/images/2_5_basic_index.png" class="img-fluid figure-img" alt="Basic index page."></a></p>
 <figcaption>Basic index page.</figcaption>
 </figure>
 </div>
@@ -470,7 +473,7 @@ Wecould choose different kinds of projects here. For example, <code>default</cod
 <p>This would then yield :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_6_titles.png" class="lightbox" data-glightbox="description: .lightbox-desc-6" data-gallery="quarto-lightbox-gallery-6" title="Example of titles and subtitles."><img src="./resources/images/2_6_titles.png" class="img-fluid figure-img" alt="Example of titles and subtitles."></a></p>
+<p><a href="./resources/images/2_6_titles.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" data-glightbox="description: .lightbox-desc-6" title="Example of titles and subtitles."><img src="./resources/images/2_6_titles.png" class="img-fluid figure-img" alt="Example of titles and subtitles."></a></p>
 <figcaption>Example of titles and subtitles.</figcaption>
 </figure>
 </div>
@@ -496,7 +499,7 @@ Wecould choose different kinds of projects here. For example, <code>default</cod
 <p>will yield :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_7_links.png" class="lightbox" data-glightbox="description: .lightbox-desc-7" data-gallery="quarto-lightbox-gallery-7" title="Example of links usage."><img src="./resources/images/2_7_links.png" class="img-fluid figure-img" alt="Example of links usage."></a></p>
+<p><a href="./resources/images/2_7_links.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" data-glightbox="description: .lightbox-desc-7" title="Example of links usage."><img src="./resources/images/2_7_links.png" class="img-fluid figure-img" alt="Example of links usage."></a></p>
 <figcaption>Example of links usage.</figcaption>
 </figure>
 </div>
@@ -510,7 +513,7 @@ Wecould choose different kinds of projects here. For example, <code>default</cod
 <p>The first step we want to do is put the files we want to share in our folder in vscode. We should have something like that :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_8_vscode_files.png" class="lightbox" data-glightbox="description: .lightbox-desc-8" data-gallery="quarto-lightbox-gallery-8" title="A vscode folder with files that we want to share."><img src="./resources/images/2_8_vscode_files.png" class="img-fluid figure-img" alt="A vscode folder with files that we want to share."></a></p>
+<p><a href="./resources/images/2_8_vscode_files.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" data-glightbox="description: .lightbox-desc-8" title="A vscode folder with files that we want to share."><img src="./resources/images/2_8_vscode_files.png" class="img-fluid figure-img" alt="A vscode folder with files that we want to share."></a></p>
 <figcaption>A vscode folder with files that we want to share.</figcaption>
 </figure>
 </div>
@@ -539,7 +542,7 @@ Wecould choose different kinds of projects here. For example, <code>default</cod
 <p>This code would yield :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_9_including_documents.png" class="lightbox" data-glightbox="description: .lightbox-desc-9" data-gallery="quarto-lightbox-gallery-9" title="An attempt to include pictures and pdf"><img src="./resources/images/2_9_including_documents.png" class="img-fluid figure-img" alt="An attempt to include pictures and pdf"></a></p>
+<p><a href="./resources/images/2_9_including_documents.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" data-glightbox="description: .lightbox-desc-9" title="An attempt to include pictures and pdf"><img src="./resources/images/2_9_including_documents.png" class="img-fluid figure-img" alt="An attempt to include pictures and pdf"></a></p>
 <figcaption>An attempt to include pictures and pdf</figcaption>
 </figure>
 </div>
@@ -565,7 +568,7 @@ Wecould choose different kinds of projects here. For example, <code>default</cod
 <p>That would yield :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_10_including_documents_2.png" class="lightbox" data-glightbox="description: .lightbox-desc-10" data-gallery="quarto-lightbox-gallery-10" title="Including a pdf document through a local link."><img src="./resources/images/2_10_including_documents_2.png" class="img-fluid figure-img" alt="Including a pdf document through a local link."></a></p>
+<p><a href="./resources/images/2_10_including_documents_2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" data-glightbox="description: .lightbox-desc-10" title="Including a pdf document through a local link."><img src="./resources/images/2_10_including_documents_2.png" class="img-fluid figure-img" alt="Including a pdf document through a local link."></a></p>
 <figcaption>Including a pdf document through a local link.</figcaption>
 </figure>
 </div>
@@ -679,7 +682,7 @@ Wecould choose different kinds of projects here. For example, <code>default</cod
 <p>That yields a navbar like :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_11_default_navbar.png" class="lightbox" data-glightbox="description: .lightbox-desc-12" data-gallery="quarto-lightbox-gallery-12" title="The default navbar of Quarto"><img src="./resources/images/2_11_default_navbar.png" class="img-fluid figure-img" alt="The default navbar of Quarto"></a></p>
+<p><a href="./resources/images/2_11_default_navbar.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12" data-glightbox="description: .lightbox-desc-12" title="The default navbar of Quarto"><img src="./resources/images/2_11_default_navbar.png" class="img-fluid figure-img" alt="The default navbar of Quarto"></a></p>
 <figcaption>The default navbar of Quarto</figcaption>
 </figure>
 </div>
@@ -696,7 +699,7 @@ Wecould choose different kinds of projects here. For example, <code>default</cod
 <p>This should yield :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_12_without_title.png" class="lightbox" data-glightbox="description: .lightbox-desc-13" data-gallery="quarto-lightbox-gallery-13" title="A navbar without title."><img src="./resources/images/2_12_without_title.png" class="img-fluid figure-img" alt="A navbar without title."></a></p>
+<p><a href="./resources/images/2_12_without_title.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13" data-glightbox="description: .lightbox-desc-13" title="A navbar without title."><img src="./resources/images/2_12_without_title.png" class="img-fluid figure-img" alt="A navbar without title."></a></p>
 <figcaption>A navbar without title.</figcaption>
 </figure>
 </div>
@@ -732,7 +735,7 @@ Wecould choose different kinds of projects here. For example, <code>default</cod
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_13_vscode.png" class="lightbox" data-glightbox="description: .lightbox-desc-14" data-gallery="quarto-lightbox-gallery-14" title="Our vscode interface."><img src="./resources/images/2_13_vscode.png" class="img-fluid figure-img" alt="Our vscode interface."></a></p>
+<p><a href="./resources/images/2_13_vscode.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14" data-glightbox="description: .lightbox-desc-14" title="Our vscode interface."><img src="./resources/images/2_13_vscode.png" class="img-fluid figure-img" alt="Our vscode interface."></a></p>
 <figcaption>Our vscode interface.</figcaption>
 </figure>
 </div>
@@ -740,7 +743,7 @@ Wecould choose different kinds of projects here. For example, <code>default</cod
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_14_navbar.png" class="lightbox" data-glightbox="description: .lightbox-desc-15" data-gallery="quarto-lightbox-gallery-15" title="The graphical result."><img src="./resources/images/2_14_navbar.png" class="img-fluid figure-img" alt="The graphical result."></a></p>
+<p><a href="./resources/images/2_14_navbar.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15" data-glightbox="description: .lightbox-desc-15" title="The graphical result."><img src="./resources/images/2_14_navbar.png" class="img-fluid figure-img" alt="The graphical result."></a></p>
 <figcaption>The graphical result.</figcaption>
 </figure>
 </div>
@@ -1228,7 +1231,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","closeEffect":"zoom","openEffect":"zoom","selector":".lightbox","loop":false});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","closeEffect":"zoom","loop":false,"openEffect":"zoom","selector":".lightbox"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
