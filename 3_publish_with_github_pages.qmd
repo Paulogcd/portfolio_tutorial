@@ -31,14 +31,14 @@ Let us do a quick recap of our workflow here :
 
 ::: {#New-doc-navbar layout-ncol=2}
 
-![1. Commiting the changes in Github Desktop.](./resources/images/3_1_github_desktop2.png)
+![Figure 3.1 : First, commiting the changes in Github Desktop.](./resources/images/3_1_github_desktop2.png)
 
-![2. Publishing our changes to Github via Github Desktop.](./resources/images/3_2_publish.png)
+![Figure 3.2 : Second, publishing our changes to Github via Github Desktop.](./resources/images/3_2_publish.png)
 :::
 
 On Github Desktop, you should have a message like "Last fetched just now" just under the publish "Publish" button, that has now turned into a "Fetch origin" button : 
 
-![Commited changes with Github Desktop.](./resources/images/3_3_last_fetched.png)
+![Figure 3.3 : Commited changes with Github Desktop.](./resources/images/3_3_last_fetched.png)
 
 Now, our changes are saved on Github and ready to be published on the Web ! 
 
@@ -46,28 +46,28 @@ Now, our changes are saved on Github and ready to be published on the Web !
 
 In order for us to publish the content that is available in our `docs` folder, we need first to goto our GitHub repository, and to click on "Settings", the last item of the top-bar : 
 
-![Our Github repository, after having added our Quarto files.](./resources/images/3_4.png)
+![Figure 3.4 : Our Github repository, after having added our Quarto files.](./resources/images/3_4.png)
 
 We then click in the "Code and automation" on the "Pages" section : 
 
-![After having clicked on "Settings", we should land on the "General" section. Now, we click on "Pages".](./resources/images/3_5.png)
+![Figure 3.5 : After having clicked on "Settings", we should land on the "General" section. Now, we click on "Pages".](./resources/images/3_5.png)
 
 We should be seeing something like this : 
 
-![The "Pages" section of the settings.](./resources/images/3_6.png)
+![Figure 3.6 : The "Pages" section of the settings.](./resources/images/3_6.png)
 
 We are now going to activate GitHub Pages, and select "Deploy from a branch" for the Source.
 We select the folder from which GitHub Pages publishes our website.
 In our case, it is the "docs" folder we created in the last section of the second chapter.
 The branch from which it selects the folder should be "main" or "master" (but could have another name) depending on your git configuration.
 
-![Selecting the "main" branch and the "docs" folder.](./resources/images/3_7.png)
+![Figure 3.7 : Selecting the "main" branch and the "docs" folder.](./resources/images/3_7.png)
 
 After selecting it, we can click on "Save". 
 Github will popup a bar at the top of the page indicating : "GitHub Pages source saved."
 Also, a "Custom domain" section should appear, that we can later configurate if we wish to have our own customed url :
 
-![After saving our source.](./resources/images/3_8.png)
+![Figure 3.8 : After saving our source.](./resources/images/3_8.png)
 
 Now, GitHub is going to test our code to see if it is possible to publish it online without errors. 
 If we come back to the home page of our repository, we will notice an orange dot next to our last commit message.
@@ -75,16 +75,16 @@ If we click on this orange dot, a small pop-up window will appear, with addition
 
 ::: {#New-doc-navbar layout-ncol=2}
 
-![Home page of our repository, with now a test being run by Github Pages.](./resources/images/3_9.png)
+![Figure 3.9 : Home page of our repository, with now a test being run by Github Pages.](./resources/images/3_9.png)
 
-![Additional information on the current test.](./resources/images/3_10.png)
+![Figure 3.10 : Additional information on the current test.](./resources/images/3_10.png)
 
 :::
 
 Now, if we click on "Details", we can have more information on what is going on : 
 
 
-![Details of the test being run.](./resources/images/3_11.png)
+![Figure 3.11 : Details of the test being run.](./resources/images/3_11.png)
 
 At this point, if we followed carefully the steps of this tutorial, everything should turn green in a few seconds.
 
@@ -103,7 +103,7 @@ After a few minutes, it should be on.
 
 Congratulations, you have published your portfolio ! :fire: :fire: :fire: 
 
-![Our basic portfolio is online.](./resources/images/3_12.png)
+![Figure 3.12 : Our basic portfolio is online.](./resources/images/3_12.png)
 
 We see that it is online with the url. 
 In my case, I see "https://frpgcd.github.io", and not something with "localhost".

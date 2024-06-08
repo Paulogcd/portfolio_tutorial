@@ -27,7 +27,7 @@ It is therefore especially interesting if we are trying to build a research port
 
 The first step of this chapter is to download Quarto [here](https://quarto.org/docs/get-started/).
 
-![Installation page of Quarto](./resources/images/2_1_install_quarto2.png)
+![Figure 2.1 : Installation page of Quarto](./resources/images/2_1_install_quarto2.png)
 
 Once it is done, we will be able to interact with Quarto through the terminal of vscode.
 
@@ -36,7 +36,7 @@ Once it is done, we will be able to interact with Quarto through the terminal of
 Now that Quarto is installed, we can create a Quarto project in our folder (the one we synchronized with our online GitHub repository).
 In order to do that, we go back to vscode, and enter `quarto create` in the terminal of our open folder.
 
-![Creation of a project with Quarto](./resources/images/2_2_create_project_quarto.png)
+![Figure 2.2 : Creation of a project with Quarto](./resources/images/2_2_create_project_quarto.png)
 
 After entering `quarto create`, Quarto asks us different things : 
 
@@ -78,13 +78,13 @@ Essentially, it does the same as the `preview` command, without opening a browse
 
 Let's try to run the `quarto preview` command : 
 
-![Running the `quarto preview` command on the vscode terminal.](./resources/images/2_3_quarto_preview_1.png)
+![Figure 2.3 : Running the `quarto preview` command on the vscode terminal.](./resources/images/2_3_quarto_preview_1.png)
 
 You should briefly see some blue text "preparing to preview", followed by the names of our qmd files, before our default browser automatically launches itself. 
 
 If you did not modify the basic files, you should see something like this on our web browser : 
 
-![The graphical result of an empty quarto project.](./resources/images/2_4_quarto_preview_2.png)
+![Figure 2.4 : The graphical result of an empty quarto project.](./resources/images/2_4_quarto_preview_2.png)
 
 Okay, we have our first graphical results ! What happened exactly here ? 
 First, we entered `quarto preview`.
@@ -137,7 +137,7 @@ Feel free to reach out to me at my email adress :
 
 This should yield : 
 
-![Basic index page.](./resources/images/2_5_basic_index.png)
+![Figure 2.5 : Basic index page.](./resources/images/2_5_basic_index.png)
 
 > We should usually avoid putting our entire email adress directly in our webpage.
 Some bots are constantly scrapping webpages to get potential email adress that are later on the target of spam or fraudulous emails.
@@ -195,7 +195,7 @@ nisi ut aliquip ex ea commodo consequat.
 
 This would then yield : 
 
-![Example of titles and subtitles.](./resources/images/2_6_titles.png)
+![Figure 2.6 : Example of titles and subtitles.](./resources/images/2_6_titles.png)
 
 It is as simple as that, and by default, Quarto creates a table of content automatically for us in the right-side of our page !
 
@@ -225,7 +225,7 @@ Feel free to reach out to me at my email adress :
 
 will yield : 
 
-![Example of links usage.](./resources/images/2_7_links.png)
+![Figure 2.7 : Example of links usage.](./resources/images/2_7_links.png)
 
 And if we click on the links, we should be redirected to the url we wrote ! 
 
@@ -234,7 +234,7 @@ And if we click on the links, we should be redirected to the url we wrote !
 Now, we could also want to include some pictures in our text.
 For example, some pdf of a long article we wrote or screeenshots. 
 
-In order to do so, we are going to use the `![description](link)` markdown syntax.
+In order to do so, we are going to use the `![Figure 2 : description](link)` markdown syntax.
 
 In the previous example, we had url as links, that could be accessed on internet. 
 Now, let's imagine that we have a pdf file in our computer that we want to share on our portfolio. 
@@ -242,7 +242,7 @@ Usually, such a pdf is not available online on a public url.
 
 The first step we want to do is put the files we want to share in our folder in vscode. We should have something like that : 
 
-![A vscode folder with files that we want to share.](./resources/images/2_8_vscode_files.png)
+![Figure 2.8 : A vscode folder with files that we want to share.](./resources/images/2_8_vscode_files.png)
 
 Note that in the left side of my screen, in the explorer bar, I now have to additional files : "screenshot.png" and "2_8_markdown_guide.pdf". 
 
@@ -261,11 +261,11 @@ My research interests are environmental economics and open source !
 
 Here is an interesting website :
 
-![A screenshot of the CRAN website.](screenshot.png)
+![Figure 2.9 : A screenshot of the CRAN website.](screenshot.png)
 
 Here is an interesting guide : 
 
-![This is the Markdown guide, written by Matt Cone.](2_8_markdown_guide.pdf)
+![Figure 2.10 : This is the Markdown guide, written by Matt Cone.](2_8_markdown_guide.pdf)
 
 Feel free to reach out to me at my email adress :
 "paulo.gugelmocavalheirodias" followed by "@sciencespo.fr" !
@@ -274,7 +274,7 @@ Feel free to reach out to me at my email adress :
 
 This code would yield : 
 
-![An attempt to include pictures and pdf](./resources/images/2_9_including_documents.png)
+![Figure 2.11 : An attempt to include pictures and pdf](./resources/images/2_9_including_documents.png)
 
 We see that the picture, a screenshot of the CRAN website, seems to work fine. 
 However, the markdown guide, written by Matt Cone, and [available here](https://markdown.p2hp.com/assets/book/markdown-guide.pdf), is displayed in a smaller dimension than the page. 
@@ -296,7 +296,7 @@ My research interests are environmental economics and open source !
 
 Here is an interesting website :
 
-![A screenshot of the CRAN website.](screenshot.png)
+![Figure 2.12 : A screenshot of the CRAN website.](screenshot.png)
 
 You can read the markdown guide of Matt Conen [by clicking on this link](2_8_markdown_guide.pdf)
 
@@ -306,7 +306,7 @@ Feel free to reach out to me at my email adress :
 
 That would yield : 
 
-![Including a pdf document through a local link.](./resources/images/2_10_including_documents_2.png)
+![Figure 2.13 : Including a pdf document through a local link.](./resources/images/2_10_including_documents_2.png)
 
 And if we click on the link, we are redirected to the pdf file within our browser. 
 
@@ -425,7 +425,7 @@ format:
 
 That yields a navbar like : 
 
-![The default navbar of Quarto](./resources/images/2_11_default_navbar.png)
+![Figure 2.14 : The default navbar of Quarto](./resources/images/2_11_default_navbar.png)
 
 In this example, the content of the navigation bar, or "navbar", are determined by all elements following the `navbar` element in the `website` list.
 Here, we see that it has two elements : the homepage, defined as the index.qmd file, and the about page, defined as the `about.qmd` file.
@@ -447,7 +447,7 @@ website:
 
 This should yield : 
 
-![A navbar without title.](./resources/images/2_12_without_title.png)
+![Figure 2.15 : A navbar without title.](./resources/images/2_12_without_title.png)
 
 We may however want to keep it. in this case, it should be better to modify the title of our webpage to a customed one, like our name.
 For example, in my case : 
@@ -491,9 +491,9 @@ If we now combine the two mentioned code, we should have something like :
 
 ::: {#New-doc-navbar layout-ncol=2}
 
-![Our vscode interface.](./resources/images/2_13_vscode.png)
+![Figure 2.16 : Our vscode interface.](./resources/images/2_13_vscode.png)
 
-![The graphical result.](./resources/images/2_14_navbar.png)
+![Figure 2.17 : The graphical result.](./resources/images/2_14_navbar.png)
 
 Adding a new document to the navbar
 :::
