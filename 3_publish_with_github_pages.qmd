@@ -36,7 +36,7 @@ Let us do a quick recap of our workflow here :
 ![Figure 3.2 : Second, publishing our changes to Github via Github Desktop.](./resources/images/3_2_publish.png)
 :::
 
-On Github Desktop, you should have a message like "Last fetched just now" just under the publish "Publish" button, that has now turned into a "Fetch origin" button : 
+On Github Desktop, we should have a message like "Last fetched just now" just under the publish "Publish" button, that has now turned into a "Fetch origin" button : 
 
 ![Figure 3.3 : Commited changes with Github Desktop.](./resources/images/3_3_last_fetched.png)
 
@@ -59,7 +59,7 @@ We should be seeing something like this :
 We are now going to activate GitHub Pages, and select "Deploy from a branch" for the Source.
 We select the folder from which GitHub Pages publishes our website.
 In our case, it is the "docs" folder we created in the last section of the second chapter.
-The branch from which it selects the folder should be "main" or "master" (but could have another name) depending on your git configuration.
+The branch from which it selects the folder should be "main" or "master" (but could have another name) depending on our git configuration.
 
 ![Figure 3.7 : Selecting the "main" branch and the "docs" folder.](./resources/images/3_7.png)
 
@@ -133,4 +133,4 @@ I hope you enjoyed it.
 If you noticed some things that seemed wrong, too complicated, or some bugs in the website, please reach to me.
 This tutorial is currently under construction and I am trying to improve it as much as possible. 
 
-> If you want to suggest some modification to this tutorial, you can also click on the top-right buttons "Report an issue" ("Edit this page" will create a pull request on Github... Feel free to look to what it does) under the table of content of this chapter :wink:.
+> If you want to suggest some modification to this tutorial, you can also click on the top-right buttons "Report an issue" ("Edit this page" will create a pull request on Github. Feel free to look to what it does) under the table of content of this chapter :wink:.

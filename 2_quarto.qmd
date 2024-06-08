@@ -10,7 +10,7 @@ Now that we know how to make use of GitHub and Visual Studio Code, we are going 
 
 Usually, we should learn HTML and CSS, and JavaScript to know a bit of Web development.
 Indeed, those are the languages that traditional web browsers support. 
-When you go to a webpage, our web browser transforms html and css into a graphical interface, which is easier to understand for humans. Javascript allows us to implement interactive features.
+When we go to a webpage, our web browser transforms html and css into a graphical interface, which is easier to understand for humans. Javascript allows us to implement interactive features.
 However, in recent years, a lot of static website generators have emerged, making the creation of websites much easier.
 Among them, [Jekyll](https://jekyllrb.com/), [Zola](https://www.getzola.org/), [Hugo](https://gohugo.io/), and [Quarto](https://quarto.org/) can be cited, but they are far from being the only ones available.
 
@@ -70,8 +70,8 @@ Quarto allows us to create a properly designed website by only interacting with 
 To see the graphical result of our qmd files, we need to use two main commands : the `quarto preview` and `quarto render` commands.
 
 The `quarto preview` command allows to see in real time what our `qmd` and `yml` yield.
-After entering it in the terminal console, it automatically opens a page on our default browser where you can see the graphical results of the latest saved version of our files.
-If there is an error with our files (for example a bad configuration within our yaml file), you won't be able to see correctly the results, and an error message will pop-up. We usually use it at the beginning of a work session, when we bring change to our portfolio. 
+After entering it in the terminal console, it automatically opens a page on our default browser where we can see the graphical results of the latest saved version of our files.
+If there is an error with our files (for example a bad configuration within our yaml file), we will not be able to see correctly the results, and an error message will pop-up. We usually use it at the beginning of a work session, when we bring change to our portfolio. 
 
 The `quarto render` command allows to create html and css files from our qmd and yml files. We usually use it at the end of a work session, when we are satisfied with the changes we brought to the our website.
 Essentially, it does the same as the `preview` command, without opening a browser to see our changes in real time. 
@@ -80,24 +80,24 @@ Let's try to run the `quarto preview` command :
 
 ![Figure 2.3 : Running the `quarto preview` command on the vscode terminal.](./resources/images/2_3_quarto_preview_1.png)
 
-You should briefly see some blue text "preparing to preview", followed by the names of our qmd files, before our default browser automatically launches itself. 
+We should briefly see some blue text "preparing to preview", followed by the names of our qmd files, before our default browser automatically launches itself. 
 
-If you did not modify the basic files, you should see something like this on our web browser : 
+If we did not modify the basic files, we should see something like this on our web browser : 
 
 ![Figure 2.4 : The graphical result of an empty quarto project.](./resources/images/2_4_quarto_preview_2.png)
 
 Okay, we have our first graphical results ! What happened exactly here ? 
 First, we entered `quarto preview`.
-Quarto first transformed all our qmd files in our folder in readable files for you web browser, i.e. html and css files.
+Quarto first transformed all our qmd files in our folder in readable files for our web browser, i.e. html and css files.
 Then, it opened those html and css files with our default browser.
 What we are seeing is the result of this conversion from qmd to html and css.
 
-> We can notice that the URL of our page looks a bit different from normal websites you access.
-Indeed, you should have something like "http://localhost:6986/", or any other kind of four numbers combination. 
+> We can notice that the URL of our page looks a bit different than the websites we usually access.
+Indeed, we should have something like "http://localhost:6986/", or any other kind of four numbers combination. 
 This is because Quarto is currently watching at our file, and will refresh the page as soon as any of our qmd or yaml files are changed and saved. 
 Simplyt put, "localhost" means that it is our computer, and the four numbers are the port of our computer quarto is using to display the files.
 
-> Now, our terminal is busy reading our files in the web browser. You can create a new terminal session by clicking on the "+" in vscode. 
+> Now, our terminal is busy reading our files in the web browser. We can create a new terminal session by clicking on the "+" in vscode. 
 To stop the process, we can click on our terminal and then enter `ctrl`+`c` (`command`+`c` for MacOS keyboards).
 
 ## How to modify our content
@@ -374,7 +374,7 @@ In theory, if you know how to deal with code engine, you can also run other lang
 ### Adding math 
 
 Finally, it's also possible to add some math to our website.
-Indeed, markdown supports $\LaTeX$, so if you are already familiar with it, you can simply include our $\LaTeX$ code between dollar signs `$ some math $` to generate inline math, or between two dollar signs `$$ an equation $$` to generate math blocks. 
+Indeed, markdown supports $\LaTeX$, and we can simply include our $\LaTeX$ code between dollar signs `$ some math $` to generate inline math, or between two dollar signs `$$ an equation $$` to generate math blocks. 
 
 For example, the following code : 
 
@@ -395,7 +395,7 @@ $$
 \bar{x}=\frac{1}{N}\sum_{i=1}^{N}x_{i}
 $$
 
-If you are not familiar with $\LaTeX$ and will be in positions where you have to write documents with math in it, I highly recommend you familiarizing ourself with this language.
+> If you are not familiar with $\LaTeX$ and will be in positions where you have to write documents with math in it, I highly recommend you familiarizing yourself with this language.
 The [Overleaf website](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes) is a good place to start, and [this guide here](https://en.wikibooks.org/wiki/LaTeX) is very complete.
 
 ## How to modify the navigation bar
@@ -502,7 +502,7 @@ Adding a new document to the navbar
 
 A final important point for the publication of our website in the last chapter is the out-put directory.
 
-In order for us to configure the output directory, we are going to change our _quarto.yml to add the `output-dir` line :
+In order for us to configure the output directory, we are going to change our `_quarto.yml` file to add the `output-dir` line :
 
 ```{.yml}
 project:
@@ -513,13 +513,13 @@ project:
 This line tells Quarto to create a subdirectory called "docs" to store the html and css files. 
 It is important to specify this so that GitHub Pages recognize more easily our files to publish them.
 
-Therefore, make sure to add this line, run `quarto render`, and check that the "docs" directory is created in your folder.
+Therefore, make sure to add this line, run `quarto render`, and check that the "docs" directory is created in the folder.
 
 ## Further resources
 
 At this point, we roughly covered the basics of Quarto.
 Although not complete, our portfolio is functional.
-If you wish to dive further into the personalization of our website (which is probably the case), you can spend more time reading their documentation. 
+If we wish to dive further into the personalization of our website (which is probably the case), we can spend more time reading their documentation. 
 
 Quarto is a very powerful tool.
 We can use it to quickly produce content and maintain it with the presented workflow in this tutorial.
