@@ -18,18 +18,18 @@ In order to do so, we are going to use several tools, like **Git**, **GitHub** a
 
 ## Git and GitHub 
 
-**Git** is a software that allows to manage all the changes done to selected files. It is also called a version management software, or a version control system. 
-We want to check all the versions and changes of our files from their creation until their current version ?
+**Git** is a software that allows to manage all the changes done to the selected files. It is also called a version management software, or a version control system. 
+Do we want to check all the versions and changes of our files from their creation until their current version ?
 If we use Git, it is possible.
 
 > Git does not only work with code files, but also with any type of file.
-If you have a text file (like a Master thesis for example...) for which you want to control the different versions, you can use Git for it ! 
+If you have a text file (like a Master thesis for example) for which you want to control the different versions, you can use Git for it ! 
 
 **GitHub** is a company (currently owned by Microsoft) whose servers can be used to store files.
-Their website integrates Git and use it to track the changes of all the documents we choose to store on it.
+Their website integrates Git and uses it to track the changes of all the documents we choose to store on it.
 
 > GitHub has a lot of different uses, including collaborative coding, but this tutorial only focuses on how to use it to manage our project with Git and Quarto.
-It is widely used in the programming community and is sometimes referred as the social network of developers. 
+It is widely used in the programming community and is sometimes referred to as the social network of developers. 
 
 This tutorial offers two methods to use **Git** and **GitHub** :
 
@@ -57,9 +57,9 @@ We can go [here](https://github.com/) and click on "Sign up".
 
 We have to be especially thoughtful of our username, because our website will inlcude it in its url. It will indeed have the format "https://username.github.io".
 
-After having created our account, we should land on a page looking like that : 
+After having created our account, we should land on a page looking like this : 
 
-![The starting page of GitHub.](./resources/images/1_9_starting_page_github)
+![Figure 1.1 : The starting page of GitHub.](./resources/images/1_9_starting_page_github)
 
 For this tutorial, I did create an account named "frpgcd".
 It will be the example username you will see in all the screenshots.
@@ -68,16 +68,16 @@ It will be the example username you will see in all the screenshots.
 
 The next step is to install GitHub Desktop [here](https://desktop.github.com/).
 
-![GitHub Desktop landing page.](./resources/images/1_12_github_desktop2.png)
+![Figure 1.2 : GitHub Desktop landing page.](./resources/images/1_12_github_desktop2.png)
 
 Once the installation is done, we can open GitHub Desktop and connect it to our recently created GitHub account. 
 By clicking on "Sign in to GitHub.com", we should be redirected to a connection page on our browser, and once we are connected on our browser, we are asked if we authorize GitHub Desktop to have access to our GitHub account. 
 
 :::{layout-ncol=2}
 
-![Starting page of GitHub Desktop.](./resources/images/1_13_github_desktop_start.png)
+![Figure 1.3 : Starting page of GitHub Desktop.](./resources/images/1_13_github_desktop_start.png)
 
-![Authorization page to GitHub.](./resources/images/1_14_authorization2.png)
+![Figure 1.4 : Authorization page to GitHub.](./resources/images/1_14_authorization2.png)
 
 GitHub Desktop initialization.
 
@@ -86,13 +86,13 @@ GitHub Desktop initialization.
 Then, we will be redirected to a configuration page on GitHub Desktop. 
 We can here notice that a slightly different email address can be specified by default instead of the one we used in the creation process of our GitHub account. 
 This is normal, it does not matter much for what we are trying to achieve here.
-We can also finish the configuration process with this different email address. 
+We can also finish the configuration process with this default different email address. 
 
-![GitHub Desktop configuration.](./resources/images/1_15_configuration.png)
+![Figure 1.5 : GitHub Desktop configuration.](./resources/images/1_15_configuration.png)
 
 Once we are done with the configuration process, we should land on a page looking like that : 
 
-![GitHub Desktop home page.](./resources/images/1_16_homepage2.png)
+![Figure 1.6 : GitHub Desktop home page.](./resources/images/1_16_homepage2.png)
 
 If we want to start our portfolio, we need a folder with all of our files.
 On our computer, we call it a directory, and on GitHub we call it a "repository".
@@ -100,11 +100,11 @@ On our computer, we call it a directory, and on GitHub we call it a "repository"
 We click on "Create a New Repository on your Local Drive...", and create a repository called "username.github.io", with our actual username instead of "username". 
 I will create one, and since my GitHub username example is frpgcd, my repository will be called "frpgcd.github.io" : 
 
-![Creating a repository on GitHub Desktop.](./resources/images/1_17_create_repository.png)
+![Figure 1.7 : Creating a repository on GitHub Desktop.](./resources/images/1_17_create_repository.png)
 
 Now, we should get something looking like that :
 
-![An empty repository on GitHub desktop.](./resources/images/1_18_repository_github_desktop.png)
+![Figure 1.8 : An empty repository on GitHub desktop.](./resources/images/1_18_repository_github_desktop.png)
 
 Let us take a moment to comment what we see. 
 In the left side bar, we have all the modified files of our directory.
@@ -133,7 +133,7 @@ I invite you to follow [the instruction of the last section of this chapter](#vi
 
 Once we installed vscode, we can install Git from [here](https://git-scm.com/). 
 
-![The installation page of Git.](./resources/images/1_4_install_git.png)
+![Figure 1.9 : The installation page of Git.](./resources/images/1_4_install_git.png)
 
 Once it is done, we can go back to vscode and open a new terminal console while having our folder "usernamen.github.io" open.
 
@@ -153,7 +153,7 @@ Concretely, using vscode :
 
 At this point, we should have something like that :
 
-![Initializing git, adding a file, and commiting this change.](./resources/images/1_7_basic_setup_git)
+![Figure 1.10 : Initializing git, adding a file, and commiting this change.](./resources/images/1_7_basic_setup_git)
 
 At any moment, we can use some other git commands to have more information. For example : 
 
@@ -177,11 +177,11 @@ To use GitHub, the first step is to go to [GitHub](https://github.com) and creat
 Once our account is created, we can create a repository, named "username.github.io", replacing "username" with our actual user name.
 Since I choose the username `frpgcd`, I will create in this example a repository name "frpgcd.github.io".
 
-![Click on the green button "Create a repository".](./resources/images/1_9_starting_page_github.png)
+![Figure 1.11 : Click on the green button "Create a repository".](./resources/images/1_9_starting_page_github.png)
 
-![Starting page of the repository creation process.](./resources/images/1_10_create_repo.png)
+![Figure 1.12 : Starting page of the repository creation process.](./resources/images/1_10_create_repo.png)
 
-![Page of the repository creation process filled with information.](./resources/images/1_11_create_repo_filled.png)
+![Figure 1.13 : Page of the repository creation process filled with information.](./resources/images/1_11_create_repo_filled.png)
 
 > Note : During the creation process of a repository, we are asked for a license.
 It is important to chose one, because without it, the most restrictive policy applies.
@@ -212,9 +212,9 @@ ssh-keygen -t ed25519 -C "frpgcd@email.com"
 On our terminal, we can enter `cat ~/.ssh/id_ed25519.pub` or `open ~/.ssh/id_ed25519.pub`, and it will give us back a character string beginning with "ssh-ed22519".
 We then go to our GitHub account, click on our profile picture at the top right of the website, choose "settings", then click on "ssh and gpg keys", then on "add new ssh key", choose the title you want (for example the name of our current computer), and in "key", add the value your terminal gave back to us. We should be connected !
 
-![In our settings, we must find the ssh and gpg keys section.](./resources/images/1_12_ssh_keys.png)
+![Figure 1.14 : In our settings, we must find the ssh and gpg keys section.](./resources/images/1_12_ssh_keys.png)
 
-![After having clicked on "New SSH Key", we can add what we get from our terminal after entering "cat ~/.ssh/id_ed25519.pub" in the "Key" section.](./resources/images/1_13_ssh_keys_info.png)
+![Figure 1.15 : After having clicked on "New SSH Key", we can add what we get from our terminal after entering "cat ~/.ssh/id_ed25519.pub" in the "Key" section.](./resources/images/1_13_ssh_keys_info.png)
 
 > You should not share your ssh keys to the public.
 It could jeopardize the safety of your connection and access to the distant repository. 
@@ -260,7 +260,7 @@ You can then verify that your changes have been taken into account by going on t
 It is largely used, and many extensions exist to customize one's experience with it. 
 We are going to install vscode [here](https://code.visualstudio.com/).
  
-![Dowload page of vscode.](./resources/images/1_1_install_vscode2.png)
+![Figure 1.16 : Dowload page of vscode.](./resources/images/1_1_install_vscode2.png)
 
 One of the strenghts of vscode is the fact that it can open and manage a whole folder.
 We are now going to use vscode to open the folder "username.github.io" that we created earlier.
@@ -269,22 +269,22 @@ To do so, we open vscode, click on "open" in the starting page, and select our f
 > In some versions of vscode, two options exist for opening a file or a folder. 
 Be sure to select the option to open a folder and not a file.
 
-![Starting page of vscode. Click on "open" to chose a folder to open.](./resources/images/1_2_starting_page_vscode.png)
+![Figure 1.17 : Starting page of vscode. Click on "open" to chose a folder to open.](./resources/images/1_2_starting_page_vscode.png)
 
 Now that we selected our folder, vscode opened it and we should see something like that : 
 
-![An empty folder opened with vscode.](./resources/images/1_3_folder_opened_vscode.png)
+![Figure 1.18 : An empty folder opened with vscode.](./resources/images/1_3_folder_opened_vscode.png)
 
 > NOTE : When a folder is opened for the first time, vscode may ask "Do you trust the authors of the files in this folder?". Since you just created your folder and that it is empty, you can naturally click on yes. You are the author !
 
 We are almost done. The last step is to create a terminal within vscode.
 In order for us to do that, we go the research bar at the top and enter ">Terminal: Create New Terminal". This will pop-up a terminal console in vscode.
 
-![How to create a new terminal on vscode.](./resources/images/1_5_create_new_terminal_vscode.png)
+![Figure 1.19 : How to create a new terminal on vscode.](./resources/images/1_5_create_new_terminal_vscode.png)
 
 This should normally generate a console at the bottom of vscode, where our username, the name of our computer, adn/or the name of our current folder do appear :
 
-![Terminal in vscode.](./resources/images/1_6_terminal_vscode.png)
+![Figure 1.20 : Terminal in vscode.](./resources/images/1_6_terminal_vscode.png)
 
 Simply put, the terminal allows to textually communicate with your machine, instead of graphically, like it is usually the case nowadays.
 For those following the CLI section, we use Git with the terminal, and it is the reason the section is called the Command Line Interface section.
