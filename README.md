@@ -1,6 +1,9 @@
 # Research student portfolio tutorial 
 
-Welcome to this GitHub repository ! Its aim is to provide a guide to building quickly a simple portfolio for research students. For now, it covers mainly the solution offered by [Quarto](https://quarto.org). 
+Welcome to this GitHub repository ! 
+It is the repository of a quarto markdown project available online.
+Its aim is to provide a guide to building quickly a simple portfolio for research students.
+For now, it covers mainly the solution offered by [Quarto](https://quarto.org). 
 
 Feel free to contact me for further questions and to report eventual problems with the code ! 
 
@@ -16,7 +19,7 @@ It is divided in three main chapters :
 - Presentation of Quarto,
 - How to publish your portfolio with GitHub Pages.
 
-## Skills
+## Requirement and Skills
 
 This tutorial does not require any prior programming experience.
 

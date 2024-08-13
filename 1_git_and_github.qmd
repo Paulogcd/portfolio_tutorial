@@ -6,9 +6,6 @@ execute:
 ---
 
 
-{{< include warning.qmd >}}
-
-
 Welcome in this tutorial to create your own online portfolio :slightly_smiling_face: !
 The first step of our journey to set up our working environment. 
 In order to do so, we are going to use several tools, like **Git**, **GitHub** and **Visual Studio Code**. 

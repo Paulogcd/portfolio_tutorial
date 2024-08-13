@@ -1,6 +1,0 @@
----
-title: "Conclusion"
----
-
-This is a conclusion.
-It is currently under development.

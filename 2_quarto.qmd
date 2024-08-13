@@ -2,8 +2,6 @@
 title: "2. Creating our content with Quarto"
 ---
 
-{{< include warning.qmd >}}
-
 Now that we know how to make use of GitHub and Visual Studio Code, we are going to use Quarto to create our website :art: !
 
 **Quarto** is a static website generator. It is a software that allows us to create web content from human readable files.

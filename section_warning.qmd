@@ -1,6 +1,0 @@
-::: {.callout-caution}
-This section is currently going under construction.
-Is it incomplete, and I am currently working on it.
-Its content is coming soon !
-Feel free to reach out to me to point out some elements that could be included here.
-:::

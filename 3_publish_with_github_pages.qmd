@@ -2,8 +2,6 @@
 title: "3. Publish your website with Github Pages"
 ---
 
-{{< include warning.qmd >}}
-
 Congratulations for having made it so far :grin: !
 Now that we have a decent-looking basis for our online portfolio, we are ready to make it available to the real world. 
 In order for us to publish our content, we are going to use GitHub Pages, a website hosting service of GitHub. 

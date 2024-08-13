@@ -2,8 +2,6 @@
 title: "Research student portfolio tutorial"
 ---
 
-{{< include warning.qmd >}}
-
 Would you like to have an online portfolio to share your work in research :thinking:, but you do not have much time and are not proficient in web development :confused: ?
 Welcome to this **research student portfolio tutorial** :open_mouth: ! 
 

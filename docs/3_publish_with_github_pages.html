@@ -226,19 +226,6 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Caution
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This tutorial is currently going under construction. All chapters and sections are not finished and might include incomplete explanations. Feel free to reach out to me to point out some missing elements.</p>
-</div>
-</div>
 <p>Congratulations for having made it so far <span class="emoji" data-emoji="grin">😁</span> ! Now that we have a decent-looking basis for our online portfolio, we are ready to make it available to the real world. In order for us to publish our content, we are going to use GitHub Pages, a website hosting service of GitHub.</p>
 <blockquote class="blockquote">
 <p>Several free hosting services exist, such as <a href="https://www.netlify.com/">Netlify</a>, <a href="https://quartopub.com/">Quarto Pub</a>, and <a href="https://pages.github.com/">GitHub Pages</a>, among other ones. We focus here on Github Pages because of its simplicity and because it allows to have an easy and stable workflow with our Github repository.</p>
@@ -860,7 +847,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"loop":false,"selector":".lightbox","closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"loop":false,"descPosition":"bottom","openEffect":"zoom","selector":".lightbox","closeEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

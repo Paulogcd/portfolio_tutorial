@@ -4,7 +4,7 @@
     "href": "3_publish_with_github_pages.html",
     "title": "3. Publish your website with Github Pages",
     "section": "",
-    "text": "Caution\n\n\n\nThis tutorial is currently going under construction. All chapters and sections are not finished and might include incomplete explanations. Feel free to reach out to me to point out some missing elements.\nCongratulations for having made it so far 😁 ! Now that we have a decent-looking basis for our online portfolio, we are ready to make it available to the real world. In order for us to publish our content, we are going to use GitHub Pages, a website hosting service of GitHub.\nThis final step is the easiest one, so hang it on, we are soon reaching the end of this tutorial 😁.",
+    "text": "Congratulations for having made it so far 😁 ! Now that we have a decent-looking basis for our online portfolio, we are ready to make it available to the real world. In order for us to publish our content, we are going to use GitHub Pages, a website hosting service of GitHub.\nThis final step is the easiest one, so hang it on, we are soon reaching the end of this tutorial 😁.",
     "crumbs": [
       "Home",
       "3. Publish your website with Github Pages"
@@ -59,7 +59,7 @@
     "href": "1_git_and_github.html",
     "title": "1. Setting up our workflow",
     "section": "",
-    "text": "Caution\n\n\n\nThis tutorial is currently going under construction. All chapters and sections are not finished and might include incomplete explanations. Feel free to reach out to me to point out some missing elements.\nWelcome in this tutorial to create your own online portfolio 🙂 ! The first step of our journey to set up our working environment. In order to do so, we are going to use several tools, like Git, GitHub and Visual Studio Code.",
+    "text": "Welcome in this tutorial to create your own online portfolio 🙂 ! The first step of our journey to set up our working environment. In order to do so, we are going to use several tools, like Git, GitHub and Visual Studio Code.",
     "crumbs": [
       "Home",
       "1. Setting up our workflow"
@@ -99,43 +99,11 @@
     ]
   },
   {
-    "objectID": "conclusion.html",
-    "href": "conclusion.html",
-    "title": "Conclusion",
-    "section": "",
-    "text": "This is a conclusion. It is currently under development.\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "foreword.html",
-    "href": "foreword.html",
-    "title": "Foreword",
-    "section": "",
-    "text": "This tutorial aims to give you the tools to easily and efficiently create, and maintain your own online portfolio.\nIt is divided in three chapters :\n\nThe first chapter focuses on creating a simple workflow for the rest of our work.\nWe will use Git, Github, and Visual Studio Code.\nThe second capter focuses on the design of the website.\nWe will use Quarto.\nThe third and last chapter focuses on the publication of our website.\nWe will use Github Pages.\n\nNo prior programming experience is required to follow this tutorial.\nI hope you will enjoy it 😁 !\n\n\n\n Back to top",
-    "crumbs": [
-      "Home",
-      "Foreword"
-    ]
-  },
-  {
-    "objectID": "section_warning.html",
-    "href": "section_warning.html",
-    "title": "Research student portfolio tutorial",
-    "section": "",
-    "text": "Caution\n\n\n\nThis section is currently going under construction. Is it incomplete, and I am currently working on it. Its content is coming soon ! Feel free to reach out to me to point out some elements that could be included here.\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "warning.html",
-    "href": "warning.html",
-    "title": "Research student portfolio tutorial",
-    "section": "",
-    "text": "Caution\n\n\n\nThis tutorial is currently going under construction. All chapters and sections are not finished and might include incomplete explanations. Feel free to reach out to me to point out some missing elements.\n\n\n\n\n\n Back to top"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Research student portfolio tutorial",
     "section": "",
-    "text": "Caution\n\n\n\nThis tutorial is currently going under construction. All chapters and sections are not finished and might include incomplete explanations. Feel free to reach out to me to point out some missing elements.\nWould you like to have an online portfolio to share your work in research 🤔, but you do not have much time and are not proficient in web development 😕 ? Welcome to this research student portfolio tutorial 😮 !",
+    "text": "Would you like to have an online portfolio to share your work in research 🤔, but you do not have much time and are not proficient in web development 😕 ? Welcome to this research student portfolio tutorial 😮 !",
     "crumbs": [
       "Home",
       "Research student portfolio tutorial"
@@ -175,6 +143,17 @@
     ]
   },
   {
+    "objectID": "foreword.html",
+    "href": "foreword.html",
+    "title": "Foreword",
+    "section": "",
+    "text": "This tutorial aims to give you the tools to easily and efficiently create, and maintain your own online portfolio.\nIt is divided in three chapters :\n\nThe first chapter focuses on creating a simple workflow for the rest of our work.\nWe will use Git, Github, and Visual Studio Code.\nThe second capter focuses on the design of the website.\nWe will use Quarto.\nThe third and last chapter focuses on the publication of our website.\nWe will use Github Pages.\n\nNo prior programming experience is required to follow this tutorial.\nI hope you will enjoy it 😁 !\n\n\n\n Back to top",
+    "crumbs": [
+      "Home",
+      "Foreword"
+    ]
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -190,7 +169,7 @@
     "href": "2_quarto.html",
     "title": "2. Creating our content with Quarto",
     "section": "",
-    "text": "Caution\n\n\n\nThis tutorial is currently going under construction. All chapters and sections are not finished and might include incomplete explanations. Feel free to reach out to me to point out some missing elements.\nNow that we know how to make use of GitHub and Visual Studio Code, we are going to use Quarto to create our website 🎨 !\nQuarto is a static website generator. It is a software that allows us to create web content from human readable files.\nUsually, we should learn HTML and CSS, and JavaScript to know a bit of Web development. Indeed, those are the languages that traditional web browsers support. When we go to a webpage, our web browser transforms html and css into a graphical interface, which is easier to understand for humans. Javascript allows us to implement interactive features. However, in recent years, a lot of static website generators have emerged, making the creation of websites much easier. Among them, Jekyll, Zola, Hugo, and Quarto can be cited, but they are far from being the only ones available.",
+    "text": "Now that we know how to make use of GitHub and Visual Studio Code, we are going to use Quarto to create our website 🎨 !\nQuarto is a static website generator. It is a software that allows us to create web content from human readable files.\nUsually, we should learn HTML and CSS, and JavaScript to know a bit of Web development. Indeed, those are the languages that traditional web browsers support. When we go to a webpage, our web browser transforms html and css into a graphical interface, which is easier to understand for humans. Javascript allows us to implement interactive features. However, in recent years, a lot of static website generators have emerged, making the creation of websites much easier. Among them, Jekyll, Zola, Hugo, and Quarto can be cited, but they are far from being the only ones available.",
     "crumbs": [
       "Home",
       "2. Creating our content with Quarto"
