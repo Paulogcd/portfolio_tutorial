@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Research student portfolio tutorial - 1. Setting up our workflow</title>
+<title>1. Setting up our workflow – Research student portfolio tutorial</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -33,7 +33,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -71,10 +71,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-09537c9ecba8558085948e1b802a414a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -117,7 +117,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -131,7 +131,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Research Portfolio tutorial</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-chapters" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-chapters" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Chapters</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-chapters">    
@@ -159,7 +159,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
@@ -170,11 +170,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1_git_and_github.html">1. Setting up our workflow</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
@@ -259,16 +259,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Welcome in this tutorial to create your own online portfolio <span class="emoji" data-emoji="slightly_smiling_face">🙂</span> ! The first step of our journey to set up our working environment. In order to do so, we are going to use several tools, like <strong>Git</strong>, <strong>GitHub</strong> and <strong>Visual Studio Code</strong>.</p>
+<p>Welcome in this tutorial to create your own online portfolio <span class="emoji" data-emoji="slightly_smiling_face">🙂</span>! The first step of our journey to set up our working environment. In order to do so, we are going to use several tools, like <strong>Git</strong>, <strong>GitHub</strong> and <strong>Visual Studio Code</strong>.</p>
 <ul>
 <li>Git and GitHub will allow us to manage the changes of our files, and store them online.</li>
 <li>Visual Studio Code will allow us to modify our files.</li>
 </ul>
 <section id="git-and-github" class="level2">
 <h2 class="anchored" data-anchor-id="git-and-github">Git and GitHub</h2>
-<p><strong>Git</strong> is a software that allows to manage all the changes done to the selected files. It is also called a version management software, or a version control system. Do we want to check all the versions and changes of our files from their creation until their current version ? If we use Git, it is possible.</p>
+<p><strong>Git</strong> is a software that allows to manage all the changes done to the selected files. It is also called a version management software, or a version control system. Do we want to check all the versions and changes of our files from their creation until their current version? If we use Git, it is possible.</p>
 <blockquote class="blockquote">
-<p>Git does not only work with code files, but also with any type of file. If you have a text file (like a Master thesis for example) for which you want to control the different versions, you can use Git for it !</p>
+<p>Git isn’t just for code: it works with any kind of file. For example, if you’re writing a text file like a Master’s thesis and want to keep track of different versions, you can use Git for that.</p>
 </blockquote>
 <p><strong>GitHub</strong> is a company (currently owned by Microsoft) whose servers can be used to store files. Their website integrates Git and uses it to track the changes of all the documents we choose to store on it.</p>
 <blockquote class="blockquote">
@@ -277,11 +277,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>This tutorial offers two methods to use <strong>Git</strong> and <strong>GitHub</strong> :</p>
 <ul>
 <li><p>The first one is based on the <strong>Graphical User Interface (GUI)</strong> solution of <strong>GitHub Desktop</strong>. It is an application that offers a simple interface to interact with Git and GitHub at the same time. It is simple and quick to setup.</p></li>
-<li><p>The second method is based on the <strong>Command Line Interface (CLI)</strong> approach. It uses the basic features of Git and GitHub, and relies on the Command Line to interact with Git and GitHub. It requires more steps, and is harder to setup, but allows to develop a deeper understanding of what is going on when we use Git and GitHub.</p></li>
+<li><p>The second method is based on the <strong>Command Line Interface (CLI)</strong> approach. It uses the basic features of Git and GitHub, and relies on the Command Line to interact with both. It requires more steps, and is harder to setup, but allows to develop a deeper understanding of what is going on when we use Git and GitHub.</p></li>
 </ul>
 <p>If we do not wish to dive deep into the mechanisms of the Git and its interactions with GitHub, we can proceed with the GUI approach.</p>
 <blockquote class="blockquote">
-<p>If the GUI approach is easy and useful, it implies necessarily abstractions of how things are really working under the hood. Therefore, I highly encourage you to read the CLI section, even if you do not follow all of its instruction. You can always continue with the GUI approach, and later on come back to this chapter to read the CLI section once you are done with the tutorial.</p>
+<p>While the GUI approach is easy and useful, it implies necessarily abstractions of how things are really working under the hood. Therefore, I highly encourage you to read the CLI section, even if you do not follow all of its instruction. You can always continue with the GUI approach, and later on come back to this chapter to read the CLI section once you are done with the tutorial.</p>
 </blockquote>
 <div class="tabset-margin-container"></div><div class="panel-tabset" data-group="method">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">GitHub Desktop : The Graphical User Interface (GUI)</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Git Command Line Interface (CLI)</a></li></ul>
@@ -290,11 +290,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="create-your-github-account" class="level3">
 <h3 class="anchored" data-anchor-id="create-your-github-account">Create your GitHub account</h3>
 <p>The first step is to create a GitHub account. We can go <a href="https://github.com/">here</a> and click on “Sign up”.</p>
-<p>We have to be especially thoughtful of our username, because our website will inlcude it in its url. It will indeed have the format “https://username.github.io”.</p>
+<p>We have to be especially thoughtful of our username, because our website will include it in its URL. It will indeed have the format “https://username.github.io”.</p>
 <p>After having created our account, we should land on a page looking like this :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/1_9_starting_page_github.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1" title="Figure 1.1 : The starting page of GitHub."><img src="./resources/images/1_9_starting_page_github.png" class="img-fluid figure-img" alt="Figure 1.1 : The starting page of GitHub."></a></p>
+<p><a href="./resources/images/1_9_starting_page_github.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure 1.1 : The starting page of GitHub."><img src="./resources/images/1_9_starting_page_github.png" class="img-fluid figure-img" alt="Figure 1.1 : The starting page of GitHub."></a></p>
 <figcaption>Figure 1.1 : The starting page of GitHub.</figcaption>
 </figure>
 </div>
@@ -305,7 +305,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The next step is to install GitHub Desktop <a href="https://desktop.github.com/">here</a>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/1_12_github_desktop2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2" title="Figure 1.2 : GitHub Desktop landing page."><img src="./resources/images/1_12_github_desktop2.png" class="img-fluid figure-img" alt="Figure 1.2 : GitHub Desktop landing page."></a></p>
+<p><a href="./resources/images/1_12_github_desktop2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure 1.2 : GitHub Desktop landing page."><img src="./resources/images/1_12_github_desktop2.png" class="img-fluid figure-img" alt="Figure 1.2 : GitHub Desktop landing page."></a></p>
 <figcaption>Figure 1.2 : GitHub Desktop landing page.</figcaption>
 </figure>
 </div>
@@ -318,7 +318,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/1_13_github_desktop_start.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" data-glightbox="description: .lightbox-desc-3" title="Figure 1.3 : Starting page of GitHub Desktop."><img src="./resources/images/1_13_github_desktop_start.png" class="img-fluid figure-img" alt="Figure 1.3 : Starting page of GitHub Desktop."></a></p>
+<p><a href="./resources/images/1_13_github_desktop_start.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figure 1.3 : Starting page of GitHub Desktop."><img src="./resources/images/1_13_github_desktop_start.png" class="img-fluid figure-img" alt="Figure 1.3 : Starting page of GitHub Desktop."></a></p>
 <figcaption>Figure 1.3 : Starting page of GitHub Desktop.</figcaption>
 </figure>
 </div>
@@ -326,7 +326,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/1_14_authorization2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" data-glightbox="description: .lightbox-desc-4" title="Figure 1.4 : Authorization page to GitHub."><img src="./resources/images/1_14_authorization2.png" class="img-fluid figure-img" alt="Figure 1.4 : Authorization page to GitHub."></a></p>
+<p><a href="./resources/images/1_14_authorization2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Figure 1.4 : Authorization page to GitHub."><img src="./resources/images/1_14_authorization2.png" class="img-fluid figure-img" alt="Figure 1.4 : Authorization page to GitHub."></a></p>
 <figcaption>Figure 1.4 : Authorization page to GitHub.</figcaption>
 </figure>
 </div>
@@ -338,17 +338,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>Then, we will be redirected to a configuration page on GitHub Desktop. We can here notice that a slightly different email address can be specified by default instead of the one we used in the creation process of our GitHub account. This is normal, it does not matter much for what we are trying to achieve here. We can also finish the configuration process with this default different email address.</p>
+<p>Then, we will be redirected to a configuration page on GitHub Desktop. We can here notice that a slightly different email address can be specified by default instead of the one we used in the creation process of our GitHub account. This is normal, and does not matter much for what we are trying to achieve here. We can also finish the configuration process with this default different email address.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/1_15_configuration.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" data-glightbox="description: .lightbox-desc-5" title="Figure 1.5 : GitHub Desktop configuration."><img src="./resources/images/1_15_configuration.png" class="img-fluid figure-img" alt="Figure 1.5 : GitHub Desktop configuration."></a></p>
+<p><a href="./resources/images/1_15_configuration.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figure 1.5 : GitHub Desktop configuration."><img src="./resources/images/1_15_configuration.png" class="img-fluid figure-img" alt="Figure 1.5 : GitHub Desktop configuration."></a></p>
 <figcaption>Figure 1.5 : GitHub Desktop configuration.</figcaption>
 </figure>
 </div>
 <p>Once we are done with the configuration process, we should land on a page looking like that :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/1_16_homepage2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" data-glightbox="description: .lightbox-desc-6" title="Figure 1.6 : GitHub Desktop home page."><img src="./resources/images/1_16_homepage2.png" class="img-fluid figure-img" alt="Figure 1.6 : GitHub Desktop home page."></a></p>
+<p><a href="./resources/images/1_16_homepage2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Figure 1.6 : GitHub Desktop home page."><img src="./resources/images/1_16_homepage2.png" class="img-fluid figure-img" alt="Figure 1.6 : GitHub Desktop home page."></a></p>
 <figcaption>Figure 1.6 : GitHub Desktop home page.</figcaption>
 </figure>
 </div>
@@ -356,19 +356,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>We click on “Create a New Repository on your Local Drive…”, and create a repository called “username.github.io”, with our actual username instead of “username”. I will create one, and since my GitHub username example is frpgcd, my repository will be called “frpgcd.github.io” :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/1_17_create_repository.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" data-glightbox="description: .lightbox-desc-7" title="Figure 1.7 : Creating a repository on GitHub Desktop."><img src="./resources/images/1_17_create_repository.png" class="img-fluid figure-img" alt="Figure 1.7 : Creating a repository on GitHub Desktop."></a></p>
+<p><a href="./resources/images/1_17_create_repository.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Figure 1.7 : Creating a repository on GitHub Desktop."><img src="./resources/images/1_17_create_repository.png" class="img-fluid figure-img" alt="Figure 1.7 : Creating a repository on GitHub Desktop."></a></p>
 <figcaption>Figure 1.7 : Creating a repository on GitHub Desktop.</figcaption>
 </figure>
 </div>
 <p>Now, we should get something looking like that :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/1_18_repository_github_desktop.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" data-glightbox="description: .lightbox-desc-8" title="Figure 1.8 : An empty repository on GitHub desktop."><img src="./resources/images/1_18_repository_github_desktop.png" class="img-fluid figure-img" alt="Figure 1.8 : An empty repository on GitHub desktop."></a></p>
+<p><a href="./resources/images/1_18_repository_github_desktop.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Figure 1.8 : An empty repository on GitHub desktop."><img src="./resources/images/1_18_repository_github_desktop.png" class="img-fluid figure-img" alt="Figure 1.8 : An empty repository on GitHub desktop."></a></p>
 <figcaption>Figure 1.8 : An empty repository on GitHub desktop.</figcaption>
 </figure>
 </div>
 <p>Let us take a moment to comment what we see. In the left side bar, we have all the modified files of our directory. Here, GitHub desktop automatically created a .gitattributes file. In the right side interface, we see the content of the selected files. Here, we see that two lines have been added, thanks to the green color and the addition sign “+”.</p>
-<p>Now, if we make any change in our folder, we will be able to commit the changes. “Commit” means here that the changes will be recorded in the history of changes. Once our changes are commited, we can “push” them on our GitHub repository with the top-right button. If we want to “push” for the first time, we first have to publish the repository, i.e.&nbsp;create a distant repository on GitHub. We do it with the top-right button “Publish repository”.</p>
+<p>Now, if we make any change in our folder, we will be able to commit the changes. “Commit” means here that the changes will be recorded in the history of the folder. Once our changes are commited, we can “push” them on our GitHub repository with the top-right button. If we want to “push” for the first time, we first have to publish the repository, i.e.&nbsp;create a distant repository on GitHub. We do it with the top-right button “Publish repository”.</p>
 <p>In order for us to add files to our directory and modify them, we are now going to use another tool : Visual Studio Code.</p>
 </section>
 </div>
@@ -383,7 +383,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Once we installed vscode, we can install Git from <a href="https://git-scm.com/">here</a>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/1_4_install_git.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" data-glightbox="description: .lightbox-desc-9" title="Figure 1.9 : The installation page of Git."><img src="./resources/images/1_4_install_git.png" class="img-fluid figure-img" alt="Figure 1.9 : The installation page of Git."></a></p>
+<p><a href="./resources/images/1_4_install_git.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Figure 1.9 : The installation page of Git."><img src="./resources/images/1_4_install_git.png" class="img-fluid figure-img" alt="Figure 1.9 : The installation page of Git."></a></p>
 <figcaption>Figure 1.9 : The installation page of Git.</figcaption>
 </figure>
 </div>
@@ -402,10 +402,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>We begin tracking this file with git, using <code>git add text.txt</code>.</li>
 <li>We describe our action using <code>git commit -m "Adding a text file."</code>.</li>
 </ol>
+<blockquote class="blockquote">
+<p>To create a new file, you can also use the <code>touch</code> command in the terminal. For example, <code>touch text.txt</code> to create an empty file named <code>text.txt</code>.</p>
+</blockquote>
 <p>At this point, we should have something like that :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/1_7_basic_setup_git.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" data-glightbox="description: .lightbox-desc-10" title="Figure 1.10 : Initializing git, adding a file, and commiting this change."><img src="./resources/images/1_7_basic_setup_git.png" class="img-fluid figure-img" alt="Figure 1.10 : Initializing git, adding a file, and commiting this change."></a></p>
+<p><a href="./resources/images/1_7_basic_setup_git.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Figure 1.10 : Initializing git, adding a file, and commiting this change."><img src="./resources/images/1_7_basic_setup_git.png" class="img-fluid figure-img" alt="Figure 1.10 : Initializing git, adding a file, and commiting this change."></a></p>
 <figcaption>Figure 1.10 : Initializing git, adding a file, and commiting this change.</figcaption>
 </figure>
 </div>
@@ -415,6 +418,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>git log</code> gives back the logbook, i.e.&nbsp;the list of changes that were saved.</li>
 <li><code>git diff</code> gives the differences between the current version of your files and the latest version saved in the logbook.</li>
 </ul>
+<blockquote class="blockquote">
+<p>To exit the special mode the terminal enters after you enter <code>git log</code> or <code>git diff</code>, you can enter <code>q</code> and then the return key. This special mode is denoted by the <code>:</code> displayed at the last line of the terminal. For more information about this issue, you can check <a href="https://stackoverflow.com/questions/11828270/how-do-i-exit-vim">this</a>.</p>
+</blockquote>
 <p>Finally, it is also useful to set up a branch. Simply put, a branch is the path in which we are registering all our commits and files. Creating and programming on another branch would be aking to continuing the development of our code on a parallel version of our project, without modifying the “main” version of it (often called the “main” branch). It is important to set up a main branch, in order for Git not to bug in future operations. In order to do so, we can enter : <code>git branch -M main</code> in the terminal.</p>
 <p>Git is a very powerful tool that allows to do a lot of collaborative code managing, but we choose here to mainly exploit one of its features : remote synchronization. Ideed, in addition to having this local logbook on our computer, we can also send your files to a remote server, in a similar way than the cloud or a remote drive works. This is where GitHub enters into play.</p>
 </section>
@@ -423,19 +429,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>To use GitHub, the first step is to go to <a href="https://github.com">GitHub</a> and create an account. Once our account is created, we can create a repository, named “username.github.io”, replacing “username” with our actual user name. Since I choose the username <code>frpgcd</code>, I will create in this example a repository name “frpgcd.github.io”.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/1_9_starting_page_github.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" data-glightbox="description: .lightbox-desc-11" title="Figure 1.11 : Click on the green button “Create a repository”."><img src="./resources/images/1_9_starting_page_github.png" class="img-fluid figure-img" alt="Figure 1.11 : Click on the green button “Create a repository”."></a></p>
+<p><a href="./resources/images/1_9_starting_page_github.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Figure 1.11 : Click on the green button “Create a repository”."><img src="./resources/images/1_9_starting_page_github.png" class="img-fluid figure-img" alt="Figure 1.11 : Click on the green button “Create a repository”."></a></p>
 <figcaption>Figure 1.11 : Click on the green button “Create a repository”.</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/1_10_create_repo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12" data-glightbox="description: .lightbox-desc-12" title="Figure 1.12 : Starting page of the repository creation process."><img src="./resources/images/1_10_create_repo.png" class="img-fluid figure-img" alt="Figure 1.12 : Starting page of the repository creation process."></a></p>
+<p><a href="./resources/images/1_10_create_repo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="Figure 1.12 : Starting page of the repository creation process."><img src="./resources/images/1_10_create_repo.png" class="img-fluid figure-img" alt="Figure 1.12 : Starting page of the repository creation process."></a></p>
 <figcaption>Figure 1.12 : Starting page of the repository creation process.</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/1_11_create_repo_filled.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13" data-glightbox="description: .lightbox-desc-13" title="Figure 1.13 : Page of the repository creation process filled with information."><img src="./resources/images/1_11_create_repo_filled.png" class="img-fluid figure-img" alt="Figure 1.13 : Page of the repository creation process filled with information."></a></p>
+<p><a href="./resources/images/1_11_create_repo_filled.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13" title="Figure 1.13 : Page of the repository creation process filled with information."><img src="./resources/images/1_11_create_repo_filled.png" class="img-fluid figure-img" alt="Figure 1.13 : Page of the repository creation process filled with information."></a></p>
 <figcaption>Figure 1.13 : Page of the repository creation process filled with information.</figcaption>
 </figure>
 </div>
@@ -453,17 +459,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.email <span class="st">"frpgcd@mail.com"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh-keygen</span> <span class="at">-t</span> ed25519 <span class="at">-C</span> <span class="st">"frpgcd@email.com"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="4" type="1">
-<li>Now, we are going to use this key to establish a connection between our computer and our GitHub account. On our terminal, we can enter <code>cat ~/.ssh/id_ed25519.pub</code> or <code>open ~/.ssh/id_ed25519.pub</code>, and it will give us back a character string beginning with “ssh-ed22519”. We then go to our GitHub account, click on our profile picture at the top right of the website, choose “settings”, then click on “ssh and gpg keys”, then on “add new ssh key”, choose the title you want (for example the name of our current computer), and in “key”, add the value your terminal gave back to us. We should be connected !</li>
+<li>Now, we are going to use this key to establish a connection between our computer and our GitHub account. On our terminal, we can enter <code>cat ~/.ssh/id_ed25519.pub</code> or <code>open ~/.ssh/id_ed25519.pub</code>, and it will give us back a character string beginning with “ssh-ed22519”. We then go to our GitHub account, click on our profile picture at the top right of the website, choose “settings”, then click on “ssh and gpg keys”, then on “add new ssh key”, choose the title you want (for example the name of our current computer), and in “key”, add the value your terminal gave back to us. We should be connected!</li>
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/1_12_ssh_keys.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14" data-glightbox="description: .lightbox-desc-14" title="Figure 1.14 : In our settings, we must find the ssh and gpg keys section."><img src="./resources/images/1_12_ssh_keys.png" class="img-fluid figure-img" alt="Figure 1.14 : In our settings, we must find the ssh and gpg keys section."></a></p>
+<p><a href="./resources/images/1_12_ssh_keys.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14" title="Figure 1.14 : In our settings, we must find the ssh and gpg keys section."><img src="./resources/images/1_12_ssh_keys.png" class="img-fluid figure-img" alt="Figure 1.14 : In our settings, we must find the ssh and gpg keys section."></a></p>
 <figcaption>Figure 1.14 : In our settings, we must find the ssh and gpg keys section.</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/1_13_ssh_keys_info.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15" data-glightbox="description: .lightbox-desc-15" title="Figure 1.15 : After having clicked on “New SSH Key”, we can add what we get from our terminal after entering “cat ~/.ssh/id_ed25519.pub” in the “Key” section."><img src="./resources/images/1_13_ssh_keys_info.png" class="img-fluid figure-img" alt="Figure 1.15 : After having clicked on “New SSH Key”, we can add what we get from our terminal after entering “cat ~/.ssh/id_ed25519.pub” in the “Key” section."></a></p>
+<p><a href="./resources/images/1_13_ssh_keys_info.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15" title="Figure 1.15 : After having clicked on “New SSH Key”, we can add what we get from our terminal after entering “cat ~/.ssh/id_ed25519.pub” in the “Key” section."><img src="./resources/images/1_13_ssh_keys_info.png" class="img-fluid figure-img" alt="Figure 1.15 : After having clicked on “New SSH Key”, we can add what we get from our terminal after entering “cat ~/.ssh/id_ed25519.pub” in the “Key” section."></a></p>
 <figcaption>Figure 1.15 : After having clicked on “New SSH Key”, we can add what we get from our terminal after entering “cat ~/.ssh/id_ed25519.pub” in the “Key” section.</figcaption>
 </figure>
 </div>
@@ -489,6 +495,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Adding a new file."</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>You can then verify that your changes have been taken into account by going on the website of GitHub, on your repository. Your tracked files should appear there.</p>
+<blockquote class="blockquote">
+<p>GitHub also has a CLI tool, that allows (among other features) to create repositories from your terminal. It is very powerful and very useful. You can check it out <a href="https://cli.github.com">here</a>.</p>
+</blockquote>
 </section>
 </div>
 </div>
@@ -499,53 +508,56 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>Visual Studio Code</strong> (VSC or vscode) is a software to write and execute code, also called Integrated Development Environment (IDE). It is largely used, and many extensions exist to customize one’s experience with it. We are going to install vscode <a href="https://code.visualstudio.com/">here</a>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/1_1_install_vscode2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16" data-glightbox="description: .lightbox-desc-16" title="Figure 1.16 : Dowload page of vscode."><img src="./resources/images/1_1_install_vscode2.png" class="img-fluid figure-img" alt="Figure 1.16 : Dowload page of vscode."></a></p>
+<p><a href="./resources/images/1_1_install_vscode2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-16" title="Figure 1.16 : Dowload page of vscode."><img src="./resources/images/1_1_install_vscode2.png" class="img-fluid figure-img" alt="Figure 1.16 : Dowload page of vscode."></a></p>
 <figcaption>Figure 1.16 : Dowload page of vscode.</figcaption>
 </figure>
 </div>
-<p>One of the strenghts of vscode is the fact that it can open and manage a whole folder. We are now going to use vscode to open the folder “username.github.io” that we created earlier. To do so, we open vscode, click on “open” in the starting page, and select our folder.</p>
+<p>One of the strengths of vscode is the fact that it can open and manage a whole folder. We are now going to use vscode to open the folder “username.github.io” that we created earlier. To do so, we open vscode, click on “open” in the starting page, and select our folder.</p>
 <blockquote class="blockquote">
 <p>In some versions of vscode, two options exist for opening a file or a folder. Be sure to select the option to open a folder and not a file.</p>
 </blockquote>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/1_2_starting_page_vscode.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17" data-glightbox="description: .lightbox-desc-17" title="Figure 1.17 : Starting page of vscode. Click on “open” to chose a folder to open."><img src="./resources/images/1_2_starting_page_vscode.png" class="img-fluid figure-img" alt="Figure 1.17 : Starting page of vscode. Click on “open” to chose a folder to open."></a></p>
+<p><a href="./resources/images/1_2_starting_page_vscode.png" class="lightbox" data-gallery="quarto-lightbox-gallery-17" title="Figure 1.17 : Starting page of vscode. Click on “open” to chose a folder to open."><img src="./resources/images/1_2_starting_page_vscode.png" class="img-fluid figure-img" alt="Figure 1.17 : Starting page of vscode. Click on “open” to chose a folder to open."></a></p>
 <figcaption>Figure 1.17 : Starting page of vscode. Click on “open” to chose a folder to open.</figcaption>
 </figure>
 </div>
 <p>Now that we selected our folder, vscode opened it and we should see something like that :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/1_3_folder_opened_vscode.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18" data-glightbox="description: .lightbox-desc-18" title="Figure 1.18 : An empty folder opened with vscode."><img src="./resources/images/1_3_folder_opened_vscode.png" class="img-fluid figure-img" alt="Figure 1.18 : An empty folder opened with vscode."></a></p>
+<p><a href="./resources/images/1_3_folder_opened_vscode.png" class="lightbox" data-gallery="quarto-lightbox-gallery-18" title="Figure 1.18 : An empty folder opened with vscode."><img src="./resources/images/1_3_folder_opened_vscode.png" class="img-fluid figure-img" alt="Figure 1.18 : An empty folder opened with vscode."></a></p>
 <figcaption>Figure 1.18 : An empty folder opened with vscode.</figcaption>
 </figure>
 </div>
 <blockquote class="blockquote">
-<p>NOTE : When a folder is opened for the first time, vscode may ask “Do you trust the authors of the files in this folder?”. Since you just created your folder and that it is empty, you can naturally click on yes. You are the author !</p>
+<p>NOTE : When a folder is opened for the first time, vscode may ask “Do you trust the authors of the files in this folder?”. Since you just created your folder and that it is empty, you can naturally click on yes: You are the author!</p>
 </blockquote>
 <p>We are almost done. The last step is to create a terminal within vscode. In order for us to do that, we go the research bar at the top and enter “&gt;Terminal: Create New Terminal”. This will pop-up a terminal console in vscode.</p>
+<blockquote class="blockquote">
+<p>This command opens a Terminal at the location of the current opened folder. If you have multiple installed shells software or programming languages in your computer, vscode has an alternative command “&gt;Create New Terminal (With Profile)”, that will give you the possibility to choose the language or shell you want to open the Terminal with.</p>
+</blockquote>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/1_5_create_new_terminal_vscode.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19" data-glightbox="description: .lightbox-desc-19" title="Figure 1.19 : How to create a new terminal on vscode."><img src="./resources/images/1_5_create_new_terminal_vscode.png" class="img-fluid figure-img" alt="Figure 1.19 : How to create a new terminal on vscode."></a></p>
+<p><a href="./resources/images/1_5_create_new_terminal_vscode.png" class="lightbox" data-gallery="quarto-lightbox-gallery-19" title="Figure 1.19 : How to create a new terminal on vscode."><img src="./resources/images/1_5_create_new_terminal_vscode.png" class="img-fluid figure-img" alt="Figure 1.19 : How to create a new terminal on vscode."></a></p>
 <figcaption>Figure 1.19 : How to create a new terminal on vscode.</figcaption>
 </figure>
 </div>
-<p>This should normally generate a console at the bottom of vscode, where our username, the name of our computer, adn/or the name of our current folder do appear :</p>
+<p>This should normally generate a console at the bottom of vscode, where our username, the name of our computer, and/or the name of our current folder do appear :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/1_6_terminal_vscode.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20" data-glightbox="description: .lightbox-desc-20" title="Figure 1.20 : Terminal in vscode."><img src="./resources/images/1_6_terminal_vscode.png" class="img-fluid figure-img" alt="Figure 1.20 : Terminal in vscode."></a></p>
+<p><a href="./resources/images/1_6_terminal_vscode.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20" title="Figure 1.20 : Terminal in vscode."><img src="./resources/images/1_6_terminal_vscode.png" class="img-fluid figure-img" alt="Figure 1.20 : Terminal in vscode."></a></p>
 <figcaption>Figure 1.20 : Terminal in vscode.</figcaption>
 </figure>
 </div>
-<p>Simply put, the terminal allows to textually communicate with your machine, instead of graphically, like it is usually the case nowadays. For those following the CLI section, we use Git with the terminal, and it is the reason the section is called the Command Line Interface section. Having a terminal opened in vscode makes it possible to manipulate the current opened folder more easily. This is also how we will be using Quarto in the next chapter.</p>
+<p>Simply put, the terminal allows to textually communicate with your machine, instead of graphically, like it is most often the case. For those following the CLI section, we use Git with the terminal, and it is the reason the section is called the Command Line Interface section. Having a terminal opened in vscode makes it possible to manipulate the current opened folder more easily. This is also how we will be using Quarto in the next chapter.</p>
 <blockquote class="blockquote">
 <p>This tutorial does not focus on what a terminal is, what shell, bash or any kinds of line command are and do. However, it would be very useful for you to know how to use the basics of it. Further resources are available at the end of this page, and I strongly encourage you to check them, especially the first four chapters of <a href="https://floswald.github.io/ScPoProgramming/">Florian Oswald’s lecture</a> on the shell.</p>
 </blockquote>
-<p><span class="emoji" data-emoji="tada">🎉</span> It is done ! We have created a GitHub account, connected it to our GitHub Desktop application, created a repository, and opened it with vscode. Next step : use Quarto to create web content.</p>
+<p><span class="emoji" data-emoji="tada">🎉</span> It is done! We have created a GitHub account, connected it to our GitHub Desktop application, created a repository, and opened it with vscode. Next step : use Quarto to create web content.</p>
 </section>
 <section id="further-resources" class="level2">
 <h2 class="anchored" data-anchor-id="further-resources">Further Resources</h2>
-<p>We are now ready to proceed to the second chapter, that treats content generation with Quarto. However, if you wish to dive deeper into the tools presented in this first chapter, and try to understand better Git, GitHub, or even the Terminal and Visual Studio Code, you might be tempted to look at additional material. First of all, for all that has been covered in this tutorial, I recommend the lecture of Florian Oswald about Git and GitHub, <a href="https://floswald.github.io/ScPoProgramming/05-git.html">available here</a>. For more specific questions, you might find the following resources useful :</p>
+<p>We are now ready to proceed to the second chapter, that deals with content generation with Quarto. However, if you wish to dive deeper into the tools presented in this first chapter, and try to understand better Git, GitHub, or even the Terminal and Visual Studio Code, you might be tempted to look at additional material. First of all, for all that has been covered in this tutorial, I recommend the lecture of Florian Oswald about Git and GitHub, <a href="https://floswald.github.io/ScPoProgramming/05-git.html">available here</a>. For more specific questions, you might find the following resources useful :</p>
 <p>About vscode :</p>
 <ul>
 <li>The official documentation of vscode, <a href="https://code.visualstudio.com/docs">available here</a>.</li>
@@ -567,28 +579,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 
 
-<div class="hidden" aria-hidden="true">
-<span class="glightbox-desc lightbox-desc-1">Figure 1.1 : The starting page of GitHub.</span>
-<span class="glightbox-desc lightbox-desc-2">Figure 1.2 : GitHub Desktop landing page.</span>
-<span class="glightbox-desc lightbox-desc-3">Figure 1.3 : Starting page of GitHub Desktop.</span>
-<span class="glightbox-desc lightbox-desc-4">Figure 1.4 : Authorization page to GitHub.</span>
-<span class="glightbox-desc lightbox-desc-5">Figure 1.5 : GitHub Desktop configuration.</span>
-<span class="glightbox-desc lightbox-desc-6">Figure 1.6 : GitHub Desktop home page.</span>
-<span class="glightbox-desc lightbox-desc-7">Figure 1.7 : Creating a repository on GitHub Desktop.</span>
-<span class="glightbox-desc lightbox-desc-8">Figure 1.8 : An empty repository on GitHub desktop.</span>
-<span class="glightbox-desc lightbox-desc-9">Figure 1.9 : The installation page of Git.</span>
-<span class="glightbox-desc lightbox-desc-10">Figure 1.10 : Initializing git, adding a file, and commiting this change.</span>
-<span class="glightbox-desc lightbox-desc-11">Figure 1.11 : Click on the green button “Create a repository”.</span>
-<span class="glightbox-desc lightbox-desc-12">Figure 1.12 : Starting page of the repository creation process.</span>
-<span class="glightbox-desc lightbox-desc-13">Figure 1.13 : Page of the repository creation process filled with information.</span>
-<span class="glightbox-desc lightbox-desc-14">Figure 1.14 : In our settings, we must find the ssh and gpg keys section.</span>
-<span class="glightbox-desc lightbox-desc-15">Figure 1.15 : After having clicked on “New SSH Key”, we can add what we get from our terminal after entering “cat ~/.ssh/id_ed25519.pub” in the “Key” section.</span>
-<span class="glightbox-desc lightbox-desc-16">Figure 1.16 : Dowload page of vscode.</span>
-<span class="glightbox-desc lightbox-desc-17">Figure 1.17 : Starting page of vscode. Click on “open” to chose a folder to open.</span>
-<span class="glightbox-desc lightbox-desc-18">Figure 1.18 : An empty folder opened with vscode.</span>
-<span class="glightbox-desc lightbox-desc-19">Figure 1.19 : How to create a new terminal on vscode.</span>
-<span class="glightbox-desc lightbox-desc-20">Figure 1.20 : Terminal in vscode.</span>
-</div>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
@@ -627,18 +617,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -670,7 +649,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -678,7 +677,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -780,7 +779,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -1032,30 +1030,37 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","selector":".lightbox","openEffect":"zoom","loop":false});
-window.onload = () => {
-  lightboxQuarto.on('slide_before_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    const href = trigger.getAttribute('href');
-    if (href !== null) {
-      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-      if (imgEl !== null) {
-        const srcAttr = imgEl.getAttribute("src");
-        if (srcAttr && srcAttr.startsWith("data:")) {
-          slideConfig.href = srcAttr;
-        }
-      }
-    } 
-  });
-
-  lightboxQuarto.on('slide_after_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    if (window.Quarto?.typesetMath) {
-      window.Quarto.typesetMath(slideNode);
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
     }
-  });
-
-};
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
           </script>
 
 

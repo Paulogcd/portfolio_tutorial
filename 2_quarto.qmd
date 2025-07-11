@@ -57,7 +57,7 @@ Once the creation process is done, we will see appear in our folder several file
 
 Let us take a moment to comment on what they do : 
 
-1. The files with a ".css" extension are Cascading Style Sheets (css) files. Together with HTML, CSS is one of the main languages for web development. Those kind of files are mainly responsisble for the appearance and design of websites. It is not necessary to modify them for the purpose of this tutorial, but we can inform ourselves about it [on this page](https://www.w3schools.com/css/).
+1. The files with a ".css" extension are Cascading Style Sheets (css) files. Together with HTML, CSS is one of the main languages for web development. Those kinds of files are mainly responsisble for the appearance and design of websites. It is not necessary to modify them for the purpose of this tutorial, but we can inform ourselves about it [on this page](https://www.w3schools.com/css/).
 2. The files with a ".qmd" extension are Quarto files. This extension stands for Quarto MarkDown (qmd). They correspond to what the future pages of our website will be. They support various langages, like traditional Markdown, $\LaTeX$, and more... We will change our portfolio pages by modifying these pages. 
 3. The files with a ".yml" extension are configuration files. We use them to set some rules that Quarto will apply to generate our pages. For example, we will modify the navigation bar (or navbar) through these files.
 
@@ -93,7 +93,7 @@ What we are seeing is the result of this conversion from qmd to html and css.
 > We can notice that the URL of our page looks a bit different than the websites we usually access.
 Indeed, we should have something like "http://localhost:6986/", or any other kind of four numbers combination. 
 This is because Quarto is currently watching at our file, and will refresh the page as soon as any of our qmd or yaml files are changed and saved. 
-Simplyt put, "localhost" means that it is our computer, and the four numbers are the port of our computer quarto is using to display the files.
+Simply put, "localhost" means that it is our computer, and the four numbers are the port of our computer quarto is using to display the files.
 
 > Now, our terminal is busy reading our files in the web browser. We can create a new terminal session by clicking on the "+" in vscode. 
 To stop the process, we can click on our terminal and then enter `ctrl`+`c` (`command`+`c` for MacOS keyboards).
@@ -225,7 +225,7 @@ will yield :
 
 ![Figure 2.7 : Example of links usage.](./resources/images/2_7_links.png)
 
-And if we click on the links, we should be redirected to the url we wrote ! 
+And if we click on the links, we should be redirected to the URL we wrote ! 
 
 ### Adding documents and pictures
 
@@ -234,9 +234,9 @@ For example, some pdf of a long article we wrote or screeenshots.
 
 In order to do so, we are going to use the `![Figure 2 : description](link)` markdown syntax.
 
-In the previous example, we had url as links, that could be accessed on internet. 
+In the previous example, we had URL as links, that could be accessed on internet. 
 Now, let's imagine that we have a pdf file in our computer that we want to share on our portfolio. 
-Usually, such a pdf is not available online on a public url. 
+Usually, such a pdf is not available online on a public URL. 
 
 The first step we want to do is put the files we want to share in our folder in vscode. We should have something like that : 
 

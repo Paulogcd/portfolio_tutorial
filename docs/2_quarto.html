@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Research student portfolio tutorial - 2. Creating our content with Quarto</title>
+<title>2. Creating our content with Quarto – Research student portfolio tutorial</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -33,7 +33,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -71,10 +71,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-09537c9ecba8558085948e1b802a414a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -106,7 +106,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
@@ -146,7 +146,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -160,7 +160,7 @@ window.Quarto = {
 <span class="menu-text">Research Portfolio tutorial</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-chapters" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-chapters" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Chapters</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-chapters">    
@@ -188,7 +188,7 @@ window.Quarto = {
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
@@ -199,11 +199,11 @@ window.Quarto = {
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./2_quarto.html">2. Creating our content with Quarto</a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
@@ -313,7 +313,7 @@ window.Quarto = {
 <p>The first step of this chapter is to download Quarto <a href="https://quarto.org/docs/get-started/">here</a>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_1_install_quarto2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1" title="Figure 2.1 : Installation page of Quarto"><img src="./resources/images/2_1_install_quarto2.png" class="img-fluid figure-img" alt="Figure 2.1 : Installation page of Quarto"></a></p>
+<p><a href="./resources/images/2_1_install_quarto2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure 2.1 : Installation page of Quarto"><img src="./resources/images/2_1_install_quarto2.png" class="img-fluid figure-img" alt="Figure 2.1 : Installation page of Quarto"></a></p>
 <figcaption>Figure 2.1 : Installation page of Quarto</figcaption>
 </figure>
 </div>
@@ -324,7 +324,7 @@ window.Quarto = {
 <p>Now that Quarto is installed, we can create a Quarto project in our folder (the one we synchronized with our online GitHub repository). In order to do that, we go back to vscode, and enter <code>quarto create</code> in the terminal of our open folder.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_2_create_project_quarto.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2" title="Figure 2.2 : Creation of a project with Quarto"><img src="./resources/images/2_2_create_project_quarto.png" class="img-fluid figure-img" alt="Figure 2.2 : Creation of a project with Quarto"></a></p>
+<p><a href="./resources/images/2_2_create_project_quarto.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure 2.2 : Creation of a project with Quarto"><img src="./resources/images/2_2_create_project_quarto.png" class="img-fluid figure-img" alt="Figure 2.2 : Creation of a project with Quarto"></a></p>
 <figcaption>Figure 2.2 : Creation of a project with Quarto</figcaption>
 </figure>
 </div>
@@ -349,7 +349,7 @@ We could choose several options here. For example, <code>default</code> would wo
 <p>Once the creation process is done, we will see appear in our folder several files : index.qmd, about.qmd, _quarto.yml, style.css.</p>
 <p>Let us take a moment to comment on what they do :</p>
 <ol type="1">
-<li>The files with a “.css” extension are Cascading Style Sheets (css) files. Together with HTML, CSS is one of the main languages for web development. Those kind of files are mainly responsisble for the appearance and design of websites. It is not necessary to modify them for the purpose of this tutorial, but we can inform ourselves about it <a href="https://www.w3schools.com/css/">on this page</a>.</li>
+<li>The files with a “.css” extension are Cascading Style Sheets (css) files. Together with HTML, CSS is one of the main languages for web development. Those kinds of files are mainly responsisble for the appearance and design of websites. It is not necessary to modify them for the purpose of this tutorial, but we can inform ourselves about it <a href="https://www.w3schools.com/css/">on this page</a>.</li>
 <li>The files with a “.qmd” extension are Quarto files. This extension stands for Quarto MarkDown (qmd). They correspond to what the future pages of our website will be. They support various langages, like traditional Markdown, <span class="math inline">\(\LaTeX\)</span>, and more… We will change our portfolio pages by modifying these pages.</li>
 <li>The files with a “.yml” extension are configuration files. We use them to set some rules that Quarto will apply to generate our pages. For example, we will modify the navigation bar (or navbar) through these files.</li>
 </ol>
@@ -363,7 +363,7 @@ We could choose several options here. For example, <code>default</code> would wo
 <p>Let’s try to run the <code>quarto preview</code> command :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_3_quarto_preview_1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" data-glightbox="description: .lightbox-desc-3" title="Figure 2.3 : Running the quarto preview command on the vscode terminal."><img src="./resources/images/2_3_quarto_preview_1.png" class="img-fluid figure-img" alt="Figure 2.3 : Running the quarto preview command on the vscode terminal."></a></p>
+<p><a href="./resources/images/2_3_quarto_preview_1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figure 2.3 : Running the quarto preview command on the vscode terminal."><img src="./resources/images/2_3_quarto_preview_1.png" class="img-fluid figure-img" alt="Figure 2.3 : Running the quarto preview command on the vscode terminal."></a></p>
 <figcaption>Figure 2.3 : Running the <code>quarto preview</code> command on the vscode terminal.</figcaption>
 </figure>
 </div>
@@ -371,13 +371,13 @@ We could choose several options here. For example, <code>default</code> would wo
 <p>If we did not modify the basic files, we should see something like this on our web browser :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_4_quarto_preview_2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" data-glightbox="description: .lightbox-desc-4" title="Figure 2.4 : The graphical result of an empty quarto project."><img src="./resources/images/2_4_quarto_preview_2.png" class="img-fluid figure-img" alt="Figure 2.4 : The graphical result of an empty quarto project."></a></p>
+<p><a href="./resources/images/2_4_quarto_preview_2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Figure 2.4 : The graphical result of an empty quarto project."><img src="./resources/images/2_4_quarto_preview_2.png" class="img-fluid figure-img" alt="Figure 2.4 : The graphical result of an empty quarto project."></a></p>
 <figcaption>Figure 2.4 : The graphical result of an empty quarto project.</figcaption>
 </figure>
 </div>
 <p>Okay, we have our first graphical results ! What happened exactly here ? First, we entered <code>quarto preview</code>. Quarto first transformed all our qmd files in our folder in readable files for our web browser, i.e.&nbsp;html and css files. Then, it opened those html and css files with our default browser. What we are seeing is the result of this conversion from qmd to html and css.</p>
 <blockquote class="blockquote">
-<p>We can notice that the URL of our page looks a bit different than the websites we usually access. Indeed, we should have something like “http://localhost:6986/”, or any other kind of four numbers combination. This is because Quarto is currently watching at our file, and will refresh the page as soon as any of our qmd or yaml files are changed and saved. Simplyt put, “localhost” means that it is our computer, and the four numbers are the port of our computer quarto is using to display the files.</p>
+<p>We can notice that the URL of our page looks a bit different than the websites we usually access. Indeed, we should have something like “http://localhost:6986/”, or any other kind of four numbers combination. This is because Quarto is currently watching at our file, and will refresh the page as soon as any of our qmd or yaml files are changed and saved. Simply put, “localhost” means that it is our computer, and the four numbers are the port of our computer quarto is using to display the files.</p>
 </blockquote>
 <blockquote class="blockquote">
 <p>Now, our terminal is busy reading our files in the web browser. We can create a new terminal session by clicking on the “+” in vscode. To stop the process, we can click on our terminal and then enter <code>ctrl</code>+<code>c</code> (<code>command</code>+<code>c</code> for MacOS keyboards).</p>
@@ -409,7 +409,7 @@ We could choose several options here. For example, <code>default</code> would wo
 <p>This should yield :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_5_basic_index.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" data-glightbox="description: .lightbox-desc-5" title="Figure 2.5 : Basic index page."><img src="./resources/images/2_5_basic_index.png" class="img-fluid figure-img" alt="Figure 2.5 : Basic index page."></a></p>
+<p><a href="./resources/images/2_5_basic_index.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figure 2.5 : Basic index page."><img src="./resources/images/2_5_basic_index.png" class="img-fluid figure-img" alt="Figure 2.5 : Basic index page."></a></p>
 <figcaption>Figure 2.5 : Basic index page.</figcaption>
 </figure>
 </div>
@@ -460,7 +460,7 @@ We could choose several options here. For example, <code>default</code> would wo
 <p>This would then yield :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_6_titles.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" data-glightbox="description: .lightbox-desc-6" title="Figure 2.6 : Example of titles and subtitles."><img src="./resources/images/2_6_titles.png" class="img-fluid figure-img" alt="Figure 2.6 : Example of titles and subtitles."></a></p>
+<p><a href="./resources/images/2_6_titles.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Figure 2.6 : Example of titles and subtitles."><img src="./resources/images/2_6_titles.png" class="img-fluid figure-img" alt="Figure 2.6 : Example of titles and subtitles."></a></p>
 <figcaption>Figure 2.6 : Example of titles and subtitles.</figcaption>
 </figure>
 </div>
@@ -486,21 +486,21 @@ We could choose several options here. For example, <code>default</code> would wo
 <p>will yield :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_7_links.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" data-glightbox="description: .lightbox-desc-7" title="Figure 2.7 : Example of links usage."><img src="./resources/images/2_7_links.png" class="img-fluid figure-img" alt="Figure 2.7 : Example of links usage."></a></p>
+<p><a href="./resources/images/2_7_links.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Figure 2.7 : Example of links usage."><img src="./resources/images/2_7_links.png" class="img-fluid figure-img" alt="Figure 2.7 : Example of links usage."></a></p>
 <figcaption>Figure 2.7 : Example of links usage.</figcaption>
 </figure>
 </div>
-<p>And if we click on the links, we should be redirected to the url we wrote !</p>
+<p>And if we click on the links, we should be redirected to the URL we wrote !</p>
 </section>
 <section id="adding-documents-and-pictures" class="level3">
 <h3 class="anchored" data-anchor-id="adding-documents-and-pictures">Adding documents and pictures</h3>
 <p>Now, we could also want to include some pictures in our text. For example, some pdf of a long article we wrote or screeenshots.</p>
 <p>In order to do so, we are going to use the <code>![Figure 2 : description](link)</code> markdown syntax.</p>
-<p>In the previous example, we had url as links, that could be accessed on internet. Now, let’s imagine that we have a pdf file in our computer that we want to share on our portfolio. Usually, such a pdf is not available online on a public url.</p>
+<p>In the previous example, we had URL as links, that could be accessed on internet. Now, let’s imagine that we have a pdf file in our computer that we want to share on our portfolio. Usually, such a pdf is not available online on a public URL.</p>
 <p>The first step we want to do is put the files we want to share in our folder in vscode. We should have something like that :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_8_vscode_files.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" data-glightbox="description: .lightbox-desc-8" title="Figure 2.8 : A vscode folder with files that we want to share."><img src="./resources/images/2_8_vscode_files.png" class="img-fluid figure-img" alt="Figure 2.8 : A vscode folder with files that we want to share."></a></p>
+<p><a href="./resources/images/2_8_vscode_files.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Figure 2.8 : A vscode folder with files that we want to share."><img src="./resources/images/2_8_vscode_files.png" class="img-fluid figure-img" alt="Figure 2.8 : A vscode folder with files that we want to share."></a></p>
 <figcaption>Figure 2.8 : A vscode folder with files that we want to share.</figcaption>
 </figure>
 </div>
@@ -529,7 +529,7 @@ We could choose several options here. For example, <code>default</code> would wo
 <p>This code would yield :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_9_including_documents.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" data-glightbox="description: .lightbox-desc-9" title="Figure 2.11 : An attempt to include pictures and pdf"><img src="./resources/images/2_9_including_documents.png" class="img-fluid figure-img" alt="Figure 2.11 : An attempt to include pictures and pdf"></a></p>
+<p><a href="./resources/images/2_9_including_documents.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Figure 2.11 : An attempt to include pictures and pdf"><img src="./resources/images/2_9_including_documents.png" class="img-fluid figure-img" alt="Figure 2.11 : An attempt to include pictures and pdf"></a></p>
 <figcaption>Figure 2.11 : An attempt to include pictures and pdf</figcaption>
 </figure>
 </div>
@@ -555,7 +555,7 @@ We could choose several options here. For example, <code>default</code> would wo
 <p>That would yield :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_10_including_documents_2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" data-glightbox="description: .lightbox-desc-10" title="Figure 2.13 : Including a pdf document through a local link."><img src="./resources/images/2_10_including_documents_2.png" class="img-fluid figure-img" alt="Figure 2.13 : Including a pdf document through a local link."></a></p>
+<p><a href="./resources/images/2_10_including_documents_2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10" title="Figure 2.13 : Including a pdf document through a local link."><img src="./resources/images/2_10_including_documents_2.png" class="img-fluid figure-img" alt="Figure 2.13 : Including a pdf document through a local link."></a></p>
 <figcaption>Figure 2.13 : Including a pdf document through a local link.</figcaption>
 </figure>
 </div>
@@ -671,7 +671,7 @@ We could choose several options here. For example, <code>default</code> would wo
 <p>That yields a navbar like :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_11_default_navbar.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12" data-glightbox="description: .lightbox-desc-12" title="Figure 2.14 : The default navbar of Quarto"><img src="./resources/images/2_11_default_navbar.png" class="img-fluid figure-img" alt="Figure 2.14 : The default navbar of Quarto"></a></p>
+<p><a href="./resources/images/2_11_default_navbar.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12" title="Figure 2.14 : The default navbar of Quarto"><img src="./resources/images/2_11_default_navbar.png" class="img-fluid figure-img" alt="Figure 2.14 : The default navbar of Quarto"></a></p>
 <figcaption>Figure 2.14 : The default navbar of Quarto</figcaption>
 </figure>
 </div>
@@ -688,7 +688,7 @@ We could choose several options here. For example, <code>default</code> would wo
 <p>This should yield :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_12_without_title.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13" data-glightbox="description: .lightbox-desc-13" title="Figure 2.15 : A navbar without title."><img src="./resources/images/2_12_without_title.png" class="img-fluid figure-img" alt="Figure 2.15 : A navbar without title."></a></p>
+<p><a href="./resources/images/2_12_without_title.png" class="lightbox" data-gallery="quarto-lightbox-gallery-13" title="Figure 2.15 : A navbar without title."><img src="./resources/images/2_12_without_title.png" class="img-fluid figure-img" alt="Figure 2.15 : A navbar without title."></a></p>
 <figcaption>Figure 2.15 : A navbar without title.</figcaption>
 </figure>
 </div>
@@ -724,7 +724,7 @@ We could choose several options here. For example, <code>default</code> would wo
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_13_vscode.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14" data-glightbox="description: .lightbox-desc-14" title="Figure 2.16 : Our vscode interface."><img src="./resources/images/2_13_vscode.png" class="img-fluid figure-img" alt="Figure 2.16 : Our vscode interface."></a></p>
+<p><a href="./resources/images/2_13_vscode.png" class="lightbox" data-gallery="quarto-lightbox-gallery-14" title="Figure 2.16 : Our vscode interface."><img src="./resources/images/2_13_vscode.png" class="img-fluid figure-img" alt="Figure 2.16 : Our vscode interface."></a></p>
 <figcaption>Figure 2.16 : Our vscode interface.</figcaption>
 </figure>
 </div>
@@ -732,7 +732,7 @@ We could choose several options here. For example, <code>default</code> would wo
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./resources/images/2_14_navbar.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15" data-glightbox="description: .lightbox-desc-15" title="Figure 2.17 : The graphical result."><img src="./resources/images/2_14_navbar.png" class="img-fluid figure-img" alt="Figure 2.17 : The graphical result."></a></p>
+<p><a href="./resources/images/2_14_navbar.png" class="lightbox" data-gallery="quarto-lightbox-gallery-15" title="Figure 2.17 : The graphical result."><img src="./resources/images/2_14_navbar.png" class="img-fluid figure-img" alt="Figure 2.17 : The graphical result."></a></p>
 <figcaption>Figure 2.17 : The graphical result.</figcaption>
 </figure>
 </div>
@@ -761,22 +761,6 @@ We could choose several options here. For example, <code>default</code> would wo
 <p>Quarto is a very powerful tool. We can use it to quickly produce content and maintain it with the presented workflow in this tutorial. I highly recommend the reading of their <a href="https://quarto.org/docs/guide/">documentation here</a>, and more specifically to follow through their <a href="https://quarto.org/docs/get-started/">Get Started guide</a>.</p>
 
 
-<div class="hidden" aria-hidden="true">
-<span class="glightbox-desc lightbox-desc-1">Figure 2.1 : Installation page of Quarto</span>
-<span class="glightbox-desc lightbox-desc-2">Figure 2.2 : Creation of a project with Quarto</span>
-<span class="glightbox-desc lightbox-desc-3">Figure 2.3 : Running the <code>quarto preview</code> command on the vscode terminal.</span>
-<span class="glightbox-desc lightbox-desc-4">Figure 2.4 : The graphical result of an empty quarto project.</span>
-<span class="glightbox-desc lightbox-desc-5">Figure 2.5 : Basic index page.</span>
-<span class="glightbox-desc lightbox-desc-6">Figure 2.6 : Example of titles and subtitles.</span>
-<span class="glightbox-desc lightbox-desc-7">Figure 2.7 : Example of links usage.</span>
-<span class="glightbox-desc lightbox-desc-8">Figure 2.8 : A vscode folder with files that we want to share.</span>
-<span class="glightbox-desc lightbox-desc-9">Figure 2.11 : An attempt to include pictures and pdf</span>
-<span class="glightbox-desc lightbox-desc-10">Figure 2.13 : Including a pdf document through a local link.</span>
-<span class="glightbox-desc lightbox-desc-12">Figure 2.14 : The default navbar of Quarto</span>
-<span class="glightbox-desc lightbox-desc-13">Figure 2.15 : A navbar without title.</span>
-<span class="glightbox-desc lightbox-desc-14">Figure 2.16 : Our vscode interface.</span>
-<span class="glightbox-desc lightbox-desc-15">Figure 2.17 : The graphical result.</span>
-</div>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
@@ -815,18 +799,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -858,7 +831,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -866,7 +859,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -968,7 +961,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
@@ -1220,30 +1212,37 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","closeEffect":"zoom","loop":false,"selector":".lightbox","openEffect":"zoom"});
-window.onload = () => {
-  lightboxQuarto.on('slide_before_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    const href = trigger.getAttribute('href');
-    if (href !== null) {
-      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-      if (imgEl !== null) {
-        const srcAttr = imgEl.getAttribute("src");
-        if (srcAttr && srcAttr.startsWith("data:")) {
-          slideConfig.href = srcAttr;
-        }
-      }
-    } 
-  });
-
-  lightboxQuarto.on('slide_after_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    if (window.Quarto?.typesetMath) {
-      window.Quarto.typesetMath(slideNode);
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
     }
-  });
-
-};
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
           </script>
 
 

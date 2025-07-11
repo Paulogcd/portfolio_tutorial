@@ -4,9 +4,9 @@ date: 06/02/2024
 ---
 
 
-Hello :wave:, I am Paulo Gugelmo Cavalheiro Dias, a research student in Economics at Sciences Po. 
+Hello :wave:, I am Paulo Gugelmo Cavalheiro Dias, a former [Research School](https://www.sciencespo.fr/ecole-recherche/en/) student of the Master in Economics at [Sciences Po](https://www.sciencespo.fr/en/). 
 
-I made this tutorial to make it easy for research student to create their own online portfolio. 
+I made this tutorial to make it easy for research students to create their own online portfolio. 
 It is made so that even someone with no prior programming experience can understand and follow its steps.
 
 Feel free to visit my main website by clicking on "Home", the first item of the navigation bar of this page.

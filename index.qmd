@@ -17,14 +17,14 @@ This tutorial is divided in three main chapters :
 
 | Chapter | Summary |
 |---|---|
-| [1. Setting up our workflow](1_git_and_github.qmd) | In this chapter, we will learn what Git and GitHub are, and how to use them. This will help us set up the workflow used in the rest of the tutorial. |
-| [2. Creating our content with Quarto](2_quarto.qmd) | In this chapter, we will learn to create and modify web content with Quarto. This will help us create the content of our portfolio. |
-| [3. Publish our website with GitHub Pages](3_publish_with_github_pages.qmd) | In this chapter, we will learn how to publish our website, i.e. make it accessible to everyone on the Internet. |
+| [1. Setting up your workflow](1_git_and_github.qmd) | In this chapter, you will learn what Git and GitHub are, and how to use them. This will help you set up the workflow used in the rest of the tutorial. |
+| [2. Creating your content with Quarto](2_quarto.qmd) | In this chapter, you will learn to create and modify web content with Quarto. This will help you create the content of our portfolio. |
+| [3. Publish your website with GitHub Pages](3_publish_with_github_pages.qmd) | In this chapter, you will learn how to publish your website, i.e. make it accessible to everyone on the Internet. |
 
 ## Further resources
 
 At the end of each chapter, you will find some useful complementary resources. Here are the main ones : 
 
-- For the first chapter, I learned a lot in [Florian Oswald class](https://floswald.github.io/ScPoProgramming/), Associate Professor of Economics at Sciences Po in Paris, and my teacher to introduction to programming.
+- For the first chapter, I learned a lot in [Florian Oswald's class](https://floswald.github.io/ScPoProgramming/), Associate Professor of Economics at Sciences Po in Paris, and my teacher to introduction to programming.
 - The second chapter takes some important elements from the [great documentation of Quarto](https://quarto.org) and on [their discussion forum on GitHub](https://github.com/quarto-dev/quarto-cli/discussions). 
 - The last chapter is based on the guide of [GitHub Pages of GitHub](https://docs.github.com/en/pages/quickstart) and complementary research on [Stack Overflow](https://stackoverflow.com/) to troubleshoot errors. 

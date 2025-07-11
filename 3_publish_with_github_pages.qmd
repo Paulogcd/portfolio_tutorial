@@ -9,7 +9,7 @@ In order for us to publish our content, we are going to use GitHub Pages, a webs
 > Several free hosting services exist, such as [Netlify](https://www.netlify.com/), [Quarto Pub](https://quartopub.com/), and [GitHub Pages](https://pages.github.com/), among other ones.
 We focus here on Github Pages because of its simplicity and because it allows to have an easy and stable workflow with our Github repository.
 
-This final step is the easiest one, so hang it on, we are soon reaching the end of this tutorial :grin:.
+This final step is the easiest one, so hang in there, we are soon reaching the end of this tutorial :grin:.
 
 ## Saving our changes
 
@@ -63,7 +63,7 @@ The branch from which it selects the folder should be "main" or "master" (but co
 
 After selecting it, we can click on "Save". 
 Github will popup a bar at the top of the page indicating : "GitHub Pages source saved."
-Also, a "Custom domain" section should appear, that we can later configurate if we wish to have our own customed url :
+Also, a "Custom domain" section should appear, that we can later configurate if we wish to have our own customed URL :
 
 ![Figure 3.8 : After saving our source.](./resources/images/3_8.png)
 
@@ -103,7 +103,7 @@ Congratulations, you have published your portfolio ! :fire: :fire: :fire:
 
 ![Figure 3.12 : Our basic portfolio is online.](./resources/images/3_12.png)
 
-We see that it is online with the url. 
+We see that it is online with the URL. 
 In my case, I see "https://frpgcd.github.io", and not something with "localhost".
 Try accessing your website from another machine, be it a computer or a mobile phone.
 It should work ! 
@@ -131,4 +131,4 @@ I hope you enjoyed it.
 If you noticed some things that seemed wrong, too complicated, or some bugs in the website, please reach to me.
 This tutorial is currently under construction and I am trying to improve it as much as possible. 
 
-> If you want to suggest some modification to this tutorial, you can also click on the top-right buttons "Report an issue" ("Edit this page" will create a pull request on Github. Feel free to look to what it does) under the table of content of this chapter :wink:.
+> If you want to suggest some modification to this tutorial, you can also click on the top-right buttons "Report an issue" ("Edit this page" will create a pull request on Github. Feel free to take a look at what it does) under the table of content of this chapter :wink:.
